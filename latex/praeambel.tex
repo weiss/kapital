@@ -87,6 +87,18 @@
 % nach der längsten Nummer des Bandes
 \deffootnote{1.6em}{1em}{\thefootnotemark}
 \setkomafont{footnotelabel}{\addfontfeatures{Numbers={OldStyle,Monospaced}}}
+% Crimson Pro hat hochgestellte Ziffern, aber keine Buchstaben: das „a“ in „19a“
+% verkleinert und angehoben wie die Ziffern
+\makeatletter
+\deffootnotemark{\fnsup{\thefootnotemark}}
+\newcommand{\fnsup}[1]{\edef\kfn{#1}\let\kfnd\@empty\let\kfnl\@empty
+  \expandafter\@tfor\expandafter\x\expandafter:\expandafter=\kfn\do{%
+    \ifcat a\x\edef\kfnl{\kfnl\x}\else\edef\kfnd{\kfnd\x}\fi}%
+  \textsuperscript{\kfnd}%
+  \ifx\kfnl\@empty\else
+    \raisebox{.19em}{\fontsize{\fpeval{.67*\f@size}}{0}\selectfont\kfnl}%
+  \fi}
+\makeatother
 \providecommand{\FnWidest}{00}
 \makeatletter
 \long\def\@makefntext#1{\setbox0\hbox{\ftnm@font\FnWidest\enspace}%

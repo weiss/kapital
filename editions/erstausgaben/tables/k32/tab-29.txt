@@ -1,0 +1,9 @@
+@ l n r n n r n n n n n
+Boden-<lb/>art | Acres | Kapital-<lb/>anlage<lb/>£ | Profit<lb/>£ | Produk-<lb/>tions-<lb/>kosten<lb/>£ | Produkt<lb/>qrs. | Ver-<lb/>kaufs-<lb/>preis<lb/>£ | Ertrag<lb/>£ | Korn-<lb/>rente<lb/>qrs. | Geld-<lb/>rente<lb/>£ | Rent-<lb/>rate
+===
+A | 1 | 2 1/2+2 1/2 | 1 | 6 | 1/2+1 1/4=1 3/4 | 3 3/7 | 6 | 0 | 0 | 0
+B | 1 | 2 1/2+2 1/2 | 1 | 6 | 1+2 1/2=3 1/2 | 3 3/7 | 12 | 1 3/4 | 6 | 120 %
+C | 1 | 2 1/2+2 1/2 | 1 | 6 | 1 1/2+3 3/4=5 1/4 | 3 3/7 | 18 | 3 1/2 | 12 | 240 %
+D | 1 | 2 1/2+2 1/2 | 1 | 6 | 2+5=7 | 3 3/7 | 24 | 5 1/4 | 18 | 360 %
+---
+ | | 20 | | | 17 1/2 | | 60 | 10 1/2 | 36 | 240 %

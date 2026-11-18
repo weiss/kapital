@@ -1,0 +1,10 @@
+@ l n n u n u n u n u n u
+Bodenart | Acres | Prod.-Kosten | < | < | < | Produkt | < | Kornrente | < | Geldrente | <
+^ | ^ | pr.<lb/>Acre | < | insge-<lb/>sammt | < | ^ | ^ | ^ | ^ | ^ | ^
+===
+A | 4 | 3 | £ | 12 | £ | 4 | qrs. | 0 | | 0 |
+B | 4 | 3 | „ | 12 | „ | 8 | „ | 4 | qrs. | 12 | £
+C | 2 | 3 | „ | 6 | „ | 6 | „ | 4 | „ | 12 | „
+D | 2 | 3 | „ | 6 | „ | 8 | „ | 6 | „ | 18 | „
+---
+Summa | 12 Acres | | | 36 | £ | 26 | qrs. | 14 | qrs. | 42 | £

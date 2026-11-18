@@ -1,0 +1,7 @@
+@ t t n n n
+Anzahl der<lb/>beschäftigten<lb/>Leute | Industriezweige und<lb/>Lokalität | Sterblichkeitsrate pro<lb/>100000 im Alter von | < | <
+^ | ^ | 25—35 | 35—45 | 45—55
+===
+958265 | Ackerbau, England und Wales | 743 | 805 | 1195
+22301 Männer und 12377 Weiber | Schneider, London | 958 | 1262 | 2093
+13803 | Schriftsetzer und Drucker London | 894 | 1747 | 2367

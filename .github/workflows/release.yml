@@ -1,0 +1,51 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - '*.*.*'
+
+jobs:
+  release:
+    name: Publish release
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - name: Install prerequisites
+        run: |
+          sudo apt-get -qq update
+          sudo apt-get -qq install python3-lxml \
+            texlive-luatex texlive-latex-recommended texlive-xetex \
+            texlive-lang-german texlive-lang-greek
+      - name: Check out repository code
+        uses: actions/checkout@v7
+      - name: Build EPUBs and PDFs
+        run: |
+          make
+          make VARIANT=modern
+          make pdf
+          make pdf VARIANT=modern
+      - name: Name release assets
+        run: |
+          mkdir dist
+          set -- 1867 1885 1894
+          for b in 1 2 3
+          do
+            cp build/erstausgaben/kapital-$b.epub dist/marx-kapital-$b-$1.epub
+            cp build/erstausgaben-modern/kapital-$b.epub \
+              dist/marx-kapital-$b-$1-modern.epub
+            for f in build/erstausgaben/kapital-$b*.pdf
+            do
+              n=$(basename $f .pdf | sed 's/kapital-//; s/-/./')
+              cp $f dist/marx-kapital-$n-$1.pdf
+              cp build/erstausgaben-modern/$(basename $f) \
+                dist/marx-kapital-$n-$1-modern.pdf
+            done
+            shift
+          done
+      - name: Create release
+        uses: ncipollo/release-action@v1
+        with:
+          name: Das Kapital ${{ github.ref_name }}
+          artifacts: dist/*

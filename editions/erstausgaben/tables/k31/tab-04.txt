@@ -1,0 +1,12 @@
+@ r u n n n n n n l
+Kapitale. | < | Mehr-<lb/>werths-<lb/>rate. | Mehr-<lb/>werth. | Profit-<lb/>rate. | Ver-<lb/>brauch-<lb/>tes c. | Werth<lb/>der<lb/>Waaren. | Kost-<lb/>preis. |
+===
+I. | 80_c + 20_v | 100 % | 20 | 20 % | 50 | 90 | 70 |
+II. | 70_c + 30_v | 100 % | 30 | 30 % | 51 | 111 | 81 |
+III. | 60_c + 40_v | 100 % | 40 | 40 % | 51 | 131 | 91 |
+IV. | 85_c + 15_v | 100 % | 15 | 15 % | 40 | 70 | 55 |
+V. | 95_c + 5_v | 100 % | 5 | 5 % | 10 | 20 | 15 |
+---
+ | 390_c + 110_v | — | 110 | 100 % | — | — | — | Summa.
+---
+ | 78_c + 22_v | — | 22 | 22 % | — | — | — | Durchschnitt.

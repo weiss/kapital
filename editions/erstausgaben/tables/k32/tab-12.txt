@@ -1,0 +1,9 @@
+@ l n n u n u n u n u
+Bodenart | Acres | Pro-<lb/>duktions-<lb/>kosten | < | Produkt | < | Kornrente | < | Geldrente | <
+===
+A | 2 | 6 | £ | 2 | qrs. | 0 | | 0 |
+B | 2 | 6 | „ | 4 | „ | 2 | qrs. | 6 | £
+C | 2 | 6 | „ | 6 | „ | 4 | „ | 12 | „
+D | 2 | 6 | „ | 8 | „ | 6 | „ | 18 | „
+---
+Summa | 8 Acres | | | 20 | qrs. | 12 | qrs. | 36 | £

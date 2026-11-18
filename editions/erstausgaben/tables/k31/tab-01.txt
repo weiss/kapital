@@ -1,0 +1,13 @@
+@ l t n n
+Distrikt | Hauptindustrie | Todesfälle von Lungen-<lb/>krankheiten zwischen 15<lb/>und 25 Jahren berechnet<lb/>auf je 100000 | <
+^ | ^ | Männer | Weiber
+===
+Berkhampstead | Strohflechterei, von Weibern betrieben | 219 | 578
+Leighton Buzzard | Strohflechterei, von Weibern betrieben | 309 | 554
+Newport Pagnell | Spitzenfabrikation durch Weiber | 301 | 617
+Towcester | Spitzenfabrikation durch Weiber | 239 | 577
+Yeovil | Handschuhmachen, meist durch Weiber | 280 | 409
+Leek | Seidenindustrie, Weiber vorwiegend | 437 | 856
+Congleton | Seidenindustrie, Weiber vorwiegend | 566 | 790
+Macclesfield | Seidenindustrie, Weiber vorwiegend | 593 | 890
+Gesunde Landgegend | Ackerbau | 331 | 333

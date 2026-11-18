@@ -1,0 +1,8 @@
+Boden-<lb/>art | Acres | Kapital<lb/>£ | Profit<lb/>£ | Produk-<lb/>tions-<lb/>kosten<lb/>£ | Produkt<lb/>qrs. | Ver-<lb/>kaufs-<lb/>preis<lb/>£ | Ertrag<lb/>£ | Rente | < | Rate des<lb/>Surplus-<lb/>profits
+^ | ^ | ^ | ^ | ^ | ^ | ^ | ^ | qrs. | £ | ^
+===
+B | 1 | 5 | 1 | 6 | 4 | 1 1/2 | 6 | 0 | 0 | 0
+C | 1 | 5 | 1 | 6 | 6 | 1 1/2 | 9 | 2 | 3 | 60 %
+D | 1 | 12 1/2 | 2 1/2 | 15 | 20 | 1 1/2 | 30 | 10 | 15 | 120 %
+---
+Total | 3 | 22 1/2 | 4 1/2 | 27 | 30 | | 45 | 12 | 18 |

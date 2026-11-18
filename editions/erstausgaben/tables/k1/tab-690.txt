@@ -1,0 +1,23 @@
+@ l n n n n n
+Jahr. | Kornfrucht. | Grünfrucht. | < | Grasland und<lb/>Klee. | <
+^ | Abnahme. | Abnahme. | Zunahme. | Abnahme. | Zunahme.
+===
+1861 | 15,701 | 36,974 | | 47,969 |
+1862 | 72,734 | 74,785 | | | 6,623
+1863 | 144,719 | 19,358 {19.358} | | | 7,724
+1864 | 122,437 | 2317 | | | 47,486
+1865 | 72,450 | | 25,421 | | 68,970
+---
+1861—1865 | 428,041<lb/>Acres | 107,984<lb/>Acres | | | 82,834
+
+@ l n n n n
+Jahr. | Flachs. | < | Alles zu Ackerbau<lb/>und Viehzucht<lb/>dienende Land. | <
+^ | Abnahme. | Zunahme. | Abnahme. | Zunahme.
+===
+1861 | | 19,271 | 81,873 |
+1862 | | 2,055 | 138,841 |
+1863 | | 63,922 | 92,431 |
+1864 | | 87,761 | | 10,493
+1865 | 50,159 | | 28,218 |
+---
+1861—1865 | | 122,850 | 330,860<lb/>Acres |

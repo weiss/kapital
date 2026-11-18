@@ -1,0 +1,5 @@
+@ c c c c
+Pferde. | Hornvieh. | Schafe. | Schweine.
+===
+Absolute<lb/>Abnahme | Absolute<lb/>Abnahme | Absolute<lb/>Zunahme | Absolute<lb/>Zunahme
+72,358. | 116,626. | 146,608. | 28,819.<note/>

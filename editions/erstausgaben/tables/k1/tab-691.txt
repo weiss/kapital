@@ -1,0 +1,46 @@
+@ l n n n n
+Produkt. | Acres bebautes Land. | < | Zu- oder Ab-<lb/>nahme 1865. | <
+^ | 1864. | 1865. | ^ | ^
+===
+Weizen | 276,483 | 266,989 | | 9,494
+Hafer | 1,814,886 | 1,745,228 | | 69,658
+Gerste | 172,700 | 177,102 | 4,402 |
+Bere, Roggen | 8,894 | 10,091 | 1,197 |
+Kartoffeln | 1,039,724 | 1,066,260 | 26,536 |
+Turnips | 337,355 | 334,212 | | 3,143
+Mangelwurzel | 14,073 | 14,389 | 316 |
+Kohl | 31,821 | 33,622 | 1,801 |
+Flachs | 301,693 | 251,433 | | 50,260
+Heu | 1,609,569 | 1,678,493 | 68,924 |
+
+@ l n n n n
+Produkt. | Produkt per Acre. | < | Zunahme und<lb/>Abnahme 1865. | <
+^ | 1864. | 1865. | ^ | ^
+===
+Weizen Ctr. | 13.3 | 13.0 | | 0.3
+Hafer C. | 12.1 | 12.3 | 0.2 |
+Gerste C. | 15.9 | 14.9 | | 1.0
+Bere C. | 16.4 | 14.8 | | 1.6
+Roggen C. | 8.5 | 10.4 | 1.9 |
+Kartoffeln Tonnen | 4.1 | 3.6 | | 0.5
+Turnips T. | 10.3 | 9.9 | | 0.4
+Mangelwurzel T. | 10.5 | 13.3 | 2.8 |
+Kohl T. | 9.3 | 10.4 | 1.1 |
+Flachs (Stones v. 14 l.) | 34.2 | 25.2 | | 9.0
+Heu Tonn. | 1.6 | 1.8 | 0.2 |
+
+@ l n u n n u n u
+Produkt. | Totalprodukt. | < | < | Zunahme oder Abnahme 1865. {Zunahme der Abnahme 1865.} | < | < | <
+^ | 1864. | < | 1865. | ^ | ^ | ^ | ^
+===
+Weizen | 875,782 | qrs. | 826,783 | | | 48,999 | q.
+Hafer | 7,826,332 | q. | 7,659,727 | | | 166,605 | q.
+Gerste | 761,909 | q. | 732,017 | | | 29,892 | q.
+Bere | 15,160 | q. | 13,989 | | | 1,171 | q.
+Roggen | 12,680 | q. | 18,364 | 5,684 | q. | |
+Kartoffeln | 4,312,388 | T. | 3,865,990 | | | 446,398 | T.
+Turnips | 3,467,659 {3.467,659} | „ | 3,301,683 | | | 165,976 | T.
+Mangelwurzel | 147,284 | „ | 191,937 | 44,653 | T. | |
+Kohl | 297,375 | „ | 350,252 | 52,877 | „ | |
+Flachs | 64,506 | „ | 39,561 | | | 24,945 | T.
+Heu | 2,607,153 | „ | 3,068,707 | 461,554 | T.<note/> | |

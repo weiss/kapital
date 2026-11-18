@@ -1,0 +1,15 @@
+@ t n n n
+ | 1860 | 1861 | 1862
+===
+Rubrik A. Grundrente. | 12,893,829 | 13,003,554 | 13,398,938
+Rubrik B. Pächterprofite. | 2,765,387 | 2,773,644 | 2,937,899
+Rubrik D. Industrielle u. s. w. Profite. | 4,891,652 | 4,836,203 | 4,858,800
+Sämmtliche Rubriken A bis E. | 22,962,885 | 22,998,394 | 23,597,574
+
+@ t n n n
+ | 1863 | 1864 | 1865
+===
+Rubrik A. Grundrente. | 13,494,091 | 13,470,700 | 13,801,616
+Rubrik B. Pächterprofite. | 2,938,923 | 2,930,874 | 2,946,072
+Rubrik D. Industrielle u. s. w. Profite. | 4,846,497 | 4,546,147 | 4,850,199
+Sämmtliche Rubriken A bis E. | 23,658,631 | 23,236,298 | 23,930,340<note/>.

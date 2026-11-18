@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    paths-ignore:
+      - '*.md'
+  pull_request:
+    paths-ignore:
+      - '*.md'
+
+jobs:
+  build:
+    name: Build EPUBs and PDFs
+    runs-on: ubuntu-24.04
+    env:
+      EPUBCHECK: java -jar /usr/share/java/epubcheck.jar
+    steps:
+      - name: Install prerequisites
+        run: |
+          sudo apt-get -qq update
+          sudo apt-get -qq install python3-lxml epubcheck \
+            texlive-luatex texlive-latex-recommended texlive-xetex \
+            texlive-lang-german texlive-lang-greek
+      - name: Check out repository code
+        uses: actions/checkout@v7
+      - name: Build and check EPUBs
+        run: make check
+      - name: Build and check EPUBs with modern orthography
+        run: make check VARIANT=modern
+      - name: Build PDFs
+        run: |
+          make pdf
+          make pdf VARIANT=modern
+      - name: Upload EPUBs and PDFs
+        uses: actions/upload-artifact@v7
+        with:
+          name: kapital
+          path: |
+            build/*/*.epub
+            build/*/*.pdf

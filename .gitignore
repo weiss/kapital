@@ -1,0 +1,6 @@
+build/
+work/
+__pycache__/
+tools/node_modules/
+experiments/*/work/
+dist/

@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face {
+  font-family: C;
+  src: url({{FONTS}}/crimson-pro-latin-400-normal.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: C;
+  src: url({{FONTS}}/crimson-pro-latin-400-italic.woff2);
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: C;
+  src: url({{FONTS}}/crimson-pro-latin-600-normal.woff2);
+  font-weight: 600;
+}
+html, body {
+  margin: 0;
+}
+body {
+  width: 1264px;
+  height: 1680px;
+  background: #f3eee4;
+  color: #1b1714;
+  font-family: C;
+  position: relative;
+  overflow: hidden;
+}
+.frame {
+  position: absolute;
+  inset: 64px;
+  border: 2px solid #1b1714;
+}
+.frame2 {
+  position: absolute;
+  inset: 78px;
+  border: 1px solid #1b1714;
+}
+.wrap {
+  position: absolute;
+  inset: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.author {
+  margin-top: 190px;
+  font-size: 50px;
+  letter-spacing: .32em;
+  text-indent: .32em;
+  font-weight: 400;
+}
+.rule {
+  width: 120px;
+  height: 0;
+  border-top: 2px solid #8a1c14;
+  margin: 70px 0 54px;
+}
+.title {
+  font-size: 178px;
+  line-height: .95;
+  font-weight: 600;
+  color: #8a1c14;
+  letter-spacing: -.005em;
+}
+.sub {
+  margin-top: 44px;
+  font-size: 56px;
+  font-style: italic;
+}
+.vol {
+  margin-top: 120px;
+  font-size: 46px;
+  letter-spacing: .2em;
+  text-indent: .2em;
+  text-transform: uppercase;
+}
+.book {
+  margin-top: 22px;
+  max-width: 900px;
+  font-size: 44px;
+  line-height: 1.2;
+  font-style: italic;
+}
+.foot {
+  position: absolute;
+  bottom: 120px;
+  left: 0;
+  right: 0;
+  font-size: 40px;
+  letter-spacing: .12em;
+  text-indent: .12em;
+}
+.src {
+  position: absolute;
+  bottom: 62px;
+  left: 0;
+  right: 0;
+  font-size: 27px;
+  letter-spacing: .06em;
+  color: #5a524a;
+  font-style: italic;
+}
+.ed {
+  margin-top: 70px;
+  font-size: 38px;
+  letter-spacing: .04em;
+}
+.ed i {
+  font-style: italic;
+}
+.orn {
+  font-size: 40px;
+  color: #8a1c14;
+  margin: 0 .5em;
+}
+</style>
+</head>
+<body>
+<div class="frame"></div>
+<div class="frame2"></div>
+<div class="wrap">
+  <div class="author">KARL MARX</div>
+  <div class="rule"></div>
+  <div class="title">Das Kapital</div>
+  <div class="sub">Kritik der politischen Oekonomie</div>
+  <div class="vol">{{VOL}}</div>
+  <div class="book">{{BOOK}}</div>
+  {{ED}}
+  <div class="foot">HAMBURG <span class="orn">·</span> {{YEAR}}</div>
+  <div class="src">{{SRC}}</div>
+</div>
+</body>
+</html>

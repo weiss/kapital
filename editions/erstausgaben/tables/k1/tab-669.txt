@@ -1,0 +1,7 @@
+@ l n u n u
+ | Kohle. | < | Stickstoff. | <
+===
+England | 40.673 | Gran | 1.594 | Gran
+Wales | 48.354 | Gran | 2.031 | Gran
+Schottland | 48.980 | Gran | 2.348 | Gran
+Irland | 43.366 | Gran | 2.439 | Gran<note/>

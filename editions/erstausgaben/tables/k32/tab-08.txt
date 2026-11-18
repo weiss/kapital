@@ -1,0 +1,9 @@
+Bodenart | Produkt | < | Kapital-<lb/>vorschuss | Profit | < | Rente | <
+^ | Quar-<lb/>ters | Schil-<lb/>linge | ^ | Quar-<lb/>ters | Schil-<lb/>linge | Quar-<lb/>ters | Schil-<lb/>linge
+===
+A | 1 | 60 | 50 | 1/6 | 10 | — | —
+B | 2 | 120 | 50 | 1 1/6 | 70 | 1 | 60
+C | 3 | 180 | 50 | 2 1/6 | 130 | 2 | 120
+D | 4 | 240 | 50 | 3 1/6 | 190 | 3 | 180
+---
+Total | 10 qs. | 600 sh. | | | | 6 qs. | 360 sh.

@@ -1,0 +1,222 @@
+% Präambel aller Bände; erwartet \Sprache (german oder ngerman) und \Titel
+\documentclass[
+  paper=135mm:210mm,
+  BCOR=8mm,
+  DIV=12,
+  fontsize=11pt,
+  twoside,
+  open=right,
+  headings=small,
+  footnotes=multiple,
+  cleardoublepage=empty,
+  numbers=noenddot]{scrbook}
+% Zeilenabstand 13 pt, Fußnoten 11,14 pt: 7 Fußnotenzeilen auf 6 Textzeilen
+\linespread{0.9559}\selectfont
+\recalctypearea
+\addtokomafont{footnote}{\linespread{1.013}\selectfont}
+\usepackage[polutonikogreek,main=\Sprache,shorthands=off]{babel}
+\babelprovide[hyphenrules=\Sprache-x-latest]{\Sprache}
+% Schreibung vor 1901 („Werth“, „Theil“): nicht zwischen t und h trennen
+\makeatletter
+\directlua{lang.patterns(lang.new(\number\l@german), "t4h")}
+\makeatother
+\usepackage{fontspec}
+\directlua{
+  luaotfload.add_fallback("kapital", {"GentiumBook-Regular.ttf:mode=node;"})}
+% Variable Schrift: Grundschrift 400, Fußnoten und kleiner etwas kräftiger
+\setmainfont{CrimsonPro-VF.ttf}[
+  ItalicFont=CrimsonPro-Italic-VF.ttf,
+  BoldFont=CrimsonPro-VF.ttf,
+  BoldItalicFont=CrimsonPro-Italic-VF.ttf,
+  Ligatures={Common,TeX},
+  Numbers={OldStyle,Proportional},
+  RawFeature={fallback=kapital},
+  UprightFeatures={SizeFeatures={
+    {Size=-10, RawFeature={axis={wght=460}}},
+    {Size=10-, RawFeature={axis={wght=400}}}}},
+  ItalicFeatures={SizeFeatures={
+    {Size=-10, RawFeature={axis={wght=460}}},
+    {Size=10-, RawFeature={axis={wght=400}}}}},
+  BoldFeatures={SizeFeatures={{Size=-, RawFeature={axis={wght=650}}}}},
+  BoldItalicFeatures={SizeFeatures={{Size=-, RawFeature={axis={wght=650}}}}}]
+\newfontfamily\greekfont{GentiumBook-Regular.ttf}[
+  ItalicFont=GentiumBook-Italic.ttf,
+  Scale=MatchLowercase]
+\catcode`℔=\active \protected\def℔{\lbsign}
+\catcode`‥=\active \protected\def‥{.\kern.15em.}
+\newcommand{\lbsign}{\leavevmode\hbox{\setbox0\hbox{lb}\copy0\kern-\wd0
+  \raise1.08ex\hbox to \wd0{%
+    \hss\vrule height .065ex depth 0pt width 1.1\wd0\hss}}}
+\usepackage{realscripts}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{scrlayer-scrpage}
+\usepackage[
+  protrusion=true,
+  expansion=true,
+  step=2]{microtype}
+% Erster Band für den Druck in zwei Teilen: Seitenzahlen des anderen Teils
+\ifdefined\KapitalOther
+  \usepackage{xr-hyper}
+  \externaldocument[x-]{\KapitalOther}
+\fi
+\usepackage{refcount}
+\usepackage{hyperref}
+\usepackage{bookmark}
+\urlstyle{same}
+
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+\setkomafont{pagehead}{\normalfont\itshape\small}
+\setkomafont{pagenumber}{\normalfont\small}
+\chead{\headmark}
+\ohead{\pagemark}
+
+\setlength{\parindent}{1em}
+\clubpenalty=3000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\raggedbottom
+\setlength{\parskip}{0pt}
+\let\KapitalFootnoterule\footnoterule
+\renewcommand*{\footnoterule}{\vfill\KapitalFootnoterule}
+% Marke grundlinienbündig, rechtsbündig vor dem Text; der Einzug richtet sich
+% nach der längsten Nummer des Bandes
+\deffootnote{1.6em}{1em}{\thefootnotemark}
+\setkomafont{footnotelabel}{\addfontfeatures{Numbers={OldStyle,Monospaced}}}
+\providecommand{\FnWidest}{00}
+\makeatletter
+\long\def\@makefntext#1{\setbox0\hbox{\ftnm@font\FnWidest\enspace}%
+  \leftskip\wd0\parindent1em\noindent\ftn@font
+  \hskip-\wd0\hbox to\wd0{\hss\@@makefnmark\enspace}#1}
+\makeatother
+\setlength{\skip\footins}{13pt plus 4pt minus 2pt}
+% Fußnoten ohne Zwischenraum: Strut von 0,7 Fußnotenzeilen
+\setlength{\footnotesep}{7.8pt}
+\renewcommand{\arraystretch}{1.1}
+\setlength{\emergencystretch}{3em}
+\tolerance=1000
+\makeatletter\@beginparpenalty=\@M\makeatother
+
+\hypersetup{
+  hidelinks,
+  bookmarksnumbered=false,
+  pdfpagemode=UseOutlines,
+  pdfauthor={Karl Marx},
+  pdftitle={\Titel},
+  pdflang={de}}
+
+% Fußnote mit der Marke des Drucks
+\newcommand{\fn}[2]{{\renewcommand{\thefootnote}{#1}\footnote{#2}}}
+% dasselbe für Tabellen: Marke in der Zelle, Text hinter der Tabelle
+\newcommand{\fnmark}[1]{{\renewcommand{\thefootnote}{#1}\footnotemark}}
+\newcommand{\fntext}[2]{{\renewcommand{\thefootnote}{#1}\footnotetext{#2}}}
+% Seitenwechsel der Erstausgabe: Strich im Text, Seitenzahl am äußeren Rand;
+% \leavevmode, damit die Marke am Absatzanfang nicht auf der Vorseite landet
+\newcommand{\pb}[2]{\leavevmode\phantomsection\label{#1}%
+  \textcolor{black!45}{\raisebox{-.15ex}{\rule{.3pt}{1.9ex}}}\pbnum{#2}}
+\newcommand{\pbm}[2]{\leavevmode\phantomsection\label{#1}\pbnum{#2}}
+% LaTeX wählt die Randseite, bevor feststeht, ob die Zeile noch auf diese
+% Seite passt; die tatsächliche Seite (\Ifthispageodd, aus dem vorigen Lauf)
+% rückt die Ziffer notfalls hinüber
+\newcommand{\pbfont}{\footnotesize\color{black!60}}
+\newcommand{\pbnum}[1]{\marginpar
+  [\Ifthispageodd
+    {\rlap{\hskip\dimexpr\marginparwidth+\textwidth+2\marginparsep\relax
+      \pbfont #1}}%
+    {\raggedleft\pbfont #1}]
+  {\Ifthispageodd
+    {\raggedright\pbfont #1}%
+    {\llap{\pbfont #1\hskip\dimexpr\textwidth+2\marginparsep\relax}}}}
+\newcommand{\pbx}[1]{\phantomsection\label{#1}}
+
+% Überschriften; die Kolumnentitel setzt der Konverter
+\newcommand{\hdI}[1]{\par\vspace*{3\baselineskip}%
+  {\centering\normalfont\Large\addfontfeatures{LetterSpace=-0.5}#1\par}%
+  \nobreak\vspace{2\baselineskip}\nobreak}
+\newcommand{\hdII}[1]{\par\vspace{2\baselineskip plus 1\baselineskip}%
+  {\centering\normalfont\large #1\par}%
+  \nobreak\vspace{1.2\baselineskip}\nobreak}
+\newcommand{\hdIII}[1]{\par\vspace{1.5\baselineskip plus .5\baselineskip}%
+  {\centering\normalfont #1\par}%
+  \nobreak\vspace{.8\baselineskip}\nobreak}
+\newcommand{\hdIV}[1]{\par\vspace{1\baselineskip plus .5\baselineskip}%
+  {\centering\normalfont\itshape #1\par}%
+  \nobreak\vspace{.5\baselineskip}\nobreak}
+\newcommand{\hdV}[1]{\par\vspace{.8\baselineskip plus .3\baselineskip}%
+  {\centering\normalfont\itshape #1\par}%
+  \nobreak\vspace{.3\baselineskip}\nobreak}
+\let\hdVI\hdV
+
+% Blockformen; sie behalten einen umgebenden Einzug (Fußnoten), den \centering
+% und \raggedright auf null setzen
+\makeatletter
+\newcommand{\kcentering}{%
+  \skip@=\leftskip\centering\leftskip=\dimexpr\skip@\relax plus 1fil\relax}
+\newcommand{\kraggedright}{\skip@=\leftskip\raggedright\leftskip=\skip@}
+\makeatother
+% zentrierte Zeilen sind meist Tabellen- oder Formelüberschriften: nicht von der
+% Folgezeile trennen (@nobreak gilt auch für die Ausgaberoutine einer
+% Randziffer in der Zeile)
+\makeatletter
+\newcommand{\cenline}[1]{\par{\kcentering\global\@nobreaktrue #1\par}%
+  \nobreak\global\@nobreakfalse}
+\makeatother
+% Formelzeile, die nicht umbrechen darf, notfalls auf Satzbreite verkleinert
+\newcommand{\fitline}[1]{\par\noindent\setbox0\hbox{#1}%
+  \ifdim\wd0>\linewidth\resizebox{\linewidth}{!}{\box0}\else\box0\fi\par}
+\newcommand{\dispf}[1]{\par\smallskip{\kcentering #1\par}\smallskip}
+\newcommand{\etline}[1]{\par{\kraggedright\advance\leftskip2em\noindent #1\par}}
+\newcommand{\rline}[1]{\par{\raggedleft #1\par}}
+\newenvironment{hanglist}[1][1.5em]
+  {\par\smallskip\begingroup\kraggedright\advance\leftskip#1\relax}
+  {\par\endgroup\smallskip}
+\newcommand{\hitem}[1][1em]{\hangindent=#1\hangafter=1\noindent}
+\newenvironment{bquote}
+  {\par\smallskip\begingroup\advance\leftskip2em\parindent=0pt}
+  {\par\endgroup\smallskip}
+% Zu breite Tabellen ragen höchstens 3 mm in den Bundsteg, sonst nach außen bis
+% 6 mm vor den Rand, notfalls verkleinert
+\newsavebox\wtbox
+\newdimen\wtover
+\newdimen\wtin
+\newdimen\wtroom
+\newcommand{\widetab}[1]{\leavevmode\sbox\wtbox{#1}%
+  \wtover=\dimexpr\wd\wtbox-\linewidth\relax
+  \ifdim\wtover>0pt
+    \wtin=.5\wtover \ifdim\wtin>3mm \wtin=3mm\fi
+    \wtroom=\dimexpr\paperwidth-1in-\oddsidemargin-\textwidth-6mm\relax
+    \ifdim\dimexpr\wtover-\wtin\relax>\wtroom
+      \sbox\wtbox{%
+        \resizebox{\dimexpr\linewidth+\wtin+\wtroom\relax}{!}{\usebox\wtbox}}%
+    \fi
+    \Ifthispageodd
+      {\makebox[\linewidth][l]{\hspace*{-\wtin}\usebox\wtbox}}%
+      {\makebox[\linewidth][r]{\usebox\wtbox\hspace*{-\wtin}}}%
+  \else\makebox[\linewidth][c]{\usebox\wtbox}\fi}
+\newcommand{\tabfont}{%
+  \addfontfeatures{Numbers={Lining,Monospaced}}\setlength{\tabcolsep}{.4em}}
+\newcommand{\linerule}[1]{\kern.12em\rule[.3em]{#1}{.4pt}\kern.12em}
+\newcommand{\Frac}[2]{\dfrac{#1}{#2}}
+\newcommand{\ovarc}[1]{\overline{#1}}
+\newcommand{\lab}[2]{\overbrace{#2}^{\text{\scriptsize #1}}}
+\newbox\brzhalf
+\newcommand{\nt}[2]{\overset{\text{\scriptsize #1}}{#2}}
+\newcommand{\vfrac}[2]{{\addfontfeatures{Fractions=On}#1⁄#2}}
+\newcommand{\grc}[1]{\foreignlanguage{polutonikogreek}{\greekfont\upshape #1}}
+\providecommand{\TeilVermerk}{}
+\newcommand{\maintitlefont}{\Huge\addfontfeatures{LetterSpace=-1.2}}
+\newcommand{\authorfont}{\LARGE\addfontfeatures{LetterSpace=-0.8}}
+
+% Ursprüngliches Inhaltsverzeichnis mit den Seiten dieser Ausgabe
+\newcommand{\tocpage}[1]{%
+  \ifcsname r@#1\endcsname\pageref{#1}\else\pageref{x-#1}\fi}
+\newcommand{\tocline}[3]{\par{%
+  \leftskip=#1\relax\rightskip=2.5em plus 1fil\parfillskip=-\rightskip
+  \parindent=0pt\hangindent=1em\noindent #2%
+  \nobreak\leaders\hbox to .6em{\hss.\hss}\hfill\nobreak
+  \hbox to 2.5em{\hss\tocpage{#3}}\par}}
+\newcommand{\tocbook}[1]{\par\medskip{\centering\itshape #1\par}\smallskip}

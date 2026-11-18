@@ -1,0 +1,9 @@
+@ t n n n n
+ | Stickstoff-<lb/>haltige<lb/>Bestand-<lb/>theile.<lb/>Unzen. | Von Stick-<lb/>stoff freie<lb/>Bestand-<lb/>theile.<lb/>Unzen. | Minera-<lb/>lische<lb/>Bestand-<lb/>theile.<lb/>Unzen. | Gesammt-<lb/>summe.<lb/>Unzen.
+===
+Verbrecher im Gefängniss von Portland | 28.95 | 150.06 | 4.68 | 183.69
+Matrose in der königl. Marine | 29.63 | 152.91 | 4.52 | 187.06
+Soldat | 25.55 | 114.49 | 3.94 | 143.98
+Kutschenmacher (Arbeiter) | 24.53 | 162.06 | 4.23 | 190.82
+Setzer | 21.24 | 100.83 | 3.12 | 125.19
+Landarbeiter | 17.73 | 118.06 | 3.29 | 139.08

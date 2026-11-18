@@ -1,0 +1,12 @@
+@ t n n u
+ | Anzahl | Areal | <
+===
+1. Pachten nicht über 1 Acre. | 48,653 | 25,394 |
+2. Pachten über 1, nicht über 5 Acres. | 82,037 | 288,916 |
+3. Pachten über 5, nicht über 15 Acres. | 176,368 | 1,836,310 |
+4. Pachten über 15, nicht über 30 Acres. | 136,578 | 3,051,343 |
+5. Pachten über 30, nicht über 50 Acres. | 71,961 | 2,906,274 |
+6. Pachten über 50, nicht über 100 Acres. | 54,247 | 3,983,880 |
+7. Pachten über 100 und über 500 Acres. | 31,927 | 8,227,807 |
+---
+8. Gesammtareal. | | 20,319,924 | Acres<note/>.

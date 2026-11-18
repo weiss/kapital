@@ -1,0 +1,8 @@
+@ r u n n n n
+Kapitale. | < | Mehrwerths-<lb/>rate. | Mehrwerth. | Produkt-<lb/>werth. | Profitrate.
+===
+I. | 80_c + 20_v | 100 % | 20 | 120 | 20 %
+II. | 70_c + 30_v | 100 % | 30 | 130 | 30 %
+III. | 60_c + 40_v | 100 % | 40 | 140 | 40 %
+IV. | 85_c + 15_v | 100 % | 15 | 115 | 15 %
+V. | 95_c + 5_v | 100 % | 5 | 105 | 5 %

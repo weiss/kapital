@@ -1,0 +1,17 @@
+@ t c t
+:: Constantes Kapital von 24 sh.
+===
+13 1/3 lbs. Garn (= Rohmaterial) | + | 2 2/3 lbs. Garn (= Arbeitsmitteln)
+20 lbs. Baumwolle zu 20 sh. | + | Spindel, Kohle u. s. w. zu 4 sh.
+Materiatur von 40 Arbeitsstunden | + | 8 Arbeitsstunden
+---
+:: Materiatur von 48 vor dem Spinnprozess vergangnen Arbeitsstunden, = 24 sh.
+
+@ t t
+Variables Kapital von 3 sh. | Mehrprodukt.
+===
+2 lbs. Garn. | 2 lbs. Garn.
+Werth der Arbeitskraft von 3 sh. | Mehrwerth von 3 sh.
+6 Stunden nothwendiger Arbeit des Spinners. | 6 Stunden Mehrarbeit des Spinners.
+---
+:: Materiatur von 12 im Spinnprozess verausgabten Arbeitsstunden, = 6 sh.

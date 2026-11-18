@@ -1,0 +1,8 @@
+@ l n r n r n n n n n
+Boden-<lb/>art | Acres | Kapital-<lb/>anlage<lb/>£ | Profit<lb/>£ | Produkt<lb/>qrs. | Ver-<lb/>kaufs-<lb/>preis<lb/>£ | Ertrag<lb/>£ | Korn-<lb/>rente<lb/>qrs. {Korn-<lb/>rente<lb/>£} | Geld-<lb/>rente<lb/>£ | Rate des<lb/>Surplus-<lb/>profits
+===
+B | 1 | 2 1/2+2 1/2 | 1 | 2+1 1/2=3 1/2 | 1 5/7 | 6 | 0 | 0 | 0
+C | 1 | 2 1/2+2 1/2 | 1 | 3+2=5 | 1 5/7 | 8 4/7 | 1 1/2 | 2 4/7 | 51 2/5 %
+D | 1 | 2 1/2+2 1/2 | 1 | 4+3 1/2=7 1/2 | 1 5/7 | 12 6/7 | 4 | 6 6/7 | 137 1/5 %
+---
+Total | 3 {4} | 15 | | 16 | | 27 3/7 | 5 1/2 | 9 3/7 | 94 3/10<lb/>Dschn.

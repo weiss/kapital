@@ -1,0 +1,8 @@
+{
+  "cover1.png": {"vol": "Erster Band", "book": "Buch I: Der Produktionsprocess des Kapitals",
+                 "year": "1867", "src": "Erstausgabe nach dem Deutschen Textarchiv"},
+  "cover2.png": {"vol": "Zweiter Band", "book": "Buch II: Der Cirkulationsprocess des Kapitals",
+                 "editor": "Friedrich Engels", "year": "1885", "src": "Erstausgabe nach dem Deutschen Textarchiv"},
+  "cover3.png": {"vol": "Dritter Band", "book": "Buch III: Der Gesammtprocess<br>der kapitalistischen Produktion",
+                 "editor": "Friedrich Engels", "year": "1894", "src": "Erstausgabe nach dem Deutschen Textarchiv"}
+}

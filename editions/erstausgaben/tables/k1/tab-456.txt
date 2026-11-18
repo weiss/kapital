@@ -1,0 +1,7 @@
+@ t t n n n
+Personenzahl<lb/>aller Alters-<lb/>stufen, in den<lb/>resp. Industrieen<lb/>angewandt. | Industrieen ver-<lb/>glichen in Bezug<lb/>auf Gesundheit. | Sterblichkeitsrate auf<lb/>100,000 Männer in den<lb/>resp. Industrieen zu den<lb/>angegebenen Altersstufen. | < | <
+^ | ^ | 25. bis<lb/>35. J. | 35. bis<lb/>45. J. | 45. bis<lb/>55. J.
+===
+958,265 | Agrikultur in England und Wales | 743 | 805 | 1145
+22,301 Männer 12,379 Weiber | Lond. Schneider | 958 | 1262 | 2093
+13,803 | Lond. Drucker | 894 | 1747 | 2367<note/>

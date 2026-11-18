@@ -1,0 +1,12 @@
+@ n n t n n l
+Prozentsatz<lb/>der in der<lb/>Manufaktur<lb/>beschäf-<lb/>tigten er-<lb/>wachsenen<lb/>Männer. | Sterblich-<lb/>keitsrate<lb/>von Lungen-<lb/>affektion<lb/>für je<lb/>100,000<lb/>Männer. | Name des<lb/>Distrikts. | Sterblich-<lb/>keitsrate<lb/>von Lungen-<lb/>affektion<lb/>für je<lb/>100,000<lb/>Frauen-<lb/>zimmer. | Prozentsatz<lb/>der in der<lb/>Manufaktur<lb/>beschäf-<lb/>tigten er-<lb/>wachsenen<lb/>Frauen-<lb/>zimmer. | Art der<lb/>weiblichen<lb/>Beschäf-<lb/>tigung.
+===
+14.9 | 598 | Wigan | 644 | 18.0 | Baumwolle
+42.6 | 708 | Blackburn | 734 | 34.9 | ditto
+37.3 | 547 | Halifax | 564 | 20.4 | Worsted
+41.9 | 611 | Bradford | 603 | 30.0 | ditto
+31.0 | 691 | Macclesfield | 804 | 26.0 | Seide
+14.9 | 588 | Leek | 705 | 17.2 | ditto
+36.6 | 721 | Stoke-upon-Trent | 665 | 19.3 | Erdenwaare
+30.4 | 726 | Woolstanton | 727 | 13.9 | ditto
+ | 305 | Acht gesunde Agrikulturdistrikte | 340 | |

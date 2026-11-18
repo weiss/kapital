@@ -1,0 +1,32 @@
+@ t c n n n n
+ | | Export.<lb/>Quantität.<lb/>1848. | Export.<lb/>Quantität.<lb/>1851. | Export.<lb/>Quantität.<lb/>1860. | Export.<lb/>Quantität.<lb/>1865.
+===
+:: <hi rendition="#b">Baumwollfabrik.</hi>
+Baumwollgarn | l. | 135,831,162 | 143,966,106 | 197,343,655 | 103,751,455
+Nähgarn | l. | | 4,392,176 | 6,297,554 | 4,648,611
+Baumwollgewebe | y. | 1,091,373,930 | 1,543,161,789 | 2,776,218,427 | 2,015,237,851 {2,015.237,851}
+:: <hi rendition="#b">Flachs- u. Hanffabrik.</hi>
+Garn | l. | 11,722,182 | 18,841,326 | 31,210,612 | 36,777,334
+Gewebe | y. | 88,901,519 | 129,106,753 | 143,996,773 | 247,012,529
+:: <hi rendition="#b">Seidenfabrik.</hi>
+Kettengarn, Zwist, Garn | l. | 466,825 | 462,513 | 897,402 | 812,589
+Gewebe | y. | | 1,181,455 | 1,307,293 | 2,869,837
+:: <hi rendition="#b">Wollfabrik.</hi>
+Wollen- u. Worsted-Garn | l. | Ctr. | 14,670,880 | 27,533,968 | 31,669,267
+Gewebe | y. | | 241,120,973 | 190,381,537 | 278,837,438
+
+@ t n n n n
+ | Export.<lb/>Werth.<lb/>1848.<lb/>Pfd. St. | Export.<lb/>Werth.<lb/>1851.<lb/>Pfd. St. | Export.<lb/>Werth.<lb/>1860.<lb/>Pfd. St. | Export.<lb/>Werth.<lb/>1865.<lb/>Pfd. St.
+===
+:: <hi rendition="#b">Baumwollfabrik.</hi>
+Baumwollgarn | 5,927,831 | 6,634,026 | 9,870,875 | 10,351,049
+Baumwollgewebe | 16,753,369 | 23,454,810 | 42,141,505 | 46,903,796
+:: <hi rendition="#b">Flachs- u. Hanffabrik.</hi>
+Garn | 493,449 | 951,426 {951.426} | 1,801,272 | 2,505,497
+Gewebe | 2,802,789 | 4,107,396 | 4,804,803 | 9,155,318
+:: <hi rendition="#b">Seidenfabrik.</hi>
+Kettengarn, Zwist, Garn | 77,789 | 195,380 | 918,342 | 768,067
+Gewebe | | 1,130,398 | 1,587,303 | 1,409,221
+:: <hi rendition="#b">Wollfabrik.</hi>
+Wollen- u. Worsted-Garn | 776,975 | 1,484,544 | 3,843,450 | 5,424,017
+Gewebe | 5,733,828 | 8,377,183 | 12,156,998 | 20,102,259

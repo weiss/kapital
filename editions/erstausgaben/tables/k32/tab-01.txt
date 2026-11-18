@@ -1,0 +1,20 @@
+@ l c n c n n
+Name der Bank | Passiva. | < | Baar-Reserven. | < | In Prozenten.
+===
+City | £ | 9 317 629 | £ | 746 551 | 8.01
+Capital and Counties | „ | 11 392 744 | „ | 1 307 483 | 11.47
+Imperial | „ | 3 987 400 | „ | 447 157 | 11.21
+Lloyds | „ | 23 800 937 | „ | 2 966 806 | 12.46
+Lon. and Westminster | „ | 24 671 559 | „ | 3 818 885 | 15.50
+London and S. Western | „ | 5 570 268 | „ | 812 353 | 13.58
+London Joint Stock | „ | 12 127 993 | „ | 1 288 977 | 10.62
+London and Midland | „ | 8 814 499 | „ | 1 127 280 | 12.79
+London and County | „ | 37 111 035 | „ | 3 600 374 | 9.70
+National | „ | 11 163 829 | „ | 1 426 225 | 12.77
+National Provincial | „ | 41 907 384 | „ | 4 614 780 | 11.01
+Parrs and the Alliance | „ | 12 794 489 | „ | 1 532 707 | 11.93
+Prescott and Co. | „ | 4 041 058 | „ | 538 517 | 13.07
+Union of London | „ | 15 502 618 | „ | 2 300 084 | 14.84
+Williams, Deacon, and Manchester, &amp; c. | „ | 10 452 381 | „ | 1 317 628 | 12.60
+---
+Total | £ | 232 655 823. | £ | 27 845 807. | 11.97.

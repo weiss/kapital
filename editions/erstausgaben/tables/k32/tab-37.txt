@@ -1,0 +1,10 @@
+@ l r r n n n r
+Boden-<lb/>art | Produktionskosten<lb/>sh. | Produkt<lb/>Bushels | Ver-<lb/>kaufs-<lb/>preis<lb/>sh. | Ertrag<lb/>sh. | Rente<lb/>sh. | Rentsteigerung
+===
+A | 60+60=120 | 10+10=20 | 6 | 120 | 0 | 0
+B | 60+60=120 | 12+12=24 | 6 | 144 | 24 | 24
+C | 60+60=120 | 14+14=28 | 6 | 168 | 48 | 2×24
+D | 60+60=120 | 16+16=32 | 6 | 192 | 72 | 3×24
+E | 60+60=120 | 18+18=36 | 6 | 216 | 96 | 4×24
+---
+ | | | | | 240 | 10×24

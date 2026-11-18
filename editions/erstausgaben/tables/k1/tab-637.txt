@@ -1,0 +1,9 @@
+@ l n n n n
+ | Jahr endend<lb/>5. April 1864. | < | Jahr endend<lb/>5. April 1865. | <
+^ | Einkommen<lb/>von Profit<lb/>Pfd. St. | Personen | Einkommen<lb/>von Profit<lb/>Pfd. St. | Personen
+===
+Gesammteinkommen: | 95,844,222 | 308,416 | 105,435,738 | 332,431
+Davon: | 57,028,289 | 23,334 | 64,554,297 | 24,265
+Davon: | 36,415,225 | 3619 | 42,535,576 | 4021
+Davon: | 22,809,781 | 832 | 27,555,313 | 973
+Davon: | 8,744,762 | 91 | 11,077,238 | 107

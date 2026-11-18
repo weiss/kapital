@@ -1,0 +1,5 @@
+@ r n n n
+Werth des Produkts | Neuwerth | Mehrwerths-<lb/>rate | Brutto-<lb/>profitrate
+===
+Erster Fall: 400<hi rendition="#sub">c</hi> + 100<hi rendition="#sub">v</hi> + 150<hi rendition="#sub">m</hi> = 650 | 250 | 150 % | 30 %
+Zweiter Fall: 400<hi rendition="#sub">c</hi> + 150<hi rendition="#sub">v</hi> + 100<hi rendition="#sub">m</hi> = 650 | 250 | 66 2/3 % {66 1/3 %} | 18 2/11 %

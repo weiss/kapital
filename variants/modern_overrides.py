@@ -88,6 +88,15 @@ OVERRIDES = {
     "durch's": 'durchs',
     'um’s': 'ums',
     "um's": 'ums',
+    'that': 'tat',
+    'Centralisation': 'Zentralisation',
+    'Kapitalcharacter': 'Kapitalcharakter',
+    'Bauernemancipation': 'Bauernemanzipation',
+    'Katholicismus': 'Katholizismus',
+    'Sechszehn': 'Sechzehn',
+    'Sechszehntes': 'Sechzehntes',
+    'sechszehnten': 'sechzehnten',
+    'siebenzig': 'siebzig',
     'Th': None,
     'th': None,
     'Fact': None,
@@ -141,6 +150,9 @@ OVERRIDES = {
 }
 
 MORPHEMES = {
+    'kassirer': 'kassierer',
+    'expropriir': 'expropriier',
+    'emancipation': 'emanzipation',
     'process': 'prozess',
     'producent': 'produzent',
     'produciren': 'produzieren',

@@ -624,6 +624,10 @@
 "Bauerneigentum",
 "compound"
 ],
+"Bauernemancipation": [
+"Bauernemanzipation",
+"manual"
+],
 "Bauernwirthschaft": [
 "Bauernwirtschaft",
 "compound"
@@ -727,6 +731,10 @@
 "Bestandtheils": [
 "Bestandteils",
 "word"
+],
+"Besässe": [
+"Besäße",
+"sz"
 ],
 "Betheiligte": [
 "Beteiligte",
@@ -967,6 +975,10 @@
 "Centrale": [
 "Zentrale",
 "foreign?"
+],
+"Centralisation": [
+"Zentralisation",
+"manual"
 ],
 "Centralkraft": [
 "Zentralkraft",
@@ -2020,6 +2032,10 @@
 "Einkassierens",
 "compound"
 ],
+"Einkassirer": [
+"Einkassierer",
+"compound"
+],
 "Einkassirung": [
 "Einkassierung",
 "compound"
@@ -2095,6 +2111,18 @@
 "Emancipation": [
 "Emanzipation",
 "foreign?"
+],
+"Emancipationsakt": [
+"Emanzipationsakt",
+"compound"
+],
+"Emancipationskampf": [
+"Emanzipationskampf",
+"compound"
+],
+"Emancipationskampfs": [
+"Emanzipationskampfs",
+"compound"
 ],
 "Encouragirung": [
 "Encouragierung",
@@ -2243,6 +2271,10 @@
 "Exportirten": [
 "Exportierten",
 "word"
+],
+"Expropriirte": [
+"Expropriierte",
+"compound"
 ],
 "Extrabevortheilung": [
 "Extrabevorteilung",
@@ -2491,6 +2523,10 @@
 "Gehülfinnen": [
 "Gehilfinnen",
 "compound"
+],
+"Geissel": [
+"Geißel",
+"sz"
 ],
 "Gelbgiesserei": [
 "Gelbgießerei",
@@ -4020,6 +4056,10 @@
 "Kapitalbestandteils",
 "compound"
 ],
+"Kapitalcharacter": [
+"Kapitalcharakter",
+"manual"
+],
 "Kapitalcirkulation": [
 "Kapitalzirkulation",
 "compound"
@@ -4084,6 +4124,10 @@
 "Kapitalverhältnis",
 "compound"
 ],
+"Kapitalverhältniß": [
+"Kapitalverhältnis",
+"sz"
+],
 "Kapitalverschleiss": [
 "Kapitalverschleiß",
 "compound"
@@ -4124,13 +4168,29 @@
 "Kapitalwirtschaft",
 "compound"
 ],
+"Kassirer": [
+"Kassierer",
+"compound"
+],
+"Kassirerei": [
+"Kassiererei",
+"compound"
+],
+"Kassirergeschäft": [
+"Kassierergeschäft",
+"compound"
+],
+"Kassirers": [
+"Kassierers",
+"compound"
+],
 "Kategorieen": [
 "Kategorien",
 "word"
 ],
 "Katholicismus": [
 "Katholizismus",
-"word"
+"manual"
 ],
 "Kausalverhältniss": [
 "Kausalverhältnis",
@@ -4964,6 +5024,10 @@
 "Niederreißung",
 "sz"
 ],
+"Niessbrauch": [
+"Nießbrauch",
+"sz"
+],
 "Nivellirung": [
 "Nivellierung",
 "word"
@@ -5067,6 +5131,14 @@
 "Nothwendigste": [
 "Notwendigste",
 "word"
+],
+"Nutzniesser": [
+"Nutznießer",
+"sz"
+],
+"Nutzniessung": [
+"Nutznießung",
+"sz"
 ],
 "Nätherei": [
 "Näherei",
@@ -6020,6 +6092,14 @@
 "Schlussergebnis",
 "compound"
 ],
+"Schluß": [
+"Schluss",
+"sz"
+],
+"Schlußpunkt": [
+"Schlusspunkt",
+"sz"
+],
 "Schulbesuchscertifikate": [
 "Schulbesuchszertifikate",
 "compound"
@@ -6059,6 +6139,14 @@
 "Sechsunddreissigstes": [
 "Sechsunddreißigstes",
 "sz"
+],
+"Sechszehn": [
+"Sechzehn",
+"manual"
+],
+"Sechszehntes": [
+"Sechzehntes",
+"manual"
 ],
 "Seelengeheimniss": [
 "Seelengeheimnis",
@@ -7447,6 +7535,10 @@
 "Verhältnisszahlen": [
 "Verhältniszahlen",
 "compound"
+],
+"Verhältniß": [
+"Verhältnis",
+"sz"
 ],
 "Vermiether": [
 "Vermieter",
@@ -9840,6 +9932,10 @@
 "ausfungiert",
 "compound"
 ],
+"ausgemeisselte": [
+"ausgemeißelte",
+"sz"
+],
 "ausgestossen": [
 "ausgestoßen",
 "sz"
@@ -10060,6 +10156,14 @@
 "berufsmäßigen",
 "sz"
 ],
+"besass": [
+"besaß",
+"sz"
+],
+"besassen": [
+"besaßen",
+"sz"
+],
 "beschliessen": [
 "beschließen",
 "sz"
@@ -10071,6 +10175,10 @@
 "bestkultivirten": [
 "bestkultivierten",
 "compound"
+],
+"besässe": [
+"besäße",
+"sz"
 ],
 "betheiligen": [
 "beteiligen",
@@ -11512,6 +11620,22 @@
 "exportierten",
 "word"
 ],
+"expropriiren": [
+"expropriieren",
+"compound"
+],
+"expropriirt": [
+"expropriiert",
+"compound"
+],
+"expropriirte": [
+"expropriierte",
+"compound"
+],
+"expropriirten": [
+"expropriierten",
+"compound"
+],
 "extrahiren": [
 "extrahieren",
 "word"
@@ -11912,6 +12036,10 @@
 "gebüßt",
 "sz"
 ],
+"gegeisselt": [
+"gegeißelt",
+"sz"
+],
 "gegentheilige": [
 "gegenteilige",
 "word"
@@ -11919,6 +12047,10 @@
 "geheimnissvolle": [
 "geheimnisvolle",
 "compound"
+],
+"geisseln": [
+"geißeln",
+"sz"
 ],
 "gemiethet": [
 "gemietet",
@@ -12047,6 +12179,10 @@
 "getödtet": [
 "getötet",
 "word"
+],
+"geweisst": [
+"geweißt",
+"sz"
 ],
 "gewerthschätzt": [
 "gewertschätzt",
@@ -13551,6 +13687,10 @@
 "mitzutheilen": [
 "mitzuteilen",
 "word"
+],
+"mißt": [
+"misst",
+"sz"
 ],
 "mobilisirten": [
 "mobilisierten",
@@ -15120,6 +15260,22 @@
 "sanktionierte",
 "word"
 ],
+"sass": [
+"saß",
+"sz"
+],
+"sassen": [
+"saßen",
+"sz"
+],
+"scheusslichen": [
+"scheußlichen",
+"sz"
+],
+"scheusslichsten": [
+"scheußlichsten",
+"sz"
+],
 "schiessen": [
 "schießen",
 "sz"
@@ -15176,6 +15332,10 @@
 "schülermäßigem",
 "compound"
 ],
+"sechszehnten": [
+"sechzehnten",
+"manual"
+],
 "selbstreproducirende": [
 "selbstreproduzierende",
 "compound"
@@ -15199,6 +15359,10 @@
 "selbstwirthschaftender": [
 "selbstwirtschaftender",
 "compound"
+],
+"siebenzig": [
+"siebzig",
+"manual"
 ],
 "signalisirt": [
 "signalisiert",
@@ -15527,6 +15691,10 @@
 "sämmtlicher": [
 "sämtlicher",
 "word"
+],
+"that": [
+"tat",
+"manual"
 ],
 "thaten": [
 "taten",
@@ -16044,6 +16212,10 @@
 "vergießt",
 "sz"
 ],
+"vergißt": [
+"vergisst",
+"sz"
+],
 "vergrössern": [
 "vergrößern",
 "sz"
@@ -16127,6 +16299,10 @@
 "verhältnissmäßiger": [
 "verhältnismäßiger",
 "compound"
+],
+"verhältnißmäßig": [
+"verhältnismäßig",
+"sz"
 ],
 "verhängnissvolle": [
 "verhängnisvolle",
@@ -16986,6 +17162,10 @@
 ],
 "äussert": [
 "äußert",
+"sz"
+],
+"äussre": [
+"äußre",
 "sz"
 ],
 "ökonomisiren": [

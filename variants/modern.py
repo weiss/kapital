@@ -5,9 +5,10 @@ The word table (modern_map.json) comes from tools/mk_modern_map.py and
 modern_overrides.py. Passages in other languages are left alone: a word counts
 as foreign context when most of the words around it are foreign (list in
 modern_map.json); a word also common in another language (Oct, Commission)
-and an English possessive also when the words next to it are foreign. A few
-rewrites depend on context (Masse/Maße, so lange/solange) or span several
-words (u. s. w. → usw., zu Grunde → zugrunde).
+and an English possessive also when the words next to it are foreign. Words
+whose ss becomes ß are always German. A few rewrites depend on context
+(Masse/Maße, so lange/solange) or span several words (u. s. w. → usw.,
+zu Grunde → zugrunde).
 """
 
 import json
@@ -35,6 +36,7 @@ FOREIGN = set(_DATA['foreign'])
 AMBIGUOUS = {
     k for k, v in _DATA['map'].items() if v[1] == 'foreign?' or k in FOREIGN
 }
+GERMAN = {k for k, v in _DATA['map'].items() if v[1] == 'sz'} - FOREIGN
 ORDINAL = {'st', 'nd', 'rd', 'th'}
 TEI = '{http://www.tei-c.org/ns/1.0}'
 BLOCKS = {
@@ -308,7 +310,7 @@ def foreign_flags(words):
     for i, w in enumerate(words):
         win = [x for x in words[max(0, i - 3) : i + 4] if len(x) > 1]
         f = sum(1 for x in win if is_foreign(x))
-        flags.append(f * 2 > len(win))
+        flags.append(f * 2 > len(win) and w not in GERMAN)
     for i, w in enumerate(words):
         if flags[i]:
             continue
@@ -321,6 +323,8 @@ def foreign_flags(words):
                     len(side) == 2 and all(is_foreign(x) for x in side)
                     for side in (before, after)
                 )
+                or w == 'that'
+                and any(is_foreign(x) for x in after)
             )
         elif re.search("[’']s$", w) and is_foreign(w):
             flags[i] = any(is_foreign(x) for x in after)

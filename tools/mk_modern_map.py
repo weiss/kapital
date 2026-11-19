@@ -244,6 +244,18 @@ SZ = [
     (r'([Bb])üss', r'\1üß'),
     (r'([Bb])lösse', r'\1löße'),
     (r'^([Dd])aß$', r'\1ass'),
+    (r'(?<=[a-zäöü])niß', 'nis'),
+    (r'([Ss])chluß', r'\1chluss'),
+    (r'^([Mm])ißt$', r'\1isst'),
+    (r'vergißt', 'vergisst'),
+    (r'^((?:[Bb]e|[Ee]r)?[Ss])ass(?=(en|t)?$)', r'\1aß'),
+    (r'^([Bb]e)säss', r'\1säß'),
+    (r'äussr', 'äußr'),
+    (r'([Ss])cheuss', r'\1cheuß'),
+    (r'([Gg])eiss(?=el)', r'\1eiß'),
+    (r'meissel', 'meißel'),
+    (r'([Nn])iess', r'\1ieß'),
+    (r'^geweisst$', 'geweißt'),
     (r'(?<=[a-zäöü])nissmässig', 'nismäßig'),
 ]
 

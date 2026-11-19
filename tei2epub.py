@@ -1593,10 +1593,12 @@ class Book:
             name, 'Inhaltsverzeichnis der Erstausgabe', 'contents'
         )
         sec = el(body, 'section', 'orig-toc')
-        h = C.new_block(sec, 'h1', id='inhalt')
+        n = self.vol['parts'].index(part)
+        hid = f'inhalt-{n + 1}' if n else 'inhalt'
+        h = C.new_block(sec, 'h1', id=hid)
         C.inline(div.find(TEI + 'head'), h)
         etree.strip_tags(h, H + 'em', H + 'strong')
-        C.toc_front.append((1, part['toc_contents'], name, 'inhalt'))
+        C.toc_front.append((1, part['toc_contents'], name, hid))
         t = el(sec, 'table', 'toc')
         stack, pending = [], []
         for c in div.find(TEI + 'list'):

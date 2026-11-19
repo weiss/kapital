@@ -85,10 +85,7 @@ def running(title):
     title = title.replace(' (Erstausgabe)', '')
     if len(title) <= 62:
         return title
-    head = title.split('. ')[0]
-    if 10 <= len(head) <= 62:
-        return head + '.'
-    return title[:58].rsplit(' ', 1)[0] + ' …'
+    return title[:58].rsplit(' ', 1)[0].rstrip(' –,;:') + ' …'
 
 
 # Seitenwechsel vor einer zentrierten Zeile: nur die Randziffer, kein Strich auf
@@ -1024,7 +1021,9 @@ class TeX:
             if not docs[-1]['main'] and (
                 name == b.first_body or (len(docs) > 1 and cls(body) == [])
             ):
-                cur.append(r'\mainmatter')
+                cur.append(
+                    r'\mainmatter\thispagestyle{plain.scrheadings}\markboth{}{}'
+                )
                 docs[-1]['main'] = True
             for sec in body:
                 k = cls(sec)

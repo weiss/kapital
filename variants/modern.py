@@ -422,6 +422,9 @@ def adjust(vol):
         ' Folgenden genannt.'
     )
     for part in vol['parts']:
+        for key in ('toc_contents', 'part_label'):
+            if key in part:
+                part[key] = modernize_text(part[key])
         if part.get('formulas'):
             part['formulas'] = [
                 (

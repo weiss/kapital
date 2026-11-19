@@ -51,7 +51,9 @@ BLOCKS = {
         'label',
     )
 }
-WORD = re.compile(r"[A-Za-zÄÖÜäöüßàâçéèêëîïôûùœæ]+(?:[’'][s])?")
+WORD = re.compile(
+    r"[A-Za-zÄÖÜäöüßàâçéèêëîïôûùœæ]+(?:[’']s(?![A-Za-zÄÖÜäöüß]))?"
+)
 MASS_DAT = re.compile(r'(?:em|im|^demselben|^denselben)$')
 CONTRACT = {
     'in',

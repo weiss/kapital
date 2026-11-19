@@ -460,6 +460,8 @@ K1_TEXT = [
     ('Kneetbrett', 'Knetbrett'),
     ('Adio', 'Addio'),
     ('Wandervölkerung', 'Wanderbevölkerung'),
+    ('Gesellschallsorganisation', 'Gesellschaftsorganisation'),
+    ('l&#x2019;atricier', 'Patricier'),
 ]
 
 K2_TEXT = [
@@ -646,6 +648,9 @@ K2_TEXT = [
     ('variablem und<lb/>\nund konstantem', 'variablem<lb/>\nund konstantem'),
     ("P . , . W'", "P … W'"),
     ('Geldwerth von (1000', 'Geldwerth von 1000'),
+    ('zn realisiren', 'zu realisiren'),
+    ('dle einzelnen', 'die einzelnen'),
+    ('dann = 600 <hi', 'dann = 6000 <hi'),
 ]
 
 K31_TEXT = [
@@ -707,6 +712,15 @@ K31_TEXT = [
     ('5 % und<lb/>\nund', '5 % und<lb/>'),
     ('Da da das Geschäft', 'Da das Geschäft'),
     ('Bereitung<lb/>\n(des Flachses in', 'Bereitung<lb/>\n(des Flachses) in'),
+    ('von ie 100', 'von je 100'),
+    (
+        r'{200_c}</formula> + 100<hi rendition="#sub">v</hi>',
+        r'{200_c + 100_v}</formula>',
+    ),
+    (
+        r'{400_c}</formula> + 100<hi rendition="#sub">v</hi>',
+        r'{400_c + 100_v}</formula>',
+    ),
 ]
 
 K32_TEXT = [
@@ -800,6 +814,10 @@ K32_TEXT = [
     ('Form von Profit nnd Rente', 'Form von Profit und Rente'),
     ('Masse des Surplusprofits, resp-', 'Masse des Surplusprofits, resp.'),
     ('Suspension<lb/>\ndes Bankakts]', 'Suspension<lb/>\ndes Bankakts)'),
+    ('wenn et sie', 'wenn er sie'),
+    ('(Autstellung', '(Aufstellung'),
+    ('gefäbrliche', 'gefährliche'),
+    ('Cirkulation<lb/>\nzn werfen', 'Cirkulation<lb/>\nzu werfen'),
     (
         (
             'beide (18 <hi rendition="#i">£</hi><lb/>\nund 36 <hi'

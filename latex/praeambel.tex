@@ -132,18 +132,14 @@
 \newcommand{\pb}[2]{\leavevmode\phantomsection\label{#1}%
   \textcolor{black!45}{\raisebox{-.15ex}{\rule{.3pt}{1.9ex}}}\pbnum{#2}}
 \newcommand{\pbm}[2]{\leavevmode\phantomsection\label{#1}\pbnum{#2}}
-% LaTeX wählt die Randseite, bevor feststeht, ob die Zeile noch auf diese
-% Seite passt; die tatsächliche Seite (\Ifthispageodd, aus dem vorigen Lauf)
-% rückt die Ziffer notfalls hinüber
+% Ziffer per \vadjust in Höhe der Zeile, ohne \marginpar: dessen Ausgaberoutine
+% bringt geteilte Fußnoten durcheinander; die Seite kommt aus \Ifthispageodd
 \newcommand{\pbfont}{\footnotesize\color{black!60}}
-\newcommand{\pbnum}[1]{\marginpar
-  [\Ifthispageodd
-    {\rlap{\hskip\dimexpr\marginparwidth+\textwidth+2\marginparsep\relax
-      \pbfont #1}}%
-    {\raggedleft\pbfont #1}]
-  {\Ifthispageodd
-    {\raggedright\pbfont #1}%
-    {\llap{\pbfont #1\hskip\dimexpr\textwidth+2\marginparsep\relax}}}}
+\newcommand{\pbnum}[1]{\vadjust{\kern-\dp\strutbox
+  \vbox to 0pt{\boxmaxdepth=0pt\vss\Ifthispageodd
+    {\hbox to 0pt{\hskip\dimexpr\textwidth+\marginparsep\relax\pbfont #1\hss}}%
+    {\hbox to 0pt{\hss\pbfont #1\hskip\marginparsep}}}%
+  \kern\dp\strutbox}}
 \newcommand{\pbx}[1]{\phantomsection\label{#1}}
 
 % Überschriften; die Kolumnentitel setzt der Konverter

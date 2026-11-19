@@ -20,9 +20,6 @@ In heutiger Rechtschreibung:
 - Band II (1885): [EPUB][m2e], [PDF][m2p]
 - Band III (1894): [EPUB][m3e], [PDF Teil 1][m3.1p], [PDF Teil 2][m3.2p]
 
-Frühere Fassungen und was sich geändert hat, stehen unter
-[Releases](https://github.com/weiss/kapital/releases).
-
 [o1e]: https://github.com/weiss/kapital/releases/latest/download/marx-kapital-1-1867.epub
 [o1.1p]: https://github.com/weiss/kapital/releases/latest/download/marx-kapital-1.1-1867.pdf
 [o1.2p]: https://github.com/weiss/kapital/releases/latest/download/marx-kapital-1.2-1867.pdf
@@ -93,9 +90,9 @@ beschreibt [DEVELOPMENT.md](DEVELOPMENT.md).
 ## Lizenz
 
 - **Code** (Konverter, Stylesheet, Makefile, `latex/praeambel.tex`, `tools/`,
-  `variants/`, `experiments/`, die `*.py` unter `editions/`): [MIT](LICENSE),
-  © Holger Weiß. Textauszüge aus den Transkriptionen in diesen Dateien
-  (Korrekturen, ergänzte Fußnoten) stehen wie diese unter CC BY-SA 4.0.
+  `variants/`, `experiments/`, die `*.py` unter `editions/`): [MIT](LICENSE).
+  Textauszüge aus den Transkriptionen in diesen Dateien (Korrekturen, ergänzte
+  Fußnoten) stehen wie diese unter CC BY-SA 4.0.
 - **Texte und Bilder** unter `editions/` (Quellen, Tabellen, Umschläge) und die
   erzeugten EPUBs und PDFs:
   [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de), wie

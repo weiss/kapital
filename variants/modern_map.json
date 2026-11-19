@@ -404,10 +404,6 @@
 "Arbeitstieren",
 "compound"
 ],
-"Arithmetic": [
-"Arithmetik",
-"foreign?"
-],
 "Armuth": [
 "Armut",
 "word"
@@ -1020,10 +1016,6 @@
 "Zertifikate",
 "word"
 ],
-"Cette": [
-"Kette",
-"foreign?"
-],
 "Character": [
 "Charakter",
 "foreign?"
@@ -1448,10 +1440,6 @@
 "Zivile",
 "foreign?"
 ],
-"Civiles": [
-"Ziviles",
-"foreign?"
-],
 "Civilisation": [
 "Zivilisation",
 "foreign?"
@@ -1495,18 +1483,6 @@
 "Combinationen": [
 "Kombinationen",
 "word"
-],
-"Comme": [
-"Komme",
-"foreign?"
-],
-"Commiss": [
-"Kommis",
-"word"
-],
-"Commission": [
-"Kommission",
-"foreign?"
 ],
 "Concentration": [
 "Konzentration",
@@ -1623,10 +1599,6 @@
 "Cooperirenden": [
 "Kooperierenden",
 "word"
-],
-"Corn": [
-"Zorn",
-"foreign?"
 ],
 "Corporationen": [
 "Korporationen",
@@ -2287,10 +2259,6 @@
 "Facit": [
 "Fazit",
 "word"
-],
-"Fact": [
-"Fakt",
-"foreign?"
 ],
 "Feudaleigenthümer": [
 "Feudaleigentümer",
@@ -3840,10 +3808,6 @@
 "Herzensstöße",
 "compound"
 ],
-"Hinc": [
-"Hinz",
-"word"
-],
 "Hinderniss": [
 "Hindernis",
 "word"
@@ -4383,10 +4347,6 @@
 "Körpertheile": [
 "Körperteile",
 "word"
-],
-"Lace": [
-"Lake",
-"foreign?"
 ],
 "Lagermiethe": [
 "Lagermiete",
@@ -5348,14 +5308,6 @@
 "Plantagenwirtschaft",
 "compound"
 ],
-"Politic": [
-"Politik",
-"foreign?"
-],
-"Ponthus": [
-"Pontus",
-"word"
-],
 "Populationsprincip": [
 "Populationsprinzip",
 "compound"
@@ -5403,10 +5355,6 @@
 "Priestercölibats": [
 "Priesterzölibats",
 "compound"
-],
-"Princ": [
-"Prinz",
-"word"
 ],
 "Princip": [
 "Prinzip",
@@ -5711,10 +5659,6 @@
 "Prostituirten": [
 "Prostituierten",
 "word"
-],
-"Provincial": [
-"Provinzial",
-"foreign?"
 ],
 "Prozenttheile": [
 "Prozentteile",
@@ -6116,10 +6060,6 @@
 "Sechsunddreißigstes",
 "sz"
 ],
-"Sect": [
-"Sekt",
-"foreign?"
-],
 "Seelengeheimniss": [
 "Seelengeheimnis",
 "compound"
@@ -6431,10 +6371,6 @@
 "Telegraphendräthen": [
 "Telegraphendräten",
 "compound"
-],
-"Th": [
-"T",
-"foreign?"
 ],
 "Thaler": [
 "Taler",
@@ -9192,10 +9128,6 @@
 "Wollenwaren",
 "compound"
 ],
-"Worth": [
-"Wort",
-"foreign?"
-],
 "Wucherzinsfuss": [
 "Wucherzinsfuß",
 "sz"
@@ -9323,10 +9255,6 @@
 "Zündruthe": [
 "Zündrute",
 "compound"
-],
-"aan": [
-"an",
-"foreign?"
 ],
 "abbüssen": [
 "abbüßen",
@@ -9487,10 +9415,6 @@
 "acceptirten": [
 "akzeptierten",
 "word"
-],
-"accumulation": [
-"akkumulation",
-"foreign?"
 ],
 "accumuliren": [
 "akkumulieren",
@@ -9823,10 +9747,6 @@
 "applicirt": [
 "appliziert",
 "word"
-],
-"aristocrat": [
-"aristokrat",
-"foreign?"
 ],
 "arrangirt": [
 "arrangiert",
@@ -10320,14 +10240,6 @@
 "campiert",
 "compound"
 ],
-"cant": [
-"kant",
-"foreign?"
-],
-"capitalist": [
-"kapitalist",
-"foreign?"
-],
 "carts": [
 "karts",
 "foreign?"
@@ -10350,10 +10262,6 @@
 ],
 "cette": [
 "kette",
-"foreign?"
-],
-"character": [
-"charakter",
 "foreign?"
 ],
 "characteristic": [
@@ -10496,10 +10404,6 @@
 "zitierter",
 "word"
 ],
-"civiles": [
-"ziviles",
-"foreign?"
-],
 "civilisation": [
 "zivilisation",
 "foreign?"
@@ -10548,10 +10452,6 @@
 "komfortabler",
 "word"
 ],
-"comme": [
-"komme",
-"foreign?"
-],
 "commensurabel": [
 "kommensurabel",
 "manual"
@@ -10578,10 +10478,6 @@
 ],
 "complement": [
 "komplement",
-"foreign?"
-],
-"concentration": [
-"konzentration",
 "foreign?"
 ],
 "concentrirte": [
@@ -10735,10 +10631,6 @@
 "culminirend": [
 "culminierend",
 "compound"
-],
-"curo": [
-"kuro",
-"foreign?"
 ],
 "cyklopische": [
 "zyklopische",
@@ -11083,10 +10975,6 @@
 "docirt": [
 "doziert",
 "word"
-],
-"document": [
-"dokument",
-"foreign?"
 ],
 "doth": [
 "dot",
@@ -11640,10 +11528,6 @@
 "fabrik",
 "foreign?"
 ],
-"fabricant": [
-"fabrikant",
-"foreign?"
-],
 "fabrication": [
 "fabrikation",
 "foreign?"
@@ -11683,14 +11567,6 @@
 "fabrizirt": [
 "fabriziert",
 "word"
-],
-"facio": [
-"fazio",
-"word"
-],
-"fact": [
-"fakt",
-"foreign?"
 ],
 "falliren": [
 "fallieren",
@@ -11891,10 +11767,6 @@
 "fortfungirt": [
 "fortfungiert",
 "compound"
-],
-"forth": [
-"fort",
-"foreign?"
 ],
 "fortproduciren": [
 "fortproduzieren",
@@ -12459,10 +12331,6 @@
 "größtentheils": [
 "größtenteils",
 "word"
-],
-"hac": [
-"hak",
-"foreign?"
 ],
 "halbmercantilistische": [
 "halbmerkantilistische",
@@ -13416,10 +13284,6 @@
 "laboriert",
 "word"
 ],
-"lace": [
-"lake",
-"foreign?"
-],
 "landwirthschaftliche": [
 "landwirtschaftliche",
 "word"
@@ -13628,10 +13492,6 @@
 "merke",
 "foreign?"
 ],
-"mercers": [
-"merkers",
-"word"
-],
 "miethe": [
 "miete",
 "word"
@@ -13775,10 +13635,6 @@
 "motivirten": [
 "motivierten",
 "word"
-],
-"multiplication": [
-"multiplikation",
-"foreign?"
 ],
 "multipliciren": [
 "multiplizieren",
@@ -13978,10 +13834,6 @@
 ],
 "notirt": [
 "notiert",
-"word"
-],
-"nuce": [
-"nuke",
 "word"
 ],
 "numerirt": [
@@ -14228,10 +14080,6 @@
 "perfekt",
 "foreign?"
 ],
-"perfection": [
-"perfektion",
-"foreign?"
-],
 "personificirt": [
 "personifiziert",
 "word"
@@ -14376,10 +14224,6 @@
 "procentmäßiger",
 "compound"
 ],
-"process": [
-"prozess",
-"foreign?"
-],
 "processes": [
 "prozesses",
 "foreign?"
@@ -14454,18 +14298,6 @@
 ],
 "product": [
 "produkt",
-"foreign?"
-],
-"production": [
-"produktion",
-"foreign?"
-],
-"productive": [
-"produktive",
-"foreign?"
-],
-"productives": [
-"produktives",
 "foreign?"
 ],
 "produziren": [
@@ -14738,10 +14570,6 @@
 ],
 "record": [
 "rekord",
-"foreign?"
-],
-"rector": [
-"rektor",
 "foreign?"
 ],
 "redigirt": [
@@ -15068,10 +14896,6 @@
 "respekt",
 "foreign?"
 ],
-"respectable": [
-"respektable",
-"foreign?"
-],
 "respective": [
 "respektive",
 "foreign?"
@@ -15352,10 +15176,6 @@
 "schülermäßigem",
 "compound"
 ],
-"sect": [
-"sekt",
-"foreign?"
-],
 "selbstreproducirende": [
 "selbstreproduzierende",
 "compound"
@@ -15495,10 +15315,6 @@
 "specifisches": [
 "spezifisches",
 "word"
-],
-"speculation": [
-"spekulation",
-"foreign?"
 ],
 "spedirt": [
 "spediert",
@@ -15692,10 +15508,6 @@
 "symbolisiert",
 "word"
 ],
-"systematic": [
-"systematik",
-"foreign?"
-],
 "systematisiren": [
 "systematisieren",
 "word"
@@ -15715,10 +15527,6 @@
 "sämmtlicher": [
 "sämtlicher",
 "word"
-],
-"th": [
-"t",
-"foreign?"
 ],
 "thaten": [
 "taten",
@@ -15927,10 +15735,6 @@
 "traktirt": [
 "traktiert",
 "word"
-],
-"transaction": [
-"transaktion",
-"foreign?"
 ],
 "transoceanischen": [
 "transozeanischen",
@@ -16599,10 +16403,6 @@
 "vindicirten": [
 "vindizierten",
 "compound"
-],
-"vocale": [
-"vokale",
-"foreign?"
 ],
 "vorgiebt": [
 "vorgibt",
@@ -17581,6 +17381,7 @@
 "Commercial",
 "Commerciale",
 "Commis",
+"Commission",
 "Commissioners",
 "Committee",
 "Committees",
@@ -17624,6 +17425,7 @@
 "Corbett",
 "Cordial",
 "Cork",
+"Corn",
 "Cornwall",
 "Coroner",
 "Correctionnel",
@@ -18131,6 +17933,7 @@
 "Laborde",
 "Labour",
 "Labourers",
+"Lace",
 "Ladies",
 "Lady",
 "Lama",
@@ -18787,6 +18590,7 @@
 "Secret",
 "Secretaries",
 "Secretary",
+"Sect",
 "See",
 "Seen",
 "Segmentation",
@@ -19125,6 +18929,7 @@
 "Working",
 "Works",
 "World",
+"Worth",
 "Wright",
 "Written",
 "Wrong",
@@ -19161,6 +18966,7 @@
 "Zone",
 "Zus",
 "a",
+"aan",
 "abbondantemente",
 "abbondanti",
 "abilities",
@@ -19918,6 +19724,7 @@
 "con",
 "conceive",
 "concentrated",
+"concentration",
 "conceptions",
 "concerning",
 "concluded",
@@ -20314,6 +20121,7 @@
 "do",
 "dock",
 "doctrine",
+"document",
 "does",
 "doet",
 "doing",
@@ -20822,6 +20630,7 @@
 "formée",
 "fort",
 "forte",
+"forth",
 "fortnight",
 "fortune",
 "fortunes",
@@ -21086,7 +20895,6 @@
 "ideato",
 "identical",
 "idle",
-"ie",
 "if",
 "ignorant",
 "il",
@@ -21290,6 +21098,7 @@
 "la",
 "labour",
 "labourers",
+"lace",
 "lady",
 "laisse",
 "laisser",
@@ -22004,6 +21813,7 @@
 "per",
 "perdre",
 "perdu",
+"perfection",
 "perfectionnement",
 "perform",
 "performed",
@@ -22204,6 +22014,7 @@
 "proceeding",
 "proceedings",
 "proceeds",
+"process",
 "processes",
 "procure",
 "procured",
@@ -22221,8 +22032,10 @@
 "producing",
 "producteurs",
 "productifs",
+"production",
 "productions",
 "productive",
+"productives",
 "products",
 "produire",
 "produisant",
@@ -22425,6 +22238,7 @@
 "recommencer",
 "recommend",
 "record",
+"rector",
 "recueillir",
 "reduce",
 "reduced",
@@ -22690,6 +22504,7 @@
 "seconds",
 "secours",
 "secret",
+"sect",
 "securities",
 "security",
 "see",
@@ -22886,6 +22701,7 @@
 "specifica",
 "specified",
 "spectator",
+"speculation",
 "spell",
 "spend",
 "sphere",
@@ -23024,6 +22840,7 @@
 "swell",
 "swelling",
 "swing",
+"systematic",
 "système",
 "séances",
 "séparer",

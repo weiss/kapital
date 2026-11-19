@@ -4,8 +4,10 @@
 The word table (modern_map.json) comes from tools/mk_modern_map.py and
 modern_overrides.py. Passages in other languages are left alone: a word counts
 as foreign context when most of the words around it are foreign (list in
-modern_map.json). A few rewrites depend on context (Masse/Maße,
-so lange/solange) or span several words (u. s. w. → usw., zu Grunde → zugrunde).
+modern_map.json); a word also common in another language (Oct, Commission)
+and an English possessive also when the words next to it are foreign. A few
+rewrites depend on context (Masse/Maße, so lange/solange) or span several
+words (u. s. w. → usw., zu Grunde → zugrunde).
 """
 
 import json
@@ -30,6 +32,10 @@ HERE = Path(__file__).resolve().parent
 _DATA = json.load(open(HERE / 'modern_map.json', encoding='utf-8'))
 MAP = {k: v[0] for k, v in _DATA['map'].items()}
 FOREIGN = set(_DATA['foreign'])
+AMBIGUOUS = {
+    k for k, v in _DATA['map'].items() if v[1] == 'foreign?' or k in FOREIGN
+}
+ORDINAL = {'st', 'nd', 'rd', 'th'}
 TEI = '{http://www.tei-c.org/ns/1.0}'
 BLOCKS = {
     TEI + t
@@ -179,6 +185,7 @@ PHRASES = [
     (r'\bu\.\s?s\.\s?f\.', 'usf.'),
     (r'\bU\.\s?s\.\s?w\.', 'Usw.'),
     (r'\bu\.(\s?)A\.', r'u.\1a.'),
+    (r'\b([Zz])\.(\s?)Th\.', r'\1.\2T.'),
     (r'\b([Ee])ben so\b', r'\1benso'),
     (
         (
@@ -292,16 +299,31 @@ def segments(block):
     return out
 
 
+def is_foreign(w):
+    return w in FOREIGN or re.split("[’']", w)[0] in FOREIGN
+
+
 def foreign_flags(words):
     flags = []
     for i, w in enumerate(words):
         win = [x for x in words[max(0, i - 3) : i + 4] if len(x) > 1]
-        f = sum(
-            1
-            for x in win
-            if x in FOREIGN or x.split('’')[0].split("'")[0] in FOREIGN
-        )
+        f = sum(1 for x in win if is_foreign(x))
         flags.append(f * 2 > len(win))
+    for i, w in enumerate(words):
+        if flags[i]:
+            continue
+        before, after = words[max(0, i - 2) : i], words[i + 1 : i + 3]
+        if w in AMBIGUOUS:
+            flags[i] = bool(
+                before[-1:]
+                and before[-1] in ORDINAL
+                or any(
+                    len(side) == 2 and all(is_foreign(x) for x in side)
+                    for side in (before, after)
+                )
+            )
+        elif re.search("[’']s$", w) and is_foreign(w):
+            flags[i] = any(is_foreign(x) for x in after)
     return flags
 
 

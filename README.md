@@ -54,7 +54,6 @@ Erstausgaben in der TEI-Fassung vom 28.02.2025. Sie liegen unverändert unter
   `https://www.deutschestextarchiv.de/media/images/<id>/<id>_<NNNN>_1600px.jpg`.
   Die Exemplare stammen aus der Staatsbibliothek zu Berlin – Preußischer
   Kulturbesitz.
-- **Lizenz:** siehe [unten](#lizenz).
 
 ## Nutzung
 
@@ -83,17 +82,13 @@ make pdf                 # build/erstausgaben/kapital-{1-1,1-2,2,3-1,3-2}.pdf
 make pdf VARIANT=modern
 ```
 
-Dafür braucht es LuaLaTeX mit KOMA-Script, `realscripts` und den deutschen und
-griechischen Trennmustern; die Schriften Crimson Pro und Gentium Book liegen
-unter `latex/fonts/` (SIL OFL). Unter Debian/Ubuntu:
+Dafür braucht es LuaLaTeX; die Schriften liegen in `latex/fonts/`. Unter
+Debian/Ubuntu (`texlive-xetex` nur für das Paket `realscripts`):
 
 ```sh
 apt install texlive-luatex texlive-latex-recommended texlive-xetex \
     texlive-lang-german texlive-lang-greek
 ```
-
-`tei2tex.py` schreibt die LaTeX-Quelle nach `build/<edition>/tex/`; die Präambel
-liegt in `latex/praeambel.tex`.
 
 Direkt aufgerufen:
 
@@ -102,14 +97,8 @@ python3 tei2epub.py 1 "Marx - Das Kapital I (1867).epub"
 python3 tei2epub.py -e erstausgaben -v <variante> 2 out.epub
 ```
 
-Die eingecheckten Umschläge neu erzeugen:
-
-```sh
-make covers
-```
-
-Das braucht Node.js und einmalig `cd tools && npm ci && npx playwright install
-chromium`.
+Die eingecheckten Umschläge erzeugt `make covers` neu; das braucht Node.js und
+einmalig `cd tools && npm ci && npx playwright install chromium`.
 
 ### Reproduzierbarkeit
 
@@ -306,15 +295,6 @@ Im Zweifel gilt die heute geläufigste Form. Marx' Wortformen und Satzbau bleibe
     innerhalb von „…“.
 - **Protokoll:** Jeder Build schreibt alle Änderungen nach
   `build/modern-changes-<teil>.tsv`.
-
-## Werkzeuge
-
-- `tools/render_covers.js`: Umschläge aus `tools/cover.html` und `covers.json`
-  rendern.
-- `tools/dump_vocab.py`: alle Wortformen der Bände mit Häufigkeit →
-  `build/vocab.json`.
-- `tools/mk_modern_map.py`: Wortliste für die Variante `modern` (alt → heute)
-  aus `build/vocab.json`.
 
 ## Lizenz
 

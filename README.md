@@ -39,9 +39,14 @@ In heutiger Rechtschreibung:
 
 ## Die Ausgabe
 
-- **Text:** Wortlaut, Orthographie und Zeichensetzung wie in der Vorlage. Die
+- **Text:** Wortlaut und Zeichensetzung wie in der Vorlage. Die
   Druckfehlerlisten der Erstausgaben (Bd. 1 und 3) und die Ergebnisse eines
   Abgleichs aller Bände mit der MEGA² (II/5, II/13, II/15) sind eingearbeitet.
+- **Zwei Fassungen:** in der Orthographie der Vorlage und in heutiger
+  Rechtschreibung. Diese folgt in Orthographie sowie Getrennt- und
+  Zusammenschreibung den heutigen Regeln, im Zweifel der heute geläufigsten
+  Form; Marx' Wortformen und Satzbau bleiben („andren“, „verschiedne“,
+  „geschehn“).
 - **Lücken der Transkription:** Was das DTA leer gelassen hat (Formeln,
   Tabellen, Schemata), ist nach dem Faksimile ergänzt und als Text gesetzt.
 - **Fußnoten** sind verlinkt (im EPUB) bzw. stehen am Seitenende (im PDF), mit
@@ -53,10 +58,6 @@ In heutiger Rechtschreibung:
 - **PDF:** gesetzt mit LuaLaTeX in Crimson Pro, Griechisch in Gentium Book.
   Band I ist nach dem dritten Kapitel in zwei Teile mit durchlaufender
   Seitenzählung geteilt, Band III wie in der Erstausgabe.
-- **Heutige Rechtschreibung:** Orthographie sowie Getrennt- und
-  Zusammenschreibung folgen den heutigen Regeln; im Zweifel gilt die heute
-  geläufigste Form. Marx' Wortformen und Satzbau bleiben („andren“,
-  „verschiedne“, „geschehn“).
 
 ## Quellen
 

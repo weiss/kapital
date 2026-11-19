@@ -1,4 +1,4 @@
-# Marx, Das Kapital – die Erstausgaben als EPUB und PDF
+# Das Kapital – Erstausgaben als EPUB und PDF
 
 Die drei Bände des *Kapital* im Text ihrer Erstausgaben (1867, 1885, 1894), nach
 den Transkriptionen des

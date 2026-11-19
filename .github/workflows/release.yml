@@ -48,4 +48,8 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           name: Das Kapital ${{ github.ref_name }}
+          body: >-
+            Alle Bände als EPUB und PDF, jeweils in der Schreibung der Vorlage
+            und in heutiger Rechtschreibung.
+          generateReleaseNotes: true
           artifacts: dist/*

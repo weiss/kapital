@@ -178,9 +178,9 @@
   \nobreak\global\@nobreakfalse}
 \makeatother
 % Formelzeile, die nicht umbrechen darf, notfalls auf Satzbreite verkleinert
-\newcommand{\fitline}[1]{\par\noindent\setbox0\hbox{#1}%
+\newcommand{\fitline}[1]{\par\noindent\setbox0\hbox{\displayfractrue#1}%
   \ifdim\wd0>\linewidth\resizebox{\linewidth}{!}{\box0}\else\box0\fi\par}
-\newcommand{\dispf}[1]{\par\smallskip{\kcentering #1\par}\smallskip}
+\newcommand{\dispf}[1]{\par\smallskip{\kcentering\displayfractrue #1\par}\smallskip}
 \newcommand{\etline}[1]{\par{\kraggedright\advance\leftskip2em\noindent #1\par}}
 \newcommand{\rline}[1]{\par{\raggedleft #1\par}}
 \newenvironment{hanglist}[1][1.5em]
@@ -212,7 +212,13 @@
 \newcommand{\tabfont}{%
   \addfontfeatures{Numbers={Lining,Monospaced}}\setlength{\tabcolsep}{.4em}}
 \newcommand{\linerule}[1]{\kern.12em\rule[.3em]{#1}{.4pt}\kern.12em}
-\newcommand{\Frac}[2]{\dfrac{#1}{#2}}
+% Brüche im Fließtext eine Stufe kleiner und mit 2 pt Luft zu den Nachbarzeilen,
+% in abgesetzten Formeln in voller Größe
+\newif\ifdisplayfrac
+\newcommand{\Frac}[2]{%
+  \ifdisplayfrac\dfrac{#1}{#2}\else
+    \raisebox{0pt}[\dimexpr\height+2pt][\dimexpr\depth+2pt]{\small$\dfrac{#1}{#2}$}%
+  \fi}
 \newcommand{\ovarc}[1]{\overline{#1}}
 \newcommand{\lab}[2]{\overbrace{#2}^{\text{\scriptsize #1}}}
 \newbox\brzhalf

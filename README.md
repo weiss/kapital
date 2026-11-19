@@ -104,6 +104,4 @@ beschreibt [DEVELOPMENT.md](DEVELOPMENT.md).
   [SIL Open Font License 1.1](https://openfontlicense.org), Copyright der
   jeweiligen Projekte, siehe `OFL-CrimsonPro.txt` und `OFL-Gentium.txt` dort.
   Die PDFs betten die Schriften ein; die OFL gilt nicht für Dokumente, die mit
-  ihnen gesetzt sind. Die EPUBs betten keine Schriften ein. Die Umschläge sind
-  in [Crimson Pro](https://fonts.google.com/specimen/Crimson+Pro) gesetzt
-  (`@fontsource/crimson-pro`).
+  ihnen gesetzt sind. Die EPUBs betten keine Schriften ein.

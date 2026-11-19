@@ -85,8 +85,14 @@
 \renewcommand*{\footnoterule}{\vfill\KapitalFootnoterule}
 % Marke grundlinienbündig, rechtsbündig vor dem Text; der Einzug richtet sich
 % nach der längsten Nummer des Bandes
-\deffootnote{1.6em}{1em}{\thefootnotemark}
+\newlength{\fnindent}
+\deffootnote{\fnindent}{1em}{\thefootnotemark\enspace}
 \setkomafont{footnotelabel}{\addfontfeatures{Numbers={OldStyle,Monospaced}}}
+\providecommand{\FnWidest}{00}
+\makeatletter
+\AtBeginDocument{%
+  \settowidth{\fnindent}{\footnotesize\ftnm@font\FnWidest\enspace}}
+\makeatother
 % Crimson Pro hat hochgestellte Ziffern, aber keine Buchstaben: das „a“ in „19a“
 % verkleinert und angehoben wie die Ziffern
 \makeatletter
@@ -98,12 +104,6 @@
   \ifx\kfnl\@empty\else
     \raisebox{.19em}{\fontsize{\fpeval{.67*\f@size}}{0}\selectfont\kfnl}%
   \fi}
-\makeatother
-\providecommand{\FnWidest}{00}
-\makeatletter
-\long\def\@makefntext#1{\setbox0\hbox{\ftnm@font\FnWidest\enspace}%
-  \leftskip\wd0\parindent1em\noindent\ftn@font
-  \hskip-\wd0\hbox to\wd0{\hss\@@makefnmark\enspace}#1}
 \makeatother
 \setlength{\skip\footins}{13pt plus 4pt minus 2pt}
 % Fußnoten ohne Zwischenraum: Strut von 0,7 Fußnotenzeilen

@@ -22,7 +22,8 @@
 \makeatother
 \usepackage{fontspec}
 \directlua{
-  luaotfload.add_fallback("kapital", {"GentiumBook-Regular.ttf:mode=node;"})}
+  luaotfload.add_fallback("kapital",
+    {"file:GentiumBook-Regular.ttf:mode=node;"})}
 % Variable Schrift: Grundschrift 400, Fußnoten und kleiner etwas kräftiger
 \setmainfont{CrimsonPro-VF.ttf}[
   ItalicFont=CrimsonPro-Italic-VF.ttf,

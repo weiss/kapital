@@ -524,8 +524,8 @@ def read_arg(src, i):
 
 def tex_text(parent, s, roman):
     s = s.replace('&lt;', '<').replace('&gt;', '>').replace('~', '\u00a0')
+    s = re.sub(r'(?<=\S) - (?=\S|$)', ' – ', s)
     if roman:
-        s = re.sub(r'(?<=\S) - (?=\S|$)', ' – ', s)
         s = re.sub(r'^- ', '– ', s)
     add_text(parent, s)
 
@@ -597,7 +597,7 @@ def render_tex(src, parent, roman=False):
         elif src.startswith('\\mathrm', i):
             flush()
             a, i = read_arg(src, i + 7)
-            render_tex(a, parent, True)
+            render_tex(a.strip(), parent, True)
         elif src.startswith('\\ldots', i):
             flush()
             add_text(parent, '…')

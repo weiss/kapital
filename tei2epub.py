@@ -154,7 +154,7 @@ DOTS = re.compile(r'(^|[^\s.])(\s?)\.((?:\s?\.){2,})(?=\s*(.?))')
 def ellipses(root):
     """Spaced dots of the print as an ellipsis; a dot set close to the word
     stays as a full stop. Long runs and runs before a number are leaders and
-    only kept from breaking."""
+    only kept from breaking. The two dots ‥ of the transcription likewise."""
 
     def sub(m):
         if m.group(3).count('.') >= 6 or m.group(4).isdigit():
@@ -174,6 +174,9 @@ def ellipses(root):
             continue
         for attr in ('text', 'tail'):
             v = getattr(e, attr)
+            if v and '‥' in v:
+                v = re.sub(r'‥(?!\s*\d)', '…', v)
+                setattr(e, attr, v)
             if v and ('. .' in v or '...' in v):
                 setattr(e, attr, DOTS.sub(sub, v))
 
@@ -200,9 +203,10 @@ def marks_after_stop(root):
         host.tail = host.tail[m.end() :]
         prev = note.getprevious()
         if prev is not None:
-            prev.tail = (prev.tail or '') + m.group()
+            prev.tail = (prev.tail or '').rstrip() + m.group()
         else:
-            note.getparent().text = (note.getparent().text or '') + m.group()
+            parent = note.getparent()
+            parent.text = (parent.text or '').rstrip() + m.group()
 
 
 def merge_empty_tables(root):
@@ -363,7 +367,8 @@ def dehyphenate(s):
     )
     stats, kept = Counter(), Counter()
     pat = re.compile(
-        rf"(?P<w1>[{LETTER}']+)(?P<c0>(?:</hi>)*)-(?P<close>(?:</hi>)*)"
+        rf"(?P<w1>[{LETTER}'’]+)(?P<c0>(?:</hi>)*)-"
+        rf"(?P<close>(?:</hi>)*)"
         rf"(?P<mid>(?:\s*<lb/>)+\s*(?:(?:<pb [^>]*/>|<milestone"
         rf" [^>]*/>|<cb/>)\s*(?:<lb/>\s*)*)*)"
         rf"(?P<open>(?:<hi rendition=\"[^\"]*\">)*)(?P<w2>[{LETTER}]+)"

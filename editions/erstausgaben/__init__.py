@@ -514,7 +514,7 @@ VOL2 = {
             ' Zeilen.'
         ),
         (
-            'Die Fußnote 38) im zwanzigsten Kapitel (S. 353) ist im Druck'
+            'Die Fußnote 38) im neunzehnten Kapitel (S. 353) ist im Druck'
             ' versehentlich als „4)“ beziffert.'
         ),
     ],

@@ -136,7 +136,6 @@ K1 = {
     ],
     'raw_hook': k1_raw,
     'struct_hook': k1_struct,
-    'toc_fixes': [('b) Widersprüche', '2) Widersprüche')],
     'formulas': [
         r'\lab{c}{410}',
         r'\lab{v}{90}',
@@ -273,8 +272,11 @@ VOL1 = {
         (
             'Die Überschrift „4) Der Arbeitstag“ war im DTA als Unterabschnitt'
             ' von „3) Die Rate des Mehrwerths“ kodiert und ist gleichrangig'
-            ' eingeordnet. „b) Widersprüche der allgemeinen Formel“ steht wie'
-            ' im Druck, im Inhaltsverzeichnis wie dort als „2)“.'
+            ' eingeordnet.'
+        ),
+        (
+            'Die Liste der schwindsüchtigen Spitzenmacherinnen 1852–1861, die'
+            ' der Druck in zwei Spalten setzt, steht in der Folge der Jahre.'
         ),
         (
             'Zwei Tabellen, die der Druck mitten in einem Satz an den Kopf der'

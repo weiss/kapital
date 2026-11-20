@@ -87,6 +87,14 @@ K1 = [
     ('Arbeiterg ' + H + 'ruppe', 'Arbeiter' + H + 'gruppe'),
     ('die Be ' + H + 'wegung', 'die ' + H + 'Bewegung'),
     ('den Waaren ' + H + 'körper', 'den Waaren' + H + 'körper'),
+    ('den Waaren ' + H + 'werthen', 'den Waaren' + H + 'werthen'),
+    ('Baumwoll ' + H + 'preis', 'Baumwoll' + H + 'preis'),
+    (H + 'Mehrwerths masse', H + 'Mehrwerthsmasse'),
+    ('wicklungs ' + H + 'epoche', 'wicklungs' + H + 'epoche'),
+    ('Arbeits nach frage', 'Arbeitsnachfrage'),
+    ('Waaren besitzern', 'Waarenbesitzern'),
+    ('der Waaren welt', 'der Waarenwelt'),
+    ('Zucker ' + H + 'preis', 'Zucker' + H + 'preis'),
 ] + shift(
     [
         ('Wert|h', 8),

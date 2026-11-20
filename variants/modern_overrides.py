@@ -65,6 +65,7 @@ OVERRIDES = {
     'Werthmass': 'Wertmaß',
     'Werthmasses': 'Wertmaßes',
     'Leyden': None,
+    'Oct': None,
     'engrossing': None,
     'Claussen': None,
     'desshalb': 'deshalb',

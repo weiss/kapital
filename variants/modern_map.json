@@ -4900,10 +4900,6 @@
 "Mehrwertsraten",
 "compound"
 ],
-"Mehrwerthsrathe": [
-"Mehrwertsrate",
-"compound"
-],
 "Mehrwerthstheil": [
 "Mehrwertsteil",
 "compound"
@@ -5411,10 +5407,6 @@
 "Oberofficiere": [
 "Oberoffiziere",
 "word"
-],
-"Oct": [
-"Okt",
-"foreign?"
 ],
 "October": [
 "Oktober",
@@ -11606,10 +11598,6 @@
 ],
 "eigenthum": [
 "eigentum",
-"word"
-],
-"eigenthums": [
-"eigentums",
 "word"
 ],
 "eigenthümlich": [
@@ -19119,6 +19107,7 @@
 "Perugia",
 "Petitions",
 "Petty",
+"Peut",
 "Philadelphia",
 "Philadelphie",
 "Philippe",
@@ -22585,6 +22574,7 @@
 "partially",
 "particular",
 "particularly",
+"particulars",
 "particulier",
 "particuliers",
 "particulières",

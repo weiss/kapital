@@ -223,7 +223,7 @@ K1 = {
 VOL1 = {
     'footnote_note': (
         ' Die Fußnotenzeichen stehen, wie heute üblich und wie in den beiden'
-        ' anderen Bänden, hinter Satzzeichen und schließenden'
+        ' anderen Bänden, hinter Satzschlusszeichen und schließenden'
         ' Anführungszeichen; die Erstausgabe setzt sie davor.'
     ),
     'index': 1,
@@ -478,8 +478,8 @@ K2 = {
 
 VOL2 = {
     'footnote_note': (
-        ' Zwei Fußnotenzeichen, die der Druck vor das Satzzeichen setzt, stehen'
-        ' wie sonst dahinter.'
+        ' Zwei Fußnotenzeichen, die der Druck vor das Satzschlusszeichen setzt,'
+        ' stehen wie sonst dahinter.'
     ),
     'index': 2,
     'year': '1885',
@@ -682,8 +682,8 @@ K32 = {
 
 VOL3 = {
     'footnote_note': (
-        ' Ein Fußnotenzeichen, das der Druck vor das Satzzeichen setzt, steht'
-        ' wie sonst dahinter.'
+        ' Ein Fußnotenzeichen, das der Druck vor das Satzschlusszeichen setzt,'
+        ' steht wie sonst dahinter.'
     ),
     'index': 3,
     'year': '1894',
@@ -760,7 +760,7 @@ VOLUMES['1']['corrections'] += [
     (
         'Weitere offensichtliche Druckfehler und Erfassungsfehler der'
         ' Transkription sind berichtigt'
-        f' ({_n(sperrsatz.K1) + len(errata.K1_TEXT) + 5} Stellen):'
+        f' ({_n(sperrsatz.K1) + _n(errata.K1_TEXT) + 5} Stellen):'
         ' Buchstabenverwechslungen („mensehlicher“, „Känfers“), falsche'
         ' Wortabstände („Unzahljetzt“, „unauf hörlich“, „welcheihren“),'
         ' grammatische Versehen („Eine bestimmtes jährliches Quantum“) und'

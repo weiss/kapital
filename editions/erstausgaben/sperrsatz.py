@@ -80,6 +80,13 @@ K1 = [
     ('Protektions system', 'Protektionssystem'),
     ('Arbeitsbeding ungen', 'Arbeitsbedingungen'),
     ('Unzertrennlich keit', 'Unzertrennlichkeit'),
+    ('Arbeits ' + H + 'quantum', 'Arbeits' + H + 'quantum'),
+    (H + 'Form</hi> entwicklung', H + 'Form</hi>entwicklung'),
+    (H + 'Werth</hi> bestimmun-', H + 'Werth</hi>bestimmun-'),
+    ('Kapital ' + H + 'besitzer', 'Kapital' + H + 'besitzer'),
+    ('Arbeiterg ' + H + 'ruppe', 'Arbeiter' + H + 'gruppe'),
+    ('die Be ' + H + 'wegung', 'die ' + H + 'Bewegung'),
+    ('den Waaren ' + H + 'körper', 'den Waaren' + H + 'körper'),
 ] + shift(
     [
         ('Wert|h', 8),

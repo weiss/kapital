@@ -11,8 +11,11 @@ rules (th→t, aa→a, c→k/z, -iren→-ieren, -niss→-nis, Ae→Ä, ss→ß �
 wins if it is clearly more frequent in present-day German (wordfreq). ß is only
 kept where the ss form is not at least as common today (Prozess, not Prozeß).
 Compounds unknown to wordfreq are rewritten piecewise with the morphemes learned
-from the simple words. Manual decisions in variants/modern_overrides.py win.
-Requires: pip install wordfreq
+from the simple words. Where wordfreq knows neither form, a German spelling
+dictionary decides: the old form must be unknown to it, the new one known.
+Manual decisions in variants/modern_overrides.py win.
+Requires: pip install wordfreq spylls, and de_DE_frami.dic/.aff from
+https://github.com/LibreOffice/dictionaries (de/) in build/
 """
 
 import itertools
@@ -24,9 +27,11 @@ from functools import lru_cache
 from pathlib import Path
 
 import wordfreq
+from spylls.hunspell import Dictionary
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
+HUNSPELL = Dictionary.from_files(str(ROOT / 'build' / 'de_DE_frami'))
 
 RULES = [
     (r'th', 't'),
@@ -48,11 +53,9 @@ RULES = [
     (r'C', 'Z'),
     (r'cc', 'kk'),
     (r'cc', 'kz'),
-    (
-        r'ir(?=(en|end|ende|enden|ender|endes|endem|t|te|ten|tes|ter|tem'
-        r'|ung|ungen|bar|bare|baren|barer)$)',
-        'ier',
-    ),
+    (r'(?<=[a-zäöü])(?<!sh)ir', 'ier'),
+    (r'(?<=[^aeiouAEIOU])y(?=[^aeiou])', 'i'),
+    (r'ey$', 'ei'),
     (r'iss$', 'is'),
     (r'ph', 'f'),
     (r'Ph', 'F'),
@@ -74,6 +77,29 @@ def z(w):
 @lru_cache(maxsize=None)
 def zf(w):
     return max(wordfreq.zipf_frequency(w, l) for l in FOREIGN_LANGS)
+
+
+@lru_cache(maxsize=None)
+def known(w):
+    return HUNSPELL.lookup(w)
+
+
+def sharp_s(w):
+    """ß for one ss, but not in aus-s or in a compound on -masse."""
+    if re.fullmatch(r'.+mass(e|en)', w):
+        return set()
+    return {
+        w[: m.start()] + 'ß' + w[m.end() :] for m in re.finditer('(?<!au)ss', w)
+    }
+
+
+def spelled(w, cands):
+    """The dictionary's choice among the candidates, if it rejects w."""
+    if zf(w) >= 2.5 or known(w):
+        return None
+    front = lambda x: len(re.findall('k(?=[eiyä])', x.lower()))
+    hits = [c for c in cands if known(c) and front(c) <= front(w)]
+    return min(hits, key=lambda c: (abs(len(c) - len(w)), c), default=None)
 
 
 def candidates(w, limit=4):
@@ -108,6 +134,13 @@ def direct_map(vocab):
                 best, bz = c, z(c)
         if best and bz >= 1.8 and bz > z0 + 0.6:
             out[w] = best
+        elif z0 < 1.5:
+            cands = candidates(w)
+            best = spelled(
+                w, cands | {s for c in cands | {w} for s in sharp_s(c)}
+            )
+            if best:
+                out[w] = best
     return out
 
 
@@ -118,7 +151,7 @@ def morphemes(direct, overrides, morph):
     for old, new in direct.items():
         if len(old) < 4 or zf(old) >= 2.5 or overrides.get(old, '') is None:
             continue
-        if old.lower().startswith(('mass', 'staat')):
+        if 'mass' in old.lower() or old.lower().startswith('staat'):
             continue
         rules[old.lower()] = new.lower()
     for old, new in morph.items():
@@ -164,8 +197,9 @@ def rewrite_compound(w, rules):
     s = re.sub(r'^Oe(?=[kfrlh])', 'Ö', s)
     s = re.sub(r'^Ue(?=[bn])', 'Ü', s)
     s = re.sub(
-        r'(?<=[a-zäöü]{3})(?<![aeiouäöü])ir(?=(t|te|ten|tes|ter|tem|en|end'
-        r'|ende|enden|ender|endes|endem|ung|ungen|bar|bare|baren|barer)$)',
+        r'(?<=[a-zäöü]{3})(?<![aeiouäöü])(?<!sh)ir(?=(e|st|t|te|ten|tes|ter'
+        r'|tem|en|end|ende|enden|ender|endes|endem|ung|ungen|bar|bare|baren'
+        r'|barer)$)',
         'ier',
         s,
     )
@@ -293,6 +327,8 @@ def main():
             continue
         base = table.get(w, [w, 'sz'])
         new = sz(base[0])
+        if 'ss' in new:
+            new = spelled(new, sharp_s(new)) or new
         if new != base[0]:
             table[w] = [new, base[1] if base[1] != 'sz' else 'sz']
             kinds['sz'] += 1

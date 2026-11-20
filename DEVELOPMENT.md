@@ -228,7 +228,10 @@ Im Zweifel gilt die heute geläufigste Form. Marx' Wortformen und Satzbau bleibe
 („andren“, „verschiedne“, „geschehn“).
 
 - **Wortliste:** `variants/modern_map.json`, erzeugt aus allen Wortformen der
-  drei Bände (braucht `pip install wordfreq`):
+  drei Bände (braucht `pip install wordfreq spylls` und das deutsche
+  Wörterbuch `de_DE_frami.dic`/`.aff` aus
+  [LibreOffice/dictionaries](https://github.com/LibreOffice/dictionaries/tree/master/de)
+  in `build/`):
 
   ```sh
   python3 tools/dump_vocab.py build/vocab.json
@@ -237,7 +240,8 @@ Im Zweifel gilt die heute geläufigste Form. Marx' Wortformen und Satzbau bleibe
 
   - Regeln wie th→t, aa→a, c→k/z, -iren→-ieren, -niss→-nis, Ae→Ä erzeugen
     Kandidaten. Ein Kandidat gewinnt, wenn er im heutigen Deutsch deutlich
-    häufiger ist.
+    häufiger ist; kennt wordfreq keine der Formen, entscheidet das
+    Wörterbuch (die alte Form darf es nicht kennen, die neue muss es).
   - Zusammensetzungen werden stückweise umgeschrieben.
   - ß/ss nach festen Stammregeln (groß, Größe, äußer-, -mäßig, schließen …).
   - Einzelentscheidungen stehen in `variants/modern_overrides.py`.

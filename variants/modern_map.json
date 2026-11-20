@@ -2,7 +2,7 @@
 "map": {
 "Abgestossene": [
 "Abgestoßene",
-"compound"
+"word"
 ],
 "Abhängigkeitsverhältniss": [
 "Abhängigkeitsverhältnis",
@@ -40,6 +40,10 @@
 "Akzessorium",
 "manual"
 ],
+"Accidens": [
+"Akzidens",
+"word"
+],
 "Accumulation": [
 "Akkumulation",
 "foreign?"
@@ -58,11 +62,11 @@
 ],
 "Accumulationsprozess": [
 "Akkumulationsprozess",
-"compound"
+"word"
 ],
 "Accumulationsprozesses": [
 "Akkumulationsprozesses",
-"compound"
+"word"
 ],
 "Accumulationsweise": [
 "Akkumulationsweise",
@@ -74,23 +78,23 @@
 ],
 "Achtunddreissigstes": [
 "Achtunddreißigstes",
-"sz"
+"word"
 ],
 "Ackerbauwirthschaften": [
 "Ackerbauwirtschaften",
-"compound"
+"word"
 ],
 "Ackergeräthe": [
 "Ackergeräte",
-"compound"
+"word"
 ],
 "Ackergeräthen": [
 "Ackergeräten",
-"compound"
+"word"
 ],
 "Ackergeräths": [
 "Ackergeräts",
-"compound"
+"word"
 ],
 "Ackergeräthschaft": [
 "Ackergerätschaft",
@@ -202,7 +206,7 @@
 ],
 "Aequivalents": [
 "Äquivalents",
-"compound"
+"word"
 ],
 "Aequivalentsein": [
 "Äquivalentsein",
@@ -238,7 +242,7 @@
 ],
 "Aeusserlichkeit": [
 "Äußerlichkeit",
-"compound"
+"word"
 ],
 "Aeusserste": [
 "Äußerste",
@@ -262,27 +266,35 @@
 ],
 "Akkumulationsprocess": [
 "Akkumulationsprozess",
-"compound"
+"word"
 ],
 "Akkumulationsprocesse": [
 "Akkumulationsprozesse",
-"compound"
+"word"
 ],
 "Akkumulationsprocesses": [
 "Akkumulationsprozesses",
-"compound"
+"word"
 ],
 "Akkumulirt": [
 "Akkumuliert",
 "word"
 ],
+"Alchymie": [
+"Alchimie",
+"word"
+],
+"Alchymisten": [
+"Alchimisten",
+"word"
+],
 "Alltagsvorurtheilen": [
 "Alltagsvorurteilen",
-"compound"
+"word"
 ],
 "Alterscertifikat": [
 "Alterszertifikat",
-"compound"
+"word"
 ],
 "Alterthum": [
 "Altertum",
@@ -302,7 +314,7 @@
 ],
 "Amortisirung": [
 "Amortisierung",
-"compound"
+"word"
 ],
 "Analysiren": [
 "Analysieren",
@@ -311,6 +323,10 @@
 "Anderntheils": [
 "Andernteils",
 "compound"
+],
+"Anmassung": [
+"Anmaßung",
+"sz"
 ],
 "Anstoss": [
 "Anstoß",
@@ -326,7 +342,7 @@
 ],
 "Antheilbesitzer": [
 "Anteilbesitzer",
-"compound"
+"word"
 ],
 "Antheile": [
 "Anteile",
@@ -338,7 +354,7 @@
 ],
 "Antheilhaber": [
 "Anteilhaber",
-"compound"
+"word"
 ],
 "Antheils": [
 "Anteils",
@@ -348,13 +364,17 @@
 "Antizipation",
 "foreign?"
 ],
+"Anticipationen": [
+"Antizipationen",
+"word"
+],
 "Apocalypse": [
 "Apokalypse",
 "foreign?"
 ],
 "Arbeiterassociationen": [
 "Arbeiterassoziationen",
-"compound"
+"word"
 ],
 "Arbeiterdelegirte": [
 "Arbeiterdelegierte",
@@ -362,19 +382,19 @@
 ],
 "Arbeiterkategorieen": [
 "Arbeiterkategorien",
-"compound"
+"word"
 ],
 "Arbeitscertifikat": [
 "Arbeitszertifikat",
-"compound"
+"word"
 ],
 "Arbeitsexcesse": [
 "Arbeitsexzesse",
-"compound"
+"word"
 ],
 "Arbeitsmass": [
 "Arbeitsmaß",
-"sz"
+"word"
 ],
 "Arbeitsprocess": [
 "Arbeitsprozess",
@@ -402,7 +422,7 @@
 ],
 "Arbeitsthieren": [
 "Arbeitstieren",
-"compound"
+"word"
 ],
 "Armuth": [
 "Armut",
@@ -414,6 +434,22 @@
 ],
 "Associationen": [
 "Assoziationen",
+"word"
+],
+"Associationsfasern": [
+"Assoziationsfasern",
+"word"
+],
+"Associationsformen": [
+"Assoziationsformen",
+"word"
+],
+"Associationsrecht": [
+"Assoziationsrecht",
+"word"
+],
+"Associationsverhältnisses": [
+"Assoziationsverhältnisses",
 "word"
 ],
 "Athem": [
@@ -434,7 +470,7 @@
 ],
 "Athmens": [
 "Atmens",
-"compound"
+"word"
 ],
 "Athmung": [
 "Atmung",
@@ -442,7 +478,7 @@
 ],
 "Athmungen": [
 "Atmungen",
-"compound"
+"word"
 ],
 "Athmungsorgane": [
 "Atmungsorgane",
@@ -454,7 +490,7 @@
 ],
 "Ausbeutungsprocess": [
 "Ausbeutungsprozess",
-"compound"
+"word"
 ],
 "Ausgleichungsprocess": [
 "Ausgleichungsprozess",
@@ -466,7 +502,7 @@
 ],
 "Ausschliessbarkeit": [
 "Ausschließbarkeit",
-"compound"
+"word"
 ],
 "Ausschliesslich": [
 "Ausschließlich",
@@ -494,7 +530,7 @@
 ],
 "Aussenlärm": [
 "Außenlärm",
-"sz"
+"word"
 ],
 "Aussenseite": [
 "Außenseite",
@@ -534,15 +570,15 @@
 ],
 "Austauschprocess": [
 "Austauschprozess",
-"compound"
+"word"
 ],
 "Austauschprocesse": [
 "Austauschprozesse",
-"compound"
+"word"
 ],
 "Austauschverhältniss": [
 "Austauschverhältnis",
-"compound"
+"word"
 ],
 "Author": [
 "Autor",
@@ -554,7 +590,7 @@
 ],
 "Baarbeträge": [
 "Barbeträge",
-"compound"
+"word"
 ],
 "Baarem": [
 "Barem",
@@ -570,23 +606,23 @@
 ],
 "Baarkredit": [
 "Barkredit",
-"compound"
+"word"
 ],
 "Baarkredite": [
 "Barkredite",
-"compound"
+"word"
 ],
 "Baarkäufen": [
 "Barkäufen",
-"compound"
+"word"
 ],
 "Baarpreise": [
 "Barpreise",
-"compound"
+"word"
 ],
 "Baarreserve": [
 "Barreserve",
-"compound"
+"word"
 ],
 "Baarschaft": [
 "Barschaft",
@@ -594,15 +630,15 @@
 ],
 "Baarschaften": [
 "Barschaften",
-"compound"
+"word"
 ],
 "Baarschatz": [
 "Barschatz",
-"compound"
+"word"
 ],
 "Baarvorschuss": [
 "Barvorschuss",
-"compound"
+"word"
 ],
 "Baarzahlung": [
 "Barzahlung",
@@ -612,17 +648,21 @@
 "Barzahlungen",
 "word"
 ],
+"Bankierthums": [
+"Bankiertums",
+"compound"
+],
 "Banknotencirkulation": [
 "Banknotenzirkulation",
-"compound"
+"word"
 ],
 "Bankzinsfuss": [
 "Bankzinsfuß",
-"sz"
+"word"
 ],
 "Bauerneigenthum": [
 "Bauerneigentum",
-"compound"
+"word"
 ],
 "Bauernemancipation": [
 "Bauernemanzipation",
@@ -630,11 +670,11 @@
 ],
 "Bauernwirthschaft": [
 "Bauernwirtschaft",
-"compound"
+"word"
 ],
 "Bauernwirthschaften": [
 "Bauernwirtschaften",
-"compound"
+"word"
 ],
 "Baumwollennoth": [
 "Baumwollennot",
@@ -648,13 +688,17 @@
 "Baumwollenwerts",
 "compound"
 ],
+"Baumwollerndte": [
+"Baumwollernte",
+"word"
+],
 "Baumwollnoth": [
 "Baumwollnot",
-"compound"
+"word"
 ],
 "Baumwollsammt": [
 "Baumwollsamt",
-"compound"
+"word"
 ],
 "Baumwollsammtscheerers": [
 "Baumwollsamtscheerers",
@@ -666,23 +710,23 @@
 ],
 "Baumwollvorrath": [
 "Baumwollvorrat",
-"compound"
+"word"
 ],
 "Baumwollvorraths": [
 "Baumwollvorrats",
-"compound"
+"word"
 ],
 "Baumwollwaare": [
 "Baumwollware",
-"compound"
+"word"
 ],
 "Baumwollwaaren": [
 "Baumwollwaren",
-"compound"
+"word"
 ],
 "Baumwollwerth": [
 "Baumwollwert",
-"compound"
+"word"
 ],
 "Bedürfniss": [
 "Bedürfnis",
@@ -710,7 +754,7 @@
 ],
 "Besitzthums": [
 "Besitztums",
-"compound"
+"word"
 ],
 "Besorgniss": [
 "Besorgnis",
@@ -758,23 +802,23 @@
 ],
 "Bethätigungsbedingungen": [
 "Betätigungsbedingungen",
-"compound"
+"word"
 ],
 "Bethätigungsformen": [
 "Betätigungsformen",
-"compound"
+"word"
 ],
 "Bethätigungsweisen": [
 "Betätigungsweisen",
-"compound"
+"word"
 ],
 "Betriebsgeräths": [
 "Betriebsgeräts",
-"compound"
+"word"
 ],
 "Bettellicenz": [
 "Bettellizenz",
-"compound"
+"word"
 ],
 "Beurtheilung": [
 "Beurteilung",
@@ -782,7 +826,7 @@
 ],
 "Bevölkerungsprincip": [
 "Bevölkerungsprinzip",
-"compound"
+"word"
 ],
 "Bevölkrungscentren": [
 "Bevölkrungszentren",
@@ -790,11 +834,11 @@
 ],
 "Bewegungscentrum": [
 "Bewegungszentrum",
-"compound"
+"word"
 ],
 "Bewegungsprocess": [
 "Bewegungsprozess",
-"compound"
+"word"
 ],
 "Bewirthschafter": [
 "Bewirtschafter",
@@ -804,17 +848,21 @@
 "Bewirtschaftung",
 "word"
 ],
+"Bierwirth": [
+"Bierwirt",
+"manual"
+],
 "Bildungsprocess": [
 "Bildungsprozess",
-"compound"
+"word"
 ],
 "Bildungsprocesses": [
 "Bildungsprozesses",
-"compound"
+"word"
 ],
 "Bleigiesser": [
 "Bleigießer",
-"compound"
+"word"
 ],
 "Bloss": [
 "Bloß",
@@ -850,31 +898,31 @@
 ],
 "Blüthenlese": [
 "Blütenlese",
-"compound"
+"word"
 ],
 "Bodenbestandtheile": [
 "Bodenbestandteile",
-"compound"
+"word"
 ],
 "Bodenparcellen": [
 "Bodenparzellen",
-"compound"
+"word"
 ],
 "Bodentheil": [
 "Bodenteil",
-"compound"
+"word"
 ],
 "Bodentheile": [
 "Bodenteile",
-"compound"
+"word"
 ],
 "Bodentheilen": [
 "Bodenteilen",
-"compound"
+"word"
 ],
 "Bodentheils": [
 "Bodenteils",
-"compound"
+"word"
 ],
 "Bodenwerth": [
 "Bodenwert",
@@ -882,7 +930,7 @@
 ],
 "Bornirtheit": [
 "Borniertheit",
-"compound"
+"word"
 ],
 "Both": [
 "Bot",
@@ -910,15 +958,15 @@
 ],
 "Bruchtheils": [
 "Bruchteils",
-"compound"
+"word"
 ],
 "Brutalisirung": [
 "Brutalisierung",
-"compound"
+"word"
 ],
 "Bruttowerth": [
 "Bruttowert",
-"compound"
+"word"
 ],
 "Busse": [
 "Buße",
@@ -926,7 +974,7 @@
 ],
 "Börsenwerthe": [
 "Börsenwerte",
-"compound"
+"word"
 ],
 "Bürgerthum": [
 "Bürgertum",
@@ -934,7 +982,7 @@
 ],
 "Büssers": [
 "Büßers",
-"sz"
+"word"
 ],
 "Californien": [
 "Kalifornien",
@@ -950,6 +998,10 @@
 ],
 "Categorien": [
 "Kategorien",
+"word"
+],
+"Cementöfen": [
+"Zementöfen",
 "word"
 ],
 "Centimeter": [
@@ -970,7 +1022,7 @@
 ],
 "Centralbehörde": [
 "Zentralbehörde",
-"compound"
+"word"
 ],
 "Centrale": [
 "Zentrale",
@@ -982,19 +1034,19 @@
 ],
 "Centralkraft": [
 "Zentralkraft",
-"compound"
+"word"
 ],
 "Centralmaschine": [
 "Zentralmaschine",
-"compound"
+"word"
 ],
 "Centralmetallschatz": [
 "Zentralmetallschatz",
-"compound"
+"word"
 ],
 "Centralmotoren": [
 "Zentralmotoren",
-"compound"
+"word"
 ],
 "Centralraths": [
 "Zentralrats",
@@ -1002,15 +1054,15 @@
 ],
 "Centralreserve": [
 "Zentralreserve",
-"compound"
+"word"
 ],
 "Centralschatz": [
 "Zentralschatz",
-"compound"
+"word"
 ],
 "Centralsitzen": [
 "Zentralsitzen",
-"compound"
+"word"
 ],
 "Centren": [
 "Zentren",
@@ -1034,11 +1086,11 @@
 ],
 "Charaktercertifikat": [
 "Charakterzertifikat",
-"compound"
+"word"
 ],
 "Charakterisirende": [
 "Charakterisierende",
-"compound"
+"word"
 ],
 "Christenthum": [
 "Christentum",
@@ -1146,7 +1198,7 @@
 ],
 "Cirkulationen": [
 "Zirkulationen",
-"compound"
+"word"
 ],
 "Cirkulations": [
 "Zirkulations",
@@ -1426,7 +1478,7 @@
 ],
 "Cirkulirendes": [
 "Zirkulierendes",
-"compound"
+"word"
 ],
 "Cirkulirt": [
 "Zirkuliert",
@@ -1452,6 +1504,18 @@
 "Zivile",
 "foreign?"
 ],
+"Civilingenieur": [
+"Zivilingenieur",
+"word"
+],
+"Civilingenieure": [
+"Zivilingenieure",
+"word"
+],
+"Civilinstitutionen": [
+"Zivilinstitutionen",
+"word"
+],
 "Civilisation": [
 "Zivilisation",
 "foreign?"
@@ -1462,7 +1526,7 @@
 ],
 "Civilisationsstufe": [
 "Zivilisationsstufe",
-"compound"
+"word"
 ],
 "Civilisirte": [
 "Zivilisierte",
@@ -1474,7 +1538,7 @@
 ],
 "Claneigenthum": [
 "Claneigentum",
-"compound"
+"word"
 ],
 "Clothier": [
 "Clotier",
@@ -1496,6 +1560,10 @@
 "Kombinationen",
 "word"
 ],
+"Compendiums": [
+"Kompendiums",
+"word"
+],
 "Concentration": [
 "Konzentration",
 "foreign?"
@@ -1510,6 +1578,10 @@
 ],
 "Congruenz": [
 "Kongruenz",
+"word"
+],
+"Conjunkturen": [
+"Konjunkturen",
 "word"
 ],
 "Consequenzen": [
@@ -1541,8 +1613,8 @@
 "foreign?"
 ],
 "Consumirst": [
-"Konsumirst",
-"compound"
+"Konsumierst",
+"word"
 ],
 "Consumirt": [
 "Konsumiert",
@@ -1554,7 +1626,7 @@
 ],
 "Consumtion": [
 "Konsumtion",
-"compound"
+"word"
 ],
 "Consumtionsfonds": [
 "Konsumtionsfonds",
@@ -1598,7 +1670,7 @@
 ],
 "Cooperationsgeschäfte": [
 "Kooperationsgeschäfte",
-"compound"
+"word"
 ],
 "Cooperativfabriken": [
 "Kooperativfabriken",
@@ -1620,8 +1692,16 @@
 "Korrelation",
 "foreign?"
 ],
+"Creditgeld": [
+"Kreditgeld",
+"word"
+],
 "Creditwesen": [
 "Kreditwesen",
+"word"
+],
+"Cretinismus": [
+"Kretinismus",
 "word"
 ],
 "Cuba": [
@@ -1651,6 +1731,14 @@
 "Cylinder": [
 "Zylinder",
 "foreign?"
+],
+"Cylinderhemmung": [
+"Zylinderhemmung",
+"word"
+],
+"Cylindermacher": [
+"Zylindermacher",
+"word"
 ],
 "Cylindern": [
 "Zylindern",
@@ -1706,7 +1794,7 @@
 ],
 "Decentralisation": [
 "Dezentralisation",
-"compound"
+"word"
 ],
 "Decimalzahlen": [
 "Dezimalzahlen",
@@ -1754,15 +1842,15 @@
 ],
 "Detailcirculation": [
 "Detailzirkulation",
-"compound"
+"word"
 ],
 "Detailliren": [
 "Detaillieren",
-"compound"
+"word"
 ],
 "Detailproducenten": [
 "Detailproduzenten",
-"compound"
+"word"
 ],
 "Detectiv": [
 "Detektiv",
@@ -1790,7 +1878,7 @@
 ],
 "Disciplinarcodex": [
 "Disziplinarcodex",
-"compound"
+"word"
 ],
 "Disciplinmangel": [
 "Disziplinmangel",
@@ -1808,6 +1896,14 @@
 "Diskontieren",
 "compound"
 ],
+"Diskontirens": [
+"Diskontierens",
+"compound"
+],
+"Diskontirer": [
+"Diskontierer",
+"compound"
+],
 "Diskontirung": [
 "Diskontierung",
 "compound"
@@ -1822,7 +1918,7 @@
 ],
 "Dispensirte": [
 "Dispensierte",
-"compound"
+"word"
 ],
 "Dividiren": [
 "Dividieren",
@@ -1834,11 +1930,15 @@
 ],
 "Donaufürstenthümer": [
 "Donaufürstentümer",
-"compound"
+"word"
 ],
 "Donaufürstenthümern": [
 "Donaufürstentümern",
-"compound"
+"word"
+],
+"Doppelcylindermaschinen": [
+"Doppelzylindermaschinen",
+"word"
 ],
 "Drainirung": [
 "Drainierung",
@@ -1850,15 +1950,15 @@
 ],
 "Dreifüsse": [
 "Dreifüße",
-"sz"
+"word"
 ],
 "Dreissigstes": [
 "Dreißigstes",
-"sz"
+"word"
 ],
 "Dreiunddreissigstes": [
 "Dreiunddreißigstes",
-"sz"
+"word"
 ],
 "Drittheil": [
 "Drittel",
@@ -1870,19 +1970,19 @@
 ],
 "Dritttheil": [
 "Drittteil",
-"compound"
+"word"
 ],
 "Dritttheilen": [
 "Drittteilen",
-"compound"
+"word"
 ],
 "Dritttheils": [
 "Drittteils",
-"compound"
+"word"
 ],
 "Durchschnittscirculation": [
 "Durchschnittszirkulation",
-"compound"
+"word"
 ],
 "Durchschnittsgrösse": [
 "Durchschnittsgröße",
@@ -1890,23 +1990,23 @@
 ],
 "Durchschnittsmass": [
 "Durchschnittsmaß",
-"sz"
+"word"
 ],
 "Durchschnittsmehrwerth": [
 "Durchschnittsmehrwert",
-"compound"
+"word"
 ],
 "Durchschnittsverhältniss": [
 "Durchschnittsverhältnis",
-"compound"
+"word"
 ],
 "Durchschnittsverschleiss": [
 "Durchschnittsverschleiß",
-"compound"
+"word"
 ],
 "Durchschnittsverschleisses": [
 "Durchschnittsverschleißes",
-"sz"
+"word"
 ],
 "Durchschnittswerth": [
 "Durchschnittswert",
@@ -1914,15 +2014,15 @@
 ],
 "Durchschnittszinsfuss": [
 "Durchschnittszinsfuß",
-"sz"
+"word"
 ],
 "Durchschnittszinsfusses": [
 "Durchschnittszinsfußes",
-"sz"
+"word"
 ],
 "Edelmetallvorraths": [
 "Edelmetallvorrats",
-"compound"
+"word"
 ],
 "Edelmüthigster": [
 "Edelmütigster",
@@ -1938,15 +2038,15 @@
 ],
 "Eigenthumsformen": [
 "Eigentumsformen",
-"compound"
+"word"
 ],
 "Eigenthumsfrage": [
 "Eigentumsfrage",
-"compound"
+"word"
 ],
 "Eigenthumsgesetze": [
 "Eigentumsgesetze",
-"compound"
+"word"
 ],
 "Eigenthumsrecht": [
 "Eigentumsrecht",
@@ -1958,19 +2058,19 @@
 ],
 "Eigenthumsschranke": [
 "Eigentumsschranke",
-"compound"
+"word"
 ],
 "Eigenthumstitel": [
 "Eigentumstitel",
-"compound"
+"word"
 ],
 "Eigenthumstitels": [
 "Eigentumstitels",
-"compound"
+"word"
 ],
 "Eigenthumsverhältniss": [
 "Eigentumsverhältnis",
-"compound"
+"word"
 ],
 "Eigenthumsverhältnisse": [
 "Eigentumsverhältnisse",
@@ -1978,11 +2078,11 @@
 ],
 "Eigenthumsvorstellungen": [
 "Eigentumsvorstellungen",
-"compound"
+"word"
 ],
 "Eigenthumszustand": [
 "Eigentumszustand",
-"compound"
+"word"
 ],
 "Eigenthumsübertragung": [
 "Eigentumsübertragung",
@@ -2020,9 +2120,13 @@
 "Eigentümlichkeiten",
 "word"
 ],
+"Einbussen": [
+"Einbußen",
+"sz"
+],
 "Einheitsmass": [
 "Einheitsmaß",
-"sz"
+"word"
 ],
 "Einkassiren": [
 "Einkassieren",
@@ -2030,15 +2134,15 @@
 ],
 "Einkassirens": [
 "Einkassierens",
-"compound"
+"word"
 ],
 "Einkassirer": [
 "Einkassierer",
-"compound"
+"word"
 ],
 "Einkassirung": [
 "Einkassierung",
-"compound"
+"word"
 ],
 "Einkommentheil": [
 "Einkommenteil",
@@ -2066,11 +2170,11 @@
 ],
 "Eintheilungsgrund": [
 "Einteilungsgrund",
-"compound"
+"word"
 ],
 "Einunddreissigstes": [
 "Einunddreißigstes",
-"sz"
+"word"
 ],
 "Einverständniss": [
 "Einverständnis",
@@ -2078,11 +2182,11 @@
 ],
 "Einzelproducenten": [
 "Einzelproduzenten",
-"compound"
+"word"
 ],
 "Eisengiesser": [
 "Eisengießer",
-"compound"
+"word"
 ],
 "Eisengiesserei": [
 "Eisengießerei",
@@ -2094,7 +2198,7 @@
 ],
 "Eisenwerth": [
 "Eisenwert",
-"compound"
+"word"
 ],
 "Eklekticismus": [
 "Eklektizismus",
@@ -2108,21 +2212,25 @@
 "Elektrizität",
 "word"
 ],
+"Elephantenrüssel": [
+"Elefantenrüssel",
+"word"
+],
 "Emancipation": [
 "Emanzipation",
 "foreign?"
 ],
 "Emancipationsakt": [
 "Emanzipationsakt",
-"compound"
+"word"
 ],
 "Emancipationskampf": [
 "Emanzipationskampf",
-"compound"
+"word"
 ],
 "Emancipationskampfs": [
 "Emanzipationskampfs",
-"compound"
+"word"
 ],
 "Encouragirung": [
 "Encouragierung",
@@ -2142,7 +2250,7 @@
 ],
 "Entkapitalisirung": [
 "Entkapitalisierung",
-"compound"
+"word"
 ],
 "Entmonopolisirung": [
 "Entmonopolisierung",
@@ -2158,11 +2266,11 @@
 ],
 "Entwerthungen": [
 "Entwertungen",
-"compound"
+"word"
 ],
 "Entwicklungsverhältniss": [
 "Entwicklungsverhältnis",
-"compound"
+"word"
 ],
 "Entäusserung": [
 "Entäußerung",
@@ -2178,7 +2286,7 @@
 ],
 "Erbtheilungen": [
 "Erbteilungen",
-"compound"
+"word"
 ],
 "Erdenwaare": [
 "Erdenware",
@@ -2218,11 +2326,11 @@
 ],
 "Ersatznothwendigkeit": [
 "Ersatznotwendigkeit",
-"compound"
+"word"
 ],
 "Ersatzwerth": [
 "Ersatzwert",
-"compound"
+"word"
 ],
 "Ersparniss": [
 "Ersparnis",
@@ -2234,7 +2342,7 @@
 ],
 "Erziehungscertifikat": [
 "Erziehungszertifikat",
-"compound"
+"word"
 ],
 "Excess": [
 "Exzess",
@@ -2256,12 +2364,20 @@
 "Exerzitien",
 "word"
 ],
+"Experimentirens": [
+"Experimentierens",
+"word"
+],
 "Exploitationsprocess": [
 "Exploitationsprozess",
 "compound"
 ],
 "Exploitationsprocesses": [
 "Exploitationsprozesses",
+"compound"
+],
+"Exploitirens": [
+"Exploitierens",
 "compound"
 ],
 "Exportiren": [
@@ -2274,19 +2390,23 @@
 ],
 "Expropriirte": [
 "Expropriierte",
-"compound"
+"word"
 ],
 "Extrabevortheilung": [
 "Extrabevorteilung",
-"compound"
+"word"
 ],
 "Extramehrwerth": [
 "Extramehrwert",
-"compound"
+"word"
+],
+"Fabrikcensor": [
+"Fabrikzensor",
+"word"
 ],
 "Fabrikeigenthümers": [
 "Fabrikeigentümers",
-"compound"
+"word"
 ],
 "Facit": [
 "Fazit",
@@ -2318,7 +2438,7 @@
 ],
 "Flachsproducenten": [
 "Flachsproduzenten",
-"compound"
+"word"
 ],
 "Fleiss": [
 "Fleiß",
@@ -2331,6 +2451,10 @@
 "Fliesst": [
 "Fließt",
 "sz"
+],
+"Fluthperioden": [
+"Flutperioden",
+"word"
 ],
 "Fluthung": [
 "Flutung",
@@ -2346,7 +2470,7 @@
 ],
 "Fruchtwechselwirthschaft": [
 "Fruchtwechselwirtschaft",
-"compound"
+"word"
 ],
 "Functionen": [
 "Funktionen",
@@ -2354,11 +2478,11 @@
 ],
 "Fundamentalprincip": [
 "Fundamentalprinzip",
-"compound"
+"word"
 ],
 "Fungirens": [
 "Fungierens",
-"compound"
+"word"
 ],
 "Fungirt": [
 "Fungiert",
@@ -2366,7 +2490,11 @@
 ],
 "Funktionsgruppirung": [
 "Funktionsgruppierung",
-"compound"
+"word"
+],
+"Furnirwerk": [
+"Furnierwerk",
+"word"
 ],
 "Fuss": [
 "Fuß",
@@ -2378,7 +2506,7 @@
 ],
 "Fussdrechselbank": [
 "Fußdrechselbank",
-"sz"
+"word"
 ],
 "Fusse": [
 "Fuße",
@@ -2398,11 +2526,11 @@
 ],
 "Fünftheil": [
 "Fünfteil",
-"compound"
+"word"
 ],
 "Fünfunddreissigstes": [
 "Fünfunddreißigstes",
-"sz"
+"word"
 ],
 "Fürstenthümer": [
 "Fürstentümer",
@@ -2438,19 +2566,19 @@
 ],
 "Gebrauchswerthe": [
 "Gebrauchswerte",
-"compound"
+"word"
 ],
 "Gebrauchswerthen": [
 "Gebrauchswerten",
-"compound"
+"word"
 ],
 "Gebrauchswerthformen": [
 "Gebrauchswertformen",
-"compound"
+"word"
 ],
 "Gebrauchswerths": [
 "Gebrauchswerts",
-"compound"
+"word"
 ],
 "Gedächtniss": [
 "Gedächtnis",
@@ -2459,6 +2587,10 @@
 "Gefengniss": [
 "Gefengnis",
 "compound"
+],
+"Gefrässigkeit": [
+"Gefräßigkeit",
+"sz"
 ],
 "Gefängniss": [
 "Gefängnis",
@@ -2538,31 +2670,35 @@
 ],
 "Geldaccumulationen": [
 "Geldakkumulationen",
-"compound"
+"word"
+],
+"Geldbusse": [
+"Geldbuße",
+"manual"
 ],
 "Geldcirkulation": [
 "Geldzirkulation",
-"compound"
+"word"
 ],
 "Geldhungersnoth": [
 "Geldhungersnot",
-"compound"
+"word"
 ],
 "Geldkapitalnoth": [
 "Geldkapitalnot",
-"compound"
+"word"
 ],
 "Geldkapitaltheil": [
 "Geldkapitalteil",
-"compound"
+"word"
 ],
 "Geldkrystall": [
 "Geldkristall",
-"compound"
+"word"
 ],
 "Geldmassstabs": [
 "Geldmaßstabs",
-"sz"
+"word"
 ],
 "Geldnoth": [
 "Geldnot",
@@ -2570,43 +2706,43 @@
 ],
 "Geldtheil": [
 "Geldteil",
-"compound"
+"word"
 ],
 "Geldtheile": [
 "Geldteile",
-"compound"
+"word"
 ],
 "Geldtheuerung": [
 "Geldteuerung",
-"compound"
+"word"
 ],
 "Geldverhältniss": [
 "Geldverhältnis",
-"compound"
+"word"
 ],
 "Geldverschleiss": [
 "Geldverschleiß",
-"compound"
+"word"
 ],
 "Geldvorrath": [
 "Geldvorrat",
-"compound"
+"word"
 ],
 "Geldvorraths": [
 "Geldvorrats",
-"compound"
+"word"
 ],
 "Geldvorräthe": [
 "Geldvorräte",
-"compound"
+"word"
 ],
 "Geldwaare": [
 "Geldware",
-"compound"
+"word"
 ],
 "Geldwaaren": [
 "Geldwaren",
-"compound"
+"word"
 ],
 "Geldwerth": [
 "Geldwert",
@@ -2618,7 +2754,7 @@
 ],
 "Geldwerths": [
 "Geldwerts",
-"compound"
+"word"
 ],
 "Geldwirthschaft": [
 "Geldwirtschaft",
@@ -2626,11 +2762,11 @@
 ],
 "Gemeindeeigenthum": [
 "Gemeindeeigentum",
-"compound"
+"word"
 ],
 "Gemeindeeigenthums": [
 "Gemeindeeigentums",
-"compound"
+"word"
 ],
 "Gemeineigenthum": [
 "Gemeineigentum",
@@ -2638,7 +2774,7 @@
 ],
 "Gemeineigenthums": [
 "Gemeineigentums",
-"compound"
+"word"
 ],
 "Gemüth": [
 "Gemüt",
@@ -2674,11 +2810,11 @@
 ],
 "Gesammtabnahme": [
 "Gesamtabnahme",
-"compound"
+"word"
 ],
 "Gesammtaddition": [
 "Gesamtaddition",
-"compound"
+"word"
 ],
 "Gesammtanlage": [
 "Gesamtanlage",
@@ -2694,83 +2830,83 @@
 ],
 "Gesammtarbeit": [
 "Gesamtarbeit",
-"compound"
+"word"
 ],
 "Gesammtarbeiter": [
 "Gesamtarbeiter",
-"compound"
+"word"
 ],
 "Gesammtarbeiterklasse": [
 "Gesamtarbeiterklasse",
-"compound"
+"word"
 ],
 "Gesammtarbeiters": [
 "Gesamtarbeiters",
-"compound"
+"word"
 ],
 "Gesammtarbeitskraft": [
 "Gesamtarbeitskraft",
-"compound"
+"word"
 ],
 "Gesammtarbeitsmasse": [
 "Gesamtarbeitsmasse",
-"compound"
+"word"
 ],
 "Gesammtarbeitstag": [
 "Gesamtarbeitstag",
-"compound"
+"word"
 ],
 "Gesammtarbeitstagen": [
 "Gesamtarbeitstagen",
-"compound"
+"word"
 ],
 "Gesammtarbeitstags": [
 "Gesamtarbeitstags",
-"compound"
+"word"
 ],
 "Gesammtarbeitszeit": [
 "Gesamtarbeitszeit",
-"compound"
+"word"
 ],
 "Gesammtareal": [
 "Gesamtareal",
-"compound"
+"word"
 ],
 "Gesammtareals": [
 "Gesamtareals",
-"compound"
+"word"
 ],
 "Gesammtatelier": [
 "Gesamtatelier",
-"compound"
+"word"
 ],
 "Gesammtausbeute": [
 "Gesamtausbeute",
-"compound"
+"word"
 ],
 "Gesammtausdehnung": [
 "Gesamtausdehnung",
-"compound"
+"word"
 ],
 "Gesammtausfall": [
 "Gesamtausfall",
-"compound"
+"word"
 ],
 "Gesammtausfuhr": [
 "Gesamtausfuhr",
-"compound"
+"word"
 ],
 "Gesammtauslage": [
 "Gesamtauslage",
-"compound"
+"word"
 ],
 "Gesammtbedarf": [
 "Gesamtbedarf",
-"compound"
+"word"
 ],
 "Gesammtbeschäftigung": [
 "Gesamtbeschäftigung",
-"compound"
+"word"
 ],
 "Gesammtbetrag": [
 "Gesamtbetrag",
@@ -2778,7 +2914,7 @@
 ],
 "Gesammtbetrags": [
 "Gesamtbetrags",
-"compound"
+"word"
 ],
 "Gesammtbevölkerung": [
 "Gesamtbevölkerung",
@@ -2786,27 +2922,27 @@
 ],
 "Gesammtbewegung": [
 "Gesamtbewegung",
-"compound"
+"word"
 ],
 "Gesammtboden": [
 "Gesamtboden",
-"compound"
+"word"
 ],
 "Gesammtbodenfläche": [
 "Gesamtbodenfläche",
-"compound"
+"word"
 ],
 "Gesammtcirkulation": [
 "Gesamtzirkulation",
-"compound"
+"word"
 ],
 "Gesammtcirkulationsprocess": [
 "Gesamtzirkulationsprozess",
 "compound"
 ],
 "Gesammtcursus": [
-"Gesamtcursus",
-"compound"
+"Gesamtkursus",
+"word"
 ],
 "Gesammtdauer": [
 "Gesamtdauer",
@@ -2818,7 +2954,7 @@
 ],
 "Gesammteinfuhr": [
 "Gesamteinfuhr",
-"compound"
+"word"
 ],
 "Gesammteinkommen": [
 "Gesamteinkommen",
@@ -2826,15 +2962,15 @@
 ],
 "Gesammteinnahme": [
 "Gesamteinnahme",
-"compound"
+"word"
 ],
 "Gesammteinrichtung": [
 "Gesamteinrichtung",
-"compound"
+"word"
 ],
 "Gesammtemigration": [
 "Gesamtemigration",
-"compound"
+"word"
 ],
 "Gesammter": [
 "Gesamter",
@@ -2846,19 +2982,19 @@
 ],
 "Gesammtertrags": [
 "Gesamtertrags",
-"compound"
+"word"
 ],
 "Gesammterträge": [
 "Gesamterträge",
-"compound"
+"word"
 ],
 "Gesammtexploitation": [
 "Gesamtexploitation",
-"compound"
+"word"
 ],
 "Gesammtexport": [
 "Gesamtexport",
-"compound"
+"word"
 ],
 "Gesammtfläche": [
 "Gesamtfläche",
@@ -2866,11 +3002,11 @@
 ],
 "Gesammtflächen": [
 "Gesamtflächen",
-"compound"
+"word"
 ],
 "Gesammtgeldkapitals": [
 "Gesamtgeldkapitals",
-"compound"
+"word"
 ],
 "Gesammtgesellschaft": [
 "Gesamtgesellschaft",
@@ -2878,11 +3014,11 @@
 ],
 "Gesammtgestalt": [
 "Gesamtgestalt",
-"compound"
+"word"
 ],
 "Gesammtgestaltung": [
 "Gesamtgestaltung",
-"compound"
+"word"
 ],
 "Gesammtgewinn": [
 "Gesamtgewinn",
@@ -2898,7 +3034,7 @@
 ],
 "Gesammthandelskapitals": [
 "Gesamthandelskapitals",
-"compound"
+"word"
 ],
 "Gesammtheit": [
 "Gesamtheit",
@@ -2910,11 +3046,11 @@
 ],
 "Gesammtinteresse": [
 "Gesamtinteresse",
-"compound"
+"word"
 ],
 "Gesammtinteresses": [
 "Gesamtinteresses",
-"compound"
+"word"
 ],
 "Gesammtkapital": [
 "Gesamtkapital",
@@ -2922,7 +3058,7 @@
 ],
 "Gesammtkapitalanlage": [
 "Gesamtkapitalanlage",
-"compound"
+"word"
 ],
 "Gesammtkapitale": [
 "Gesamtkapitale",
@@ -2930,31 +3066,31 @@
 ],
 "Gesammtkapitalgrössen": [
 "Gesamtkapitalgrößen",
-"compound"
+"word"
 ],
 "Gesammtkapitalist": [
 "Gesamtkapitalist",
-"compound"
+"word"
 ],
 "Gesammtkapitalisten": [
 "Gesamtkapitalisten",
-"compound"
+"word"
 ],
 "Gesammtkapitals": [
 "Gesamtkapitals",
-"compound"
+"word"
 ],
 "Gesammtklasse": [
 "Gesamtklasse",
-"compound"
+"word"
 ],
 "Gesammtklassen": [
 "Gesamtklassen",
-"compound"
+"word"
 ],
 "Gesammtkonsum": [
 "Gesamtkonsum",
-"compound"
+"word"
 ],
 "Gesammtkostpreis": [
 "Gesamtkostpreis",
@@ -2962,51 +3098,51 @@
 ],
 "Gesammtkraft": [
 "Gesamtkraft",
-"compound"
+"word"
 ],
 "Gesammtkreislauf": [
 "Gesamtkreislauf",
-"compound"
+"word"
 ],
 "Gesammtkreislaufs": [
 "Gesamtkreislaufs",
-"compound"
+"word"
 ],
 "Gesammtkörper": [
 "Gesamtkörper",
-"compound"
+"word"
 ],
 "Gesammtkörpers": [
 "Gesamtkörpers",
-"compound"
+"word"
 ],
 "Gesammtlebensmittel": [
 "Gesamtlebensmittel",
-"compound"
+"word"
 ],
 "Gesammtlebenszeit": [
 "Gesamtlebenszeit",
-"compound"
+"word"
 ],
 "Gesammtlohn": [
 "Gesamtlohn",
-"compound"
+"word"
 ],
 "Gesammtlohns": [
 "Gesamtlohns",
-"compound"
+"word"
 ],
 "Gesammtmanufaktur": [
 "Gesamtmanufaktur",
-"compound"
+"word"
 ],
 "Gesammtmaschine": [
 "Gesamtmaschine",
-"compound"
+"word"
 ],
 "Gesammtmaschinerie": [
 "Gesamtmaschinerie",
-"compound"
+"word"
 ],
 "Gesammtmasse": [
 "Gesamtmasse",
@@ -3014,19 +3150,19 @@
 ],
 "Gesammtmechanismus": [
 "Gesamtmechanismus",
-"compound"
+"word"
 ],
 "Gesammtmehrarbeit": [
 "Gesamtmehrarbeit",
-"compound"
+"word"
 ],
 "Gesammtmehrwerth": [
 "Gesamtmehrwert",
-"compound"
+"word"
 ],
 "Gesammtmehrwerths": [
 "Gesamtmehrwerts",
-"compound"
+"word"
 ],
 "Gesammtmenge": [
 "Gesamtmenge",
@@ -3034,11 +3170,11 @@
 ],
 "Gesammtmetamorphose": [
 "Gesamtmetamorphose",
-"compound"
+"word"
 ],
 "Gesammtnachfrage": [
 "Gesamtnachfrage",
-"compound"
+"word"
 ],
 "Gesammtpreis": [
 "Gesamtpreis",
@@ -3046,7 +3182,7 @@
 ],
 "Gesammtpreises": [
 "Gesamtpreises",
-"compound"
+"word"
 ],
 "Gesammtprocess": [
 "Gesamtprozess",
@@ -3054,15 +3190,15 @@
 ],
 "Gesammtprocesses": [
 "Gesamtprozesses",
-"compound"
+"word"
 ],
 "Gesammtprodukt": [
 "Gesamtprodukt",
-"compound"
+"word"
 ],
 "Gesammtprodukte": [
 "Gesamtprodukte",
-"compound"
+"word"
 ],
 "Gesammtproduktenwerth": [
 "Gesamtproduktenwert",
@@ -3078,27 +3214,27 @@
 ],
 "Gesammtproduktionspreis": [
 "Gesamtproduktionspreis",
-"compound"
+"word"
 ],
 "Gesammtproduktionsprocess": [
 "Gesamtproduktionsprozess",
-"compound"
+"word"
 ],
 "Gesammtproduktionsprocesses": [
 "Gesamtproduktionsprozesses",
-"compound"
+"word"
 ],
 "Gesammtprodukts": [
 "Gesamtprodukts",
-"compound"
+"word"
 ],
 "Gesammtprofit": [
 "Gesamtprofit",
-"compound"
+"word"
 ],
 "Gesammtprofits": [
 "Gesamtprofits",
-"compound"
+"word"
 ],
 "Gesammtprozess": [
 "Gesamtprozess",
@@ -3106,19 +3242,19 @@
 ],
 "Gesammtprozesses": [
 "Gesamtprozesses",
-"compound"
+"word"
 ],
 "Gesammtquantität": [
 "Gesamtquantität",
-"compound"
+"word"
 ],
 "Gesammtquantum": [
 "Gesamtquantum",
-"compound"
+"word"
 ],
 "Gesammtquantums": [
 "Gesamtquantums",
-"compound"
+"word"
 ],
 "Gesammtrechnung": [
 "Gesamtrechnung",
@@ -3126,7 +3262,7 @@
 ],
 "Gesammtreichthum": [
 "Gesamtreichtum",
-"compound"
+"word"
 ],
 "Gesammtrental": [
 "Gesamtrental",
@@ -3138,23 +3274,23 @@
 ],
 "Gesammtrente": [
 "Gesamtrente",
-"compound"
+"word"
 ],
 "Gesammtrenten": [
 "Gesamtrenten",
-"compound"
+"word"
 ],
 "Gesammtreproduktion": [
 "Gesamtreproduktion",
-"compound"
+"word"
 ],
 "Gesammtreserve": [
 "Gesamtreserve",
-"compound"
+"word"
 ],
 "Gesammtresultat": [
 "Gesamtresultat",
-"compound"
+"word"
 ],
 "Gesammtrevenue": [
 "Gesamtrevenue",
@@ -3162,11 +3298,11 @@
 ],
 "Gesammtschatz": [
 "Gesamtschatz",
-"compound"
+"word"
 ],
 "Gesammtstock": [
 "Gesamtstock",
-"compound"
+"word"
 ],
 "Gesammtsumme": [
 "Gesamtsumme",
@@ -3178,11 +3314,11 @@
 ],
 "Gesammtthätigkeit": [
 "Gesamttätigkeit",
-"compound"
+"word"
 ],
 "Gesammttransaktion": [
 "Gesamttransaktion",
-"compound"
+"word"
 ],
 "Gesammtumfang": [
 "Gesamtumfang",
@@ -3190,15 +3326,15 @@
 ],
 "Gesammtumkreis": [
 "Gesamtumkreis",
-"compound"
+"word"
 ],
 "Gesammtumschlag": [
 "Gesamtumschlag",
-"compound"
+"word"
 ],
 "Gesammtumschlags": [
 "Gesamtumschlags",
-"compound"
+"word"
 ],
 "Gesammtunternehmen": [
 "Gesamtunternehmen",
@@ -3210,11 +3346,11 @@
 ],
 "Gesammtverlaufs": [
 "Gesamtverlaufs",
-"compound"
+"word"
 ],
 "Gesammtverläufe": [
 "Gesamtverläufe",
-"compound"
+"word"
 ],
 "Gesammtvermögens": [
 "Gesamtvermögens",
@@ -3222,35 +3358,35 @@
 ],
 "Gesammtverrichtung": [
 "Gesamtverrichtung",
-"compound"
+"word"
 ],
 "Gesammtvorschuss": [
 "Gesamtvorschuss",
-"compound"
+"word"
 ],
 "Gesammtwaare": [
 "Gesamtware",
-"compound"
+"word"
 ],
 "Gesammtwaarenmasse": [
 "Gesamtwarenmasse",
-"compound"
+"word"
 ],
 "Gesammtwaarenprodukts": [
 "Gesamtwarenprodukts",
-"compound"
+"word"
 ],
 "Gesammtwaarenwerth": [
 "Gesamtwarenwert",
-"compound"
+"word"
 ],
 "Gesammtwachsthum": [
 "Gesamtwachstum",
-"compound"
+"word"
 ],
 "Gesammtwachsthums": [
 "Gesamtwachstums",
-"compound"
+"word"
 ],
 "Gesammtwerth": [
 "Gesamtwert",
@@ -3258,15 +3394,15 @@
 ],
 "Gesammtwerthprodukt": [
 "Gesamtwertprodukt",
-"compound"
+"word"
 ],
 "Gesammtwerths": [
 "Gesamtwerts",
-"compound"
+"word"
 ],
 "Gesammtwerthsumme": [
 "Gesamtwertsumme",
-"compound"
+"word"
 ],
 "Gesammtwirkung": [
 "Gesamtwirkung",
@@ -3274,7 +3410,7 @@
 ],
 "Gesammtwochenlohn": [
 "Gesamtwochenlohn",
-"compound"
+"word"
 ],
 "Gesammtzahl": [
 "Gesamtzahl",
@@ -3286,7 +3422,7 @@
 ],
 "Gesammtzufuhr": [
 "Gesamtzufuhr",
-"compound"
+"word"
 ],
 "Gesammtzusammenhang": [
 "Gesamtzusammenhang",
@@ -3294,27 +3430,31 @@
 ],
 "Gesammtüberschuss": [
 "Gesamtüberschuss",
-"compound"
+"word"
+],
+"Geschrey": [
+"Geschrei",
+"word"
 ],
 "Geschäftscyklus": [
 "Geschäftszyklus",
-"compound"
+"word"
 ],
 "Geschäftshinderniss": [
 "Geschäftshindernis",
-"compound"
+"word"
 ],
 "Geschäftskenntniss": [
 "Geschäftskenntnis",
-"compound"
+"word"
 ],
 "Geschäftsnothlage": [
 "Geschäftsnotlage",
-"compound"
+"word"
 ],
 "Geschäftsnothwendigkeit": [
 "Geschäftsnotwendigkeit",
-"compound"
+"word"
 ],
 "Geschäftsthätigkeit": [
 "Geschäftstätigkeit",
@@ -3322,11 +3462,11 @@
 ],
 "Gesellschaftseigenthum": [
 "Gesellschaftseigentum",
-"compound"
+"word"
 ],
 "Gesellschaftstheile": [
 "Gesellschaftsteile",
-"compound"
+"word"
 ],
 "Geständniss": [
 "Geständnis",
@@ -3358,15 +3498,15 @@
 ],
 "Gewichtstheil": [
 "Gewichtsteil",
-"compound"
+"word"
 ],
 "Gewichtstheile": [
 "Gewichtsteile",
-"compound"
+"word"
 ],
 "Gewichtsverhältniss": [
 "Gewichtsverhältnis",
-"compound"
+"word"
 ],
 "Gewichttheil": [
 "Gewichtteil",
@@ -3394,7 +3534,7 @@
 ],
 "Gleichheitsverhältniss": [
 "Gleichheitsverhältnis",
-"compound"
+"word"
 ],
 "Gleichmuth": [
 "Gleichmut",
@@ -3406,7 +3546,7 @@
 ],
 "Gleichwerth": [
 "Gleichwert",
-"compound"
+"word"
 ],
 "Gliedmassen": [
 "Gliedmaßen",
@@ -3418,23 +3558,23 @@
 ],
 "Goldcirkulation": [
 "Goldzirkulation",
-"compound"
+"word"
 ],
 "Goldmassstabs": [
 "Goldmaßstabs",
-"sz"
+"word"
 ],
 "Goldproducent": [
 "Goldproduzent",
-"compound"
+"word"
 ],
 "Goldproducenten": [
 "Goldproduzenten",
-"compound"
+"word"
 ],
 "Goldvorrath": [
 "Goldvorrat",
-"compound"
+"word"
 ],
 "Goldwerth": [
 "Goldwert",
@@ -3450,7 +3590,7 @@
 ],
 "Grossbetriebes": [
 "Großbetriebes",
-"compound"
+"word"
 ],
 "Grossbritanien": [
 "Großbritannien",
@@ -3518,7 +3658,7 @@
 ],
 "Grosskultur": [
 "Großkultur",
-"compound"
+"word"
 ],
 "Grossmuth": [
 "Großmut",
@@ -3526,7 +3666,7 @@
 ],
 "Grosspächter": [
 "Großpächter",
-"compound"
+"word"
 ],
 "Grossthaten": [
 "Großtaten",
@@ -3550,23 +3690,23 @@
 ],
 "Grundeigenthums": [
 "Grundeigentums",
-"compound"
+"word"
 ],
 "Grundeigenthumsphantasie": [
 "Grundeigentumsphantasie",
-"compound"
+"word"
 ],
 "Grundeigenthumstitel": [
 "Grundeigentumstitel",
-"compound"
+"word"
 ],
 "Grundeigenthumsverhältnisse": [
 "Grundeigentumsverhältnisse",
-"compound"
+"word"
 ],
 "Grundeigenthumsverhältnissen": [
 "Grundeigentumsverhältnissen",
-"compound"
+"word"
 ],
 "Grundeigenthümer": [
 "Grundeigentümer",
@@ -3578,11 +3718,11 @@
 ],
 "Grundeigenthümers": [
 "Grundeigentümers",
-"compound"
+"word"
 ],
 "Grundirrthum": [
 "Grundirrtum",
-"compound"
+"word"
 ],
 "Grundprincip": [
 "Grundprinzip",
@@ -3590,7 +3730,7 @@
 ],
 "Grundverhältniss": [
 "Grundverhältnis",
-"compound"
+"word"
 ],
 "Gruppirung": [
 "Gruppierung",
@@ -3606,23 +3746,23 @@
 ],
 "Grössenabnahme": [
 "Größenabnahme",
-"compound"
+"word"
 ],
 "Grössenausdehnung": [
 "Größenausdehnung",
-"compound"
+"word"
 ],
 "Grössenbestimmung": [
 "Größenbestimmung",
-"compound"
+"word"
 ],
 "Grössengleiches": [
 "Größengleiches",
-"compound"
+"word"
 ],
 "Grössenindividuen": [
 "Größenindividuen",
-"compound"
+"word"
 ],
 "Grössenmass": [
 "Größenmaß",
@@ -3630,11 +3770,11 @@
 ],
 "Grössensumme": [
 "Größensumme",
-"compound"
+"word"
 ],
 "Grössenumfang": [
 "Größenumfang",
-"compound"
+"word"
 ],
 "Grössenunterschied": [
 "Größenunterschied",
@@ -3650,15 +3790,15 @@
 ],
 "Grössenveränderung": [
 "Größenveränderung",
-"compound"
+"word"
 ],
 "Grössenwechsel": [
 "Größenwechsel",
-"compound"
+"word"
 ],
 "Grössenwechsels": [
 "Größenwechsels",
-"compound"
+"word"
 ],
 "Grössere": [
 "Größere",
@@ -3674,15 +3814,19 @@
 ],
 "Gutssklavenwirthschaft": [
 "Gutssklavenwirtschaft",
-"compound"
+"word"
 ],
 "Gutswirthschaft": [
 "Gutswirtschaft",
-"compound"
+"word"
 ],
 "Gutswirthschaften": [
 "Gutswirtschaften",
-"compound"
+"word"
+],
+"Gyps": [
+"Gips",
+"word"
 ],
 "Halbgrossen": [
 "Halbgroßen",
@@ -3690,27 +3834,27 @@
 ],
 "Handarbeitsgeräthe": [
 "Handarbeitsgeräte",
-"compound"
+"word"
 ],
 "Handelscirkulation": [
 "Handelszirkulation",
-"compound"
+"word"
 ],
 "Handelsgrösse": [
 "Handelsgröße",
-"compound"
+"word"
 ],
 "Handelswerth": [
 "Handelswert",
-"compound"
+"word"
 ],
 "Handwerkserforderniss": [
 "Handwerkserfordernis",
-"compound"
+"word"
 ],
 "Hanthierungen": [
 "Hantierungen",
-"compound"
+"word"
 ],
 "Harmonieen": [
 "Harmonien",
@@ -3718,15 +3862,15 @@
 ],
 "Hauptanstoss": [
 "Hauptanstoß",
-"compound"
+"word"
 ],
 "Hauptcentren": [
 "Hauptzentren",
-"compound"
+"word"
 ],
 "Hauptcentrum": [
 "Hauptzentrum",
-"compound"
+"word"
 ],
 "Hauptcirkulationskost": [
 "Hauptzirkulationskost",
@@ -3734,15 +3878,15 @@
 ],
 "Hauptgeheimniss": [
 "Hauptgeheimnis",
-"compound"
+"word"
 ],
 "Hauptindustrieen": [
 "Hauptindustrien",
-"compound"
+"word"
 ],
 "Hauptirrthümer": [
 "Hauptirrtümer",
-"compound"
+"word"
 ],
 "Hauptstrasse": [
 "Hauptstraße",
@@ -3750,7 +3894,7 @@
 ],
 "Hauptthatsachen": [
 "Haupttatsachen",
-"compound"
+"word"
 ],
 "Haupttheil": [
 "Hauptteil",
@@ -3762,11 +3906,15 @@
 ],
 "Hauptwaaren": [
 "Hauptwaren",
-"compound"
+"word"
+],
+"Hausaccommodation": [
+"Hausakkommodation",
+"word"
 ],
 "Hauseigenthum": [
 "Hauseigentum",
-"compound"
+"word"
 ],
 "Hauseigenthümer": [
 "Hauseigentümer",
@@ -3774,23 +3922,23 @@
 ],
 "Hauseigenthümerschaft": [
 "Hauseigentümerschaft",
-"compound"
+"word"
 ],
 "Hausgeräth": [
 "Hausgerät",
-"compound"
+"word"
 ],
 "Hausmiethe": [
 "Hausmiete",
-"compound"
+"word"
 ],
 "Hausmiethen": [
 "Hausmieten",
-"compound"
+"word"
 ],
 "Hausvermiether": [
 "Hausvermieter",
-"compound"
+"word"
 ],
 "Heimath": [
 "Heimat",
@@ -3818,7 +3966,7 @@
 ],
 "Heisshungers": [
 "Heißhungers",
-"sz"
+"word"
 ],
 "Heisssporn": [
 "Heißsporn",
@@ -3834,7 +3982,7 @@
 ],
 "Herzensergiessungen": [
 "Herzensergießungen",
-"compound"
+"word"
 ],
 "Herzensstoss": [
 "Herzensstoß",
@@ -3858,7 +4006,7 @@
 ],
 "Holzwerth": [
 "Holzwert",
-"compound"
+"word"
 ],
 "Hungersnoth": [
 "Hungersnot",
@@ -3930,11 +4078,11 @@
 ],
 "Idealwerthe": [
 "Idealwerte",
-"compound"
+"word"
 ],
 "Idealwerthen": [
 "Idealwerten",
-"compound"
+"word"
 ],
 "Identificirung": [
 "Identifizierung",
@@ -3942,11 +4090,11 @@
 ],
 "Immobilisirung": [
 "Immobilisierung",
-"compound"
+"word"
 ],
 "Importwaaren": [
 "Importwaren",
-"compound"
+"word"
 ],
 "Incarnation": [
 "Inkarnation",
@@ -3955,6 +4103,10 @@
 "Incongruenz": [
 "Inkongruenz",
 "word"
+],
+"Increment": [
+"Inkrement",
+"manual"
 ],
 "Indess": [
 "Indes",
@@ -3966,7 +4118,7 @@
 ],
 "Industrieblüthe": [
 "Industrieblüte",
-"compound"
+"word"
 ],
 "Industrieen": [
 "Industrien",
@@ -3974,11 +4126,11 @@
 ],
 "Industrieunterofficiere": [
 "Industrieunteroffiziere",
-"compound"
+"word"
 ],
 "Industriewaaren": [
 "Industriewaren",
-"compound"
+"word"
 ],
 "Inhaltsverzeichniss": [
 "Inhaltsverzeichnis",
@@ -3990,7 +4142,7 @@
 ],
 "Interessirtheit": [
 "Interessiertheit",
-"compound"
+"word"
 ],
 "Irrthum": [
 "Irrtum",
@@ -4014,7 +4166,7 @@
 ],
 "Jahresantheil": [
 "Jahresanteil",
-"compound"
+"word"
 ],
 "Jahresergebniss": [
 "Jahresergebnis",
@@ -4022,7 +4174,7 @@
 ],
 "Jahresverschleiss": [
 "Jahresverschleiß",
-"compound"
+"word"
 ],
 "Jamaica": [
 "Jamaika",
@@ -4038,23 +4190,23 @@
 ],
 "Kapitalantheil": [
 "Kapitalanteil",
-"compound"
+"word"
 ],
 "Kapitalantheils": [
 "Kapitalanteils",
-"compound"
+"word"
 ],
 "Kapitalbestandtheil": [
 "Kapitalbestandteil",
-"compound"
+"word"
 ],
 "Kapitalbestandtheile": [
 "Kapitalbestandteile",
-"compound"
+"word"
 ],
 "Kapitalbestandtheils": [
 "Kapitalbestandteils",
-"compound"
+"word"
 ],
 "Kapitalcharacter": [
 "Kapitalcharakter",
@@ -4062,23 +4214,23 @@
 ],
 "Kapitalcirkulation": [
 "Kapitalzirkulation",
-"compound"
+"word"
 ],
 "Kapitaleigenthum": [
 "Kapitaleigentum",
-"compound"
+"word"
 ],
 "Kapitaleigenthums": [
 "Kapitaleigentums",
-"compound"
+"word"
 ],
 "Kapitaleigenthümer": [
 "Kapitaleigentümer",
-"compound"
+"word"
 ],
 "Kapitalgrösse": [
 "Kapitalgröße",
-"compound"
+"word"
 ],
 "Kapitalisirung": [
 "Kapitalisierung",
@@ -4094,11 +4246,11 @@
 ],
 "Kapitalreichthum": [
 "Kapitalreichtum",
-"compound"
+"word"
 ],
 "Kapitalreichthums": [
 "Kapitalreichtums",
-"compound"
+"word"
 ],
 "Kapitalswerths": [
 "Kapitalswerts",
@@ -4106,23 +4258,23 @@
 ],
 "Kapitaltheil": [
 "Kapitalteil",
-"compound"
+"word"
 ],
 "Kapitaltheile": [
 "Kapitalteile",
-"compound"
+"word"
 ],
 "Kapitaltheilen": [
 "Kapitalteilen",
-"compound"
+"word"
 ],
 "Kapitaltheils": [
 "Kapitalteils",
-"compound"
+"word"
 ],
 "Kapitalverhältniss": [
 "Kapitalverhältnis",
-"compound"
+"word"
 ],
 "Kapitalverhältniß": [
 "Kapitalverhältnis",
@@ -4130,15 +4282,15 @@
 ],
 "Kapitalverschleiss": [
 "Kapitalverschleiß",
-"compound"
+"word"
 ],
 "Kapitalverwerthung": [
 "Kapitalverwertung",
-"compound"
+"word"
 ],
 "Kapitalvorrath": [
 "Kapitalvorrat",
-"compound"
+"word"
 ],
 "Kapitalwerth": [
 "Kapitalwert",
@@ -4146,31 +4298,31 @@
 ],
 "Kapitalwerthe": [
 "Kapitalwerte",
-"compound"
+"word"
 ],
 "Kapitalwerthen": [
 "Kapitalwerten",
-"compound"
+"word"
 ],
 "Kapitalwerthes": [
 "Kapitalwertes",
-"compound"
+"word"
 ],
 "Kapitalwerths": [
 "Kapitalwerts",
-"compound"
+"word"
 ],
 "Kapitalwerthsumme": [
 "Kapitalwertsumme",
-"compound"
+"word"
 ],
 "Kapitalwirthschaft": [
 "Kapitalwirtschaft",
-"compound"
+"word"
 ],
 "Kassirer": [
 "Kassierer",
-"compound"
+"word"
 ],
 "Kassirerei": [
 "Kassiererei",
@@ -4182,7 +4334,7 @@
 ],
 "Kassirers": [
 "Kassierers",
-"compound"
+"word"
 ],
 "Kategorieen": [
 "Kategorien",
@@ -4194,7 +4346,7 @@
 ],
 "Kausalverhältniss": [
 "Kausalverhältnis",
-"compound"
+"word"
 ],
 "Kenntniss": [
 "Kenntnis",
@@ -4206,27 +4358,35 @@
 ],
 "Kircheneigenthum": [
 "Kircheneigentum",
-"compound"
+"word"
+],
+"Kirchthurmrennen": [
+"Kirchturmrennen",
+"word"
 ],
 "Klassenabtheilungen": [
 "Klassenabteilungen",
-"compound"
+"word"
 ],
 "Klassenverhältniss": [
 "Klassenverhältnis",
-"compound"
+"word"
+],
+"Klassicität": [
+"Klassizität",
+"word"
 ],
 "Kleidungsbedürfniss": [
 "Kleidungsbedürfnis",
-"compound"
+"word"
 ],
 "Kleinbauernwirthschaft": [
 "Kleinbauernwirtschaft",
-"compound"
+"word"
 ],
 "Kleinproducenten": [
 "Kleinproduzenten",
-"compound"
+"word"
 ],
 "Knechtschaftsverhältniss": [
 "Knechtschaftsverhältnis",
@@ -4234,19 +4394,27 @@
 ],
 "Kohleneigenthümer": [
 "Kohleneigentümer",
-"compound"
+"word"
 ],
 "Kohlenersparniss": [
 "Kohlenersparnis",
-"compound"
+"word"
 ],
 "Kohlenproducenten": [
 "Kohlenproduzenten",
-"compound"
+"word"
+],
+"Kohlentheer": [
+"Kohlenteer",
+"word"
+],
+"Kohlentheerfarben": [
+"Kohlenteerfarben",
+"word"
 ],
 "Kolonialreichthums": [
 "Kolonialreichtums",
-"compound"
+"word"
 ],
 "Kolonialwaaren": [
 "Kolonialwaren",
@@ -4254,7 +4422,7 @@
 ],
 "Kolonialwirthschaft": [
 "Kolonialwirtschaft",
-"compound"
+"word"
 ],
 "Kolonieen": [
 "Kolonien",
@@ -4266,11 +4434,11 @@
 ],
 "Komplicirtere": [
 "Kompliziertere",
-"compound"
+"word"
 ],
 "Komplicirtheit": [
 "Kompliziertheit",
-"compound"
+"word"
 ],
 "Koncentration": [
 "Konzentration",
@@ -4294,7 +4462,7 @@
 ],
 "Konstatirung": [
 "Konstatierung",
-"compound"
+"word"
 ],
 "Konsumtionsprocess": [
 "Konsumtionsprozess",
@@ -4330,15 +4498,15 @@
 ],
 "Kornproducenten": [
 "Kornproduzenten",
-"compound"
+"word"
 ],
 "Korntheuerung": [
 "Kornteuerung",
-"compound"
+"word"
 ],
 "Kornwerth": [
 "Kornwert",
-"compound"
+"word"
 ],
 "Koth": [
 "Kot",
@@ -4346,11 +4514,11 @@
 ],
 "Kraftäusserung": [
 "Kraftäußerung",
-"compound"
+"word"
 ],
 "Kreditassociationen": [
 "Kreditassoziationen",
-"compound"
+"word"
 ],
 "Kreditiren": [
 "Kreditieren",
@@ -4362,7 +4530,7 @@
 ],
 "Kreislaufprocesses": [
 "Kreislaufprozesses",
-"compound"
+"word"
 ],
 "Kreislaufsprocess": [
 "Kreislaufsprozess",
@@ -4374,11 +4542,15 @@
 ],
 "Kriegsvorräthen": [
 "Kriegsvorräten",
-"compound"
+"word"
+],
+"Krystall": [
+"Kristall",
+"word"
 ],
 "Krystallisation": [
 "Kristallisation",
-"compound"
+"word"
 ],
 "Kubikfuss": [
 "Kubikfuß",
@@ -4390,11 +4562,11 @@
 ],
 "Kupferwerths": [
 "Kupferwerts",
-"compound"
+"word"
 ],
 "Kursnotirung": [
 "Kursnotierung",
-"compound"
+"word"
 ],
 "Königthum": [
 "Königtum",
@@ -4402,19 +4574,27 @@
 ],
 "Körpermass": [
 "Körpermaß",
-"sz"
+"word"
 ],
 "Körpertheile": [
 "Körperteile",
 "word"
 ],
+"Lackirarbeiten": [
+"Lackierarbeiten",
+"word"
+],
+"Lackirer": [
+"Lackierer",
+"word"
+],
 "Lagermiethe": [
 "Lagermiete",
-"compound"
+"word"
 ],
 "Landeigenthümern": [
 "Landeigentümern",
-"compound"
+"word"
 ],
 "Landestheile": [
 "Landesteile",
@@ -4426,7 +4606,7 @@
 ],
 "Landestheils": [
 "Landesteils",
-"compound"
+"word"
 ],
 "Landstrasse": [
 "Landstraße",
@@ -4450,6 +4630,10 @@
 ],
 "Landwirthschaften": [
 "Landwirtschaften",
+"word"
+],
+"Lapidarstyl": [
+"Lapidarstil",
 "compound"
 ],
 "Lebenscyklus": [
@@ -4462,19 +4646,19 @@
 ],
 "Lebensnothwendigkeiten": [
 "Lebensnotwendigkeiten",
-"compound"
+"word"
 ],
 "Lebensprocess": [
 "Lebensprozess",
-"compound"
+"word"
 ],
 "Lebensprocesses": [
 "Lebensprozesses",
-"compound"
+"word"
 ],
 "Lebensäusserung": [
 "Lebensäußerung",
-"compound"
+"word"
 ],
 "Leibeignenverhältniss": [
 "Leibeignenverhältnis",
@@ -4498,11 +4682,11 @@
 ],
 "Lichtgiesser": [
 "Lichtgießer",
-"compound"
+"word"
 ],
 "Linientheile": [
 "Linienteile",
-"compound"
+"word"
 ],
 "Lobenswerth": [
 "Lobenswert",
@@ -4516,9 +4700,13 @@
 "Logik",
 "foreign?"
 ],
+"Logirhäuser": [
+"Logierhäuser",
+"word"
+],
 "Lokalcirkulation": [
 "Lokalzirkulation",
-"compound"
+"word"
 ],
 "Losreissung": [
 "Losreißung",
@@ -4530,11 +4718,11 @@
 ],
 "Luxusbedürfniss": [
 "Luxusbedürfnis",
-"compound"
+"word"
 ],
 "Luxustheil": [
 "Luxusteil",
-"compound"
+"word"
 ],
 "Luxuswaaren": [
 "Luxuswaren",
@@ -4554,7 +4742,7 @@
 ],
 "Manufakturwaaren": [
 "Manufakturwaren",
-"compound"
+"word"
 ],
 "Manuscript": [
 "Manuskript",
@@ -4570,10 +4758,14 @@
 ],
 "Marktwerthen": [
 "Marktwerten",
-"compound"
+"word"
 ],
 "Marktwerths": [
 "Marktwerts",
+"word"
+],
+"Martyrthum": [
+"Martyrtum",
 "compound"
 ],
 "Maschinenexploitirenden": [
@@ -4586,15 +4778,15 @@
 ],
 "Maschinentheils": [
 "Maschinenteils",
-"compound"
+"word"
 ],
 "Maschinenverschleiss": [
 "Maschinenverschleiß",
-"compound"
+"word"
 ],
 "Maschinenwerth": [
 "Maschinenwert",
-"compound"
+"word"
 ],
 "Mass": [
 "Maß",
@@ -4606,11 +4798,11 @@
 ],
 "Massenantheil": [
 "Massenanteil",
-"compound"
+"word"
 ],
 "Massentheil": [
 "Massenteil",
-"compound"
+"word"
 ],
 "Masslosigkeit": [
 "Maßlosigkeit",
@@ -4632,9 +4824,13 @@
 "Maßstabs",
 "sz"
 ],
+"Massstäbe": [
+"Maßstäbe",
+"sz"
+],
 "Mehlvorrath": [
 "Mehlvorrat",
-"compound"
+"word"
 ],
 "Mehrwerth": [
 "Mehrwert",
@@ -4642,11 +4838,11 @@
 ],
 "Mehrwerthbildung": [
 "Mehrwertbildung",
-"compound"
+"word"
 ],
 "Mehrwerthcirkulation": [
 "Mehrwertzirkulation",
-"compound"
+"word"
 ],
 "Mehrwerthe": [
 "Mehrwerte",
@@ -4654,23 +4850,23 @@
 ],
 "Mehrwertheinnahme": [
 "Mehrwerteinnahme",
-"compound"
+"word"
 ],
 "Mehrwerthes": [
 "Mehrwertes",
-"compound"
+"word"
 ],
 "Mehrwerthmasse": [
 "Mehrwertmasse",
-"compound"
+"word"
 ],
 "Mehrwerthmassen": [
 "Mehrwertmassen",
-"compound"
+"word"
 ],
 "Mehrwerthrate": [
 "Mehrwertrate",
-"compound"
+"word"
 ],
 "Mehrwerths": [
 "Mehrwerts",
@@ -4718,27 +4914,31 @@
 ],
 "Mehrwerththeil": [
 "Mehrwertteil",
-"compound"
+"word"
 ],
 "Mehrwerththeils": [
 "Mehrwertteils",
-"compound"
+"word"
 ],
 "Mehrwerththeorie": [
 "Mehrwerttheorie",
-"compound"
+"word"
 ],
 "Menschenschweiss": [
 "Menschenschweiß",
-"sz"
+"word"
 ],
 "Menschenschweisses": [
 "Menschenschweißes",
-"sz"
+"word"
+],
+"Mercantilisten": [
+"Merkantilisten",
+"word"
 ],
 "Messerwaarenfabrik": [
 "Messerwarenfabrik",
-"compound"
+"word"
 ],
 "Metairiewirthschaft": [
 "Metairiewirtschaft",
@@ -4746,23 +4946,23 @@
 ],
 "Metallcirkulation": [
 "Metallzirkulation",
-"compound"
+"word"
 ],
 "Metallvorrath": [
 "Metallvorrat",
-"compound"
+"word"
 ],
 "Metallvorraths": [
 "Metallvorrats",
-"compound"
+"word"
 ],
 "Metallwaarengeschäft": [
 "Metallwarengeschäft",
-"compound"
+"word"
 ],
 "Metallwerth": [
 "Metallwert",
-"compound"
+"word"
 ],
 "Mexico": [
 "Mexiko",
@@ -4782,19 +4982,19 @@
 ],
 "Miethkontrakt": [
 "Mietkontrakt",
-"compound"
+"word"
 ],
 "Miethkontrakte": [
 "Mietkontrakte",
-"compound"
+"word"
 ],
 "Miethkontrakten": [
 "Mietkontrakten",
-"compound"
+"word"
 ],
 "Miethkontrakts": [
 "Mietkontrakts",
-"compound"
+"word"
 ],
 "Miethlinge": [
 "Mietlinge",
@@ -4834,15 +5034,15 @@
 ],
 "Minderwerth": [
 "Minderwert",
-"compound"
+"word"
 ],
 "Minimalgrösse": [
 "Minimalgröße",
-"compound"
+"word"
 ],
 "Minimalmass": [
 "Minimalmaß",
-"sz"
+"word"
 ],
 "Missethaten": [
 "Missetaten",
@@ -4866,7 +5066,15 @@
 ],
 "Mittelgrösse": [
 "Mittelgröße",
-"compound"
+"word"
+],
+"Mittelmasses": [
+"Mittelmaßes",
+"manual"
+],
+"Mitthat": [
+"Mittat",
+"word"
 ],
 "Mittheilung": [
 "Mitteilung",
@@ -4882,7 +5090,7 @@
 ],
 "Modewaaren": [
 "Modewaren",
-"compound"
+"word"
 ],
 "Modificationen": [
 "Modifikationen",
@@ -4896,9 +5104,21 @@
 "Morgenröte",
 "word"
 ],
+"Municipalität": [
+"Munizipalität",
+"word"
+],
 "Municipalitäten": [
 "Munizipalitäten",
 "manual"
+],
+"Musse": [
+"Muße",
+"sz"
+],
+"Mussestunde": [
+"Mußestunde",
+"word"
 ],
 "Muth": [
 "Mut",
@@ -4911,6 +5131,26 @@
 "Mysticismus": [
 "Mystizismus",
 "word"
+],
+"Mässiges": [
+"Mäßiges",
+"sz"
+],
+"Müssige": [
+"Müßige",
+"sz"
+],
+"Müssigen": [
+"Müßigen",
+"sz"
+],
+"Müssiggang": [
+"Müßiggang",
+"sz"
+],
+"Müssiggänger": [
+"Müßiggänger",
+"sz"
 ],
 "Nachtheil": [
 "Nachteil",
@@ -4926,19 +5166,19 @@
 ],
 "Nahrungsmass": [
 "Nahrungsmaß",
-"sz"
+"word"
 ],
 "Nahrungsproducenten": [
 "Nahrungsproduzenten",
-"compound"
+"word"
 ],
 "Nationalreichthum": [
 "Nationalreichtum",
-"compound"
+"word"
 ],
 "Nationalreichthums": [
 "Nationalreichtums",
-"compound"
+"word"
 ],
 "Naturalbestandtheile": [
 "Naturalbestandteile",
@@ -4946,39 +5186,39 @@
 ],
 "Naturalwirthschaft": [
 "Naturalwirtschaft",
-"compound"
+"word"
 ],
 "Naturhinderniss": [
 "Naturhindernis",
-"compound"
+"word"
 ],
 "Naturnothwendigkeit": [
 "Naturnotwendigkeit",
-"compound"
+"word"
 ],
 "Naturprocesse": [
 "Naturprozesse",
-"compound"
+"word"
 ],
 "Naturprocessen": [
 "Naturprozessen",
-"compound"
+"word"
 ],
 "Naturprocesses": [
 "Naturprozesses",
-"compound"
+"word"
 ],
 "Naturreichthum": [
 "Naturreichtum",
-"compound"
+"word"
 ],
 "Naturreichthums": [
 "Naturreichtums",
-"compound"
+"word"
 ],
 "Neununddreissigstes": [
 "Neununddreißigstes",
-"sz"
+"word"
 ],
 "Neuwerth": [
 "Neuwert",
@@ -4986,27 +5226,27 @@
 ],
 "Neuwerths": [
 "Neuwerts",
-"compound"
+"word"
 ],
 "Nichtbetheiligung": [
 "Nichtbeteiligung",
-"compound"
+"word"
 ],
 "Nichteigenthum": [
 "Nichteigentum",
-"compound"
+"word"
 ],
 "Nichteigenthümer": [
 "Nichteigentümer",
-"compound"
+"word"
 ],
 "Nichteigenthümern": [
 "Nichteigentümern",
-"compound"
+"word"
 ],
 "Nichtproducenten": [
 "Nichtproduzenten",
-"compound"
+"word"
 ],
 "Nichtresidirende": [
 "Nichtresidierende",
@@ -5014,11 +5254,11 @@
 ],
 "Nichtthätigkeit": [
 "Nichttätigkeit",
-"compound"
+"word"
 ],
 "Nichtverwerthung": [
 "Nichtverwertung",
-"compound"
+"word"
 ],
 "Niederreissung": [
 "Niederreißung",
@@ -5034,7 +5274,7 @@
 ],
 "Nivellirungen": [
 "Nivellierungen",
-"compound"
+"word"
 ],
 "Nominalwerth": [
 "Nominalwert",
@@ -5042,11 +5282,11 @@
 ],
 "Nominalwerthen": [
 "Nominalwerten",
-"compound"
+"word"
 ],
 "Nominalwerths": [
 "Nominalwerts",
-"compound"
+"word"
 ],
 "Normalgrösse": [
 "Normalgröße",
@@ -5058,7 +5298,7 @@
 ],
 "Normalverhältniss": [
 "Normalverhältnis",
-"compound"
+"word"
 ],
 "Normirung": [
 "Normierung",
@@ -5066,11 +5306,11 @@
 ],
 "Notencirkulation": [
 "Notenzirkulation",
-"compound"
+"word"
 ],
 "Notenentwerthung": [
 "Notenentwertung",
-"compound"
+"word"
 ],
 "Noth": [
 "Not",
@@ -5082,7 +5322,11 @@
 ],
 "Nothbehelfen": [
 "Notbehelfen",
-"compound"
+"word"
+],
+"Nothdurft": [
+"Notdurft",
+"manual"
 ],
 "Nothfall": [
 "Notfall",
@@ -5098,11 +5342,11 @@
 ],
 "Nothstände": [
 "Notstände",
-"compound"
+"word"
 ],
 "Nothständen": [
 "Notständen",
-"compound"
+"word"
 ],
 "Nothwendig": [
 "Notwendig",
@@ -5163,6 +5407,10 @@
 "Nützlichkeitsprincip": [
 "Nützlichkeitsprinzip",
 "compound"
+],
+"Oberofficiere": [
+"Oberoffiziere",
+"word"
 ],
 "Oct": [
 "Okt",
@@ -5238,7 +5486,7 @@
 ],
 "Oekonomisiren": [
 "Ökonomisieren",
-"compound"
+"word"
 ],
 "Oekonomisirung": [
 "Ökonomisierung",
@@ -5246,7 +5494,7 @@
 ],
 "Oekonomisten": [
 "Ökonomisten",
-"compound"
+"word"
 ],
 "Oel": [
 "Öl",
@@ -5254,7 +5502,7 @@
 ],
 "Oelhändler": [
 "Ölhändler",
-"compound"
+"word"
 ],
 "Oelmühle": [
 "Ölmühle",
@@ -5266,7 +5514,7 @@
 ],
 "Oelsaat": [
 "Ölsaat",
-"compound"
+"word"
 ],
 "Oertlichkeit": [
 "Örtlichkeit",
@@ -5282,11 +5530,15 @@
 ],
 "Originalwerth": [
 "Originalwert",
-"compound"
+"word"
 ],
 "Originalwerths": [
 "Originalwerts",
-"compound"
+"word"
+],
+"Oscillation": [
+"Oszillation",
+"manual"
 ],
 "Oscillationen": [
 "Oszillationen",
@@ -5300,13 +5552,17 @@
 "Ostteil",
 "word"
 ],
+"Oxydirbarkeit": [
+"Oxidierbarkeit",
+"word"
+],
 "Papiercirculation": [
 "Papierzirkulation",
-"compound"
+"word"
 ],
 "Papiercirkulation": [
 "Papierzirkulation",
-"compound"
+"word"
 ],
 "Parce": [
 "Parke",
@@ -5350,7 +5606,7 @@
 ],
 "Pauperisirung": [
 "Pauperisierung",
-"compound"
+"word"
 ],
 "Pericles": [
 "Perikles",
@@ -5366,7 +5622,11 @@
 ],
 "Personificirungen": [
 "Personifizierungen",
-"compound"
+"word"
+],
+"Pfaffenthum": [
+"Pfaffentum",
+"word"
 ],
 "Phantasieen": [
 "Fantasien",
@@ -5378,7 +5638,7 @@
 ],
 "Plantagenwirthschaft": [
 "Plantagenwirtschaft",
-"compound"
+"word"
 ],
 "Populationsprincip": [
 "Populationsprinzip",
@@ -5386,7 +5646,7 @@
 ],
 "Positionsvortheil": [
 "Positionsvorteil",
-"compound"
+"word"
 ],
 "Possenreisserei": [
 "Possenreißerei",
@@ -5394,27 +5654,31 @@
 ],
 "Preisbestandtheile": [
 "Preisbestandteile",
-"compound"
+"word"
 ],
 "Preisgrössen": [
 "Preisgrößen",
-"compound"
+"word"
+],
+"Preisoscillation": [
+"Preisoszillation",
+"word"
 ],
 "Preistheile": [
 "Preisteile",
-"compound"
+"word"
 ],
 "Preistheilen": [
 "Preisteilen",
-"compound"
+"word"
 ],
 "Preistheils": [
 "Preisteils",
-"compound"
+"word"
 ],
 "Preisverhältniss": [
 "Preisverhältnis",
-"compound"
+"word"
 ],
 "Preussen": [
 "Preußen",
@@ -5426,7 +5690,7 @@
 ],
 "Priestercölibats": [
 "Priesterzölibats",
-"compound"
+"word"
 ],
 "Princip": [
 "Prinzip",
@@ -5440,9 +5704,13 @@
 "Prinzips",
 "word"
 ],
+"Privatbankierthums": [
+"Privatbankiertums",
+"compound"
+],
 "Privatbedürfniss": [
 "Privatbedürfnis",
-"compound"
+"word"
 ],
 "Privateigenthum": [
 "Privateigentum",
@@ -5458,27 +5726,27 @@
 ],
 "Privatgrundeigenthum": [
 "Privatgrundeigentum",
-"compound"
+"word"
 ],
 "Privatgrundeigenthums": [
 "Privatgrundeigentums",
-"compound"
+"word"
 ],
 "Privatgrundeigenthümer": [
 "Privatgrundeigentümer",
-"compound"
+"word"
 ],
 "Privatproducenten": [
 "Privatproduzenten",
-"compound"
+"word"
 ],
 "Privatreichthum": [
 "Privatreichtum",
-"compound"
+"word"
 ],
 "Privatverhältniss": [
 "Privatverhältnis",
-"compound"
+"word"
 ],
 "Privatwirthschaft": [
 "Privatwirtschaft",
@@ -5502,7 +5770,7 @@
 ],
 "Procentantheile": [
 "Prozentanteile",
-"compound"
+"word"
 ],
 "Procente": [
 "Prozente",
@@ -5521,11 +5789,11 @@
 "word"
 ],
 "Procenttheile": [
-"Procentteile",
+"Prozentteile",
 "compound"
 ],
 "Procentverhältniss": [
-"Procentverhältnis",
+"Prozentverhältnis",
 "compound"
 ],
 "Procentzahl": [
@@ -5553,8 +5821,8 @@
 "foreign?"
 ],
 "Processirens": [
-"Prozessirens",
-"compound"
+"Prozessierens",
+"word"
 ],
 "Processkosten": [
 "Prozesskosten",
@@ -5638,19 +5906,19 @@
 ],
 "Produktionscentren": [
 "Produktionszentren",
-"compound"
+"word"
 ],
 "Produktionscentrum": [
 "Produktionszentrum",
-"compound"
+"word"
 ],
 "Produktionscentrums": [
 "Produktionszentrums",
-"compound"
+"word"
 ],
 "Produktionsprocedur": [
 "Produktionsprozedur",
-"compound"
+"word"
 ],
 "Produktionsprocess": [
 "Produktionsprozess",
@@ -5670,43 +5938,43 @@
 ],
 "Produktionsverhältniss": [
 "Produktionsverhältnis",
-"compound"
+"word"
 ],
 "Produktionsvorrath": [
 "Produktionsvorrat",
-"compound"
+"word"
 ],
 "Produktionsvorraths": [
 "Produktionsvorrats",
-"compound"
+"word"
 ],
 "Produktionsvorräthe": [
 "Produktionsvorräte",
-"compound"
+"word"
 ],
 "Produkttheil": [
 "Produktteil",
-"compound"
+"word"
 ],
 "Produkttheilen": [
 "Produktteilen",
-"compound"
+"word"
 ],
 "Produkttheils": [
 "Produktteils",
-"compound"
+"word"
 ],
 "Produktvertheilung": [
 "Produktverteilung",
-"compound"
+"word"
 ],
 "Produktwerth": [
 "Produktwert",
-"compound"
+"word"
 ],
 "Produktwerths": [
 "Produktwerts",
-"compound"
+"word"
 ],
 "Produzirt": [
 "Produziert",
@@ -5718,6 +5986,10 @@
 ],
 "Profittheils": [
 "Profitteils",
+"compound"
+],
+"Profitwuth": [
+"Profitwut",
 "compound"
 ],
 "Profitwüthigste": [
@@ -5732,13 +6004,17 @@
 "Prostituierten",
 "word"
 ],
+"Provincialbank": [
+"Provinzialbank",
+"word"
+],
 "Prozenttheile": [
 "Prozentteile",
 "compound"
 ],
 "Pulverisirung": [
 "Pulverisierung",
-"compound"
+"word"
 ],
 "Pöbelexcessen": [
 "Pöbelexzessen",
@@ -5750,7 +6026,7 @@
 ],
 "Quadratfüssen": [
 "Quadratfüßen",
-"sz"
+"word"
 ],
 "Race": [
 "Rasse",
@@ -5759,6 +6035,10 @@
 "Racen": [
 "Rassen",
 "manual"
+],
+"Rasirmesser": [
+"Rasiermesser",
+"word"
 ],
 "Rath": [
 "Rat",
@@ -5774,11 +6054,11 @@
 ],
 "Raubthaten": [
 "Raubtaten",
-"compound"
+"word"
 ],
 "Raumantheil": [
 "Raumanteil",
-"compound"
+"word"
 ],
 "Raumgrösse": [
 "Raumgröße",
@@ -5786,11 +6066,11 @@
 ],
 "Raumtheile": [
 "Raumteile",
-"compound"
+"word"
 ],
 "Realencyklopädien": [
 "Realenzyklopädien",
-"compound"
+"word"
 ],
 "Realisiren": [
 "Realisieren",
@@ -5802,7 +6082,7 @@
 ],
 "Realwerth": [
 "Realwert",
-"compound"
+"word"
 ],
 "Recept": [
 "Rezept",
@@ -5832,6 +6112,10 @@
 "Rediskontieren",
 "compound"
 ],
+"Reducire": [
+"Reduziere",
+"word"
+],
 "Reducirt": [
 "Reduziert",
 "word"
@@ -5854,7 +6138,7 @@
 ],
 "Reibungstheile": [
 "Reibungsteile",
-"compound"
+"word"
 ],
 "Reichthum": [
 "Reichtum",
@@ -5884,6 +6168,10 @@
 "Reichtümern",
 "word"
 ],
+"Reinlichkeitsmassregeln": [
+"Reinlichkeitsmaßregeln",
+"word"
+],
 "Reisvorräthe": [
 "Reisvorräte",
 "compound"
@@ -5906,7 +6194,7 @@
 ],
 "Reparaturbedürfniss": [
 "Reparaturbedürfnis",
-"compound"
+"word"
 ],
 "Repariren": [
 "Reparieren",
@@ -5926,7 +6214,7 @@
 ],
 "Repräsentationsverhältniss": [
 "Repräsentationsverhältnis",
-"compound"
+"word"
 ],
 "Republic": [
 "Republik",
@@ -5934,7 +6222,7 @@
 ],
 "Restwaaren": [
 "Restwaren",
-"compound"
+"word"
 ],
 "Revenuetheil": [
 "Revenueteil",
@@ -5948,21 +6236,29 @@
 "Revolutionierung",
 "word"
 ],
+"Riesenthurm": [
+"Riesenturm",
+"word"
+],
 "Risico": [
 "Risiko",
 "foreign?"
 ],
 "Rockproducent": [
 "Rockproduzent",
-"compound"
+"word"
+],
+"Rockschösse": [
+"Rockschöße",
+"word"
 ],
 "Rockwerth": [
 "Rockwert",
-"compound"
+"word"
 ],
 "Rohstoffproducent": [
 "Rohstoffproduzent",
-"compound"
+"word"
 ],
 "Rohstofftheurung": [
 "Rohstoffteuerung",
@@ -5970,15 +6266,19 @@
 ],
 "Rothhaut": [
 "Rothaut",
-"compound"
+"word"
 ],
 "Rothhäute": [
 "Rothäute",
-"compound"
+"word"
 ],
 "Rothwild": [
 "Rotwild",
 "word"
+],
+"Russ": [
+"Ruß",
+"manual"
 ],
 "Ruthen": [
 "Ruten",
@@ -6002,11 +6302,15 @@
 ],
 "Rückvertheilung": [
 "Rückverteilung",
-"compound"
+"word"
 ],
 "Sabbathentheiligung": [
 "Sabbathenteiligung",
 "compound"
+],
+"Sabbaths": [
+"Sabbats",
+"word"
 ],
 "Sachkenntniss": [
 "Sachkenntnis",
@@ -6018,11 +6322,11 @@
 ],
 "Saldirung": [
 "Saldierung",
-"compound"
+"word"
 ],
 "Saldirungen": [
 "Saldierungen",
-"compound"
+"word"
 ],
 "Sanction": [
 "Sanktion",
@@ -6033,8 +6337,8 @@
 "foreign?"
 ],
 "Scalpiren": [
-"Scalpieren",
-"compound"
+"Skalpieren",
+"word"
 ],
 "Scene": [
 "Szene",
@@ -6053,8 +6357,8 @@
 "compound"
 ],
 "Schafvliess": [
-"Schafvließ",
-"sz"
+"Schafvlies",
+"word"
 ],
 "Schattirungen": [
 "Schattierungen",
@@ -6062,19 +6366,19 @@
 ],
 "Schatzbestandtheil": [
 "Schatzbestandteil",
-"compound"
+"word"
 ],
 "Scheidungsprocess": [
 "Scheidungsprozess",
-"compound"
+"word"
 ],
 "Schienenproducenten": [
 "Schienenproduzenten",
-"compound"
+"word"
 ],
 "Schiesswolle": [
 "Schießwolle",
-"sz"
+"word"
 ],
 "Schliessen": [
 "Schließen",
@@ -6090,7 +6394,7 @@
 ],
 "Schlussergebniss": [
 "Schlussergebnis",
-"compound"
+"word"
 ],
 "Schluß": [
 "Schluss",
@@ -6100,13 +6404,17 @@
 "Schlusspunkt",
 "sz"
 ],
+"Schooss": [
+"Schoß",
+"manual"
+],
 "Schulbesuchscertifikate": [
 "Schulbesuchszertifikate",
-"compound"
+"word"
 ],
 "Schulcertifikat": [
 "Schulzertifikat",
-"compound"
+"word"
 ],
 "Schulcertifikatbüchern": [
 "Schulzertifikatbüchern",
@@ -6114,11 +6422,15 @@
 ],
 "Schulcertifikate": [
 "Schulzertifikate",
-"compound"
+"word"
+],
+"Schuldcertificate": [
+"Schuldzertifikate",
+"word"
 ],
 "Schulmöblirung": [
 "Schulmöblierung",
-"compound"
+"word"
 ],
 "Schwankungscentrum": [
 "Schwankungszentrum",
@@ -6134,11 +6446,11 @@
 ],
 "Schwindelprocedur": [
 "Schwindelprozedur",
-"compound"
+"word"
 ],
 "Sechsunddreissigstes": [
 "Sechsunddreißigstes",
-"sz"
+"word"
 ],
 "Sechszehn": [
 "Sechzehn",
@@ -6150,11 +6462,15 @@
 ],
 "Seelengeheimniss": [
 "Seelengeheimnis",
-"compound"
+"word"
 ],
 "Selbstbewirthschaftung": [
 "Selbstbewirtschaftung",
-"compound"
+"word"
+],
+"Selbsterhaltungsassociation": [
+"Selbsterhaltungsassoziation",
+"word"
 ],
 "Selbstkontrole": [
 "Selbstkontrolle",
@@ -6162,19 +6478,19 @@
 ],
 "Selbstproducenten": [
 "Selbstproduzenten",
-"compound"
+"word"
 ],
 "Selbstverwerthung": [
 "Selbstverwertung",
-"compound"
+"word"
 ],
 "Selbstverwerthungsgrades": [
 "Selbstverwertungsgrades",
-"compound"
+"word"
 ],
 "Selbstverwerthungskraft": [
 "Selbstverwertungskraft",
-"compound"
+"word"
 ],
 "Selbstwerth": [
 "Selbstwert",
@@ -6182,7 +6498,7 @@
 ],
 "Selbstwerthe": [
 "Selbstwerte",
-"compound"
+"word"
 ],
 "Sicilien": [
 "Sizilien",
@@ -6194,23 +6510,23 @@
 ],
 "Siebenunddreissigstes": [
 "Siebenunddreißigstes",
-"sz"
+"word"
 ],
 "Silberproducent": [
 "Silberproduzent",
-"compound"
+"word"
 ],
 "Silberproducenten": [
 "Silberproduzenten",
-"compound"
+"word"
 ],
 "Silbervorrath": [
 "Silbervorrat",
-"compound"
+"word"
 ],
 "Silbervorraths": [
 "Silbervorrats",
-"compound"
+"word"
 ],
 "Silberwaaren": [
 "Silberwaren",
@@ -6218,15 +6534,23 @@
 ],
 "Silberwerths": [
 "Silberwerts",
-"compound"
+"word"
+],
+"Sklavencensus": [
+"Sklavenzensus",
+"word"
 ],
 "Sklavenverhältniss": [
 "Sklavenverhältnis",
-"compound"
+"word"
 ],
 "Sklavenwirthschaft": [
 "Sklavenwirtschaft",
-"compound"
+"word"
+],
+"Skrophulose": [
+"Skrofulose",
+"word"
 ],
 "Socialismus": [
 "Sozialismus",
@@ -6238,15 +6562,15 @@
 ],
 "Soldatenmass": [
 "Soldatenmaß",
-"sz"
+"word"
 ],
 "Sondertheil": [
 "Sonderteil",
-"compound"
+"word"
 ],
 "Sondervortheils": [
 "Sondervorteils",
-"compound"
+"word"
 ],
 "Sophocles": [
 "Sophokles",
@@ -6260,12 +6584,28 @@
 "Sortierung",
 "word"
 ],
+"Specialarbeit": [
+"Spezialarbeit",
+"word"
+],
+"Specialcensus": [
+"Spezialzensus",
+"word"
+],
 "Specialfall": [
 "Spezialfall",
 "word"
 ],
+"Specialform": [
+"Spezialform",
+"word"
+],
 "Specialfälle": [
 "Spezialfälle",
+"word"
+],
+"Specialinteresse": [
+"Spezialinteresse",
 "word"
 ],
 "Specialität": [
@@ -6274,6 +6614,18 @@
 ],
 "Specialitäten": [
 "Spezialitäten",
+"word"
+],
+"Specialpolizei": [
+"Spezialpolizei",
+"word"
+],
+"Specialstudien": [
+"Spezialstudien",
+"word"
+],
+"Specialuntersuchung": [
+"Spezialuntersuchung",
 "word"
 ],
 "Specifikation": [
@@ -6294,7 +6646,7 @@
 ],
 "Spediren": [
 "Spedieren",
-"compound"
+"word"
 ],
 "Spedirung": [
 "Spedierung",
@@ -6330,11 +6682,11 @@
 ],
 "Staatssocialisten": [
 "Staatssozialisten",
-"compound"
+"word"
 ],
 "Staatsverräther": [
 "Staatsverräter",
-"compound"
+"word"
 ],
 "Stadtrath": [
 "Stadtrat",
@@ -6346,7 +6698,7 @@
 ],
 "Steuervertheilung": [
 "Steuerverteilung",
-"compound"
+"word"
 ],
 "Stimulirung": [
 "Stimulierung",
@@ -6366,7 +6718,7 @@
 ],
 "Strafkolonieen": [
 "Strafkolonien",
-"compound"
+"word"
 ],
 "Strasse": [
 "Straße",
@@ -6382,11 +6734,11 @@
 ],
 "Strassenkanäle": [
 "Straßenkanäle",
-"sz"
+"word"
 ],
 "Strassenpflastern": [
 "Straßenpflastern",
-"sz"
+"word"
 ],
 "Strassenreuber": [
 "Straßenreuber",
@@ -6402,7 +6754,19 @@
 ],
 "Strumpfwaarengeschäft": [
 "Strumpfwarengeschäft",
-"compound"
+"word"
+],
+"Studirzimmer": [
+"Studierzimmer",
+"word"
+],
+"Styl": [
+"Stil",
+"word"
+],
+"Styls": [
+"Stils",
+"word"
 ],
 "Stösst": [
 "Stößt",
@@ -6416,6 +6780,10 @@
 "Surpluswert",
 "compound"
 ],
+"Syrup": [
+"Sirup",
+"foreign?"
+],
 "Sämmtliche": [
 "Sämtliche",
 "word"
@@ -6426,15 +6794,15 @@
 ],
 "Tageswerth": [
 "Tageswert",
-"compound"
+"word"
 ],
 "Tageswerths": [
 "Tageswerts",
-"compound"
+"word"
 ],
 "Tageszinsfuss": [
 "Tageszinsfuß",
-"sz"
+"word"
 ],
 "Tauschwerth": [
 "Tauschwert",
@@ -6442,15 +6810,15 @@
 ],
 "Tauschwerthe": [
 "Tauschwerte",
-"compound"
+"word"
 ],
 "Tauschwerths": [
 "Tauschwerts",
-"compound"
+"word"
 ],
 "Tauschwirthschaft": [
 "Tauschwirtschaft",
-"compound"
+"word"
 ],
 "Taxwerth": [
 "Taxwert",
@@ -6467,6 +6835,10 @@
 "Thalern": [
 "Talern",
 "manual"
+],
+"Thalerstücke": [
+"Talerstücke",
+"word"
 ],
 "That": [
 "Tat",
@@ -6496,41 +6868,49 @@
 "Tee",
 "foreign?"
 ],
+"Theehandels": [
+"Teehandels",
+"word"
+],
+"Theezolls": [
+"Teezolls",
+"word"
+],
 "Theil": [
 "Teil",
 "word"
 ],
 "Theilarbeit": [
 "Teilarbeit",
-"compound"
+"word"
 ],
 "Theilarbeiten": [
 "Teilarbeiten",
-"compound"
+"word"
 ],
 "Theilarbeiter": [
 "Teilarbeiter",
-"compound"
+"word"
 ],
 "Theilarbeitern": [
 "Teilarbeitern",
-"compound"
+"word"
 ],
 "Theilarbeiters": [
 "Teilarbeiters",
-"compound"
+"word"
 ],
 "Theilarbeitsmaschinen": [
 "Teilarbeitsmaschinen",
-"compound"
+"word"
 ],
 "Theilbewegung": [
 "Teilbewegung",
-"compound"
+"word"
 ],
 "Theilbewegungen": [
 "Teilbewegungen",
-"compound"
+"word"
 ],
 "Theile": [
 "Teile",
@@ -6542,7 +6922,7 @@
 ],
 "Theilfunktion": [
 "Teilfunktion",
-"compound"
+"word"
 ],
 "Theilhaber": [
 "Teilhaber",
@@ -6554,27 +6934,27 @@
 ],
 "Theilindividuum": [
 "Teilindividuum",
-"compound"
+"word"
 ],
 "Theillinien": [
 "Teillinien",
-"compound"
+"word"
 ],
 "Theilmaschine": [
 "Teilmaschine",
-"compound"
+"word"
 ],
 "Theilmaschinen": [
 "Teilmaschinen",
-"compound"
+"word"
 ],
 "Theilmenschen": [
 "Teilmenschen",
-"compound"
+"word"
 ],
 "Theilmetamorphosen": [
 "Teilmetamorphosen",
-"compound"
+"word"
 ],
 "Theilnahme": [
 "Teilnahme",
@@ -6590,35 +6970,35 @@
 ],
 "Theiloperation": [
 "Teiloperation",
-"compound"
+"word"
 ],
 "Theiloperationen": [
 "Teiloperationen",
-"compound"
+"word"
 ],
 "Theilorgane": [
 "Teilorgane",
-"compound"
+"word"
 ],
 "Theilprodukt": [
 "Teilprodukt",
-"compound"
+"word"
 ],
 "Theilprodukte": [
 "Teilprodukte",
-"compound"
+"word"
 ],
 "Theilprodukten": [
 "Teilprodukten",
-"compound"
+"word"
 ],
 "Theilprodukts": [
 "Teilprodukts",
-"compound"
+"word"
 ],
 "Theilprozess": [
 "Teilprozess",
-"compound"
+"word"
 ],
 "Theilprozesse": [
 "Teilprozesse",
@@ -6642,23 +7022,23 @@
 ],
 "Theilungsgründe": [
 "Teilungsgründe",
-"compound"
+"word"
 ],
 "Theilungsrate": [
 "Teilungsrate",
-"compound"
+"word"
 ],
 "Theilverkäufe": [
 "Teilverkäufe",
-"compound"
+"word"
 ],
 "Theilwerkzeug": [
 "Teilwerkzeug",
-"compound"
+"word"
 ],
 "Theilwirthschaft": [
 "Teilwirtschaft",
-"compound"
+"word"
 ],
 "Theorieen": [
 "Theorien",
@@ -6698,15 +7078,15 @@
 ],
 "Thiergeschlechter": [
 "Tiergeschlechter",
-"compound"
+"word"
 ],
 "Thierkraft": [
 "Tierkraft",
-"compound"
+"word"
 ],
 "Thierorgane": [
 "Tierorgane",
-"compound"
+"word"
 ],
 "Thierquälerei": [
 "Tierquälerei",
@@ -6722,7 +7102,7 @@
 ],
 "Thierzuständen": [
 "Tierzuständen",
-"compound"
+"word"
 ],
 "Thon": [
 "Ton",
@@ -6730,7 +7110,7 @@
 ],
 "Thonboden": [
 "Tonboden",
-"compound"
+"word"
 ],
 "Thonerde": [
 "Tonerde",
@@ -6806,11 +7186,11 @@
 ],
 "Thürwacht": [
 "Türwacht",
-"compound"
+"word"
 ],
 "Tischmesserwaare": [
 "Tischmesserware",
-"compound"
+"word"
 ],
 "Titulareigenthümer": [
 "Titulareigentümer",
@@ -6838,7 +7218,7 @@
 ],
 "Todtenschau": [
 "Totenschau",
-"compound"
+"word"
 ],
 "Todtschlag": [
 "Totschlag",
@@ -6846,7 +7226,7 @@
 ],
 "Totalwerth": [
 "Totalwert",
-"compound"
+"word"
 ],
 "Transactionen": [
 "Transaktionen",
@@ -6858,7 +7238,7 @@
 ],
 "Transportprocess": [
 "Transportprozess",
-"compound"
+"word"
 ],
 "Tributverhältniss": [
 "Tributverhältnis",
@@ -6866,7 +7246,7 @@
 ],
 "Trocknungsprocessen": [
 "Trocknungsprozessen",
-"compound"
+"word"
 ],
 "Uebel": [
 "Übel",
@@ -6886,11 +7266,11 @@
 ],
 "Uebelstand": [
 "Übelstand",
-"compound"
+"word"
 ],
 "Uebelstände": [
 "Übelstände",
-"compound"
+"word"
 ],
 "Ueber": [
 "Über",
@@ -6898,7 +7278,7 @@
 ],
 "Ueberakkumulation": [
 "Überakkumulation",
-"compound"
+"word"
 ],
 "Ueberall": [
 "Überall",
@@ -6910,11 +7290,11 @@
 ],
 "Ueberanlage": [
 "Überanlage",
-"compound"
+"word"
 ],
 "Ueberanspannung": [
 "Überanspannung",
-"compound"
+"word"
 ],
 "Ueberanstrengung": [
 "Überanstrengung",
@@ -6922,7 +7302,7 @@
 ],
 "Ueberarbeit": [
 "Überarbeit",
-"compound"
+"word"
 ],
 "Ueberarbeiteten": [
 "Überarbeiteten",
@@ -6934,11 +7314,11 @@
 ],
 "Ueberausfuhr": [
 "Überausfuhr",
-"compound"
+"word"
 ],
 "Ueberausgabe": [
 "Überausgabe",
-"compound"
+"word"
 ],
 "Ueberbau": [
 "Überbau",
@@ -6966,11 +7346,11 @@
 ],
 "Ueberdrusses": [
 "Überdrusses",
-"compound"
+"word"
 ],
 "Uebereinfuhr": [
 "Übereinfuhr",
-"compound"
+"word"
 ],
 "Uebereinkommen": [
 "Übereinkommen",
@@ -6990,7 +7370,7 @@
 ],
 "Ueberexport": [
 "Überexport",
-"compound"
+"word"
 ],
 "Ueberfluss": [
 "Überfluss",
@@ -7010,7 +7390,7 @@
 ],
 "Ueberflüssigkeiten": [
 "Überflüssigkeiten",
-"compound"
+"word"
 ],
 "Ueberflüssigmachung": [
 "Überflüssigmachung",
@@ -7050,7 +7430,7 @@
 ],
 "Uebergangsmomente": [
 "Übergangsmomente",
-"compound"
+"word"
 ],
 "Uebergangsperiode": [
 "Übergangsperiode",
@@ -7058,15 +7438,15 @@
 ],
 "Uebergangsphasen": [
 "Übergangsphasen",
-"compound"
+"word"
 ],
 "Uebergangspunkt": [
 "Übergangspunkt",
-"compound"
+"word"
 ],
 "Uebergangsstufen": [
 "Übergangsstufen",
-"compound"
+"word"
 ],
 "Uebergangszeit": [
 "Übergangszeit",
@@ -7098,7 +7478,7 @@
 ],
 "Ueberhandel": [
 "Überhandel",
-"compound"
+"word"
 ],
 "Ueberhaupt": [
 "Überhaupt",
@@ -7114,27 +7494,27 @@
 ],
 "Ueberhäufung": [
 "Überhäufung",
-"compound"
+"word"
 ],
 "Ueberimport": [
 "Überimport",
-"compound"
+"word"
 ],
 "Ueberkonsum": [
 "Überkonsum",
-"compound"
+"word"
 ],
 "Ueberkonsumtion": [
 "Überkonsumtion",
-"compound"
+"word"
 ],
 "Ueberkredit": [
 "Überkredit",
-"compound"
+"word"
 ],
 "Ueberlandpost": [
 "Überlandpost",
-"compound"
+"word"
 ],
 "Ueberlassung": [
 "Überlassung",
@@ -7174,7 +7554,7 @@
 ],
 "Ueberpopulation": [
 "Überpopulation",
-"compound"
+"word"
 ],
 "Ueberproduktion": [
 "Überproduktion",
@@ -7182,7 +7562,7 @@
 ],
 "Ueberprofit": [
 "Überprofit",
-"compound"
+"word"
 ],
 "Ueberraschung": [
 "Überraschung",
@@ -7234,7 +7614,7 @@
 ],
 "Ueberschusszeit": [
 "Überschusszeit",
-"compound"
+"word"
 ],
 "Ueberschwemmungen": [
 "Überschwemmungen",
@@ -7270,7 +7650,7 @@
 ],
 "Ueberspekulation": [
 "Überspekulation",
-"compound"
+"word"
 ],
 "Ueberspringen": [
 "Überspringen",
@@ -7278,7 +7658,7 @@
 ],
 "Ueberstopfung": [
 "Überstopfung",
-"compound"
+"word"
 ],
 "Ueberstunden": [
 "Überstunden",
@@ -7290,7 +7670,7 @@
 ],
 "Ueberstürzung": [
 "Überstürzung",
-"compound"
+"word"
 ],
 "Uebertrag": [
 "Übertrag",
@@ -7314,11 +7694,11 @@
 ],
 "Uebertragungsgeschirrs": [
 "Übertragungsgeschirrs",
-"compound"
+"word"
 ],
 "Uebertragungsmaschinerie": [
 "Übertragungsmaschinerie",
-"compound"
+"word"
 ],
 "Uebertreibung": [
 "Übertreibung",
@@ -7338,7 +7718,7 @@
 ],
 "Ueberträfe": [
 "Überträfe",
-"compound"
+"word"
 ],
 "Uebervortheilung": [
 "Übervorteilung",
@@ -7346,11 +7726,11 @@
 ],
 "Uebervölkerung": [
 "Übervölkerung",
-"compound"
+"word"
 ],
 "Ueberwachs": [
 "Überwachs",
-"compound"
+"word"
 ],
 "Ueberwachung": [
 "Überwachung",
@@ -7366,7 +7746,7 @@
 ],
 "Ueberwucherungen": [
 "Überwucherungen",
-"compound"
+"word"
 ],
 "Ueberwältigung": [
 "Überwältigung",
@@ -7378,7 +7758,7 @@
 ],
 "Ueberzeit": [
 "Überzeit",
-"compound"
+"word"
 ],
 "Ueberzeugung": [
 "Überzeugung",
@@ -7394,7 +7774,7 @@
 ],
 "Ueberzufuhr": [
 "Überzufuhr",
-"compound"
+"word"
 ],
 "Ueberzähligen": [
 "Überzähligen",
@@ -7418,7 +7798,7 @@
 ],
 "Umsatzprocesses": [
 "Umsatzprozesses",
-"compound"
+"word"
 ],
 "Umschlagscyklen": [
 "Umschlagszyklen",
@@ -7434,7 +7814,7 @@
 ],
 "Umsetzungsprocesses": [
 "Umsetzungsprozesses",
-"compound"
+"word"
 ],
 "Unkenntniss": [
 "Unkenntnis",
@@ -7462,7 +7842,7 @@
 ],
 "Untermiethern": [
 "Untermietern",
-"compound"
+"word"
 ],
 "Unterofficiere": [
 "Unteroffiziere",
@@ -7498,7 +7878,7 @@
 ],
 "Urtheilssprüchen": [
 "Urteilssprüchen",
-"compound"
+"word"
 ],
 "Variirt": [
 "Variiert",
@@ -7506,7 +7886,7 @@
 ],
 "Verbrennungsprocesses": [
 "Verbrennungsprozesses",
-"compound"
+"word"
 ],
 "Vergrösserung": [
 "Vergrößerung",
@@ -7558,15 +7938,15 @@
 ],
 "Verschleisselement": [
 "Verschleißelement",
-"sz"
+"compound"
 ],
 "Verschleisselements": [
 "Verschleißelements",
-"sz"
+"compound"
 ],
 "Verschleissersatz": [
 "Verschleißersatz",
-"sz"
+"compound"
 ],
 "Verschleisses": [
 "Verschleißes",
@@ -7578,11 +7958,11 @@
 ],
 "Verschleisstheil": [
 "Verschleißteil",
-"compound"
+"word"
 ],
 "Verschleisstheils": [
 "Verschleißteils",
-"compound"
+"word"
 ],
 "Verschleisswerth": [
 "Verschleißwert",
@@ -7594,7 +7974,7 @@
 ],
 "Verschleisszeit": [
 "Verschleißzeit",
-"compound"
+"word"
 ],
 "Verstoss": [
 "Verstoß",
@@ -7626,7 +8006,7 @@
 ],
 "Vertheidigungsmittel": [
 "Verteidigungsmittel",
-"compound"
+"word"
 ],
 "Vertheiler": [
 "Verteiler",
@@ -7638,39 +8018,39 @@
 ],
 "Vertheilungsbedingungen": [
 "Verteilungsbedingungen",
-"compound"
+"word"
 ],
 "Vertheilungsform": [
 "Verteilungsform",
-"compound"
+"word"
 ],
 "Vertheilungsformen": [
 "Verteilungsformen",
-"compound"
+"word"
 ],
 "Vertheilungskategorie": [
 "Verteilungskategorie",
-"compound"
+"word"
 ],
 "Vertheilungsverhältniss": [
 "Verteilungsverhältnis",
-"compound"
+"word"
 ],
 "Vertheilungsverhältnisse": [
 "Verteilungsverhältnisse",
-"compound"
+"word"
 ],
 "Vertheilungsverhältnissen": [
 "Verteilungsverhältnissen",
-"compound"
+"word"
 ],
 "Vertheilungsweise": [
 "Verteilungsweise",
-"compound"
+"word"
 ],
 "Vertheilungsweisen": [
 "Verteilungsweisen",
-"compound"
+"word"
 ],
 "Vertheuerung": [
 "Verteuerung",
@@ -7694,67 +8074,67 @@
 ],
 "Verwerthungsbedingungen": [
 "Verwertungsbedingungen",
-"compound"
+"word"
 ],
 "Verwerthungsbedürfniss": [
 "Verwertungsbedürfnis",
-"compound"
+"word"
 ],
 "Verwerthungsbedürfnisse": [
 "Verwertungsbedürfnisse",
-"compound"
+"word"
 ],
 "Verwerthungsbedürfnissen": [
 "Verwertungsbedürfnissen",
-"compound"
+"word"
 ],
 "Verwerthungsgesetze": [
 "Verwertungsgesetze",
-"compound"
+"word"
 ],
 "Verwerthungsgrad": [
 "Verwertungsgrad",
-"compound"
+"word"
 ],
 "Verwerthungskraft": [
 "Verwertungskraft",
-"compound"
+"word"
 ],
 "Verwerthungskreisläufen": [
 "Verwertungskreisläufen",
-"compound"
+"word"
 ],
 "Verwerthungsmittel": [
 "Verwertungsmittel",
-"compound"
+"word"
 ],
 "Verwerthungsprocess": [
 "Verwertungsprozess",
-"compound"
+"word"
 ],
 "Verwerthungsprocesses": [
 "Verwertungsprozesses",
-"compound"
+"word"
 ],
 "Verwerthungsprozess": [
 "Verwertungsprozess",
-"compound"
+"word"
 ],
 "Verwerthungsprozesses": [
 "Verwertungsprozesses",
-"compound"
+"word"
 ],
 "Verwerthungstrieb": [
 "Verwertungstrieb",
-"compound"
+"word"
 ],
 "Verwerthungsverhältniss": [
 "Verwertungsverhältnis",
-"compound"
+"word"
 ],
 "Verwerthungsverhältnissen": [
 "Verwertungsverhältnissen",
-"compound"
+"word"
 ],
 "Verzeichniss": [
 "Verzeichnis",
@@ -7766,7 +8146,7 @@
 ],
 "Veräusserlichung": [
 "Veräußerlichung",
-"compound"
+"word"
 ],
 "Veräusserung": [
 "Veräußerung",
@@ -7778,11 +8158,11 @@
 ],
 "Veräusserungsprofit": [
 "Veräußerungsprofit",
-"compound"
+"word"
 ],
 "Veräusserungsprofits": [
 "Veräußerungsprofits",
-"compound"
+"word"
 ],
 "Vicepräsident": [
 "Vizepräsident",
@@ -7790,7 +8170,7 @@
 ],
 "Viehvorrath": [
 "Viehvorrat",
-"compound"
+"word"
 ],
 "Viertheil": [
 "Viertel",
@@ -7798,7 +8178,7 @@
 ],
 "Vierunddreissigstes": [
 "Vierunddreißigstes",
-"sz"
+"word"
 ],
 "Vincentstrasse": [
 "Vincentstraße",
@@ -7806,11 +8186,11 @@
 ],
 "Volksarmuth": [
 "Volksarmut",
-"compound"
+"word"
 ],
 "Volksbestandtheil": [
 "Volksbestandteil",
-"compound"
+"word"
 ],
 "Volkseigenthum": [
 "Volkseigentum",
@@ -7818,19 +8198,19 @@
 ],
 "Volksreichthum": [
 "Volksreichtum",
-"compound"
+"word"
 ],
 "Volksreichthums": [
 "Volksreichtums",
-"compound"
+"word"
 ],
 "Volksvorurtheil": [
 "Volksvorurteil",
-"compound"
+"word"
 ],
 "Volksvorurtheils": [
 "Volksvorurteils",
-"compound"
+"word"
 ],
 "Volkswirthschaft": [
 "Volkswirtschaft",
@@ -7854,7 +8234,7 @@
 ],
 "Vorrathsbildung": [
 "Vorratsbildung",
-"compound"
+"word"
 ],
 "Vorrathskammern": [
 "Vorratskammern",
@@ -7862,7 +8242,7 @@
 ],
 "Vorrathsräume": [
 "Vorratsräume",
-"compound"
+"word"
 ],
 "Vorräthe": [
 "Vorräte",
@@ -7879,6 +8259,10 @@
 "Vorschiesser": [
 "Vorschießer",
 "sz"
+],
+"Vorsichtsmassregeln": [
+"Vorsichtsmaßregeln",
+"word"
 ],
 "Vortheil": [
 "Vorteil",
@@ -7918,19 +8302,19 @@
 ],
 "Waarenaccumulation": [
 "Warenakkumulation",
-"compound"
+"word"
 ],
 "Waarenanalyse": [
 "Warenanalyse",
-"compound"
+"word"
 ],
 "Waarenart": [
 "Warenart",
-"compound"
+"word"
 ],
 "Waarenarten": [
 "Warenarten",
-"compound"
+"word"
 ],
 "Waarenaustausch": [
 "Warenaustausch",
@@ -7938,83 +8322,83 @@
 ],
 "Waarenaustausches": [
 "Warenaustausches",
-"compound"
+"word"
 ],
 "Waarenaustauschs": [
 "Warenaustauschs",
-"compound"
+"word"
 ],
 "Waarenbesitzer": [
 "Warenbesitzer",
-"compound"
+"word"
 ],
 "Waarenbesitzern": [
 "Warenbesitzern",
-"compound"
+"word"
 ],
 "Waarenbesitzers": [
 "Warenbesitzers",
-"compound"
+"word"
 ],
 "Waarenbestandtheil": [
 "Warenbestandteil",
-"compound"
+"word"
 ],
 "Waarenbestandtheile": [
 "Warenbestandteile",
-"compound"
+"word"
 ],
 "Waarenbeträge": [
 "Warenbeträge",
-"compound"
+"word"
 ],
 "Waarenbildner": [
 "Warenbildner",
-"compound"
+"word"
 ],
 "Waarenbreis": [
 "Warenbreis",
-"compound"
+"word"
 ],
 "Waarencirculation": [
 "Warenzirkulation",
-"compound"
+"word"
 ],
 "Waarencirkulation": [
 "Warenzirkulation",
-"compound"
+"word"
 ],
 "Waarendienst": [
 "Warendienst",
-"compound"
+"word"
 ],
 "Waarendinge": [
 "Warendinge",
-"compound"
+"word"
 ],
 "Waarendocks": [
 "Warendocks",
-"compound"
+"word"
 ],
 "Waareneinfuhr": [
 "Wareneinfuhr",
-"compound"
+"word"
 ],
 "Waarenelement": [
 "Warenelement",
-"compound"
+"word"
 ],
 "Waarenelemente": [
 "Warenelemente",
-"compound"
+"word"
 ],
 "Waarenelementen": [
 "Warenelementen",
-"compound"
+"word"
 ],
 "Waarenexports": [
 "Warenexports",
-"compound"
+"word"
 ],
 "Waarenextreme": [
 "Warenextreme",
@@ -8022,43 +8406,43 @@
 ],
 "Waarenfetischs": [
 "Warenfetischs",
-"compound"
+"word"
 ],
 "Waarenform": [
 "Warenform",
-"compound"
+"word"
 ],
 "Waarenformen": [
 "Warenformen",
-"compound"
+"word"
 ],
 "Waarenfunktion": [
 "Warenfunktion",
-"compound"
+"word"
 ],
 "Waarenfunktionen": [
 "Warenfunktionen",
-"compound"
+"word"
 ],
 "Waarenfälschung": [
 "Warenfälschung",
-"compound"
+"word"
 ],
 "Waarengattung": [
 "Warengattung",
-"compound"
+"word"
 ],
 "Waarengeschäft": [
 "Warengeschäft",
-"compound"
+"word"
 ],
 "Waarengeschäfte": [
 "Warengeschäfte",
-"compound"
+"word"
 ],
 "Waarengestalt": [
 "Warengestalt",
-"compound"
+"word"
 ],
 "Waarenhandel": [
 "Warenhandel",
@@ -8066,7 +8450,7 @@
 ],
 "Waarenhandels": [
 "Warenhandels",
-"compound"
+"word"
 ],
 "Waarenhandlungs": [
 "Warenhandlungs",
@@ -8074,27 +8458,27 @@
 ],
 "Waarenhandlungskapital": [
 "Warenhandlungskapital",
-"compound"
+"word"
 ],
 "Waarenhandlungskapitals": [
 "Warenhandlungskapitals",
-"compound"
+"word"
 ],
 "Waarenheers": [
 "Warenheers",
-"compound"
+"word"
 ],
 "Waarenhändler": [
 "Warenhändler",
-"compound"
+"word"
 ],
 "Waarenhändlern": [
 "Warenhändlern",
-"compound"
+"word"
 ],
 "Waarenhändlers": [
 "Warenhändlers",
-"compound"
+"word"
 ],
 "Waarenhäuser": [
 "Warenhäuser",
@@ -8106,15 +8490,15 @@
 ],
 "Waarenhüter": [
 "Warenhüter",
-"compound"
+"word"
 ],
 "Waareninhabern": [
 "Wareninhabern",
-"compound"
+"word"
 ],
 "Waarenkapital": [
 "Warenkapital",
-"compound"
+"word"
 ],
 "Waarenkapitale": [
 "Warenkapitale",
@@ -8122,15 +8506,15 @@
 ],
 "Waarenkapitals": [
 "Warenkapitals",
-"compound"
+"word"
 ],
 "Waarenkauf": [
 "Warenkauf",
-"compound"
+"word"
 ],
 "Waarenkenntniss": [
 "Warenkenntnis",
-"compound"
+"word"
 ],
 "Waarenkunde": [
 "Warenkunde",
@@ -8138,27 +8522,27 @@
 ],
 "Waarenkäufe": [
 "Warenkäufe",
-"compound"
+"word"
 ],
 "Waarenkäufen": [
 "Warenkäufen",
-"compound"
+"word"
 ],
 "Waarenkäufer": [
 "Warenkäufer",
-"compound"
+"word"
 ],
 "Waarenkörper": [
 "Warenkörper",
-"compound"
+"word"
 ],
 "Waarenkörpern": [
 "Warenkörpern",
-"compound"
+"word"
 ],
 "Waarenkörpers": [
 "Warenkörpers",
-"compound"
+"word"
 ],
 "Waarenlager": [
 "Warenlager",
@@ -8166,119 +8550,119 @@
 ],
 "Waarenlagern": [
 "Warenlagern",
-"compound"
+"word"
 ],
 "Waarenleib": [
 "Warenleib",
-"compound"
+"word"
 ],
 "Waarenleibern": [
 "Warenleibern",
-"compound"
+"word"
 ],
 "Waarenmagazine": [
 "Warenmagazine",
-"compound"
+"word"
 ],
 "Waarenmagazinen": [
 "Warenmagazinen",
-"compound"
+"word"
 ],
 "Waarenmagazins": [
 "Warenmagazins",
-"compound"
+"word"
 ],
 "Waarenmakler": [
 "Warenmakler",
-"compound"
+"word"
 ],
 "Waarenmaklern": [
 "Warenmaklern",
-"compound"
+"word"
 ],
 "Waarenmarkt": [
 "Warenmarkt",
-"compound"
+"word"
 ],
 "Waarenmarkts": [
 "Warenmarkts",
-"compound"
+"word"
 ],
 "Waarenmasse": [
 "Warenmasse",
-"compound"
+"word"
 ],
 "Waarenmassen": [
 "Warenmassen",
-"compound"
+"word"
 ],
 "Waarenmaterial": [
 "Warenmaterial",
-"compound"
+"word"
 ],
 "Waarenmaß": [
 "Warenmaß",
-"compound"
+"word"
 ],
 "Waarenmaßes": [
 "Warenmaßes",
-"compound"
+"word"
 ],
 "Waarenmenge": [
 "Warenmenge",
-"compound"
+"word"
 ],
 "Waarenmetamorphose": [
 "Warenmetamorphose",
-"compound"
+"word"
 ],
 "Waarenmetamorphosen": [
 "Warenmetamorphosen",
-"compound"
+"word"
 ],
 "Waarenmärkten": [
 "Warenmärkten",
-"compound"
+"word"
 ],
 "Waarennatur": [
 "Warennatur",
-"compound"
+"word"
 ],
 "Waarenpfand": [
 "Warenpfand",
-"compound"
+"word"
 ],
 "Waarenpreis": [
 "Warenpreis",
-"compound"
+"word"
 ],
 "Waarenpreise": [
 "Warenpreise",
-"compound"
+"word"
 ],
 "Waarenpreisen": [
 "Warenpreisen",
-"compound"
+"word"
 ],
 "Waarenpreises": [
 "Warenpreises",
-"compound"
+"word"
 ],
 "Waarenproducent": [
 "Warenproduzent",
-"compound"
+"word"
 ],
 "Waarenproducenten": [
 "Warenproduzenten",
-"compound"
+"word"
 ],
 "Waarenprodukt": [
 "Warenprodukt",
-"compound"
+"word"
 ],
 "Waarenprodukte": [
 "Warenprodukte",
-"compound"
+"word"
 ],
 "Waarenproduktion": [
 "Warenproduktion",
@@ -8286,19 +8670,19 @@
 ],
 "Waarenprodukts": [
 "Warenprodukts",
-"compound"
+"word"
 ],
 "Waarenproduzent": [
 "Warenproduzent",
-"compound"
+"word"
 ],
 "Waarenproduzenten": [
 "Warenproduzenten",
-"compound"
+"word"
 ],
 "Waarenpöbel": [
 "Warenpöbel",
-"compound"
+"word"
 ],
 "Waarenquanta": [
 "Warenquanta",
@@ -8306,11 +8690,11 @@
 ],
 "Waarenquantum": [
 "Warenquantum",
-"compound"
+"word"
 ],
 "Waarenquantums": [
 "Warenquantums",
-"compound"
+"word"
 ],
 "Waarenquotums": [
 "Warenquotums",
@@ -8318,59 +8702,59 @@
 ],
 "Waarenreihe": [
 "Warenreihe",
-"compound"
+"word"
 ],
 "Waarenrest": [
 "Warenrest",
-"compound"
+"word"
 ],
 "Waarensammlung": [
 "Warensammlung",
-"compound"
+"word"
 ],
 "Waarenseele": [
 "Warenseele",
-"compound"
+"word"
 ],
 "Waarensendung": [
 "Warensendung",
-"compound"
+"word"
 ],
 "Waarensorte": [
 "Warensorte",
-"compound"
+"word"
 ],
 "Waarensorten": [
 "Warensorten",
-"compound"
+"word"
 ],
 "Waarenspecies": [
-"Warenspecies",
-"compound"
+"Warenspezies",
+"word"
 ],
 "Waarensphäre": [
 "Warensphäre",
-"compound"
+"word"
 ],
 "Waarenstock": [
 "Warenstock",
-"compound"
+"word"
 ],
 "Waarenstockung": [
 "Warenstockung",
-"compound"
+"word"
 ],
 "Waarenstrom": [
 "Warenstrom",
-"compound"
+"word"
 ],
 "Waarensumme": [
 "Warensumme",
-"compound"
+"word"
 ],
 "Waarentheil": [
 "Warenteil",
-"compound"
+"word"
 ],
 "Waarentransport": [
 "Warentransport",
@@ -8378,59 +8762,59 @@
 ],
 "Waarenumsatz": [
 "Warenumsatz",
-"compound"
+"word"
 ],
 "Waarenumsatzes": [
 "Warenumsatzes",
-"compound"
+"word"
 ],
 "Waarenumsätze": [
 "Warenumsätze",
-"compound"
+"word"
 ],
 "Waarenverhältnisse": [
 "Warenverhältnisse",
-"compound"
+"word"
 ],
 "Waarenverkauf": [
 "Warenverkauf",
-"compound"
+"word"
 ],
 "Waarenverkaufs": [
 "Warenverkaufs",
-"compound"
+"word"
 ],
 "Waarenverkäufer": [
 "Warenverkäufer",
-"compound"
+"word"
 ],
 "Waarenverkäufern": [
 "Warenverkäufern",
-"compound"
+"word"
 ],
 "Waarenverkäufers": [
 "Warenverkäufers",
-"compound"
+"word"
 ],
 "Waarenvorrath": [
 "Warenvorrat",
-"compound"
+"word"
 ],
 "Waarenvorraths": [
 "Warenvorrats",
-"compound"
+"word"
 ],
 "Waarenvorräthen": [
 "Warenvorräten",
-"compound"
+"word"
 ],
 "Waarenvorschüsse": [
 "Warenvorschüsse",
-"compound"
+"word"
 ],
 "Waarenwandlung": [
 "Warenwandlung",
-"compound"
+"word"
 ],
 "Waarenwelt": [
 "Warenwelt",
@@ -8446,27 +8830,27 @@
 ],
 "Waarenwerthe": [
 "Warenwerte",
-"compound"
+"word"
 ],
 "Waarenwerthen": [
 "Warenwerten",
-"compound"
+"word"
 ],
 "Waarenwerths": [
 "Warenwerts",
-"compound"
+"word"
 ],
 "Waarenwerththeil": [
 "Warenwertteil",
-"compound"
+"word"
 ],
 "Waarenzufuhr": [
 "Warenzufuhr",
-"compound"
+"word"
 ],
 "Waarenzüge": [
 "Warenzüge",
-"compound"
+"word"
 ],
 "Waarenäquivalent": [
 "Warenäquivalent",
@@ -8494,7 +8878,7 @@
 ],
 "Waldeigenthümer": [
 "Waldeigentümer",
-"compound"
+"word"
 ],
 "Waldwirthschaft": [
 "Waldwirtschaft",
@@ -8506,19 +8890,23 @@
 ],
 "Wechselcirkulation": [
 "Wechselzirkulation",
-"compound"
+"word"
 ],
 "Wechseldiskontiren": [
 "Wechseldiskontieren",
 "compound"
 ],
+"Wechseldiskontirens": [
+"Wechseldiskontierens",
+"compound"
+],
 "Wechselwirthschaft": [
 "Wechselwirtschaft",
-"compound"
+"word"
 ],
 "Wehrwolfsheisshunger": [
 "Wehrwolfsheißhunger",
-"sz"
+"word"
 ],
 "Weidewirthschaft": [
 "Weidewirtschaft",
@@ -8538,15 +8926,15 @@
 ],
 "Weisswaschung": [
 "Weißwaschung",
-"sz"
+"word"
 ],
 "Weizenwerths": [
 "Weizenwerts",
-"compound"
+"word"
 ],
 "Weltmarktgrösse": [
 "Weltmarktgröße",
-"compound"
+"word"
 ],
 "Weltmarktscirculation": [
 "Weltmarktszirkulation",
@@ -8558,15 +8946,15 @@
 ],
 "Welttheilen": [
 "Weltteilen",
-"compound"
+"word"
 ],
 "Welttheils": [
 "Weltteils",
-"compound"
+"word"
 ],
 "Werkthätigkeit": [
 "Werktätigkeit",
-"compound"
+"word"
 ],
 "Werth": [
 "Wert",
@@ -8574,19 +8962,19 @@
 ],
 "Werthabgabe": [
 "Wertabgabe",
-"compound"
+"word"
 ],
 "Werthabnahme": [
 "Wertabnahme",
-"compound"
+"word"
 ],
 "Werthabzugs": [
 "Wertabzugs",
-"compound"
+"word"
 ],
 "Werthatom": [
 "Wertatom",
-"compound"
+"word"
 ],
 "Werthausdruck": [
 "Wertausdruck",
@@ -8610,11 +8998,11 @@
 ],
 "Werthbegriff": [
 "Wertbegriff",
-"compound"
+"word"
 ],
 "Werthbegriffs": [
 "Wertbegriffs",
-"compound"
+"word"
 ],
 "Werthbelauf": [
 "Wertbelauf",
@@ -8622,79 +9010,79 @@
 ],
 "Werthbestandtheil": [
 "Wertbestandteil",
-"compound"
+"word"
 ],
 "Werthbestandtheile": [
 "Wertbestandteile",
-"compound"
+"word"
 ],
 "Werthbestandtheilen": [
 "Wertbestandteilen",
-"compound"
+"word"
 ],
 "Werthbestandtheils": [
 "Wertbestandteils",
-"compound"
+"word"
 ],
 "Werthbestimmung": [
 "Wertbestimmung",
-"compound"
+"word"
 ],
 "Werthbetrag": [
 "Wertbetrag",
-"compound"
+"word"
 ],
 "Werthbeträge": [
 "Wertbeträge",
-"compound"
+"word"
 ],
 "Werthbewegung": [
 "Wertbewegung",
-"compound"
+"word"
 ],
 "Werthbildner": [
 "Wertbildner",
-"compound"
+"word"
 ],
 "Werthbildnern": [
 "Wertbildnern",
-"compound"
+"word"
 ],
 "Werthbildung": [
 "Wertbildung",
-"compound"
+"word"
 ],
 "Werthbildungsprocess": [
 "Wertbildungsprozess",
-"compound"
+"word"
 ],
 "Werthbildungsprozess": [
 "Wertbildungsprozess",
-"compound"
+"word"
 ],
 "Werthbildungsprozesses": [
 "Wertbildungsprozesses",
-"compound"
+"word"
 ],
 "Werthcharakter": [
 "Wertcharakter",
-"compound"
+"word"
 ],
 "Werthdasein": [
 "Wertdasein",
-"compound"
+"word"
 ],
 "Werthdifferenz": [
 "Wertdifferenz",
-"compound"
+"word"
 ],
 "Werthdifferenzen": [
 "Wertdifferenzen",
-"compound"
+"word"
 ],
 "Werthding": [
 "Wertding",
-"compound"
+"word"
 ],
 "Werthe": [
 "Werte",
@@ -8702,23 +9090,23 @@
 ],
 "Wertheigenschaft": [
 "Werteigenschaft",
-"compound"
+"word"
 ],
 "Werthelement": [
 "Wertelement",
-"compound"
+"word"
 ],
 "Werthelemente": [
 "Wertelemente",
-"compound"
+"word"
 ],
 "Werthelementen": [
 "Wertelementen",
-"compound"
+"word"
 ],
 "Werthelements": [
 "Wertelements",
-"compound"
+"word"
 ],
 "Werthen": [
 "Werten",
@@ -8726,7 +9114,7 @@
 ],
 "Wertherhöhung": [
 "Werterhöhung",
-"compound"
+"word"
 ],
 "Werthersatz": [
 "Wertersatz",
@@ -8734,7 +9122,7 @@
 ],
 "Werthersatzes": [
 "Wertersatzes",
-"compound"
+"word"
 ],
 "Werthes": [
 "Wertes",
@@ -8742,67 +9130,67 @@
 ],
 "Werthexistenzen": [
 "Wertexistenzen",
-"compound"
+"word"
 ],
 "Werthfall": [
 "Wertfall",
-"compound"
+"word"
 ],
 "Werthfalls": [
 "Wertfalls",
-"compound"
+"word"
 ],
 "Werthform": [
 "Wertform",
-"compound"
+"word"
 ],
 "Werthformen": [
 "Wertformen",
-"compound"
+"word"
 ],
 "Werthgegenständlichkeit": [
 "Wertgegenständlichkeit",
-"compound"
+"word"
 ],
 "Werthgesetz": [
 "Wertgesetz",
-"compound"
+"word"
 ],
 "Werthgesetze": [
 "Wertgesetze",
-"compound"
+"word"
 ],
 "Werthgesetzes": [
 "Wertgesetzes",
-"compound"
+"word"
 ],
 "Werthgestalt": [
 "Wertgestalt",
-"compound"
+"word"
 ],
 "Werthgrenze": [
 "Wertgrenze",
-"compound"
+"word"
 ],
 "Werthgrösse": [
 "Wertgröße",
-"compound"
+"word"
 ],
 "Werthgrössen": [
 "Wertgrößen",
-"compound"
+"word"
 ],
 "Werthgröße": [
 "Wertgröße",
-"compound"
+"word"
 ],
 "Werthgrößen": [
 "Wertgrößen",
-"compound"
+"word"
 ],
 "Werthhöhe": [
 "Werthöhe",
-"compound"
+"word"
 ],
 "Werthigkeit": [
 "Wertigkeit",
@@ -8810,27 +9198,27 @@
 ],
 "Werthinkrement": [
 "Wertinkrement",
-"compound"
+"word"
 ],
 "Werthkonstitution": [
 "Wertkonstitution",
-"compound"
+"word"
 ],
 "Werthkrystall": [
 "Wertkristall",
-"compound"
+"word"
 ],
 "Werthkörper": [
 "Wertkörper",
-"compound"
+"word"
 ],
 "Werthkörpers": [
 "Wertkörpers",
-"compound"
+"word"
 ],
 "Werthleib": [
 "Wertleib",
-"compound"
+"word"
 ],
 "Werthlosigkeit": [
 "Wertlosigkeit",
@@ -8846,11 +9234,11 @@
 ],
 "Werthmasse": [
 "Wertmasse",
-"compound"
+"word"
 ],
 "Werthmassen": [
 "Wertmassen",
-"compound"
+"word"
 ],
 "Werthmasses": [
 "Wertmaßes",
@@ -8862,11 +9250,11 @@
 ],
 "Werthmaß": [
 "Wertmaß",
-"compound"
+"word"
 ],
 "Werthmesser": [
 "Wertmesser",
-"compound"
+"word"
 ],
 "Werthpapier": [
 "Wertpapier",
@@ -8882,27 +9270,27 @@
 ],
 "Werthpreisen": [
 "Wertpreisen",
-"compound"
+"word"
 ],
 "Werthprinzips": [
 "Wertprinzips",
-"compound"
+"word"
 ],
 "Werthprodukt": [
 "Wertprodukt",
-"compound"
+"word"
 ],
 "Werthprodukte": [
 "Wertprodukte",
-"compound"
+"word"
 ],
 "Werthproduktion": [
 "Wertproduktion",
-"compound"
+"word"
 ],
 "Werthprodukts": [
 "Wertprodukts",
-"compound"
+"word"
 ],
 "Werthquanta": [
 "Wertquanta",
@@ -8910,31 +9298,31 @@
 ],
 "Werthquantum": [
 "Wertquantum",
-"compound"
+"word"
 ],
 "Werthquantums": [
 "Wertquantums",
-"compound"
+"word"
 ],
 "Werthquelle": [
 "Wertquelle",
-"compound"
+"word"
 ],
 "Werthregel": [
 "Wertregel",
-"compound"
+"word"
 ],
 "Werthreproduktion": [
 "Wertreproduktion",
-"compound"
+"word"
 ],
 "Werthrevolution": [
 "Wertrevolution",
-"compound"
+"word"
 ],
 "Werthrevolutionen": [
 "Wertrevolutionen",
-"compound"
+"word"
 ],
 "Werths": [
 "Werts",
@@ -8942,11 +9330,11 @@
 ],
 "Werthschranken": [
 "Wertschranken",
-"compound"
+"word"
 ],
 "Werthschwankungen": [
 "Wertschwankungen",
-"compound"
+"word"
 ],
 "Werthschätzung": [
 "Wertschätzung",
@@ -8958,19 +9346,19 @@
 ],
 "Werthsein": [
 "Wertsein",
-"compound"
+"word"
 ],
 "Werthseins": [
 "Wertseins",
-"compound"
+"word"
 ],
 "Werthseite": [
 "Wertseite",
-"compound"
+"word"
 ],
 "Werthsenkung": [
 "Wertsenkung",
-"compound"
+"word"
 ],
 "Werthsteigerung": [
 "Wertsteigerung",
@@ -8982,75 +9370,75 @@
 ],
 "Werthstücke": [
 "Wertstücke",
-"compound"
+"word"
 ],
 "Werthsubstanz": [
 "Wertsubstanz",
-"compound"
+"word"
 ],
 "Werthsumme": [
 "Wertsumme",
-"compound"
+"word"
 ],
 "Werthsummen": [
 "Wertsummen",
-"compound"
+"word"
 ],
 "Werththeil": [
 "Wertteil",
-"compound"
+"word"
 ],
 "Werththeile": [
 "Wertteile",
-"compound"
+"word"
 ],
 "Werththeilen": [
 "Wertteilen",
-"compound"
+"word"
 ],
 "Werththeils": [
 "Wertteils",
-"compound"
+"word"
 ],
 "Werththeorie": [
 "Werttheorie",
-"compound"
+"word"
 ],
 "Werthträger": [
 "Wertträger",
-"compound"
+"word"
 ],
 "Werthumfang": [
 "Wertumfang",
-"compound"
+"word"
 ],
 "Werthumfangs": [
 "Wertumfangs",
-"compound"
+"word"
 ],
 "Werthumsatz": [
 "Wertumsatz",
-"compound"
+"word"
 ],
 "Werthumschlag": [
 "Wertumschlag",
-"compound"
+"word"
 ],
 "Werthverhältniss": [
 "Wertverhältnis",
-"compound"
+"word"
 ],
 "Werthverhältnisse": [
 "Wertverhältnisse",
-"compound"
+"word"
 ],
 "Werthverhältnissen": [
 "Wertverhältnissen",
-"compound"
+"word"
 ],
 "Werthverhältnisses": [
 "Wertverhältnisses",
-"compound"
+"word"
 ],
 "Werthverlust": [
 "Wertverlust",
@@ -9058,55 +9446,55 @@
 ],
 "Werthverlustes": [
 "Wertverlustes",
-"compound"
+"word"
 ],
 "Werthvermehrung": [
 "Wertvermehrung",
-"compound"
+"word"
 ],
 "Werthverminderung": [
 "Wertverminderung",
-"compound"
+"word"
 ],
 "Werthverschiedenheit": [
 "Wertverschiedenheit",
-"compound"
+"word"
 ],
 "Werthveränderung": [
 "Wertveränderung",
-"compound"
+"word"
 ],
 "Werthveränderungen": [
 "Wertveränderungen",
-"compound"
+"word"
 ],
 "Werthvorschuss": [
 "Wertvorschuss",
-"compound"
+"word"
 ],
 "Werthwechsel": [
 "Wertwechsel",
-"compound"
+"word"
 ],
 "Werthwechsels": [
 "Wertwechsels",
-"compound"
+"word"
 ],
 "Werthzeichen": [
 "Wertzeichen",
-"compound"
+"word"
 ],
 "Werthzunahme": [
 "Wertzunahme",
-"compound"
+"word"
 ],
 "Werthzusammensetzung": [
 "Wertzusammensetzung",
-"compound"
+"word"
 ],
 "Werthzusatz": [
 "Wertzusatz",
-"compound"
+"word"
 ],
 "Werthzuschaffen": [
 "Wertzuschaffen",
@@ -9114,15 +9502,15 @@
 ],
 "Werthzuschlag": [
 "Wertzuschlag",
-"compound"
+"word"
 ],
 "Werthzuschläge": [
 "Wertzuschläge",
-"compound"
+"word"
 ],
 "Werthzuschuss": [
 "Wertzuschuss",
-"compound"
+"word"
 ],
 "Werthzuwachs": [
 "Wertzuwachs",
@@ -9130,7 +9518,7 @@
 ],
 "Werthänderung": [
 "Wertänderung",
-"compound"
+"word"
 ],
 "Werthäquivalent": [
 "Wertäquivalent",
@@ -9138,15 +9526,15 @@
 ],
 "Werthüberschuss": [
 "Wertüberschuss",
-"compound"
+"word"
 ],
 "Werthüberschusses": [
 "Wertüberschusses",
-"compound"
+"word"
 ],
 "Werthübertragung": [
 "Wertübertragung",
-"compound"
+"word"
 ],
 "Wesshalb": [
 "Weshalb",
@@ -9158,7 +9546,7 @@
 ],
 "Willensverhältniss": [
 "Willensverhältnis",
-"compound"
+"word"
 ],
 "Wirthe": [
 "Wirte",
@@ -9174,7 +9562,7 @@
 ],
 "Wirthschafter": [
 "Wirtschafter",
-"compound"
+"word"
 ],
 "Wirthschafterin": [
 "Wirtschafterin",
@@ -9182,7 +9570,7 @@
 ],
 "Wirthschaftsbedingungen": [
 "Wirtschaftsbedingungen",
-"compound"
+"word"
 ],
 "Wirthschaftsbetriebe": [
 "Wirtschaftsbetriebe",
@@ -9194,19 +9582,19 @@
 ],
 "Wirthschaftsgeräthen": [
 "Wirtschaftsgeräten",
-"compound"
+"word"
 ],
 "Wirthschaftskosten": [
 "Wirtschaftskosten",
-"compound"
+"word"
 ],
 "Wochenmiethe": [
 "Wochenmiete",
-"compound"
+"word"
 ],
 "Wochenwerth": [
 "Wochenwert",
-"compound"
+"word"
 ],
 "Wohlthätigkeit": [
 "Wohltätigkeit",
@@ -9214,27 +9602,39 @@
 ],
 "Wohlthätigkeitsanstalt": [
 "Wohltätigkeitsanstalt",
-"compound"
+"word"
 ],
 "Wollenwaaren": [
 "Wollenwaren",
 "compound"
 ],
+"Wollerndte": [
+"Wollernte",
+"word"
+],
 "Wucherzinsfuss": [
 "Wucherzinsfuß",
-"sz"
+"word"
+],
+"Wuthgeheul": [
+"Wutgeheul",
+"word"
 ],
 "Wüthendste": [
 "Wütendste",
+"word"
+],
+"Yankeethum": [
+"Yankeetum",
 "compound"
 ],
 "Zahlengrössen": [
 "Zahlengrößen",
-"compound"
+"word"
 ],
 "Zahlungsbedürfniss": [
 "Zahlungsbedürfnis",
-"compound"
+"word"
 ],
 "Zeitmass": [
 "Zeitmaß",
@@ -9242,15 +9642,19 @@
 ],
 "Zeittheil": [
 "Zeitteil",
-"compound"
+"word"
 ],
 "Zeittheilen": [
 "Zeitteilen",
-"compound"
+"word"
+],
+"Zenith": [
+"Zenit",
+"manual"
 ],
 "Zerreissung": [
 "Zerreißung",
-"sz"
+"word"
 ],
 "Zerstossen": [
 "Zerstoßen",
@@ -9260,25 +9664,33 @@
 "Zeugnis",
 "word"
 ],
+"Zigeunerthum": [
+"Zigeunertum",
+"word"
+],
 "Zinsfuss": [
 "Zinsfuß",
 "sz"
 ],
 "Zinsfusses": [
 "Zinsfußes",
-"sz"
+"word"
+],
+"Zubusse": [
+"Zubuße",
+"word"
 ],
 "Zugthüren": [
 "Zugtüren",
-"compound"
+"word"
 ],
 "Zusammenaddirt": [
 "Zusammenaddiert",
-"compound"
+"word"
 ],
 "Zusatzwerth": [
 "Zusatzwert",
-"compound"
+"word"
 ],
 "Zuschliessen": [
 "Zuschließen",
@@ -9304,13 +9716,17 @@
 "Zutun",
 "word"
 ],
+"Zwangsmassregeln": [
+"Zwangsmaßregeln",
+"word"
+],
 "Zwangsverhältniss": [
 "Zwangsverhältnis",
-"compound"
+"word"
 ],
 "Zweckgemässheit": [
 "Zweckgemäßheit",
-"sz"
+"compound"
 ],
 "Zweckmässigkeit": [
 "Zweckmäßigkeit",
@@ -9322,15 +9738,15 @@
 ],
 "Zweiunddreissigstes": [
 "Zweiunddreißigstes",
-"sz"
+"word"
 ],
 "Zwergmassstab": [
 "Zwergmaßstab",
-"sz"
+"word"
 ],
 "Zwergwirthschaft": [
 "Zwergwirtschaft",
-"compound"
+"word"
 ],
 "Zwischenheirathen": [
 "Zwischenheiraten",
@@ -9338,15 +9754,15 @@
 ],
 "Zwischenprocess": [
 "Zwischenprozess",
-"compound"
+"word"
 ],
 "Zwischenprocessen": [
 "Zwischenprozessen",
-"compound"
+"word"
 ],
 "Zündruthe": [
 "Zündrute",
-"compound"
+"word"
 ],
 "abbüssen": [
 "abbüßen",
@@ -9358,7 +9774,7 @@
 ],
 "abfliessendes": [
 "abfließendes",
-"compound"
+"word"
 ],
 "abfliesst": [
 "abfließt",
@@ -9366,11 +9782,11 @@
 ],
 "abgebüsst": [
 "abgebüßt",
-"sz"
+"word"
 ],
 "abgenöthigt": [
 "abgenötigt",
-"compound"
+"word"
 ],
 "abgestossen": [
 "abgestoßen",
@@ -9390,7 +9806,7 @@
 ],
 "abnöthigen": [
 "abnötigen",
-"compound"
+"word"
 ],
 "abschliessen": [
 "abschließen",
@@ -9422,7 +9838,11 @@
 ],
 "absorbirbar": [
 "absorbierbar",
-"compound"
+"word"
+],
+"absorbire": [
+"absorbiere",
+"word"
 ],
 "absorbiren": [
 "absorbieren",
@@ -9462,7 +9882,7 @@
 ],
 "abstrahirend": [
 "abstrahierend",
-"compound"
+"word"
 ],
 "abstrahirt": [
 "abstrahiert",
@@ -9478,11 +9898,11 @@
 ],
 "abtheilt": [
 "abteilt",
-"compound"
+"word"
 ],
 "abzufliessen": [
 "abzufließen",
-"compound"
+"word"
 ],
 "abzustossen": [
 "abzustoßen",
@@ -9490,7 +9910,7 @@
 ],
 "abzuurtheilen": [
 "abzuurteilen",
-"compound"
+"word"
 ],
 "acceptiren": [
 "akzeptieren",
@@ -9508,6 +9928,10 @@
 "akzeptierten",
 "word"
 ],
+"accessorisch": [
+"akzessorisch",
+"word"
+],
 "accumuliren": [
 "akkumulieren",
 "word"
@@ -9518,7 +9942,7 @@
 ],
 "accumulirte": [
 "akkumulierte",
-"compound"
+"word"
 ],
 "accumulirten": [
 "akkumulierten",
@@ -9526,11 +9950,11 @@
 ],
 "accumulirter": [
 "akkumulierter",
-"compound"
+"word"
 ],
 "accumulirtes": [
 "akkumuliertes",
-"compound"
+"word"
 ],
 "active": [
 "aktive",
@@ -9558,27 +9982,27 @@
 ],
 "affektirte": [
 "affektierte",
-"compound"
+"word"
 ],
 "affektirten": [
 "affektierten",
-"compound"
+"word"
 ],
 "afficiren": [
 "affizieren",
-"compound"
+"word"
 ],
 "afficirende": [
 "affizierende",
-"compound"
+"word"
 ],
 "afficirt": [
 "affiziert",
-"compound"
+"word"
 ],
 "afficirte": [
 "affizierte",
-"compound"
+"word"
 ],
 "aggregirt": [
 "aggregiert",
@@ -9586,7 +10010,7 @@
 ],
 "aggregirtes": [
 "aggregiertes",
-"compound"
+"word"
 ],
 "agirt": [
 "agiert",
@@ -9598,7 +10022,11 @@
 ],
 "akkordirt": [
 "akkordiert",
-"compound"
+"word"
+],
+"akkumulire": [
+"akkumuliere",
+"word"
 ],
 "akkumuliren": [
 "akkumulieren",
@@ -9606,11 +10034,11 @@
 ],
 "akkumulirende": [
 "akkumulierende",
-"compound"
+"word"
 ],
 "akkumulirenden": [
 "akkumulierenden",
-"compound"
+"word"
 ],
 "akkumulirt": [
 "akkumuliert",
@@ -9618,11 +10046,11 @@
 ],
 "akkumulirte": [
 "akkumulierte",
-"compound"
+"word"
 ],
 "akkumulirtem": [
 "akkumuliertem",
-"compound"
+"word"
 ],
 "akkumulirten": [
 "akkumulierten",
@@ -9630,11 +10058,15 @@
 ],
 "akkumulirter": [
 "akkumulierter",
-"compound"
+"word"
 ],
 "akkumulirtes": [
 "akkumuliertes",
-"compound"
+"word"
+],
+"alchymistische": [
+"alchimistische",
+"word"
 ],
 "allergrössten": [
 "allergrößten",
@@ -9650,11 +10082,11 @@
 ],
 "alteriren": [
 "alterieren",
-"compound"
+"word"
 ],
 "alterirt": [
 "alteriert",
-"compound"
+"word"
 ],
 "alternirende": [
 "alternierende",
@@ -9718,7 +10150,7 @@
 ],
 "anerkennenswerther": [
 "anerkennenswerter",
-"compound"
+"word"
 ],
 "angethan": [
 "angetan",
@@ -9726,11 +10158,15 @@
 ],
 "angethane": [
 "angetane",
-"compound"
+"word"
 ],
 "angiebt": [
 "angibt",
 "word"
+],
+"anmasslichen": [
+"anmaßlichen",
+"compound"
 ],
 "annexirt": [
 "annexiert",
@@ -9784,17 +10220,21 @@
 "antizipation",
 "foreign?"
 ],
+"anticipatorische": [
+"antizipatorische",
+"word"
+],
 "anticipiren": [
 "antizipieren",
 "word"
 ],
 "anticipirend": [
 "antizipierend",
-"compound"
+"word"
 ],
 "anticipirenden": [
 "antizipierenden",
-"compound"
+"word"
 ],
 "anticipirt": [
 "antizipiert",
@@ -9802,11 +10242,11 @@
 ],
 "anticipirte": [
 "antizipierte",
-"compound"
+"word"
 ],
 "anticipirten": [
 "antizipierten",
-"compound"
+"word"
 ],
 "antiquirt": [
 "antiquiert",
@@ -9840,6 +10280,10 @@
 "appliziert",
 "word"
 ],
+"appreciirt": [
+"appreziiert",
+"manual"
+],
 "arrangirt": [
 "arrangiert",
 "word"
@@ -9862,7 +10306,7 @@
 ],
 "assimilirter": [
 "assimilierter",
-"compound"
+"word"
 ],
 "associiren": [
 "assoziieren",
@@ -9894,27 +10338,27 @@
 ],
 "aufgenöthigte": [
 "aufgenötigte",
-"compound"
+"word"
 ],
 "aufmarschirt": [
 "aufmarschiert",
 "word"
 ],
 "aufoctroyirte": [
-"aufoctroyierte",
-"compound"
+"aufoktroyierte",
+"word"
 ],
 "aufoktroyirt": [
 "aufoktroyiert",
-"compound"
+"word"
 ],
 "aufschiessenden": [
 "aufschießenden",
-"sz"
+"word"
 ],
 "aufschiesst": [
 "aufschießt",
-"sz"
+"word"
 ],
 "aufstiess": [
 "aufstieß",
@@ -9922,11 +10366,15 @@
 ],
 "aufstossendes": [
 "aufstoßendes",
-"compound"
+"word"
 ],
 "aufzuoktroyiren": [
 "aufzuoktroyieren",
-"compound"
+"word"
+],
+"aufässe": [
+"aufäße",
+"word"
 ],
 "ausfungirt": [
 "ausfungiert",
@@ -10042,11 +10490,11 @@
 ],
 "auszuathmen": [
 "auszuatmen",
-"compound"
+"word"
 ],
 "auszugiessen": [
 "auszugießen",
-"compound"
+"word"
 ],
 "auszuschliessen": [
 "auszuschließen",
@@ -10110,7 +10558,7 @@
 ],
 "basirtem": [
 "basiertem",
-"compound"
+"word"
 ],
 "begrüsst": [
 "begrüßt",
@@ -10214,15 +10662,15 @@
 ],
 "bethätigende": [
 "betätigende",
-"compound"
+"word"
 ],
 "bethätigenden": [
 "betätigenden",
-"compound"
+"word"
 ],
 "bethätigender": [
 "betätigender",
-"compound"
+"word"
 ],
 "bethätigt": [
 "betätigt",
@@ -10230,7 +10678,7 @@
 ],
 "bethätigtes": [
 "betätigtes",
-"compound"
+"word"
 ],
 "beurtheile": [
 "beurteile",
@@ -10294,11 +10742,11 @@
 ],
 "blossgelegt": [
 "bloßgelegt",
-"compound"
+"word"
 ],
 "blosslegen": [
 "bloßlegen",
-"compound"
+"word"
 ],
 "bornirt": [
 "borniert",
@@ -10314,7 +10762,7 @@
 ],
 "bossirte": [
 "bossierte",
-"compound"
+"word"
 ],
 "both": [
 "bot",
@@ -10334,7 +10782,7 @@
 ],
 "buchstabirte": [
 "buchstabierte",
-"compound"
+"word"
 ],
 "büssen": [
 "büßen",
@@ -10342,11 +10790,15 @@
 ],
 "büssest": [
 "büßest",
-"sz"
+"word"
+],
+"campire": [
+"kampiere",
+"word"
 ],
 "campirt": [
-"campiert",
-"compound"
+"kampiert",
+"word"
 ],
 "carts": [
 "karts",
@@ -10366,7 +10818,7 @@
 ],
 "centripetalen": [
 "zentripetalen",
-"compound"
+"word"
 ],
 "cette": [
 "kette",
@@ -10386,11 +10838,11 @@
 ],
 "charakterisirende": [
 "charakterisierende",
-"compound"
+"word"
 ],
 "charakterisirenden": [
 "charakterisierenden",
-"compound"
+"word"
 ],
 "charakterisirt": [
 "charakterisiert",
@@ -10403,10 +10855,6 @@
 "ciel": [
 "ziel",
 "foreign?"
-],
-"circulants": [
-"zirkulants",
-"compound"
 ],
 "circulationsfähige": [
 "zirkulationsfähige",
@@ -10445,8 +10893,8 @@
 "compound"
 ],
 "cirkulire": [
-"zirkulire",
-"compound"
+"zirkuliere",
+"word"
 ],
 "cirkuliren": [
 "zirkulieren",
@@ -10454,7 +10902,7 @@
 ],
 "cirkulirend": [
 "zirkulierend",
-"compound"
+"word"
 ],
 "cirkulirende": [
 "zirkulierende",
@@ -10462,7 +10910,7 @@
 ],
 "cirkulirendem": [
 "zirkulierendem",
-"compound"
+"word"
 ],
 "cirkulirenden": [
 "zirkulierenden",
@@ -10470,11 +10918,11 @@
 ],
 "cirkulirender": [
 "zirkulierender",
-"compound"
+"word"
 ],
 "cirkulirendes": [
 "zirkulierendes",
-"compound"
+"word"
 ],
 "cirkulirt": [
 "zirkuliert",
@@ -10536,17 +10984,13 @@
 "klasse",
 "foreign?"
 ],
-"cocons": [
-"kokons",
-"word"
-],
 "coll": [
 "zoll",
 "foreign?"
 ],
 "colportiren": [
-"colportieren",
-"compound"
+"kolportieren",
+"word"
 ],
 "combination": [
 "kombination",
@@ -10575,10 +11019,6 @@
 "commercielles": [
 "kommerzielles",
 "word"
-],
-"commercium": [
-"kommerzium",
-"compound"
 ],
 "compensiren": [
 "kompensieren",
@@ -10650,7 +11090,7 @@
 ],
 "constanteres": [
 "konstanteres",
-"compound"
+"word"
 ],
 "constantes": [
 "konstantes",
@@ -10672,10 +11112,6 @@
 "konsumiert",
 "word"
 ],
-"consumptions": [
-"konsumptions",
-"compound"
-],
 "continent": [
 "kontinent",
 "foreign?"
@@ -10690,7 +11126,7 @@
 ],
 "contrahirten": [
 "kontrahierten",
-"compound"
+"word"
 ],
 "controliren": [
 "kontrollieren",
@@ -10732,13 +11168,17 @@
 "zorn",
 "foreign?"
 ],
+"cornischen": [
+"kornischen",
+"word"
+],
 "corrigirt": [
 "korrigiert",
 "word"
 ],
 "culminirend": [
-"culminierend",
-"compound"
+"kulminierend",
+"word"
 ],
 "cyklopische": [
 "zyklopische",
@@ -10760,13 +11200,17 @@
 "zynischer",
 "word"
 ],
+"cynischsten": [
+"zynischsten",
+"word"
+],
 "daarin": [
 "darin",
 "foreign?"
 ],
 "darzuthun": [
 "darzutun",
-"compound"
+"word"
 ],
 "datiren": [
 "datieren",
@@ -10774,7 +11218,7 @@
 ],
 "datirend": [
 "datierend",
-"compound"
+"word"
 ],
 "datirt": [
 "datiert",
@@ -10786,11 +11230,11 @@
 ],
 "debitirt": [
 "debitiert",
-"compound"
+"word"
 ],
 "decentralisirend": [
 "dezentralisierend",
-"compound"
+"word"
 ],
 "decentralisirte": [
 "dezentralisierte",
@@ -10802,7 +11246,7 @@
 ],
 "decimirenden": [
 "dezimierenden",
-"compound"
+"word"
 ],
 "decimirt": [
 "dezimiert",
@@ -10830,7 +11274,7 @@
 ],
 "degradirend": [
 "degradierend",
-"compound"
+"word"
 ],
 "degradirt": [
 "degradiert",
@@ -10850,11 +11294,11 @@
 ],
 "dekretirt": [
 "dekretiert",
-"compound"
+"word"
 ],
 "dekretirte": [
 "dekretierte",
-"compound"
+"word"
 ],
 "delegirt": [
 "delegiert",
@@ -10894,7 +11338,7 @@
 ],
 "denuncirten": [
 "denunzierten",
-"compound"
+"word"
 ],
 "denunzirt": [
 "denunziert",
@@ -10916,6 +11360,10 @@
 "deplazierten",
 "compound"
 ],
+"deponire": [
+"deponiere",
+"word"
+],
 "deponiren": [
 "deponieren",
 "word"
@@ -10930,7 +11378,7 @@
 ],
 "deponirtem": [
 "deponiertem",
-"compound"
+"word"
 ],
 "deponirten": [
 "deponierten",
@@ -10938,11 +11386,11 @@
 ],
 "deponirter": [
 "deponierter",
-"compound"
+"word"
 ],
 "deponirtes": [
 "deponiertes",
-"compound"
+"word"
 ],
 "depravirt": [
 "depraviert",
@@ -10958,7 +11406,7 @@
 ],
 "desorganisirte": [
 "desorganisierte",
-"compound"
+"word"
 ],
 "dessgleichen": [
 "desgleichen",
@@ -10970,7 +11418,7 @@
 ],
 "detailliren": [
 "detaillieren",
-"compound"
+"word"
 ],
 "detaillirter": [
 "detaillierter",
@@ -10978,7 +11426,7 @@
 ],
 "determinirend": [
 "determinierend",
-"compound"
+"word"
 ],
 "dezimirte": [
 "dezimierte",
@@ -11032,37 +11480,45 @@
 "dirigiert",
 "word"
 ],
+"diskontinuirliche": [
+"diskontinuierliche",
+"word"
+],
 "diskontirbar": [
 "diskontierbar",
-"compound"
+"word"
 ],
 "diskontirbare": [
 "diskontierbare",
-"compound"
+"word"
+],
+"diskontire": [
+"diskontiere",
+"word"
 ],
 "diskontiren": [
 "diskontieren",
-"compound"
+"word"
 ],
 "diskontirenden": [
 "diskontierenden",
-"compound"
+"word"
 ],
 "diskontirt": [
 "diskontiert",
-"compound"
+"word"
 ],
 "diskontirte": [
 "diskontierte",
-"compound"
+"word"
 ],
 "diskontirten": [
 "diskontierten",
-"compound"
+"word"
 ],
 "diskontirter": [
 "diskontierter",
-"compound"
+"word"
 ],
 "diskutirt": [
 "diskutiert",
@@ -11070,6 +11526,10 @@
 ],
 "disponirt": [
 "disponiert",
+"word"
+],
+"distinguirte": [
+"distinguierte",
 "word"
 ],
 "dividiren": [
@@ -11090,7 +11550,7 @@
 ],
 "drainirt": [
 "drainiert",
-"compound"
+"word"
 ],
 "draussen": [
 "draußen",
@@ -11098,7 +11558,7 @@
 ],
 "dreiprocentige": [
 "dreiprozentige",
-"compound"
+"word"
 ],
 "dreissig": [
 "dreißig",
@@ -11110,7 +11570,7 @@
 ],
 "dreissigfachen": [
 "dreißigfachen",
-"sz"
+"word"
 ],
 "dreissigjährige": [
 "dreißigjährige",
@@ -11131,6 +11591,10 @@
 "dynamic": [
 "dynamik",
 "foreign?"
+],
+"ebendesshalb": [
+"ebendeshalb",
+"compound"
 ],
 "effect": [
 "effekt",
@@ -11174,7 +11638,15 @@
 ],
 "eigenthümlichsten": [
 "eigentümlichsten",
-"compound"
+"word"
+],
+"einathmeten": [
+"einatmeten",
+"word"
+],
+"einbalsamire": [
+"einbalsamiere",
+"word"
 ],
 "einbüsst": [
 "einbüßt",
@@ -11182,7 +11654,15 @@
 ],
 "einestheils": [
 "einesteils",
-"compound"
+"word"
+],
+"einflösste": [
+"einflößte",
+"word"
+],
+"eingeathmete": [
+"eingeatmete",
+"word"
 ],
 "eingebüsst": [
 "eingebüßt",
@@ -11198,11 +11678,11 @@
 ],
 "einkassirte": [
 "einkassierte",
-"compound"
+"word"
 ],
 "einkassirten": [
 "einkassierten",
-"compound"
+"word"
 ],
 "einrollirt": [
 "einrolliert",
@@ -11278,7 +11758,7 @@
 ],
 "emigrirenden": [
 "emigrierenden",
-"compound"
+"word"
 ],
 "emigrirt": [
 "emigriert",
@@ -11290,7 +11770,7 @@
 ],
 "emporschiessenden": [
 "emporschießenden",
-"sz"
+"word"
 ],
 "encouragiren": [
 "encouragieren",
@@ -11306,7 +11786,7 @@
 ],
 "encyklopädischer": [
 "enzyklopädischer",
-"compound"
+"word"
 ],
 "engagirt": [
 "engagiert",
@@ -11318,15 +11798,23 @@
 ],
 "engagirtem": [
 "engagiertem",
-"compound"
+"word"
 ],
 "engagirten": [
 "engagierten",
 "word"
 ],
+"entblösst": [
+"entblößt",
+"sz"
+],
+"entblösste": [
+"entblößte",
+"sz"
+],
 "entfliessende": [
 "entfließende",
-"compound"
+"word"
 ],
 "entmuthigen": [
 "entmutigen",
@@ -11334,7 +11822,7 @@
 ],
 "entmuthigenden": [
 "entmutigenden",
-"compound"
+"word"
 ],
 "entschliessen": [
 "entschließen",
@@ -11350,31 +11838,31 @@
 ],
 "entwertheten": [
 "entwerteten",
-"compound"
+"word"
 ],
 "entäussere": [
 "entäußere",
-"compound"
+"word"
 ],
 "entäussert": [
 "entäußert",
-"compound"
+"word"
 ],
 "entäusserte": [
 "entäußerte",
-"compound"
+"word"
 ],
 "entäusserten": [
 "entäußerten",
-"compound"
+"word"
 ],
 "erfahrungsmässig": [
 "erfahrungsmäßig",
-"compound"
+"word"
 ],
 "erfahrungsmässiger": [
 "erfahrungsmäßiger",
-"compound"
+"word"
 ],
 "ergiebt": [
 "ergibt",
@@ -11450,15 +11938,23 @@
 ],
 "examinirt": [
 "examiniert",
-"compound"
+"word"
 ],
 "excellent": [
 "exzellent",
 "foreign?"
 ],
+"exceptionelle": [
+"exzeptionelle",
+"word"
+],
+"exceptionellen": [
+"exzeptionellen",
+"word"
+],
 "excerpirt": [
-"excerpiert",
-"compound"
+"exzerpiert",
+"word"
 ],
 "excessive": [
 "exzessive",
@@ -11480,13 +11976,17 @@
 "exekutiert",
 "word"
 ],
+"existire": [
+"existiere",
+"word"
+],
 "existiren": [
 "existieren",
 "word"
 ],
 "existirend": [
 "existierend",
-"compound"
+"word"
 ],
 "existirende": [
 "existierende",
@@ -11494,7 +11994,7 @@
 ],
 "existirendem": [
 "existierendem",
-"compound"
+"word"
 ],
 "existirenden": [
 "existierenden",
@@ -11530,7 +12030,7 @@
 ],
 "expedirt": [
 "expediert",
-"compound"
+"word"
 ],
 "explicite": [
 "explizite",
@@ -11558,39 +12058,39 @@
 ],
 "exploitiren": [
 "exploitieren",
-"compound"
+"word"
 ],
 "exploitirende": [
 "exploitierende",
-"compound"
+"word"
 ],
 "exploitirenden": [
 "exploitierenden",
-"compound"
+"word"
 ],
 "exploitirt": [
 "exploitiert",
-"compound"
+"word"
 ],
 "exploitirte": [
 "exploitierte",
-"compound"
+"word"
 ],
 "exploitirten": [
 "exploitierten",
-"compound"
+"word"
 ],
 "exploitirter": [
 "exploitierter",
-"compound"
+"word"
 ],
 "exportirbar": [
 "exportierbar",
-"compound"
+"word"
 ],
 "exportirbarer": [
 "exportierbarer",
-"compound"
+"word"
 ],
 "exportiren": [
 "exportieren",
@@ -11598,11 +12098,11 @@
 ],
 "exportirende": [
 "exportierende",
-"compound"
+"word"
 ],
 "exportirenden": [
 "exportierenden",
-"compound"
+"word"
 ],
 "exportirt": [
 "exportiert",
@@ -11614,7 +12114,7 @@
 ],
 "exportirtem": [
 "exportiertem",
-"compound"
+"word"
 ],
 "exportirten": [
 "exportierten",
@@ -11622,19 +12122,19 @@
 ],
 "expropriiren": [
 "expropriieren",
-"compound"
+"word"
 ],
 "expropriirt": [
 "expropriiert",
-"compound"
+"word"
 ],
 "expropriirte": [
 "expropriierte",
-"compound"
+"word"
 ],
 "expropriirten": [
 "expropriierten",
-"compound"
+"word"
 ],
 "extrahiren": [
 "extrahieren",
@@ -11678,7 +12178,7 @@
 ],
 "fabrikmässiger": [
 "fabrikmäßiger",
-"compound"
+"word"
 ],
 "fabriziren": [
 "fabrizieren",
@@ -11686,7 +12186,7 @@
 ],
 "fabrizirendes": [
 "fabrizierendes",
-"compound"
+"word"
 ],
 "fabrizirt": [
 "fabriziert",
@@ -11694,23 +12194,23 @@
 ],
 "falliren": [
 "fallieren",
-"compound"
+"word"
 ],
 "fallirt": [
 "falliert",
-"compound"
+"word"
 ],
 "fallirte": [
 "fallierte",
-"compound"
+"word"
 ],
 "fallirten": [
 "fallierten",
-"compound"
+"word"
 ],
 "fallirter": [
 "fallierter",
-"compound"
+"word"
 ],
 "façonniren": [
 "façonnieren",
@@ -11722,15 +12222,15 @@
 ],
 "figuriren": [
 "figurieren",
-"compound"
+"word"
 ],
 "figurirende": [
 "figurierende",
-"compound"
+"word"
 ],
 "figurirenden": [
 "figurierenden",
-"compound"
+"word"
 ],
 "figurirt": [
 "figuriert",
@@ -11738,11 +12238,11 @@
 ],
 "figurirte": [
 "figurierte",
-"compound"
+"word"
 ],
 "figurirten": [
 "figurierten",
-"compound"
+"word"
 ],
 "filtrirt": [
 "filtriert",
@@ -11750,7 +12250,7 @@
 ],
 "filtrirter": [
 "filtrierter",
-"compound"
+"word"
 ],
 "fingirte": [
 "fingierte",
@@ -11758,7 +12258,7 @@
 ],
 "fingirtes": [
 "fingiertes",
-"compound"
+"word"
 ],
 "fixiren": [
 "fixieren",
@@ -11778,7 +12278,7 @@
 ],
 "fixirtes": [
 "fixiertes",
-"compound"
+"word"
 ],
 "fleissig": [
 "fleißig",
@@ -11826,6 +12326,18 @@
 ],
 "floriren": [
 "florieren",
+"word"
+],
+"fluktuirende": [
+"fluktuierende",
+"word"
+],
+"fluktuirenden": [
+"fluktuierenden",
+"word"
+],
+"fluktuirender": [
+"fluktuierender",
 "word"
 ],
 "fluthet": [
@@ -11898,7 +12410,7 @@
 ],
 "fortreisst": [
 "fortreißt",
-"sz"
+"word"
 ],
 "fortzuexistiren": [
 "fortzuexistieren",
@@ -11910,15 +12422,15 @@
 ],
 "frappiren": [
 "frappieren",
-"compound"
+"word"
 ],
 "frappirt": [
 "frappiert",
-"compound"
+"word"
 ],
 "frappirte": [
 "frappierte",
-"compound"
+"word"
 ],
 "function": [
 "funktion",
@@ -11932,13 +12444,17 @@
 "funktioniert",
 "word"
 ],
+"fungire": [
+"fungiere",
+"word"
+],
 "fungiren": [
 "fungieren",
 "word"
 ],
 "fungirend": [
 "fungierend",
-"compound"
+"word"
 ],
 "fungirende": [
 "fungierende",
@@ -11946,7 +12462,7 @@
 ],
 "fungirendem": [
 "fungierendem",
-"compound"
+"word"
 ],
 "fungirenden": [
 "fungierenden",
@@ -11954,11 +12470,11 @@
 ],
 "fungirender": [
 "fungierender",
-"compound"
+"word"
 ],
 "fungirendes": [
 "fungierendes",
-"compound"
+"word"
 ],
 "fungirt": [
 "fungiert",
@@ -11970,6 +12486,10 @@
 ],
 "fungirten": [
 "fungierten",
+"word"
+],
+"funktionire": [
+"funktioniere",
 "word"
 ],
 "funktioniren": [
@@ -12006,7 +12526,7 @@
 ],
 "funktionsgemäss": [
 "funktionsgemäß",
-"sz"
+"word"
 ],
 "fussstapffen": [
 "fußstapffen",
@@ -12052,6 +12572,10 @@
 "geißeln",
 "sz"
 ],
+"gemassregelten": [
+"gemaßregelten",
+"word"
+],
 "gemiethet": [
 "gemietet",
 "word"
@@ -12086,7 +12610,7 @@
 ],
 "gemüthskalte": [
 "gemütskalte",
-"compound"
+"word"
 ],
 "geniessen": [
 "genießen",
@@ -12202,7 +12726,7 @@
 ],
 "gewohnheitsmässigen": [
 "gewohnheitsmäßigen",
-"compound"
+"word"
 ],
 "giebt": [
 "gibt",
@@ -12226,7 +12750,7 @@
 ],
 "gleichgrosser": [
 "gleichgroßer",
-"compound"
+"word"
 ],
 "gleichmässig": [
 "gleichmäßig",
@@ -12254,11 +12778,11 @@
 ],
 "glossirt": [
 "glossiert",
-"compound"
+"word"
 ],
 "glossirte": [
 "glossierte",
-"compound"
+"word"
 ],
 "graduirten": [
 "graduierten",
@@ -12282,7 +12806,7 @@
 ],
 "gravitirt": [
 "gravitiert",
-"compound"
+"word"
 ],
 "gross": [
 "groß",
@@ -12366,7 +12890,7 @@
 ],
 "gruppirenden": [
 "gruppierenden",
-"compound"
+"word"
 ],
 "gruppirt": [
 "gruppiert",
@@ -12474,23 +12998,23 @@
 ],
 "halbofficielle": [
 "halboffizielle",
-"compound"
+"word"
 ],
 "handwerksmässig": [
 "handwerksmäßig",
-"compound"
+"word"
 ],
 "handwerksmässige": [
 "handwerksmäßige",
-"compound"
+"word"
 ],
 "handwerksmässigen": [
 "handwerksmäßigen",
-"compound"
+"word"
 ],
 "handwerksmässiger": [
 "handwerksmäßiger",
-"compound"
+"word"
 ],
 "hantiren": [
 "hantieren",
@@ -12498,7 +13022,11 @@
 ],
 "hantirende": [
 "hantierende",
-"compound"
+"word"
+],
+"harmonire": [
+"harmoniere",
+"word"
 ],
 "harmonirt": [
 "harmoniert",
@@ -12546,7 +13074,7 @@
 ],
 "herumstolziren": [
 "herumstolzieren",
-"compound"
+"word"
 ],
 "hervorfliessen": [
 "hervorfließen",
@@ -12578,7 +13106,7 @@
 ],
 "humanisiren": [
 "humanisieren",
-"compound"
+"word"
 ],
 "höherwerthige": [
 "höherwertige",
@@ -12586,7 +13114,7 @@
 ],
 "höherwerthiges": [
 "höherwertiges",
-"compound"
+"word"
 ],
 "identificiren": [
 "identifizieren",
@@ -12618,7 +13146,7 @@
 ],
 "illustrirender": [
 "illustrierender",
-"compound"
+"word"
 ],
 "illustrirt": [
 "illustriert",
@@ -12646,7 +13174,7 @@
 ],
 "importirenden": [
 "importierenden",
-"compound"
+"word"
 ],
 "importirt": [
 "importiert",
@@ -12714,7 +13242,7 @@
 ],
 "inkorporirte": [
 "inkorporierte",
-"compound"
+"word"
 ],
 "insgesammt": [
 "insgesamt",
@@ -12730,7 +13258,7 @@
 ],
 "instinktmässigen": [
 "instinktmäßigen",
-"compound"
+"word"
 ],
 "integrirenden": [
 "integrierenden",
@@ -12738,11 +13266,11 @@
 ],
 "integrirender": [
 "integrierender",
-"compound"
+"word"
 ],
 "integrirendes": [
 "integrierendes",
-"compound"
+"word"
 ],
 "intensificirt": [
 "intensifiziert",
@@ -12806,15 +13334,15 @@
 ],
 "kalkulirenden": [
 "kalkulierenden",
-"compound"
+"word"
 ],
 "kapitalisiren": [
 "kapitalisieren",
-"compound"
+"word"
 ],
 "kapitalisirenden": [
 "kapitalisierenden",
-"compound"
+"word"
 ],
 "kapitalisirt": [
 "kapitalisiert",
@@ -12822,23 +13350,23 @@
 ],
 "kapitalisirte": [
 "kapitalisierte",
-"compound"
+"word"
 ],
 "kapitalisirtem": [
 "kapitalisiertem",
-"compound"
+"word"
 ],
 "kapitalisirten": [
 "kapitalisierten",
-"compound"
+"word"
 ],
 "kapitalisirter": [
 "kapitalisierter",
-"compound"
+"word"
 ],
 "kapitalisirtes": [
 "kapitalisiertes",
-"compound"
+"word"
 ],
 "kapitalübermüthig": [
 "kapitalübermütig",
@@ -12874,7 +13402,7 @@
 ],
 "kleinmüthig": [
 "kleinmütig",
-"compound"
+"word"
 ],
 "kolonisirt": [
 "kolonisiert",
@@ -12950,11 +13478,11 @@
 ],
 "kompensirenden": [
 "kompensierenden",
-"compound"
+"word"
 ],
 "kompensirender": [
 "kompensierender",
-"compound"
+"word"
 ],
 "kompensirt": [
 "kompensiert",
@@ -12994,31 +13522,39 @@
 ],
 "komplicirtere": [
 "kompliziertere",
-"compound"
+"word"
 ],
 "komplicirteren": [
 "komplizierteren",
-"compound"
+"word"
 ],
 "komplicirterer": [
 "komplizierterer",
-"compound"
+"word"
 ],
 "komplicirtesten": [
 "kompliziertesten",
-"compound"
+"word"
 ],
 "komplizirten": [
 "komplizierten",
 "word"
 ],
+"komplizirtere": [
+"kompliziertere",
+"word"
+],
 "komponirende": [
 "komponierende",
-"compound"
+"word"
 ],
 "komponirenden": [
 "komponierenden",
-"compound"
+"word"
+],
+"komprimire": [
+"komprimiere",
+"word"
 ],
 "koncentriren": [
 "konzentrieren",
@@ -13050,11 +13586,11 @@
 ],
 "kondensirende": [
 "kondensierende",
-"compound"
+"word"
 ],
 "kondensirender": [
 "kondensierender",
-"compound"
+"word"
 ],
 "konfiscirt": [
 "konfisziert",
@@ -13112,6 +13648,10 @@
 "konsolidierte",
 "word"
 ],
+"konstatire": [
+"konstatiere",
+"word"
+],
 "konstatiren": [
 "konstatieren",
 "word"
@@ -13130,7 +13670,7 @@
 ],
 "konstatirter": [
 "konstatierter",
-"compound"
+"word"
 ],
 "konstituiren": [
 "konstituieren",
@@ -13138,7 +13678,7 @@
 ],
 "konstituirend": [
 "konstituierend",
-"compound"
+"word"
 ],
 "konstituirende": [
 "konstituierende",
@@ -13150,7 +13690,7 @@
 ],
 "konstituirendes": [
 "konstituierendes",
-"compound"
+"word"
 ],
 "konstituirt": [
 "konstituiert",
@@ -13174,11 +13714,15 @@
 ],
 "konsumirbar": [
 "konsumierbar",
-"compound"
+"word"
 ],
 "konsumirbaren": [
 "konsumierbaren",
-"compound"
+"word"
+],
+"konsumire": [
+"konsumiere",
+"word"
 ],
 "konsumiren": [
 "konsumieren",
@@ -13186,11 +13730,11 @@
 ],
 "konsumirende": [
 "konsumierende",
-"compound"
+"word"
 ],
 "konsumirenden": [
 "konsumierenden",
-"compound"
+"word"
 ],
 "konsumirt": [
 "konsumiert",
@@ -13202,7 +13746,7 @@
 ],
 "konsumirtem": [
 "konsumiertem",
-"compound"
+"word"
 ],
 "konsumirten": [
 "konsumierten",
@@ -13210,19 +13754,43 @@
 ],
 "kontingentirt": [
 "kontingentiert",
-"compound"
+"word"
+],
+"kontinuirlich": [
+"kontinuierlich",
+"word"
+],
+"kontinuirliche": [
+"kontinuierliche",
+"word"
+],
+"kontinuirlichem": [
+"kontinuierlichem",
+"word"
+],
+"kontinuirlichen": [
+"kontinuierlichen",
+"word"
+],
+"kontinuirlicher": [
+"kontinuierlicher",
+"word"
+],
+"kontinuirliches": [
+"kontinuierliches",
+"word"
 ],
 "kontrahiren": [
 "kontrahieren",
-"compound"
+"word"
 ],
 "kontrahirende": [
 "kontrahierende",
-"compound"
+"word"
 ],
 "kontrahirenden": [
 "kontrahierenden",
-"compound"
+"word"
 ],
 "kontrahirt": [
 "kontrahiert",
@@ -13230,7 +13798,7 @@
 ],
 "kontrahirten": [
 "kontrahierten",
-"compound"
+"word"
 ],
 "kontrastirt": [
 "kontrastiert",
@@ -13282,7 +13850,7 @@
 ],
 "kooperirender": [
 "kooperierender",
-"compound"
+"word"
 ],
 "koordinirter": [
 "koordinierter",
@@ -13306,7 +13874,7 @@
 ],
 "korrespondirender": [
 "korrespondierender",
-"compound"
+"word"
 ],
 "korrespondirt": [
 "korrespondiert",
@@ -13326,7 +13894,7 @@
 ],
 "korrumpirende": [
 "korrumpierende",
-"compound"
+"word"
 ],
 "kosmopolisirt": [
 "kosmopolisiert",
@@ -13334,11 +13902,11 @@
 ],
 "kreditirt": [
 "kreditiert",
-"compound"
+"word"
 ],
 "kreditirten": [
 "kreditierten",
-"compound"
+"word"
 ],
 "kreiren": [
 "kreieren",
@@ -13358,31 +13926,31 @@
 ],
 "kritisirende": [
 "kritisierende",
-"compound"
+"word"
 ],
 "kritisirt": [
 "kritisiert",
 "word"
 ],
 "krystallisire": [
-"kristallisire",
-"compound"
+"kristallisiere",
+"word"
 ],
 "krystallisiren": [
 "kristallisieren",
-"compound"
+"word"
 ],
 "krystallisirt": [
 "kristallisiert",
-"compound"
+"word"
 ],
 "krystallisirte": [
 "kristallisierte",
-"compound"
+"word"
 ],
 "krystallisirter": [
 "kristallisierter",
-"compound"
+"word"
 ],
 "kulminirt": [
 "kulminiert",
@@ -13390,7 +13958,7 @@
 ],
 "kulminirten": [
 "kulminierten",
-"compound"
+"word"
 ],
 "kultivirt": [
 "kultiviert",
@@ -13414,7 +13982,7 @@
 ],
 "laboriren": [
 "laborieren",
-"compound"
+"word"
 ],
 "laborirt": [
 "laboriert",
@@ -13486,7 +14054,7 @@
 ],
 "logirend": [
 "logierend",
-"compound"
+"word"
 ],
 "logirt": [
 "logiert",
@@ -13542,11 +14110,11 @@
 ],
 "maschinenmässig": [
 "maschinenmäßig",
-"compound"
+"word"
 ],
 "maschinenmässigen": [
 "maschinenmäßigen",
-"compound"
+"word"
 ],
 "maskiren": [
 "maskieren",
@@ -13554,6 +14122,10 @@
 ],
 "mass": [
 "maß",
+"sz"
+],
+"massen": [
+"maßen",
 "sz"
 ],
 "massgebend": [
@@ -13578,7 +14150,7 @@
 ],
 "massloses": [
 "maßloses",
-"sz"
+"word"
 ],
 "massloseste": [
 "maßloseste",
@@ -13590,7 +14162,7 @@
 ],
 "massregelnden": [
 "maßregelnden",
-"sz"
+"word"
 ],
 "materialisirt": [
 "materialisiert",
@@ -13602,7 +14174,7 @@
 ],
 "materialisirten": [
 "materialisierten",
-"compound"
+"word"
 ],
 "mechanic": [
 "mechanik",
@@ -13618,7 +14190,7 @@
 ],
 "mehrwerthige": [
 "mehrwertige",
-"compound"
+"word"
 ],
 "meistentheils": [
 "meistenteils",
@@ -13654,7 +14226,11 @@
 ],
 "missrathener": [
 "missratener",
-"compound"
+"word"
+],
+"missrieth": [
+"missriet",
+"word"
 ],
 "mitgetheilt": [
 "mitgeteilt",
@@ -13710,11 +14286,11 @@
 ],
 "modificirende": [
 "modifizierende",
-"compound"
+"word"
 ],
 "modificirenden": [
 "modifizierenden",
-"compound"
+"word"
 ],
 "modificirt": [
 "modifiziert",
@@ -13734,15 +14310,15 @@
 ],
 "monopolisirbar": [
 "monopolisierbar",
-"compound"
+"word"
 ],
 "monopolisirbare": [
 "monopolisierbare",
-"compound"
+"word"
 ],
 "monopolisirbaren": [
 "monopolisierbaren",
-"compound"
+"word"
 ],
 "monopolisiren": [
 "monopolisieren",
@@ -13750,7 +14326,7 @@
 ],
 "monopolisirenden": [
 "monopolisierenden",
-"compound"
+"word"
 ],
 "monopolisirt": [
 "monopolisiert",
@@ -13758,15 +14334,15 @@
 ],
 "monopolisirte": [
 "monopolisierte",
-"compound"
+"word"
 ],
 "monopolisirten": [
 "monopolisierten",
-"compound"
+"word"
 ],
 "monopolisirter": [
 "monopolisierter",
-"compound"
+"word"
 ],
 "mortificiren": [
 "mortifizieren",
@@ -13786,7 +14362,7 @@
 ],
 "multiplicirte": [
 "multiplizierte",
-"compound"
+"word"
 ],
 "muthwillige": [
 "mutwillige",
@@ -13794,27 +14370,27 @@
 ],
 "mystificiren": [
 "mystifizieren",
-"compound"
+"word"
 ],
 "mystificirende": [
 "mystifizierende",
-"compound"
+"word"
 ],
 "mystificirenden": [
 "mystifizierenden",
-"compound"
+"word"
 ],
 "mystificirt": [
 "mystifiziert",
-"compound"
+"word"
 ],
 "mystificirte": [
 "mystifizierte",
-"compound"
+"word"
 ],
 "mystificirten": [
 "mystifizierten",
-"compound"
+"word"
 ],
 "mässig": [
 "mäßig",
@@ -13835,6 +14411,26 @@
 "mässiges": [
 "mäßiges",
 "sz"
+],
+"müssig": [
+"müßig",
+"sz"
+],
+"müssigem": [
+"müßigem",
+"word"
+],
+"müssigen": [
+"müßigen",
+"sz"
+],
+"müssiger": [
+"müßiger",
+"word"
+],
+"müssiges": [
+"müßiges",
+"word"
 ],
 "naam": [
 "nam",
@@ -13898,7 +14494,7 @@
 ],
 "nichtexistirenden": [
 "nichtexistierenden",
-"compound"
+"word"
 ],
 "nichtproducirenden": [
 "nichtproduzierenden",
@@ -13906,7 +14502,7 @@
 ],
 "nivellirend": [
 "nivellierend",
-"compound"
+"word"
 ],
 "nivellirt": [
 "nivelliert",
@@ -13918,7 +14514,7 @@
 ],
 "normirenden": [
 "normierenden",
-"compound"
+"word"
 ],
 "nothdürftig": [
 "notdürftig",
@@ -13926,11 +14522,11 @@
 ],
 "nothdürftiges": [
 "notdürftiges",
-"compound"
+"word"
 ],
 "nothdürftigsten": [
 "notdürftigsten",
-"compound"
+"word"
 ],
 "nothwen": [
 "notwen",
@@ -13966,7 +14562,7 @@
 ],
 "notificirten": [
 "notifizierten",
-"compound"
+"word"
 ],
 "notiren": [
 "notieren",
@@ -13990,7 +14586,7 @@
 ],
 "nöthigem": [
 "nötigem",
-"compound"
+"word"
 ],
 "nöthigen": [
 "nötigen",
@@ -14026,7 +14622,7 @@
 ],
 "objektivirter": [
 "objektivierter",
-"compound"
+"word"
 ],
 "obscön": [
 "obszön",
@@ -14034,7 +14630,7 @@
 ],
 "obscönste": [
 "obszönste",
-"compound"
+"word"
 ],
 "occulte": [
 "okkulte",
@@ -14053,12 +14649,12 @@
 "word"
 ],
 "octroyiren": [
-"octroyieren",
-"compound"
+"oktroyieren",
+"word"
 ],
 "octroyirten": [
-"octroyierten",
-"compound"
+"oktroyierten",
+"word"
 ],
 "offerirte": [
 "offerierte",
@@ -14086,15 +14682,15 @@
 ],
 "oktroyirt": [
 "oktroyiert",
-"compound"
+"word"
 ],
 "oktroyirte": [
 "oktroyierte",
-"compound"
+"word"
 ],
 "oktroyirten": [
 "oktroyierten",
-"compound"
+"word"
 ],
 "operiren": [
 "operieren",
@@ -14142,11 +14738,11 @@
 ],
 "paradirten": [
 "paradierten",
-"compound"
+"word"
 ],
 "paralysiren": [
 "paralysieren",
-"compound"
+"word"
 ],
 "paralysirt": [
 "paralysiert",
@@ -14202,19 +14798,19 @@
 ],
 "perennirend": [
 "perennierend",
-"compound"
+"word"
 ],
 "perennirende": [
 "perennierende",
-"compound"
+"word"
 ],
 "perennirenden": [
 "perennierenden",
-"compound"
+"word"
 ],
 "perennirender": [
 "perennierender",
-"compound"
+"word"
 ],
 "perfect": [
 "perfekt",
@@ -14234,15 +14830,19 @@
 ],
 "personificirtes": [
 "personifiziertes",
-"compound"
+"word"
 ],
 "personifizirtes": [
 "personifiziertes",
+"word"
+],
+"petitionire": [
+"petitioniere",
 "compound"
 ],
 "petitioniren": [
 "petitionieren",
-"compound"
+"word"
 ],
 "petitionirten": [
 "petitionierten",
@@ -14278,7 +14878,7 @@
 ],
 "poetisirt": [
 "poetisiert",
-"compound"
+"word"
 ],
 "polemisiren": [
 "polemisieren",
@@ -14296,13 +14896,17 @@
 "popularisiert",
 "word"
 ],
+"posthumer": [
+"postumer",
+"compound"
+],
 "potenzirte": [
 "potenzierte",
-"compound"
+"word"
 ],
 "potenzirten": [
 "potenzierten",
-"compound"
+"word"
 ],
 "practicable": [
 "praktikable",
@@ -14318,7 +14922,7 @@
 ],
 "preisregulirend": [
 "preisregulierend",
-"compound"
+"word"
 ],
 "preussische": [
 "preußische",
@@ -14361,7 +14965,7 @@
 "word"
 ],
 "procentmässiger": [
-"procentmäßiger",
+"prozentmäßiger",
 "compound"
 ],
 "processes": [
@@ -14370,31 +14974,31 @@
 ],
 "processirend": [
 "prozessierend",
-"compound"
+"word"
 ],
 "processirende": [
 "prozessierende",
-"compound"
+"word"
 ],
 "processirendem": [
 "prozessierendem",
-"compound"
+"word"
 ],
 "processirenden": [
 "prozessierenden",
-"compound"
+"word"
 ],
 "processirender": [
 "prozessierender",
-"compound"
+"word"
 ],
 "producirbar": [
 "produzierbar",
-"compound"
+"word"
 ],
 "producire": [
 "produziere",
-"compound"
+"word"
 ],
 "produciren": [
 "produzieren",
@@ -14410,7 +15014,7 @@
 ],
 "producirender": [
 "produzierender",
-"compound"
+"word"
 ],
 "producirt": [
 "produziert",
@@ -14439,6 +15043,10 @@
 "product": [
 "produkt",
 "foreign?"
+],
+"produzire": [
+"produziere",
+"word"
 ],
 "produziren": [
 "produzieren",
@@ -14498,7 +15106,7 @@
 ],
 "prolongirt": [
 "prolongiert",
-"compound"
+"word"
 ],
 "propagandiren": [
 "propagandieren",
@@ -14508,9 +15116,13 @@
 "proportioniert",
 "word"
 ],
+"proscribire": [
+"proscribiere",
+"compound"
+],
 "prosperirend": [
 "prosperierend",
-"compound"
+"word"
 ],
 "protestiren": [
 "protestieren",
@@ -14530,23 +15142,23 @@
 ],
 "prozessirende": [
 "prozessierende",
-"compound"
+"word"
 ],
 "prozessirenden": [
 "prozessierenden",
-"compound"
+"word"
 ],
 "prozessirender": [
 "prozessierender",
-"compound"
+"word"
 ],
 "prozessirendes": [
 "prozessierendes",
-"compound"
+"word"
 ],
 "präcisirten": [
-"präcisierten",
-"compound"
+"präzisierten",
+"word"
 ],
 "prädestinirte": [
 "prädestinierte",
@@ -14554,7 +15166,7 @@
 ],
 "prädestinirten": [
 "prädestinierten",
-"compound"
+"word"
 ],
 "präparirt": [
 "präpariert",
@@ -14666,7 +15278,7 @@
 ],
 "realisirbarer": [
 "realisierbarer",
-"compound"
+"word"
 ],
 "realisiren": [
 "realisieren",
@@ -14674,11 +15286,11 @@
 ],
 "realisirende": [
 "realisierende",
-"compound"
+"word"
 ],
 "realisirenden": [
 "realisierenden",
-"compound"
+"word"
 ],
 "realisirt": [
 "realisiert",
@@ -14698,7 +15310,7 @@
 ],
 "realisirtes": [
 "realisiertes",
-"compound"
+"word"
 ],
 "rebellirt": [
 "rebelliert",
@@ -14718,7 +15330,7 @@
 ],
 "redigirten": [
 "redigierten",
-"compound"
+"word"
 ],
 "rediskontiren": [
 "rediskontieren",
@@ -14802,7 +15414,7 @@
 ],
 "regelmässigsten": [
 "regelmäßigsten",
-"compound"
+"word"
 ],
 "registriren": [
 "registrieren",
@@ -14826,7 +15438,7 @@
 ],
 "regulirendem": [
 "regulierendem",
-"compound"
+"word"
 ],
 "regulirenden": [
 "regulierenden",
@@ -14834,11 +15446,11 @@
 ],
 "regulirender": [
 "regulierender",
-"compound"
+"word"
 ],
 "regulirendes": [
 "regulierendes",
-"compound"
+"word"
 ],
 "regulirt": [
 "reguliert",
@@ -14854,7 +15466,7 @@
 ],
 "reintegrirt": [
 "reintegriert",
-"compound"
+"word"
 ],
 "reissen": [
 "reißen",
@@ -14890,7 +15502,7 @@
 ],
 "rekurrirenden": [
 "rekurrierenden",
-"compound"
+"word"
 ],
 "remittiren": [
 "remittieren",
@@ -14926,11 +15538,11 @@
 ],
 "repetirt": [
 "repetiert",
-"compound"
+"word"
 ],
 "reproducire": [
 "reproduziere",
-"compound"
+"word"
 ],
 "reproduciren": [
 "reproduzieren",
@@ -14938,23 +15550,23 @@
 ],
 "reproducirende": [
 "reproduzierende",
-"compound"
+"word"
 ],
 "reproducirendem": [
 "reproduzierendem",
-"compound"
+"word"
 ],
 "reproducirenden": [
 "reproduzierenden",
-"compound"
+"word"
 ],
 "reproducirender": [
 "reproduzierender",
-"compound"
+"word"
 ],
 "reproducirendes": [
 "reproduzierendes",
-"compound"
+"word"
 ],
 "reproducirt": [
 "reproduziert",
@@ -14970,11 +15582,11 @@
 ],
 "reproducirter": [
 "reproduzierter",
-"compound"
+"word"
 ],
 "reproducirtes": [
 "reproduziertes",
-"compound"
+"word"
 ],
 "reproduction": [
 "reproduktion",
@@ -14986,7 +15598,7 @@
 ],
 "reproduzirende": [
 "reproduzierende",
-"compound"
+"word"
 ],
 "reproduzirt": [
 "reproduziert",
@@ -15000,13 +15612,21 @@
 "repräsentierbare",
 "compound"
 ],
+"repräsentire": [
+"repräsentiere",
+"word"
+],
 "repräsentiren": [
 "repräsentieren",
 "word"
 ],
 "repräsentirende": [
 "repräsentierende",
-"compound"
+"word"
+],
+"repräsentirst": [
+"repräsentierst",
+"word"
 ],
 "repräsentirt": [
 "repräsentiert",
@@ -15026,6 +15646,10 @@
 ],
 "reservirt": [
 "reserviert",
+"word"
+],
+"residire": [
+"residiere",
 "word"
 ],
 "residirenden": [
@@ -15082,7 +15706,7 @@
 ],
 "retourniren": [
 "retournieren",
-"compound"
+"word"
 ],
 "retournirt": [
 "retourniert",
@@ -15090,11 +15714,11 @@
 ],
 "retournirtes": [
 "retourniertes",
-"compound"
+"word"
 ],
 "returnirt": [
 "returniert",
-"compound"
+"word"
 ],
 "reussiren": [
 "reussieren",
@@ -15110,11 +15734,11 @@
 ],
 "revolutionirend": [
 "revolutionierend",
-"compound"
+"word"
 ],
 "revolutionirende": [
 "revolutionierende",
-"compound"
+"word"
 ],
 "revolutionirt": [
 "revolutioniert",
@@ -15154,7 +15778,7 @@
 ],
 "rothglühendem": [
 "rotglühendem",
-"compound"
+"word"
 ],
 "rotirenden": [
 "rotierenden",
@@ -15166,7 +15790,7 @@
 ],
 "rubricirt": [
 "rubriziert",
-"compound"
+"word"
 ],
 "ruiniren": [
 "ruinieren",
@@ -15174,15 +15798,15 @@
 ],
 "ruinirend": [
 "ruinierend",
-"compound"
+"word"
 ],
 "ruinirende": [
 "ruinierende",
-"compound"
+"word"
 ],
 "ruinirenden": [
 "ruinierenden",
-"compound"
+"word"
 ],
 "ruinirt": [
 "ruiniert",
@@ -15246,11 +15870,11 @@
 ],
 "saldiren": [
 "saldieren",
-"compound"
+"word"
 ],
 "saldirt": [
 "saldiert",
-"compound"
+"word"
 ],
 "sammt": [
 "samt",
@@ -15274,7 +15898,7 @@
 ],
 "scheusslichsten": [
 "scheußlichsten",
-"sz"
+"word"
 ],
 "schiessen": [
 "schießen",
@@ -15290,7 +15914,7 @@
 ],
 "schleisse": [
 "schleiße",
-"sz"
+"word"
 ],
 "schliesse": [
 "schließe",
@@ -15332,6 +15956,10 @@
 "schülermäßigem",
 "compound"
 ],
+"scrupulös": [
+"skrupulös",
+"word"
+],
 "sechszehnten": [
 "sechzehnten",
 "manual"
@@ -15346,7 +15974,7 @@
 ],
 "selbstthätiger": [
 "selbsttätiger",
-"compound"
+"word"
 ],
 "selbstwirthschaftende": [
 "selbstwirtschaftende",
@@ -15360,6 +15988,10 @@
 "selbstwirtschaftender",
 "compound"
 ],
+"sey": [
+"sei",
+"word"
+],
 "siebenzig": [
 "siebzig",
 "manual"
@@ -15370,6 +16002,14 @@
 ],
 "situirten": [
 "situierten",
+"word"
+],
+"skrophulösen": [
+"skrofulösen",
+"word"
+],
+"skrophulöses": [
+"skrofulöses",
 "word"
 ],
 "sociale": [
@@ -15444,17 +16084,9 @@
 "spezieller",
 "word"
 ],
-"specifica": [
-"spezifika",
-"foreign?"
-],
 "specificirten": [
 "spezifizierten",
 "word"
-],
-"specifick": [
-"spezifick",
-"compound"
 ],
 "specifisch": [
 "spezifisch",
@@ -15482,7 +16114,7 @@
 ],
 "spedirt": [
 "spediert",
-"compound"
+"word"
 ],
 "spekuliren": [
 "spekulieren",
@@ -15490,7 +16122,7 @@
 ],
 "spekulirende": [
 "spekulierende",
-"compound"
+"word"
 ],
 "spekulirt": [
 "spekuliert",
@@ -15506,11 +16138,11 @@
 ],
 "spezificirter": [
 "spezifizierter",
-"compound"
+"word"
 ],
 "staatswirthschaftlichen": [
 "staatswirtschaftlichen",
-"compound"
+"word"
 ],
 "stagniren": [
 "stagnieren",
@@ -15530,7 +16162,7 @@
 ],
 "stereotypirt": [
 "stereotypiert",
-"compound"
+"word"
 ],
 "stiess": [
 "stieß",
@@ -15550,11 +16182,11 @@
 ],
 "stipulirt": [
 "stipuliert",
-"compound"
+"word"
 ],
 "stipulirten": [
 "stipulierten",
-"compound"
+"word"
 ],
 "stossen": [
 "stoßen",
@@ -15585,8 +16217,16 @@
 "word"
 ],
 "stylisirt": [
-"stylisiert",
-"compound"
+"stilisiert",
+"word"
+],
+"stylistisch": [
+"stilistisch",
+"word"
+],
+"stylistischer": [
+"stilistischer",
+"word"
 ],
 "stösst": [
 "stößt",
@@ -15598,7 +16238,7 @@
 ],
 "subsistiren": [
 "subsistieren",
-"compound"
+"word"
 ],
 "substituirt": [
 "substituiert",
@@ -15614,7 +16254,7 @@
 ],
 "subsumirten": [
 "subsumierten",
-"compound"
+"word"
 ],
 "subtrahirt": [
 "subtrahiert",
@@ -15630,7 +16270,7 @@
 ],
 "successivem": [
 "sukzessivem",
-"compound"
+"word"
 ],
 "successiven": [
 "sukzessiven",
@@ -15638,7 +16278,7 @@
 ],
 "successiver": [
 "sukzessiver",
-"compound"
+"word"
 ],
 "supponirten": [
 "supponierten",
@@ -15650,7 +16290,7 @@
 ],
 "suspendirenden": [
 "suspendierenden",
-"compound"
+"word"
 ],
 "suspendirt": [
 "suspendiert",
@@ -15666,7 +16306,7 @@
 ],
 "suspendirtes": [
 "suspendiertes",
-"compound"
+"word"
 ],
 "symbolisirt": [
 "symbolisiert",
@@ -15730,11 +16370,11 @@
 ],
 "theilende": [
 "teilende",
-"compound"
+"word"
 ],
 "theilenden": [
 "teilenden",
-"compound"
+"word"
 ],
 "theilgenommen": [
 "teilgenommen",
@@ -15792,6 +16432,10 @@
 "teuer",
 "word"
 ],
+"theuern": [
+"teuern",
+"manual"
+],
 "theure": [
 "teure",
 "word"
@@ -15810,7 +16454,7 @@
 ],
 "theurerem": [
 "teurerem",
-"compound"
+"word"
 ],
 "theureren": [
 "teureren",
@@ -15843,6 +16487,10 @@
 "thun": [
 "tun",
 "foreign?"
+],
+"thunlich": [
+"tunlich",
+"word"
 ],
 "thus": [
 "tus",
@@ -15906,15 +16554,15 @@
 ],
 "transoceanischen": [
 "transozeanischen",
-"compound"
+"word"
 ],
 "transponirte": [
 "transponierte",
-"compound"
+"word"
 ],
 "transponirtes": [
 "transponiertes",
-"compound"
+"word"
 ],
 "transportiren": [
 "transportieren",
@@ -15930,11 +16578,11 @@
 ],
 "trassirten": [
 "trassierten",
-"compound"
+"word"
 ],
 "travestirte": [
 "travestierte",
-"compound"
+"word"
 ],
 "treibhausmässig": [
 "treibhausmäßig",
@@ -16140,9 +16788,13 @@
 "urteilskräftig",
 "compound"
 ],
+"usurpire": [
+"usurpiere",
+"word"
+],
 "usurpiren": [
 "usurpieren",
-"compound"
+"word"
 ],
 "usurpirt": [
 "usurpiert",
@@ -16150,15 +16802,15 @@
 ],
 "usurpirte": [
 "usurpierte",
-"compound"
+"word"
 ],
 "usurpirten": [
 "usurpierten",
-"compound"
+"word"
 ],
 "vagabundirende": [
 "vagabundierende",
-"compound"
+"word"
 ],
 "vampyrmässig": [
 "vampyrmäßig",
@@ -16186,11 +16838,11 @@
 ],
 "vegetirten": [
 "vegetierten",
-"compound"
+"word"
 ],
 "ventilirt": [
 "ventiliert",
-"compound"
+"word"
 ],
 "verdeklamiren": [
 "verdeklamieren",
@@ -16206,7 +16858,7 @@
 ],
 "verfliesst": [
 "verfließt",
-"compound"
+"word"
 ],
 "vergiesst": [
 "vergießt",
@@ -16334,7 +16986,7 @@
 ],
 "vermiethbares": [
 "vermietbares",
-"compound"
+"word"
 ],
 "vermiethen": [
 "vermieten",
@@ -16342,7 +16994,7 @@
 ],
 "vermiethenden": [
 "vermietenden",
-"compound"
+"word"
 ],
 "vermiethet": [
 "vermietet",
@@ -16386,7 +17038,7 @@
 ],
 "verschleissender": [
 "verschleißender",
-"sz"
+"word"
 ],
 "verschleisst": [
 "verschleißt",
@@ -16406,7 +17058,7 @@
 ],
 "verspekuliren": [
 "verspekulieren",
-"compound"
+"word"
 ],
 "verstosse": [
 "verstoße",
@@ -16438,11 +17090,11 @@
 ],
 "vertheilende": [
 "verteilende",
-"compound"
+"word"
 ],
 "vertheilenden": [
 "verteilenden",
-"compound"
+"word"
 ],
 "vertheilt": [
 "verteilt",
@@ -16486,7 +17138,7 @@
 ],
 "verwerthe": [
 "verwerte",
-"compound"
+"word"
 ],
 "verwerthen": [
 "verwerten",
@@ -16494,19 +17146,19 @@
 ],
 "verwerthende": [
 "verwertende",
-"compound"
+"word"
 ],
 "verwerthendem": [
 "verwertendem",
-"compound"
+"word"
 ],
 "verwerthenden": [
 "verwertenden",
-"compound"
+"word"
 ],
 "verwerthender": [
 "verwertender",
-"compound"
+"word"
 ],
 "verwerthet": [
 "verwertet",
@@ -16518,7 +17170,7 @@
 ],
 "verwerthetem": [
 "verwertetem",
-"compound"
+"word"
 ],
 "verwertheten": [
 "verwerteten",
@@ -16526,31 +17178,31 @@
 ],
 "verwertheter": [
 "verwerteter",
-"compound"
+"word"
 ],
 "verwerthetes": [
 "verwertetes",
-"compound"
+"word"
 ],
 "veräusserlich": [
 "veräußerlich",
-"compound"
+"word"
 ],
 "veräusserliche": [
 "veräußerliche",
-"compound"
+"word"
 ],
 "veräusserlichen": [
 "veräußerlichen",
-"compound"
+"word"
 ],
 "veräusserlicher": [
 "veräußerlicher",
-"compound"
+"word"
 ],
 "veräusserlichte": [
 "veräußerlichte",
-"compound"
+"word"
 ],
 "veräussern": [
 "veräußern",
@@ -16594,11 +17246,11 @@
 ],
 "vorräthige": [
 "vorrätige",
-"compound"
+"word"
 ],
 "vorräthigen": [
 "vorrätigen",
-"compound"
+"word"
 ],
 "vorschiessen": [
 "vorschießen",
@@ -16606,7 +17258,7 @@
 ],
 "vorschiesst": [
 "vorschießt",
-"sz"
+"word"
 ],
 "vorschriftsmässige": [
 "vorschriftsmäßige",
@@ -16626,7 +17278,7 @@
 ],
 "vortheilhaftem": [
 "vorteilhaftem",
-"compound"
+"word"
 ],
 "vortheilhaften": [
 "vorteilhaften",
@@ -16638,35 +17290,35 @@
 ],
 "vortheilhaftere": [
 "vorteilhaftere",
-"compound"
+"word"
 ],
 "vortheilhafteste": [
 "vorteilhafteste",
-"compound"
+"word"
 ],
 "vortheilhaftesten": [
 "vorteilhaftesten",
-"compound"
+"word"
 ],
 "vorurtheilsvoller": [
 "vorurteilsvoller",
-"compound"
+"word"
 ],
 "vorzuschiessen": [
 "vorzuschießen",
-"sz"
+"word"
 ],
 "vorzuschiessende": [
 "vorzuschießende",
-"sz"
+"compound"
 ],
 "vorzuschiessenden": [
 "vorzuschießenden",
-"sz"
+"compound"
 ],
 "vorzuschiessendes": [
 "vorzuschießendes",
-"sz"
+"compound"
 ],
 "votiren": [
 "votieren",
@@ -16678,7 +17330,7 @@
 ],
 "vulgarisirt": [
 "vulgarisiert",
-"compound"
+"word"
 ],
 "waare": [
 "ware",
@@ -16714,7 +17366,7 @@
 ],
 "werkthätigem": [
 "werktätigem",
-"compound"
+"word"
 ],
 "werkthätigen": [
 "werktätigen",
@@ -16782,7 +17434,7 @@
 ],
 "werthloseste": [
 "wertloseste",
-"compound"
+"word"
 ],
 "werths": [
 "werts",
@@ -16846,7 +17498,7 @@
 ],
 "wiederspiegelnden": [
 "widerspiegelnden",
-"compound"
+"word"
 ],
 "wiederspiegelt": [
 "widerspiegelt",
@@ -16862,7 +17514,7 @@
 ],
 "wirthschaftender": [
 "wirtschaftender",
-"compound"
+"word"
 ],
 "wirthschaftet": [
 "wirtschaftet",
@@ -16874,7 +17526,7 @@
 ],
 "wohlthut": [
 "wohltut",
-"compound"
+"word"
 ],
 "wohlthätig": [
 "wohltätig",
@@ -16906,7 +17558,7 @@
 ],
 "wunderthätige": [
 "wundertätige",
-"compound"
+"word"
 ],
 "wünschenswerth": [
 "wünschenswert",
@@ -16918,7 +17570,7 @@
 ],
 "wünschenswerthester": [
 "wünschenswertester",
-"compound"
+"word"
 ],
 "wüthen": [
 "wüten",
@@ -16978,11 +17630,11 @@
 ],
 "zurückdatirenden": [
 "zurückdatierenden",
-"compound"
+"word"
 ],
 "zurückfliesse": [
 "zurückfließe",
-"compound"
+"word"
 ],
 "zurückfliessen": [
 "zurückfließen",
@@ -16990,15 +17642,15 @@
 ],
 "zurückfliessend": [
 "zurückfließend",
-"compound"
+"word"
 ],
 "zurückfliessende": [
 "zurückfließende",
-"compound"
+"word"
 ],
 "zurückfliessenden": [
 "zurückfließenden",
-"compound"
+"word"
 ],
 "zurückfliesst": [
 "zurückfließt",
@@ -17018,19 +17670,19 @@
 ],
 "zurückschliessen": [
 "zurückschließen",
-"compound"
+"word"
 ],
 "zurückzufliessen": [
 "zurückzufließen",
-"compound"
+"word"
 ],
 "zusammenaddirt": [
 "zusammenaddiert",
-"compound"
+"word"
 ],
 "zusammenaddirte": [
 "zusammenaddierte",
-"compound"
+"word"
 ],
 "zusammenthun": [
 "zusammentun",
@@ -17054,27 +17706,27 @@
 ],
 "zwangsmässig": [
 "zwangsmäßig",
-"compound"
+"word"
 ],
 "zwangsmässige": [
 "zwangsmäßige",
-"compound"
+"word"
 ],
 "zweckgemäss": [
 "zweckgemäß",
-"sz"
+"word"
 ],
 "zweckgemässe": [
 "zweckgemäße",
-"sz"
+"word"
 ],
 "zweckgemässen": [
 "zweckgemäßen",
-"sz"
+"word"
 ],
 "zweckgemässer": [
 "zweckgemäßer",
-"sz"
+"word"
 ],
 "zweckmässig": [
 "zweckmäßig",
@@ -17094,7 +17746,7 @@
 ],
 "zweckmässigste": [
 "zweckmäßigste",
-"compound"
+"word"
 ],
 "zwergmässig": [
 "zwergmäßig",
@@ -17166,15 +17818,15 @@
 ],
 "äussre": [
 "äußre",
-"sz"
+"word"
 ],
 "ökonomisiren": [
 "ökonomisieren",
-"compound"
+"word"
 ],
 "ökonomisirt": [
 "ökonomisiert",
-"compound"
+"word"
 ],
 "überexportirt": [
 "überexportiert",
@@ -17182,11 +17834,15 @@
 ],
 "überfliessende": [
 "überfließende",
-"compound"
+"word"
 ],
 "überfliessenden": [
 "überfließenden",
-"compound"
+"word"
+],
+"überfluthenden": [
+"überflutenden",
+"word"
 ],
 "überfluthet": [
 "überflutet",
@@ -17226,7 +17882,7 @@
 ],
 "überschiessendes": [
 "überschießendes",
-"sz"
+"word"
 ],
 "übervortheilen": [
 "übervorteilen",

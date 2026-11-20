@@ -6,9 +6,10 @@ modern_overrides.py. Passages in other languages are left alone: a word counts
 as foreign context when most of the words around it are foreign (list in
 modern_map.json); a word also common in another language (Oct, Commission)
 and an English possessive also when the words next to it are foreign. Words
-whose ss becomes ß are always German. A few rewrites depend on context
-(Masse/Maße, so lange/solange) or span several words (u. s. w. → usw.,
-zu Grunde → zugrunde).
+the table knows as German only (not "foreign?") stay German, short ones (mass)
+unless next to a foreign word. A few rewrites depend on context (Masse/Maße,
+so lange/solange) or span several words (u. s. w. → usw., zu Grunde →
+zugrunde).
 """
 
 import json
@@ -36,7 +37,9 @@ FOREIGN = set(_DATA['foreign'])
 AMBIGUOUS = {
     k for k, v in _DATA['map'].items() if v[1] == 'foreign?' or k in FOREIGN
 }
-GERMAN = {k for k, v in _DATA['map'].items() if v[1] == 'sz'} - FOREIGN
+GERMAN = {
+    k for k, v in _DATA['map'].items() if v[1] in ('sz', 'word', 'compound')
+} - FOREIGN
 ORDINAL = {'st', 'nd', 'rd', 'th'}
 TEI = '{http://www.tei-c.org/ns/1.0}'
 BLOCKS = {
@@ -188,6 +191,7 @@ PHRASES = [
     (r'\bU\.\s?s\.\s?w\.', 'Usw.'),
     (r'\bu\.(\s?)A\.', r'u.\1a.'),
     (r'\b([Zz])\.(\s?)Th\.', r'\1.\2T.'),
+    (r'\bgezähmten Thiers\b', 'gezähmten Tiers'),
     (r'\b([Ee])ben so\b', r'\1benso'),
     (
         (
@@ -302,7 +306,7 @@ def segments(block):
 
 
 def is_foreign(w):
-    return w in FOREIGN or re.split("[’']", w)[0] in FOREIGN
+    return len(w) > 1 and (w in FOREIGN or re.split("[’']", w)[0] in FOREIGN)
 
 
 def foreign_flags(words):
@@ -310,7 +314,11 @@ def foreign_flags(words):
     for i, w in enumerate(words):
         win = [x for x in words[max(0, i - 3) : i + 4] if len(x) > 1]
         f = sum(1 for x in win if is_foreign(x))
-        flags.append(f * 2 > len(win) and w not in GERMAN)
+        flag = f * 2 > len(win)
+        if flag and w in GERMAN:
+            near = words[max(0, i - 1) : i] + words[i + 1 : i + 2]
+            flag = len(w) < 6 and any(is_foreign(x) for x in near)
+        flags.append(flag)
     for i, w in enumerate(words):
         if flags[i]:
             continue
@@ -360,13 +368,13 @@ def historic_quotes(text, offsets, flags):
                     flags[i] = True
 
 
-def modernize_text(s, foreign=None):
+def modernize_text(s, foreign=None, before=''):
     """Plain string (formulas, headings in the config): word table + phrases,
     German context assumed."""
     words = WORD.findall(s)
     flags = foreign or [False] * len(words)
     it = iter(range(len(words)))
-    prev = ['']
+    prev = [before]
 
     def rep(m):
         i = next(it)
@@ -420,7 +428,7 @@ def transform(root, part):
         k = 0
         for (e, a), t in zip(segs, texts):
             n = len(WORD.findall(t))
-            new = modernize_text(t, flags[k : k + n])
+            new = modernize_text(t, flags[k : k + n], words[k - 1] if k else '')
             k += n
             if new != t:
                 setattr(e, a, new)

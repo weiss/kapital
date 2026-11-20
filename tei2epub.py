@@ -88,7 +88,8 @@ def remove_keep_tail(e):
 
 
 def apply_raw_fixes(s, fixes):
-    """(old, new) must match exactly once; (old, new, n) exactly n times."""
+    """(old, new) must match exactly once; (old, new, n) exactly n times. The
+    ditto mark 〃 of the transcription becomes „ as in the print."""
     for old, new, *n in fixes:
         n = n[0] if n else 1
         if s.count(old) != n:
@@ -96,7 +97,31 @@ def apply_raw_fixes(s, fixes):
                 f'raw fix: {old!r} found {s.count(old)} times, expected {n}'
             )
         s = s.replace(old, new)
+    s = s.replace('&#x3003;', '&#x201E;')
     return re.sub(r'<fw\b[^>]*>.*?</fw>', '', s, flags=re.S)
+
+
+SPACED_HYPHEN = re.compile(
+    rf'(?<=[{LETTER}])((?:</hi>)?) - ((?:<hi[^>]*>)?)(?=[{LETTER}])'
+)
+
+
+def spaced_hyphens(s):
+    """A hyphen between spaces: suspended before a conjunction (Gold- resp.
+    Silber), otherwise joining a compound (New-York)."""
+
+    def sub(m):
+        if re.match(
+            r'(und|oder|bis|als|wie|noch)\b|resp\.', m.string[m.end() :]
+        ):
+            return m.group(1) + '- ' + m.group(2)
+        return m.group(1) + '-' + m.group(2)
+
+    parts = re.split(r'(<formula\b.*?</formula>)', s, flags=re.S)
+    return ''.join(
+        p if p.startswith('<formula') else SPACED_HYPHEN.sub(sub, p)
+        for p in parts
+    )
 
 
 def merge_note_chains(root):
@@ -187,7 +212,7 @@ STOP = re.compile(r'“?[.!?]“?|“')
 
 def marks_after_stop(root):
     """Footnote marks after the full stop and closing quote that the print sets
-    them before."""
+    them before; after an abbreviation the stop is not doubled."""
     for note in root.iter(TEI + 'note'):
         if note.get('place') != 'foot' or local(note.getparent()) == 'cell':
             continue
@@ -202,12 +227,19 @@ def marks_after_stop(root):
         if not m:
             continue
         host.tail = host.tail[m.end() :]
+        stop = m.group()
         prev = note.getprevious()
         if prev is not None:
-            prev.tail = (prev.tail or '').rstrip() + m.group()
+            before = prev.tail or ''.join(prev.itertext())
+        else:
+            before = note.getparent().text or ''
+        if stop.startswith('.') and before.rstrip().endswith('.'):
+            stop = stop[1:]
+        if prev is not None:
+            prev.tail = (prev.tail or '').rstrip() + stop
         else:
             parent = note.getparent()
-            parent.text = (parent.text or '').rstrip() + m.group()
+            parent.text = (parent.text or '').rstrip() + stop
 
 
 def merge_empty_tables(root):
@@ -1129,7 +1161,7 @@ class Converter:
         for old, new in self.part.get('toc_fixes', ()):
             txt = txt.replace(old, new)
         txt = PRIMES.sub(
-            lambda m: m.group(1) + ('′' if len(m.group(2)) == 1 else '″'), txt
+            lambda m: m.group(1) + PRIME_MARKS[len(m.group(2))], txt
         )
         self.toc.append((level, txt, self.file, hid))
 
@@ -1139,33 +1171,40 @@ class Converter:
 # U+202F marks a narrow space; wrap_narrow() turns it into a thin space inside
 # span.nobr
 NBSP_RULES = [
+    (re.compile(r'\bu\. ?s\. ?([wf])\.'), 'u.\u202fs.\u202f\\1.'),
+    (re.compile(r'\bu\. d\. g\.'), 'u.\u202fd.\u202fg.'),
     (
         re.compile(
             r'\b(z|d|u|s|l|v|i|o|resp|vgl)\. (B|h|s|a|c|o|u|e|g|i|w|dgl)\.'
+            r'(?!\u202f)'
         ),
         '\\1.\u202f\\2.',
     ),
-    (re.compile(r'\bu\.\u202fs\. w\.'), 'u.\u202fs.\u202fw.'),
-    (re.compile(r'\bPfd\. St\.'), 'Pfd.\u202fSt.'),
+    (re.compile(r'\bPfd\. St\b'), 'Pfd.\u202fSt'),
     (re.compile(r'([\d½⅓⅔¼¾⅕⅖⅗⅘⅙⅚⅛⅜⅝⅞]) (%|£|℔)'), '\\1\u202f\\2'),
     (
         re.compile(
             r'([\d½⅓⅔¼¾⅕⅖⅗⅘⅙⅚⅛⅜⅝⅞])'
-            r' (Pfd\.|l\.|sh\.|d\.|lbs?\.|fcs?\.'
+            r' (Pfd\.|l\.|sh\b|d\.|lbs?\.|fcs?\.'
             r'|Acres|Stunden|Ellen|Quarters?|qrs?\.)'
         ),
         '\\1\u00a0\\2',
     ),
-    (re.compile(r'(£|℔) (\d)'), '\\1\u202f\\2'),
+    (
+        re.compile(r'(?<![\d½⅓⅔¼¾⅕⅖⅗⅘⅙⅚⅛⅜⅝⅞]\u202f)(£|℔) (\d)'),
+        '\\1\u202f\\2',
+    ),
+    (re.compile(r'([½⅓⅔¼¾⅕⅖⅗⅘⅙⅚⅛⅜⅝⅞])(sh\.|d\.)'), '\\1\u00a0\\2'),
     (re.compile(r'\b(S|p|pp|Z|Nr|No|n|t|ch|Bd|Vol)\. (\d)'), '\\1.\u00a0\\2'),
     (re.compile(r'§\. (\d)'), '§.\u00a0\\1'),
 ]
 NARROW = re.compile(r'(?:\S|\u202f)*\u202f(?:\S|\u202f)*')
-# G', W'', m'n: the print's apostrophes after a single letter are primes (but
+# G', W'', m'n, kp': the print's apostrophes after a variable are primes (but
 # not in l'homme)
 PRIMES = re.compile(
-    rf"(?<![{LETTER}])([A-Za-z]|Pm)('{{1,2}})(?![{LETTER}]{{3}})"
+    rf"(?<![{LETTER}])([A-Za-z]|Pm|kp|Bp|bp|Cz)('{{1,3}})(?![{LETTER}]{{3}})"
 )
+PRIME_MARKS = {1: '′', 2: '″', 3: '″′'}
 
 
 def join_centered(root):
@@ -1256,11 +1295,12 @@ def tidy(root):
                 for rx, rep in NBSP_RULES:
                     v = rx.sub(rep, v)
                 v = PRIMES.sub(
-                    lambda m: m.group(1)
-                    + ('′' if len(m.group(2)) == 1 else '″'),
-                    v,
+                    lambda m: m.group(1) + PRIME_MARKS[len(m.group(2))], v
                 )
                 setattr(e, attr, v)
+    for e in root.iter(H + 'span'):
+        if e.get('class') == 'frac' and re.match(r' [%£℔]', e.tail or ''):
+            e.tail = '\u00a0' + e.tail[1:]
     for e in root.iter(H + 'span'):
         if e.get('class') != 'pb' or not (e.tail or '').startswith(' '):
             continue
@@ -1402,6 +1442,7 @@ class Book:
                 insert_table_notes(root, part)
             normalize_greek(root)
             s, st, kp = dehyphenate(etree.tostring(root, encoding='unicode'))
+            s = spaced_hyphens(s)
             self.stats.update(st)
             self.kept.update(kp)
             root = etree.fromstring(s.encode('utf-8'))

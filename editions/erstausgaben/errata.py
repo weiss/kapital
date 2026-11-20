@@ -738,6 +738,8 @@ K2_TEXT = [
     ('dann = 600 <hi', 'dann = 6000 <hi'),
     ('Kapitalwerth im ihm', 'Kapitalwerth in ihm'),
     ('London Economist&#x201E; 16.', 'London Economist, 16.'),
+    ("von B, B,' B''", "von B, B', B''"),
+    ("bildner A, A,' A''", "bildner A, A', A''"),
 ]
 
 K31_TEXT = [
@@ -800,6 +802,7 @@ K31_TEXT = [
     ('Da da das Geschäft', 'Da das Geschäft'),
     ('Bereitung<lb/>\n(des Flachses in', 'Bereitung<lb/>\n(des Flachses) in'),
     ('von ie 100', 'von je 100'),
+    ("Produkte m 'v,", "Produkte m'v,"),
     (
         r'{200_c}</formula> + 100<hi rendition="#sub">v</hi>',
         r'{200_c + 100_v}</formula>',

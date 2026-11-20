@@ -67,7 +67,6 @@ OVERRIDES = {
     'Leyden': None,
     'engrossing': None,
     'Claussen': None,
-    'Berußfleiss': 'Berufsfleiß',
     'desshalb': 'deshalb',
     'Desshalb': 'Deshalb',
     'wesshalb': 'weshalb',

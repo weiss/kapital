@@ -2,7 +2,6 @@
 """Das Kapital: LaTeX (LuaLaTeX) aus demselben Zwischenstand wie das EPUB."""
 
 import argparse
-import difflib
 import re
 from pathlib import Path
 
@@ -109,25 +108,6 @@ class TeX:
         for _, _, sec in book.note_groups:
             for a in sec.iter(H + 'aside'):
                 self.notes[a.get('id')] = a
-        self.order = []
-        for name, doc in book.files:
-            if name == book.notes_file:
-                continue
-            for e in doc.iter(
-                H + 'span',
-                H + 'h1',
-                H + 'h2',
-                H + 'h3',
-                H + 'h4',
-                H + 'h5',
-                H + 'h6',
-            ):
-                if tag(e) == 'span' and 'pb' in cls(e):
-                    self.order.append(('pb', e.get('id'), None))
-                elif (
-                    tag(e) != 'span' and e.get('id') and 't-main' not in cls(e)
-                ):
-                    self.order.append(('h', e.get('id'), plain(e)))
         self.in_note = 0
         self.table_notes = None
         self.after_heading = False
@@ -141,35 +121,6 @@ class TeX:
         if m:
             return self.pages[m.group(1)]
         return href.split('#', 1)[1] if '#' in href else None
-
-    def toc_target(self, pid, title):
-        """The heading an entry of the original contents points to: the closest
-        match among the headings on its page, including those before the page
-        mark when the page begins with a heading; a matching first word (the
-        number of a chapter or section) counts extra."""
-        idx = next(
-            i
-            for i, (k, i_, _) in enumerate(self.order)
-            if k == 'pb' and i_ == pid
-        )
-        start = idx
-        while start > 0 and self.order[start - 1][0] == 'h':
-            start -= 1
-        cands = [(i_, t) for k, i_, t in self.order[start:idx] if k == 'h']
-        cands += [
-            (i_, t) for k, i_, t in self.order[idx : idx + 40] if k == 'h'
-        ][:6]
-        norm = lambda s: re.sub(r'\W+', ' ', s.lower()).strip()
-
-        def score(cand):
-            a, b = norm(title), norm(cand[1])
-            r = difflib.SequenceMatcher(None, a, b).ratio()
-            return r + (0.3 if a.split()[:1] == b.split()[:1] else 0)
-
-        best = max(cands, key=score, default=None)
-        if best and score(best) > 0.6:
-            return best[0]
-        return pid
 
     # -- inline -----------------------------------------------------------
 
@@ -841,7 +792,7 @@ class TeX:
                     + '}{}'
                 )
                 continue
-            tg = self.toc_target(self.target(a.get('href')), plain(ti))
+            tg = self.target(a.get('href'))
             out.append(
                 r'\tocline{'
                 + f'{1.2 * lv:.1f}em'

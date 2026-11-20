@@ -3,6 +3,7 @@
 
 import argparse
 import datetime
+import difflib
 import importlib
 import os
 import re
@@ -1433,10 +1434,7 @@ class Book:
         C = self.C
         saved, C.pending_pb = C.pending_pb, []
         if C.notes:
-            sec = etree.Element(
-                H + 'section', {'class': 'notes', 'role': 'doc-endnotes'}
-            )
-            sec.set(EPT, 'footnotes')
+            sec = etree.Element(H + 'section', {'class': 'notes'})
             self.note_groups.append(
                 (name, html.find(f'{H}head/{H}title').text, sec)
             )
@@ -1468,11 +1466,13 @@ class Book:
             self.back(part)
         self.endnotes()
         self.notice()
+        link_contents(self)
 
     def endnotes(self):
         name = self.notes_file = self.name('anmerkungen')
         html, body = self.start(name, 'Anmerkungen')
-        sec = el(body, 'section', 'chapter endnotes')
+        sec = el(body, 'section', 'chapter endnotes', role='doc-endnotes')
+        sec.set(EPT, 'endnotes')
         el(sec, 'h1', id='anmerkungen').text = 'Anmerkungen'
         self.C.toc.append((1, 'Anmerkungen', name, 'anmerkungen'))
         toc = self.C.toc
@@ -2195,18 +2195,18 @@ def ncx_doc(book, uid):
         book.vol['title']
     )
     navmap = etree.SubElement(ncx, N + 'navMap')
-    seq = [0]
+    targets = []
 
     def emit(parent, nodes):
         for n in nodes:
-            seq[0] += 1
             np_ = etree.SubElement(
-                parent, N + 'navPoint', id=f'np{seq[0]}', playOrder=str(seq[0])
+                parent, N + 'navPoint', id=f'np{len(targets) + 1}'
             )
             etree.SubElement(
                 etree.SubElement(np_, N + 'navLabel'), N + 'text'
             ).text = n['label']
             etree.SubElement(np_, N + 'content', src=n['href'])
+            targets.append((n['href'], np_))
             emit(np_, n['children'])
 
     emit(navmap, build_nav_tree(toc))
@@ -2214,22 +2214,42 @@ def ncx_doc(book, uid):
     etree.SubElement(
         etree.SubElement(plist, N + 'navLabel'), N + 'text'
     ).text = 'Seiten der Erstausgabe'
-    for i, (label, f, pid) in enumerate(pages, 1):
-        seq[0] += 1
-        num = label.split('/')[-1]
+    kinds = [
+        ('normal', int(n)) if n.isdigit() else ('front', roman(n))
+        for n in (label.split('/')[-1] for label, _, _ in pages)
+    ]
+    unique = len(set(kinds)) == len(kinds)
+    for i, ((label, f, pid), (kind, num)) in enumerate(zip(pages, kinds), 1):
         pt = etree.SubElement(
             plist,
             N + 'pageTarget',
             id=f'pt{i}',
-            type='normal' if num.isdigit() else 'front',
-            value=str(i),
-            playOrder=str(seq[0]),
+            type=kind,
+            value=str(num if unique else i),
         )
         etree.SubElement(
             etree.SubElement(pt, N + 'navLabel'), N + 'text'
         ).text = label
         etree.SubElement(pt, N + 'content', src=f'text/{f}#{pid}')
+        targets.append((f'text/{f}#{pid}', pt))
+    pos = {}
+    for k, (name, doc) in enumerate(book.files):
+        pos[f'text/{name}'] = (k, -1)
+        for j, e in enumerate(doc.iter()):
+            if e.get('id'):
+                pos[f'text/{name}#{e.get("id")}'] = (k, j)
+    order = {
+        p: i for i, p in enumerate(sorted({pos[t] for t, _ in targets}), 1)
+    }
+    for t, e in targets:
+        e.set('playOrder', str(order[pos[t]]))
     return ncx
+
+
+def roman(s):
+    vals = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+    n = [vals[c] for c in s.upper()]
+    return sum(-v if v < w else v for v, w in zip(n, n[1:] + [0]))
 
 
 def cover_doc(vol):
@@ -2238,6 +2258,64 @@ def cover_doc(vol):
     sec.set(EPT, 'cover')
     el(sec, 'img', src='../images/cover.png', alt=f'Karl Marx: {vol["title"]}')
     return html
+
+
+def heading_order(book):
+    """Page marks and headings of the main text in reading order:
+    (kind, id, text, file)."""
+    order = []
+    for name, doc in book.files:
+        if name == book.notes_file:
+            continue
+        for e in doc.iter(H + 'span', *(H + f'h{i}' for i in range(1, 7))):
+            c = (e.get('class') or '').split()
+            if e.tag == H + 'span':
+                if 'pb' in c:
+                    order.append(('pb', e.get('id'), None, name))
+            elif e.get('id') and 't-main' not in c:
+                text = ' '.join(''.join(e.itertext()).split())
+                order.append(('h', e.get('id'), text, name))
+    return order
+
+
+def toc_target(order, pid, title):
+    """The heading an entry of the original contents points to, with its
+    file: the closest match among the headings on its page, including those
+    before the page mark when the page begins with a heading; a matching first
+    word (the number of a chapter or section) counts extra. Without a match
+    the page mark itself."""
+    idx = next(i for i, o in enumerate(order) if o[0] == 'pb' and o[1] == pid)
+    start = idx
+    while start > 0 and order[start - 1][0] == 'h':
+        start -= 1
+    cands = [o for o in order[start:idx] if o[0] == 'h']
+    cands += [o for o in order[idx : idx + 40] if o[0] == 'h'][:6]
+    norm = lambda s: re.sub(r'\W+', ' ', s.lower()).strip()
+
+    def score(cand):
+        a, b = norm(title), norm(cand[2])
+        r = difflib.SequenceMatcher(None, a, b).ratio()
+        return r + (0.3 if a.split()[:1] == b.split()[:1] else 0)
+
+    best = max(cands, key=score, default=None)
+    if best and score(best) > 0.6:
+        return best[1], best[3]
+    return pid, order[idx][3]
+
+
+def link_contents(book):
+    """Point the entries of the original contents to their headings."""
+    order = heading_order(book)
+    pages = {label: pid for label, _, pid in book.C.pages}
+    for name, doc in book.files:
+        for tr in doc.iter(H + 'tr'):
+            links = [a for a in tr.iter(H + 'a') if '@@PAGE:' in a.get('href')]
+            if not links:
+                continue
+            label = links[0].get('href')[len('@@PAGE:') : -2]
+            hid, f = toc_target(order, pages[label], links[0].xpath('string()'))
+            for a in links:
+                a.set('href', f'{f}#{hid}')
 
 
 def package(book, out):

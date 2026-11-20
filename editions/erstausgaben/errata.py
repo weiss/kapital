@@ -462,6 +462,10 @@ K1_TEXT = [
     ('Wandervölkerung', 'Wanderbevölkerung'),
     ('Gesellschallsorganisation', 'Gesellschaftsorganisation'),
     ('l&#x2019;atricier', 'Patricier'),
+    (
+        '<head>b) <hi rendition="#g">Widersprüche',
+        '<head>2) <hi rendition="#g">Widersprüche',
+    ),
 ]
 
 K2_TEXT = [
@@ -651,6 +655,7 @@ K2_TEXT = [
     ('zn realisiren', 'zu realisiren'),
     ('dle einzelnen', 'die einzelnen'),
     ('dann = 600 <hi', 'dann = 6000 <hi'),
+    ('Kapitalwerth im ihm', 'Kapitalwerth in ihm'),
 ]
 
 K31_TEXT = [
@@ -817,6 +822,7 @@ K32_TEXT = [
     ('wenn et sie', 'wenn er sie'),
     ('(Autstellung', '(Aufstellung'),
     ('gefäbrliche', 'gefährliche'),
+    ('[der. Bankgesetzgebung]', '[der Bankgesetzgebung]'),
     ('Cirkulation<lb/>\nzn werfen', 'Cirkulation<lb/>\nzu werfen'),
     (
         (

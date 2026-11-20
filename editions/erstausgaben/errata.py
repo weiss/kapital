@@ -662,6 +662,7 @@ K2_TEXT = [
     ('dle einzelnen', 'die einzelnen'),
     ('dann = 600 <hi', 'dann = 6000 <hi'),
     ('Kapitalwerth im ihm', 'Kapitalwerth in ihm'),
+    ('London Economist&#x201E; 16.', 'London Economist, 16.'),
 ]
 
 K31_TEXT = [

@@ -66,11 +66,6 @@ h5 {
   margin: 1.4em 0 .6em;
 }
 
-section.chapter {
-  page-break-before: always;
-  break-before: page;
-}
-
 em {
   font-style: italic;
 }
@@ -594,6 +589,7 @@ section.cover {
 section.cover img {
   max-width: 100%;
   max-height: 100%;
+  max-height: 98vh;
 }
 
 span.blockish {

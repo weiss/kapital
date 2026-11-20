@@ -59,7 +59,7 @@ TABLE_LINE = 23
 GREEK_VARIANTS = str.maketrans(
     {'ϰ': 'κ', 'ϱ': 'ρ', 'ϑ': 'θ', 'ϐ': 'β', 'ϕ': 'φ'}
 )
-CONJ = {'und', 'oder', 'bis', 'resp', 'u', 'sowie'}
+CONJ = {'und', 'oder', 'bis', 'resp', 'u', 'sowie', 'zum', 'zur'}
 LETTER = "A-Za-zÄÖÜäöüßÀ-ÖØ-öø-ÿ\u0370-\u03ff\u1f00-\u1fff"
 BLOCK_TAGS = ('list', 'table', 'lg', 'cit')
 
@@ -525,7 +525,7 @@ def read_arg(src, i):
 def tex_text(parent, s, roman):
     s = s.replace('&lt;', '<').replace('&gt;', '>').replace('~', '\u00a0')
     if roman:
-        s = re.sub(r'(?<=\S) - (?=\S)', ' – ', s)
+        s = re.sub(r'(?<=\S) - (?=\S|$)', ' – ', s)
         s = re.sub(r'^- ', '– ', s)
     add_text(parent, s)
 
@@ -727,7 +727,13 @@ class Converter:
         if tag == 'lb':
             if br:
                 rstrip_end(out)
-                el(out, 'br')
+                last = out[-1] if len(out) else None
+                if (
+                    last is None
+                    or last.get('class') not in ('line', 'blockish')
+                    or (last.tail or '').strip()
+                ):
+                    el(out, 'br')
             else:
                 add_text(out, ' ')
         elif tag == 'pb':
@@ -1180,7 +1186,8 @@ NBSP_RULES = [
         ),
         '\\1.\u202f\\2.',
     ),
-    (re.compile(r'\bPfd\. St\b'), 'Pfd.\u202fSt'),
+    (re.compile(r'\bPfd\. (St|Sterl)\b'), 'Pfd.\u202f\\1'),
+    (re.compile(r'(\d)(£|℔)'), '\\1\u202f\\2'),
     (re.compile(r'([\d½⅓⅔¼¾⅕⅖⅗⅘⅙⅚⅛⅜⅝⅞]) (%|£|℔)'), '\\1\u202f\\2'),
     (
         re.compile(
@@ -1208,10 +1215,13 @@ PRIME_MARKS = {1: '′', 2: '″', 3: '″′'}
 
 
 def join_centered(root):
-    """Centered captions keep the print's line breaks only where a line is short
-    (lists, formulas)."""
+    """Centered and right-aligned blocks keep the print's line breaks only where
+    a line is short (lists, formulas)."""
     for sp in list(root.iter(H + 'span')):
-        if sp.get('class') != 'c' or sp.find('.//' + H + 'br') is None:
+        if (
+            sp.get('class') not in ('c', 'et')
+            or sp.find('.//' + H + 'br') is None
+        ):
             continue
         tail, sp.tail = sp.tail, None
         segs = etree.tostring(sp, encoding='unicode').split('<br/>')

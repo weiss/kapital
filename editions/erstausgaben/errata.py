@@ -858,6 +858,7 @@ K2_TEXT = [
     ('vorzugsweis èine', 'vorzugsweis eine'),
     ('V:25', 'V: 25'),
     ('setzt G<supplied>,</supplied>', 'setzt G'),
+    ('des Produkts von<lb/>\nsodass,', 'des Produkts von I,<lb/>\nsodass,'),
     ('schiesst der Cirkulation,<lb/>', 'schiesst der Cirkulation<lb/>'),
     ('Physiocrates, le. partie', 'Physiocrates, Ie. partie'),
     ('capitaux<lb/>\nqu &#x2019;on', 'capitaux<lb/>\nqu&#x2019;on'),

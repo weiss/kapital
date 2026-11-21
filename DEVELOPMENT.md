@@ -23,7 +23,7 @@ steht für eine wesentlich geänderte Edition.
 make                 # build/erstausgaben/kapital-{1,2,3}.epub
 make VARIANT=modern  # build/erstausgaben-modern/…: heutige Rechtschreibung
 make BANDS=3         # nur Band 3
-make check           # EPUBCheck über alle Bände
+make check           # EPUBCheck über alle Bände, auch Warnungen sind Fehler
 ```
 
 PDFs:
@@ -40,6 +40,10 @@ Debian/Ubuntu (`texlive-xetex` nur für das Paket `realscripts`):
 apt install texlive-luatex texlive-latex-recommended texlive-xetex \
     texlive-lang-german texlive-lang-greek
 ```
+
+`make pdf` bricht ab, wenn einer Schrift eine Glyphe fehlt, und schlägt fehl,
+wenn das Log eine zu breite Zeile (`Overfull \hbox`) oder eine Warnung von
+LaTeX, Klasse oder Paket enthält.
 
 Direkt aufgerufen:
 

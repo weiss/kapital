@@ -352,10 +352,6 @@
 "Altertümer",
 "manual"
 ],
-"America": [
-"Amerika",
-"foreign?"
-],
 "Amortisirung": [
 "Amortisierung",
 "word"
@@ -715,6 +711,10 @@
 "Baarzahlungen": [
 "Barzahlungen",
 "word"
+],
+"Baiern": [
+"Bayern",
+"manual"
 ],
 "Bankakkomodation": [
 "Bankakkommodation",
@@ -1836,6 +1836,10 @@
 "Komitees",
 "manual"
 ],
+"Compatrioten": [
+"Kompatrioten",
+"manual"
+],
 "Compendiums": [
 "Kompendiums",
 "word"
@@ -2007,6 +2011,10 @@
 "Cuba": [
 "Kuba",
 "foreign?"
+],
+"Curiosa": [
+"Kuriosa",
+"manual"
 ],
 "Curse": [
 "Kurse",
@@ -2740,6 +2748,10 @@
 "Etiketten",
 "manual"
 ],
+"Evictionsgeist": [
+"Eviktionsgeist",
+"manual"
+],
 "Excess": [
 "Exzess",
 "foreign?"
@@ -3016,6 +3028,10 @@
 "Füßen",
 "sz"
 ],
+"Galimathias": [
+"Galimatias",
+"manual"
+],
 "Gallerie": [
 "Galerie",
 "manual"
@@ -3037,7 +3053,7 @@
 "compound"
 ],
 "Gascompagnien": [
-"Gaskompagnien",
+"Gaskompanien",
 "manual"
 ],
 "Gastheer": [
@@ -4684,6 +4700,10 @@
 "Inkarnation",
 "foreign?"
 ],
+"Incidenzpunkts": [
+"Inzidenzpunkts",
+"manual"
+],
 "Incongruenz": [
 "Inkongruenz",
 "word"
@@ -5086,6 +5106,26 @@
 ],
 "Kommissair": [
 "Kommissär",
+"manual"
+],
+"Kompagnie": [
+"Kompanie",
+"manual"
+],
+"Kompagniegeschäft": [
+"Kompaniegeschäft",
+"manual"
+],
+"Kompagniegeschäfts": [
+"Kompaniegeschäfts",
+"manual"
+],
+"Kompagnien": [
+"Kompanien",
+"manual"
+],
+"Kompagnieprofit": [
+"Kompanieprofit",
 "manual"
 ],
 "Komplicirtere": [
@@ -5804,6 +5844,10 @@
 "Minimalmaß",
 "word"
 ],
+"Minimalsalair": [
+"Minimalsalär",
+"manual"
+],
 "Missethaten": [
 "Missetaten",
 "word"
@@ -5886,6 +5930,10 @@
 ],
 "Municipalitäten": [
 "Munizipalitäten",
+"manual"
+],
+"Municipalphilister": [
+"Munizipalphilister",
 "manual"
 ],
 "Musse": [
@@ -6453,8 +6501,8 @@
 "word"
 ],
 "Phantasieen": [
-"Fantasien",
-"word"
+"Phantasien",
+"manual"
 ],
 "Philantropen": [
 "Philanthropen",
@@ -6940,6 +6988,10 @@
 "Rasse",
 "manual"
 ],
+"Reagentien": [
+"Reagenzien",
+"manual"
+],
 "Realencyklopädien": [
 "Realenzyklopädien",
 "word"
@@ -7159,6 +7211,10 @@
 "Rockwerth": [
 "Rockwert",
 "word"
+],
+"Roheit": [
+"Rohheit",
+"manual"
 ],
 "Rohstoffproducent": [
 "Rohstoffproduzent",
@@ -7718,6 +7774,10 @@
 ],
 "Stahlpolirer": [
 "Stahlpolierer",
+"manual"
+],
+"Stengel": [
+"Stängel",
 "manual"
 ],
 "Steuervertheilung": [
@@ -10736,6 +10796,10 @@
 "Wohltätigkeitsanstalt",
 "word"
 ],
+"Wohnlichkeitsmisère": [
+"Wohnlichkeitsmisere",
+"manual"
+],
 "Wollenwaaren": [
 "Wollenwaren",
 "compound"
@@ -12589,16 +12653,16 @@
 "compound"
 ],
 "deplaciren": [
-"deplazieren",
-"compound"
+"deplatzieren",
+"manual"
 ],
 "deplacirt": [
-"deplaziert",
-"word"
+"deplatziert",
+"manual"
 ],
 "deplacirten": [
-"deplazierten",
-"compound"
+"deplatzierten",
+"manual"
 ],
 "deponire": [
 "deponiere",
@@ -18475,6 +18539,14 @@
 "vegetirten": [
 "vegetierten",
 "word"
+],
+"venetianische": [
+"venezianische",
+"manual"
+],
+"venetianischen": [
+"venezianischen",
+"manual"
 ],
 "ventilirt": [
 "ventiliert",

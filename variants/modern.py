@@ -72,6 +72,11 @@ WORD = re.compile(
 MASS_DAT = re.compile(
     r'(?:em|im|^demselben|^denselben|^selben|^gesellschaftlicher)$'
 )
+# "von neuem" after these nouns is an adjective (Bildung von neuem Kapital)
+NEW_OF = set(
+    'Zusetzen Zusatz Zufügung Anlage Vorschuss Produktion Bildung'
+    ' Akkumulationsfonds Konkurrenz Schöpfung'.split()
+)
 CONTRACT = {
     'in',
     'auf',
@@ -308,7 +313,7 @@ PHRASES = [
     (r'\bhier zu Lande\b', 'hierzulande'),
     (r'\bsogut wie\b', 'so gut wie'),
     (r'\bTeil zu nehmen\b', 'teilzunehmen'),
-    (r'(?<=\d) mal\b(?! \d)', '-mal'),
+    (r'(?<=[\d¼½¾⅓⅔]) mal\b(?! \d)', '-mal'),
     (r'\b(nicht|absolut) das geringste\b(?! [A-ZÄÖÜ])', r'\1 das Geringste'),
     (r'\b([Nn]icht) im geringsten\b(?! [A-ZÄÖÜ])', r'\1 im Geringsten'),
     (
@@ -414,7 +419,29 @@ PHRASES = [
     (r'\bdes folgenden:', 'des Folgenden:'),
     (r'\bmanchmal dreifache der\b', 'manchmal Dreifache der'),
     (r'\bohne weit(e?)res\b', r'ohne Weit\1res'),
-    (r'\bbei weitem\b', 'bei Weitem'),
+    (r'\b([Bb])ei weitem\b', r'\1ei Weitem'),
+    (r'\baufs neue\b(?! [A-ZÄÖÜ])', 'aufs Neue'),
+    (r'\b([Vv]or|seit) kurzem\b', r'\1 Kurzem'),
+    (r'\bgleichviel (?=[A-ZÄÖÜ]|variables)', 'gleich viel '),
+    (r'\bgleich Null\b', 'gleich null'),
+    (r'\bin Bar\b', 'in bar'),
+    (r'\bdas einzige(?=, was)', 'das Einzige'),
+    (
+        r'\b((?:Sonn|Mon|Diens|Donners|Frei|Sams)tag|Mittwoch) (Nacht|Abend)\b',
+        lambda m: m.group(1) + m.group(2).lower(),
+    ),
+    (
+        r'\b([DdSs])(reißig|ieben)(jährige[nr]?) (?=Kriegs?\b)',
+        lambda m: m.group(1).upper() + m.group(2) + m.group(3) + ' ',
+    ),
+    (r'(?<=[\d¼½¾⅓⅔]) ?(?=(?:stündig|jährig|tägig|pfündig)\w*\b)', '-'),
+    (
+        r'((?:\b(?:und|oder) |, )-)([A-ZÄÖÜ])(?=[a-zäöü])',
+        lambda m: m.group(1) + m.group(2).lower(),
+    ),
+    (r'(?<=[a-zäöüß.])…', ' …'),
+    (r'…(?=[A-ZÄÖÜa-zäöü])', '… '),
+    (r'(?<=\b1[78]\d\d) :(?= )', ':'),
     (r'\b(im ersten|identischer) Act\b', r'\1 Akt'),
     (r'\b(sparsamer|den) Wirth\b', r'\1 Wirt'),
     (r'\b(ihr|zum|und) Thor\b', r'\1 Tor'),
@@ -722,9 +749,11 @@ def foreign_flags(words):
     return flags
 
 
-def map_word(w, prev, foreign):
+def map_word(w, prev, foreign, prev2=''):
     if foreign:
         return w
+    if w == 'neuem' and prev == 'von' and prev2 not in NEW_OF:
+        return 'Neuem'
     if w in ('Masse', 'masse') and prev and MASS_DAT.search(prev.lower()):
         return w[0] + 'aße'
     if w == 'Schmidt' and prev == 'einen':
@@ -753,19 +782,19 @@ def historic_quotes(text, offsets, flags):
                     flags[i] = True
 
 
-def modernize_text(s, foreign=None, before=''):
+def modernize_text(s, foreign=None, before='', before2=''):
     """Plain string (formulas, headings in the config): word table + phrases,
     German context assumed."""
     words = WORD.findall(s)
     flags = foreign or [False] * len(words)
     it = iter(range(len(words)))
-    prev = [before]
+    prev = [before, before2]
 
     def rep(m):
         i = next(it)
         w = m.group(0)
-        new = map_word(w, prev[0], flags[i])
-        prev[0] = w
+        new = map_word(w, prev[0], flags[i], prev[1])
+        prev[:] = w, prev[0]
         if new != w:
             _log[(w, new)] += 1
         return new
@@ -858,7 +887,12 @@ def transform(root, part):
             n = len(WORD.findall(t))
             if any(flags[k : k + n]):
                 foreign.add((e, a))
-            new = modernize_text(t, flags[k : k + n], words[k - 1] if k else '')
+            new = modernize_text(
+                t,
+                flags[k : k + n],
+                words[k - 1] if k else '',
+                words[k - 2] if k > 1 else '',
+            )
             k += n
             if new != t:
                 setattr(e, a, new)

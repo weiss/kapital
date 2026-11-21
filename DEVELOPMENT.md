@@ -43,7 +43,10 @@ apt install texlive-luatex texlive-latex-recommended texlive-xetex \
 
 `make pdf` bricht ab, wenn einer Schrift eine Glyphe fehlt, und schlägt fehl,
 wenn das Log eine zu breite Zeile (`Overfull \hbox`) oder eine Warnung von
-LaTeX, Klasse oder Paket enthält.
+LaTeX, Klasse oder Paket enthält (`tools/check_tex_log.py`). Ausgenommen sind
+zwei Hinweise neuerer babel-Versionen auf `polutonikogreek` und `german`: Beide
+Namen sind gewollt, sie laden polytones Griechisch und die Schreibung von 1901
+über die `ldf`-Dateien, ohne Trennung und Satz zu ändern.
 
 Direkt aufgerufen:
 

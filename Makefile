@@ -18,7 +18,6 @@ SOURCES := tei2epub.py tables.py kapital.css \
            $(wildcard variants/*.py) $(wildcard variants/*.json)
 DATEENV := $(if $(EPOCH),SOURCE_DATE_EPOCH=$(EPOCH)) \
            $(if $(VERSION),KAPITAL_VERSION=$(VERSION))
-TEXWARN := '^(Overfull \\hbox|(LaTeX( Font)?|(Class|Package) [^ ]+) Warning)'
 TEXENV  := TEXINPUTS=.:$(CURDIR)/latex: TTFONTS=$(CURDIR)/latex/fonts: \
            $(if $(EPOCH),$(DATEENV) FORCE_SOURCE_DATE=1)
 
@@ -49,8 +48,8 @@ pdf:
 	      || { tail -n 30 $${f%.tex}.log; exit 1; }; \
 	  done; done; \
 	  for f in $$files; do cp $${f%.tex}.pdf ..; done; \
-	  ! grep -E -A2 $(TEXWARN) $$(echo $$files | sed 's/\.tex/.log/g') \
-	    || exit 1; \
+	  $(PY) $(CURDIR)/tools/check_tex_log.py \
+	    $$(echo $$files | sed 's/\.tex/.log/g') || exit 1; \
 	done
 
 # Umschläge neu rendern (braucht Node.js; einmalig:

@@ -773,9 +773,9 @@ VOLUMES['1']['corrections'] += [
         ' grammatische Versehen („Eine bestimmtes jährliches Quantum“) und'
         ' Hervorhebungen, die in der Transkription einen Buchstaben zu früh'
         ' beginnen (gesperrt „hgrösse“ in „Werthgrösse“). Gefunden wurden sie'
-        ' durch einen Abgleich mit der MEGA² (Bd. II/5, 1983) und eine'
-        ' Durchsicht der Sperrsatzstellen; Zweifelsfälle sind nach dem'
-        ' Faksimile entschieden.'
+        ' durch einen Abgleich mit der MEGA² (Bd. II/5, 1983), eine'
+        ' Durchsicht der Sperrsatzstellen und beim Korrekturlesen;'
+        ' Zweifelsfälle sind nach dem Faksimile entschieden.'
     ),
     (
         'Im Griechischen sind zwei Erfassungsfehler nach dem Faksimile und vier'
@@ -787,8 +787,8 @@ VOLUMES['1']['corrections'] += [
 ]
 _SPERR = ' im Sperrsatz, wo Wortabstände schwer zu erkennen sind,'
 _MEGA = (
-    'Gefunden wurden sie durch einen Abgleich mit der MEGA² ({}); Zweifelsfälle'
-    ' sind nach dem Faksimile entschieden.'
+    'Gefunden wurden sie durch einen Abgleich mit der MEGA² ({}) und beim'
+    ' Korrekturlesen; Zweifelsfälle sind nach dem Faksimile entschieden.'
 )
 VOLUMES['2']['corrections'] = [
     f'Offensichtliche Druckfehler sind berichtigt ({len(errata.K2_TEXT)}'

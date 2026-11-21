@@ -2,9 +2,10 @@
 (Bd. 1, 1867) and "Druckfehler" (Bd. 3, 1894), obvious misprints in Greek
 quotations, and (K1_TEXT) transcription errors and obvious misprints found by
 comparing Bd. 1 with MEGA² II/5 (1983); K2_TEXT, K31_TEXT, K32_TEXT likewise for
-Bd. 2 and 3 with MEGA² II/13 and II/15. MEGA served only as a pointer; doubtful
-readings were checked against the facsimile. MEGA's factual corrections (names,
-dates, page references, quotations adjusted to their sources) are not adopted.
+Bd. 2 and 3 with MEGA² II/13 and II/15, and by proofreading. MEGA served only as
+a pointer; doubtful readings were checked against the facsimile. MEGA's factual
+corrections (names, dates, page references, quotations adjusted to their
+sources) are not adopted.
 
 The erratum for p. 534 ("Z. 11 v. o. lies 8 statt 11") matches nothing on that
 page and is not applied. In Bd. 3 the erratum for p. I/115 (1857 for 1867) is
@@ -583,6 +584,9 @@ K1_TEXT = [
     ('Holzsäger</hi>. 1851:', 'Holzsäger</hi>: 1851:'),
     ('7 sh. 6d.,', '7 sh. 6 d.,'),
     ('Werth</hi> sein bildet', 'Werth</hi>sein bildet'),
+    ('Pfd. St.. In den letzten', 'Pfd. St. In den letzten'),
+    ('1851: 216, 851 Personen', '1851: 216,851 Personen'),
+    ('u.a.', 'u. a.', 2),
 ]
 
 K2_TEXT = [
@@ -834,6 +838,24 @@ K2_TEXT = [
         '<hi rendition="#et">I. 200<hi rendition="#sub">m</hi>',
     ),
     ('betheiligen.&#x2014;F. E.', 'betheiligen. &#x2014; F. E.'),
+    ('Im letzren', 'Im letztren'),
+    ('<choice><sic>iu</sic><corr>in</corr></choice> Folge', 'in Folge'),
+    (
+        'verkauft; 8440 <hi rendition="#i">£</hi> = 422',
+        'verkauft; 8440 <hi rendition="#i">&#x2114;</hi>. = 422',
+    ),
+    ('dem bürgerlichem', 'dem bürgerlichen'),
+    ('Cirkulationsphäre', 'Cirkulationssphäre', 2),
+    ('Kauf und Verkaufszeit', 'Kauf- und Verkaufszeit'),
+    ('In diesen und dem', 'In diesem und dem'),
+    ('nöthigem<lb/>\nGeldkapital)', 'nöthigen<lb/>\nGeldkapital)'),
+    ('im Produktionsstoffe', 'in Produktionsstoffe'),
+    ('Gold und Silberproduktion', 'Gold- und Silberproduktion'),
+    ('in dem Konsumtionsfonds andrer', 'in den Konsumtionsfonds andrer'),
+    ('Produkt andre Produktionssphären', 'Produkt andrer Produktionssphären'),
+    ('heissen; So', 'heissen: So'),
+    ('vorzugsweis èine', 'vorzugsweis eine'),
+    ('V:25', 'V: 25'),
 ]
 
 K31_TEXT = [
@@ -955,6 +977,26 @@ K31_TEXT = [
     ('in Anpruch genommene', 'in Anspruch genommene'),
     ('le capital-<lb/>\nargent,', 'le capital-argent,<lb/>\n'),
     ('C. D. 1848|57.', 'C. D. 1848/57.'),
+    ('ausgelegten Theils des Kapitals', 'ausgelegten Theil des Kapitals'),
+    ('zwischen fixen und cirkulirendem', 'zwischen fixem und cirkulirendem'),
+    ('zwischen cirkulirenden und fixem', 'zwischen cirkulirendem und fixem'),
+    ('unter unsere Voraussetzungen', 'unter unsern Voraussetzungen'),
+    ('überschreitendem Maß', 'überschreitenden Maß'),
+    ('Kapitale derselbe<lb/>', 'Kapitale dieselbe<lb/>'),
+    ('konstanten Kapitals berührt', 'konstanten Kapital berührt'),
+    (
+        'und Kapital<lb/>\n<fw type="sig" place="bottom"><hi rendition="#g">Marx</hi>, Kapital III. 16</fw><lb/>\n<pb n="242" facs="#f0276"/>\n<hi rendition="#g">werthen</hi>',
+        'und Kapital-<lb/>\n<pb n="242" facs="#f0276"/>\nwerthen',
+    ),
+    ('geometrischer Progressive', 'geometrischer Progression'),
+    (
+        'industriellen Kapitals verschiednen',
+        'industriellen Kapital verschiednen',
+    ),
+    ('Metereologische', 'Meteorologische'),
+    ('0,100,200', '0, 100, 200'),
+    ('(A.Müller, l.c., II., p.147', '(A. Müller, l. c., II., p. 147'),
+    ('(p. 43,44.)', '(p. 43, 44.)'),
 ]
 
 K32_TEXT = [
@@ -1100,4 +1142,15 @@ K32_TEXT = [
     ('Pent-elle', 'Peut-elle'),
     ('Sil&#x2019;on', 'Si l&#x2019;on'),
     ('c&#x2019;est-à dire', 'c&#x2019;est-à-dire'),
+    ('deponirten Kapital.', 'deponirtem Kapital.'),
+    ('(z.B. 1847', '(z. B. 1847'),
+    ('d.h. produktiven', 'd. h. produktiven'),
+    ('den Vorschub, die diese', 'den Vorschub, den diese'),
+    ('Kapitalvorschuss ist<lb/>\nJener', 'Kapitalvorschuss ist.<lb/>\nJener'),
+    ('Bodenarten, nach der Menge', 'Bodenarten, noch der Menge'),
+    ('Kampf um dem<lb/>', 'Kampf um den<lb/>'),
+    ('zu behandeln, dass von', 'zu behandeln, das von'),
+    ('Profits im Durchschnittsprofit', 'Profits in Durchschnittsprofit'),
+    ('Werthe im Produktionspreise', 'Werthe in Produktionspreise'),
+    ('konkuriren', 'konkurriren'),
 ]

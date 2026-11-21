@@ -826,6 +826,13 @@ K2_TEXT = [
     ('zn versilbern', 'zu versilbern'),
     ('im produktives (konstantes)', 'in produktives (konstantes)'),
     ('aud have', 'and have'),
+    ('&#x2153; Gesammtarbeistag', '&#x2153; Gesammtarbeitstag'),
+    ('Kapital B =<formula', 'Kapital B = <formula'),
+    (
+        '<hi rendition="#et">. 200<hi rendition="#sub">m</hi>',
+        '<hi rendition="#et">I. 200<hi rendition="#sub">m</hi>',
+    ),
+    ('betheiligen.&#x2014;F. E.', 'betheiligen. &#x2014; F. E.'),
 ]
 
 K31_TEXT = [
@@ -944,6 +951,9 @@ K31_TEXT = [
     (r'\frac{14 2}{7 k/100}', r'\frac{14\frac{2}{7} k}{100}'),
     ('3755<lb/>\nSie glauben', '3755.<lb/>\nSie glauben'),
     ('2×10 = 20', '2 × 10 = 20'),
+    ('in Anpruch genommene', 'in Anspruch genommene'),
+    ('le capital-<lb/>\nargent,', 'le capital-argent,<lb/>\n'),
+    ('C. D. 1848|57.', 'C. D. 1848/57.'),
 ]
 
 K32_TEXT = [

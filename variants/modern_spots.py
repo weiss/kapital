@@ -1921,4 +1921,5 @@ EDGES = [
     ('(?<=einfache Wertausdrücke)$', ','),
     ('(?<=^geplündert)$', ','),
     ('^…(?= the\\s*$)', ' …'),
+    ('^…(?= Herr Potter)', ' …'),
 ]

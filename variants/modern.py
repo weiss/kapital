@@ -69,7 +69,9 @@ BREAKS = {TEI + 'lb', TEI + 'pb'}
 WORD = re.compile(
     r"[A-Za-zÄÖÜäöüßàâçéèêëîïôûùœæ]+(?:[’']s(?![A-Za-zÄÖÜäöüß]))?"
 )
-MASS_DAT = re.compile(r'(?:em|im|^demselben|^denselben|^gesellschaftlicher)$')
+MASS_DAT = re.compile(
+    r'(?:em|im|^demselben|^denselben|^selben|^gesellschaftlicher)$'
+)
 CONTRACT = {
     'in',
     'auf',
@@ -310,7 +312,7 @@ PHRASES = [
     (r'\b(nicht|absolut) das geringste\b(?! [A-ZÄÖÜ])', r'\1 das Geringste'),
     (r'\b([Nn]icht) im geringsten\b(?! [A-ZÄÖÜ])', r'\1 im Geringsten'),
     (
-        r'\baufs ([a-zäöü]+ste)\b',
+        r'\baufs ([a-zäöüß]+ste)\b',
         lambda m: 'aufs ' + m.group(1).capitalize(),
     ),
     (r'\b([Jj])enachdem\b', r'\1e nachdem'),
@@ -725,6 +727,8 @@ def map_word(w, prev, foreign):
         return w
     if w in ('Masse', 'masse') and prev and MASS_DAT.search(prev.lower()):
         return w[0] + 'aße'
+    if w == 'Schmidt' and prev == 'einen':
+        return 'Schmied'
     m = re.fullmatch(r"(\w+)([’'])s", w)
     if m:
         base, apo = m.group(1), m.group(2)

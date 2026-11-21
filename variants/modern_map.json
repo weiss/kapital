@@ -1204,9 +1204,17 @@
 "Kategorien",
 "word"
 ],
+"Cementirwerke": [
+"Zementierwerke",
+"manual"
+],
 "Cementöfen": [
 "Zementöfen",
 "word"
+],
+"Censors": [
+"Zensors",
+"manual"
 ],
 "Census": [
 "Zensus",
@@ -1335,6 +1343,10 @@
 "Christenthum": [
 "Christentum",
 "word"
+],
+"Chursachsen": [
+"Kursachsen",
+"manual"
 ],
 "Cigarren": [
 "Zigarren",
@@ -1796,6 +1808,10 @@
 "Claneigentum",
 "word"
 ],
+"Codex": [
+"Kodex",
+"manual"
+],
 "Collegen": [
 "Kollegen",
 "word"
@@ -1999,6 +2015,10 @@
 "Curve": [
 "Kurve",
 "foreign?"
+],
+"Cyclopädie": [
+"Zyklopädie",
+"manual"
 ],
 "Cyklen": [
 "Zyklen",
@@ -2247,6 +2267,10 @@
 "Dispensirte": [
 "Dispensierte",
 "word"
+],
+"Dispepsie": [
+"Dyspepsie",
+"manual"
 ],
 "Dividiren": [
 "Dividieren",
@@ -2994,6 +3018,10 @@
 ],
 "Gallerie": [
 "Galerie",
+"manual"
+],
+"Galvanisirungs": [
+"Galvanisierungs",
 "manual"
 ],
 "Garnproducenten": [
@@ -4720,6 +4748,10 @@
 "Isolierung",
 "word"
 ],
+"Jahrelang": [
+"jahrelang",
+"manual"
+],
 "Jahresantheil": [
 "Jahresanteil",
 "word"
@@ -4731,6 +4763,10 @@
 "Jahresverschleiss": [
 "Jahresverschleiß",
 "word"
+],
+"Jahrhundertlang": [
+"jahrhundertlang",
+"manual"
 ],
 "Jamaica": [
 "Jamaika",
@@ -5461,8 +5497,8 @@
 "manual"
 ],
 "Maschinenexploitirenden": [
-"Maschinenexploitierenden",
-"compound"
+"maschinenexploitierenden",
+"manual"
 ],
 "Maschinentheile": [
 "Maschinenteile",
@@ -5875,6 +5911,10 @@
 "Mysticismus": [
 "Mystizismus",
 "word"
+],
+"Mährchen": [
+"Märchen",
+"manual"
 ],
 "Mässiges": [
 "Mäßiges",
@@ -7212,6 +7252,10 @@
 "Saldierungen",
 "word"
 ],
+"Salzsoole": [
+"Salzsole",
+"manual"
+],
 "Sanction": [
 "Sanktion",
 "foreign?"
@@ -7254,6 +7298,10 @@
 ],
 "Scheererei": [
 "Schererei",
+"manual"
+],
+"Scheermaschine": [
+"Schermaschine",
 "manual"
 ],
 "Scheidungsprocess": [
@@ -7883,6 +7931,10 @@
 "Theehandels": [
 "Teehandels",
 "word"
+],
+"Thees": [
+"Tees",
+"manual"
 ],
 "Theezolls": [
 "Teezolls",
@@ -11956,6 +12008,10 @@
 "buchstabierte",
 "word"
 ],
+"bureaukratischen": [
+"bürokratischen",
+"manual"
+],
 "büssen": [
 "büßen",
 "sz"
@@ -14349,8 +14405,8 @@
 "sz"
 ],
 "hinaufzuforciren": [
-"hinaufzuforzieren",
-"compound"
+"hinaufzuforcieren",
+"manual"
 ],
 "hinterliess": [
 "hinterließ",
@@ -15668,6 +15724,10 @@
 "motivierten",
 "word"
 ],
+"muhamedanischen": [
+"mohammedanischen",
+"manual"
+],
 "multipliciren": [
 "multiplizieren",
 "word"
@@ -16319,6 +16379,10 @@
 "planmässiger": [
 "planmäßiger",
 "sz"
+],
+"platzgreifen": [
+"Platz greifen",
+"manual"
 ],
 "poetisirt": [
 "poetisiert",
@@ -17169,8 +17233,8 @@
 "word"
 ],
 "resumirten": [
-"resumierten",
-"compound"
+"resümierten",
+"manual"
 ],
 "resümirt": [
 "resümiert",
@@ -17586,10 +17650,6 @@
 ],
 "sociologischen": [
 "soziologischen",
-"word"
-],
-"socius": [
-"sozius",
 "word"
 ],
 "sollicitiren": [
@@ -19391,6 +19451,10 @@
 "zwergmässig": [
 "zwergmäßig",
 "compound"
+],
+"ächt": [
+"echt",
+"manual"
 ],
 "äussere": [
 "äußere",

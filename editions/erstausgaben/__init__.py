@@ -74,7 +74,12 @@ K1 = {
             '&#x1F00;&#x03B4;&#x03C5;&#x03BD;&#x03B1;&#x03C4;&#x03BF;&#x03BD;',
             'ἀδύνατον',
         ),
-        ('Linie a--------------b', 'Linie <seg type="line">a b</seg>'),
+        ('Linie a--------------b', 'Linie <seg type="line">a6 b0</seg>'),
+        ('a-------------b---c', '<seg type="line">a6 b1 c0</seg>'),
+        (
+            "a-------------b'--b----c",
+            '<seg type="line">a6 b&#x2032;1 b2 c0</seg>',
+        ),
         (
             '<p>I)<lb/>\n<formula/>.<lb/>\n',
             '<p><formula rend="display" n="I)" suffix="."/>',

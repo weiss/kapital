@@ -89,7 +89,8 @@ def remove_keep_tail(e):
 
 def apply_raw_fixes(s, fixes):
     """(old, new) must match exactly once; (old, new, n) exactly n times. The
-    ditto mark 〃 of the transcription becomes „ as in the print."""
+    ditto mark 〃 of the transcription becomes „ as in the print, and the s
+    of a possessive joins the highlighted name before it."""
     for old, new, *n in fixes:
         n = n[0] if n else 1
         if s.count(old) != n:
@@ -98,6 +99,7 @@ def apply_raw_fixes(s, fixes):
             )
         s = s.replace(old, new)
     s = s.replace('&#x3003;', '&#x201E;')
+    s = re.sub(r'(&#x2019;|’)</hi>s(?![A-Za-zäöüß])', r'\1s</hi>', s)
     return re.sub(r'<fw\b[^>]*>.*?</fw>', '', s, flags=re.S)
 
 
@@ -749,7 +751,8 @@ class Converter:
             corr = c.find(TEI + 'corr')
             self.inline(corr if corr is not None else c, out, br)
         elif tag == 'seg':
-            self.line_figure(out, [('a', 6), ('b', 0)])
+            spec = re.findall(r'(\D+?)(\d+)', c.text or '')
+            self.line_figure(out, [(lab.strip(), int(n)) for lab, n in spec])
         elif tag == 'figure':
             self.figure(c, out)
         elif tag in (
@@ -1181,7 +1184,8 @@ NBSP_RULES = [
     (re.compile(r'\bu\. d\. g\.'), 'u.\u202fd.\u202fg.'),
     (
         re.compile(
-            r'\b(z|d|u|s|l|v|i|o|resp|vgl)\. (B|h|s|a|c|o|u|e|g|i|w|dgl)\.'
+            r'\b(z|Z|d|D|u|U|s|l|v|i|o|resp|vgl)\.'
+            r' (B|h|s|a|c|o|u|e|g|i|w|T|dgl|dergl)\.'
             r'(?!\u202f)'
         ),
         '\\1.\u202f\\2.',
@@ -1209,7 +1213,7 @@ NARROW = re.compile(r'(?:\S|\u202f)*\u202f(?:\S|\u202f)*')
 # G', W'', m'n, kp': the print's apostrophes after a variable are primes (but
 # not in l'homme)
 PRIMES = re.compile(
-    rf"(?<![{LETTER}])([A-Za-z]|Pm|kp|Bp|bp|Cz)('{{1,3}})(?![{LETTER}]{{3}})"
+    rf"(?<![{LETTER}])([A-Za-z]|Pm|kp|Bp|bp|Cz|Kz)('{{1,3}})(?![{LETTER}]{{3}})"
 )
 PRIME_MARKS = {1: '′', 2: '″', 3: '″′'}
 

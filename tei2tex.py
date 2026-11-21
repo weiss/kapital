@@ -245,7 +245,9 @@ class TeX:
             if 'lf-l' in k:
                 out.append(esc(s.text))
             else:
-                w = {'w1': '.7em', 'w3': '2.1em', 'w6': '4.2em'}[k[1]]
+                w = {'w1': '.7em', 'w2': '1.4em', 'w3': '2.1em', 'w6': '4.2em'}[
+                    k[1]
+                ]
                 out.append(r'\linerule{' + w + '}')
         return ''.join(out)
 

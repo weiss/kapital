@@ -124,6 +124,10 @@
 "Akquisition",
 "manual"
 ],
+"Action": [
+"Aktion",
+"manual"
+],
 "Addiren": [
 "Addieren",
 "word"
@@ -343,6 +347,10 @@
 "Alterthums": [
 "Altertums",
 "word"
+],
+"Alterthümer": [
+"Altertümer",
+"manual"
 ],
 "America": [
 "Amerika",
@@ -731,6 +739,10 @@
 "Bankierthums": [
 "Bankiertums",
 "compound"
+],
+"Bankkomité": [
+"Bankkomitee",
+"manual"
 ],
 "Banknotencirkulation": [
 "Banknotenzirkulation",
@@ -1148,6 +1160,10 @@
 "Bürokratie",
 "manual"
 ],
+"Bureaux": [
+"Büros",
+"manual"
+],
 "Busse": [
 "Buße",
 "sz"
@@ -1196,6 +1212,10 @@
 "Zensus",
 "manual"
 ],
+"Censusberichte": [
+"Zensusberichte",
+"manual"
+],
 "Centimeter": [
 "Zentimeter",
 "foreign?"
@@ -1206,6 +1226,10 @@
 ],
 "Centra": [
 "Zentra",
+"manual"
+],
+"Central": [
+"Zentral",
 "manual"
 ],
 "Centralbank": [
@@ -1288,6 +1312,26 @@
 "Charakterisierende",
 "word"
 ],
+"Charlatanerie": [
+"Scharlatanerie",
+"manual"
+],
+"Charlatanismus": [
+"Scharlatanismus",
+"manual"
+],
+"Cheque": [
+"Scheck",
+"manual"
+],
+"Cheques": [
+"Schecks",
+"manual"
+],
+"Chokolade": [
+"Schokolade",
+"manual"
+],
 "Christenthum": [
 "Christentum",
 "word"
@@ -1298,6 +1342,10 @@
 ],
 "Circulation": [
 "Zirkulation",
+"manual"
+],
+"Circulations": [
+"Zirkulations",
 "manual"
 ],
 "Circulationsagenten": [
@@ -1696,9 +1744,17 @@
 "Zitaten",
 "foreign?"
 ],
+"Citation": [
+"Zitation",
+"manual"
+],
 "Citirt": [
 "Zitiert",
 "word"
+],
+"Civil": [
+"Zivil",
+"manual"
 ],
 "Civile": [
 "Zivile",
@@ -1740,10 +1796,6 @@
 "Claneigentum",
 "word"
 ],
-"Clothier": [
-"Clotier",
-"compound"
-],
 "Collegen": [
 "Kollegen",
 "word"
@@ -1771,6 +1823,10 @@
 "Compendiums": [
 "Kompendiums",
 "word"
+],
+"Compilation": [
+"Kompilation",
+"manual"
 ],
 "Concentration": [
 "Konzentration",
@@ -1886,6 +1942,10 @@
 ],
 "Convention": [
 "Konvention",
+"manual"
+],
+"Conversionsfonds": [
+"Konversionsfonds",
 "manual"
 ],
 "Cooperation": [
@@ -2004,9 +2064,17 @@
 "Dazutun",
 "word"
 ],
+"Dcbr": [
+"Dezbr",
+"manual"
+],
 "Dec": [
 "Dez",
 "foreign?"
+],
+"Decbr": [
+"Dezbr",
+"manual"
 ],
 "December": [
 "Dezember",
@@ -2072,6 +2140,14 @@
 "Deponierung",
 "word"
 ],
+"Depôt": [
+"Depot",
+"manual"
+],
+"Depôtpapiere": [
+"Depotpapiere",
+"manual"
+],
 "Desshalb": [
 "Deshalb",
 "manual"
@@ -2104,6 +2180,10 @@
 "Diesmal",
 "compound"
 ],
+"Differentialkalkuls": [
+"Differentialkalküls",
+"manual"
+],
 "Differenzirtes": [
 "Differenziertes",
 "word"
@@ -2111,6 +2191,10 @@
 "Differenzirung": [
 "Differenzierung",
 "word"
+],
+"Diktionnair": [
+"Diktionär",
+"manual"
 ],
 "Disciplin": [
 "Disziplin",
@@ -2524,10 +2608,6 @@
 "Endergebnis",
 "word"
 ],
-"Entheiligung": [
-"Enteiligung",
-"compound"
-],
 "Entkapitalisirung": [
 "Entkapitalisierung",
 "word"
@@ -2624,6 +2704,10 @@
 "Erziehungszertifikat",
 "word"
 ],
+"Estricht": [
+"Estrich",
+"manual"
+],
 "Etiquette": [
 "Etikette",
 "manual"
@@ -2647,6 +2731,10 @@
 "Excursion": [
 "Exkursion",
 "foreign?"
+],
+"Execution": [
+"Exekution",
+"manual"
 ],
 "Exercitien": [
 "Exerzitien",
@@ -2712,9 +2800,17 @@
 "Fazit",
 "word"
 ],
+"Faullenzerei": [
+"Faulenzerei",
+"manual"
+],
 "Feudaleigenthümer": [
 "Feudaleigentümer",
 "compound"
+],
+"Fichtescher": [
+"fichtescher",
+"manual"
 ],
 "Finanzwirthschaft": [
 "Finanzwirtschaft",
@@ -3800,6 +3896,10 @@
 "Geschrei",
 "word"
 ],
+"Geschäftsbureaux": [
+"Geschäftsbüros",
+"manual"
+],
 "Geschäftscyklus": [
 "Geschäftszyklus",
 "word"
@@ -3827,6 +3927,10 @@
 "Gesellschaftseigenthum": [
 "Gesellschaftseigentum",
 "word"
+],
+"Gesellschaftsschoose": [
+"Gesellschaftsschoße",
+"manual"
 ],
 "Gesellschaftstheile": [
 "Gesellschaftsteile",
@@ -3884,6 +3988,10 @@
 "Gewichtteile",
 "compound"
 ],
+"Giebt": [
+"Gibt",
+"manual"
+],
 "Giesser": [
 "Gießer",
 "sz"
@@ -3892,13 +4000,17 @@
 "Gießerei",
 "sz"
 ],
+"Glasirräume": [
+"Glasierräume",
+"manual"
+],
 "Glaswaaren": [
 "Glaswaren",
 "word"
 ],
 "Gleichgrosse": [
-"Gleichgroße",
-"sz"
+"Gleich große",
+"manual"
 ],
 "Gleichheitsverhältniss": [
 "Gleichheitsverhältnis",
@@ -3952,9 +4064,17 @@
 "Gradgröße",
 "compound"
 ],
+"Greuel": [
+"Gräuel",
+"manual"
+],
+"Greueln": [
+"Gräueln",
+"manual"
+],
 "Greuelthaten": [
-"Greueltaten",
-"word"
+"Gräueltaten",
+"manual"
 ],
 "Grobschmidt": [
 "Grobschmied",
@@ -4428,6 +4548,10 @@
 "hubbardschen",
 "manual"
 ],
+"Humanitairen": [
+"Humanitären",
+"manual"
+],
 "Hungersnoth": [
 "Hungersnot",
 "word"
@@ -4515,6 +4639,10 @@
 "Identificirung": [
 "Identifizierung",
 "word"
+],
+"Ihresgleichen": [
+"ihresgleichen",
+"manual"
 ],
 "Immobilisirung": [
 "Immobilisierung",
@@ -4615,6 +4743,10 @@
 "Kaiserthum": [
 "Kaisertum",
 "word"
+],
+"Kapitain": [
+"Kapitän",
+"manual"
 ],
 "Kapitalaccumulation": [
 "Kapitalakkumulation",
@@ -4852,6 +4984,10 @@
 "Kleinproduzenten",
 "word"
 ],
+"Klugheitsmassregel": [
+"Klugheitsmaßregel",
+"manual"
+],
 "Knechtschaftsverhältniss": [
 "Knechtschaftsverhältnis",
 "compound"
@@ -4896,6 +5032,18 @@
 "Kolonien",
 "word"
 ],
+"Komité": [
+"Komitee",
+"manual"
+],
+"Komités": [
+"Komitees",
+"manual"
+],
+"Komitézimmer": [
+"Komiteezimmer",
+"manual"
+],
 "Kommerciellen": [
 "Kommerziellen",
 "word"
@@ -4937,8 +5085,12 @@
 "manual"
 ],
 "Konscribirten": [
-"Konscribierten",
-"compound"
+"Konskribierten",
+"manual"
+],
+"Konscription": [
+"Konskription",
+"manual"
 ],
 "Konstatirung": [
 "Konstatierung",
@@ -5208,12 +5360,20 @@
 "Lokalzirkulation",
 "word"
 ],
+"Lokalkomité": [
+"Lokalkomitee",
+"manual"
+],
 "Loos": [
 "Los",
 "manual"
 ],
 "Looses": [
 "Loses",
+"manual"
+],
+"Looseziehn": [
+"Loseziehn",
 "manual"
 ],
 "Losreissung": [
@@ -5335,6 +5495,10 @@
 "Massentheil": [
 "Massenteil",
 "word"
+],
+"Masses": [
+"Maßes",
+"manual"
 ],
 "Masslosigkeit": [
 "Maßlosigkeit",
@@ -5616,6 +5780,10 @@
 "Missverständnis",
 "word"
 ],
+"Misère": [
+"Misere",
+"manual"
+],
 "Miteigenthümer": [
 "Miteigentümer",
 "word"
@@ -5655,6 +5823,10 @@
 "Modificationen": [
 "Modifikationen",
 "word"
+],
+"Mongolenrath": [
+"Mongolenrat",
+"manual"
 ],
 "Monopolisirern": [
 "Monopolisierern",
@@ -6188,6 +6360,14 @@
 "Parzellierung",
 "word"
 ],
+"Parlamentskomité": [
+"Parlamentskomitee",
+"manual"
+],
+"Parlamentswegen": [
+"Parlaments wegen",
+"manual"
+],
 "Particip": [
 "Partizip",
 "word"
@@ -6636,6 +6816,10 @@
 "Prostituierten",
 "word"
 ],
+"Protektionsmassregeln": [
+"Protektionsmaßregeln",
+"manual"
+],
 "Provincialbank": [
 "Provinzialbank",
 "word"
@@ -6676,6 +6860,10 @@
 "Rassenverhältnisse",
 "manual"
 ],
+"Raisonable": [
+"Räsonable",
+"manual"
+],
 "Rasirmesser": [
 "Rasiermesser",
 "word"
@@ -6707,6 +6895,10 @@
 "Raumtheile": [
 "Raumteile",
 "word"
+],
+"Raçe": [
+"Rasse",
+"manual"
 ],
 "Realencyklopädien": [
 "Realenzyklopädien",
@@ -6740,6 +6932,10 @@
 "Rechtsverhältnis",
 "word"
 ],
+"Rechtswegen": [
+"Rechts wegen",
+"manual"
+],
 "Recidive": [
 "Rezidive",
 "foreign?"
@@ -6768,9 +6964,17 @@
 "Regelmäßigkeit",
 "sz"
 ],
+"Regierungskommissairs": [
+"Regierungskommissärs",
+"manual"
+],
 "Regierungsraths": [
 "Regierungsrats",
 "word"
+],
+"Regierungswegen": [
+"Regierungs wegen",
+"manual"
 ],
 "Regulirung": [
 "Regulierung",
@@ -6884,6 +7088,10 @@
 "Revolutionierung",
 "word"
 ],
+"Rhachitischen": [
+"Rachitischen",
+"manual"
+],
 "Rhederei": [
 "Reederei",
 "manual"
@@ -6984,6 +7192,18 @@
 "Sachwert",
 "word"
 ],
+"Salair": [
+"Salär",
+"manual"
+],
+"Salaire": [
+"Saläre",
+"manual"
+],
+"Salairs": [
+"Salärs",
+"manual"
+],
 "Saldirung": [
 "Saldierung",
 "word"
@@ -7004,6 +7224,10 @@
 "Skalpieren",
 "word"
 ],
+"Scalps": [
+"Skalps",
+"manual"
+],
 "Scene": [
 "Szene",
 "foreign?"
@@ -7014,10 +7238,6 @@
 ],
 "Schacherbedürfniss": [
 "Schacherbedürfnis",
-"compound"
-],
-"Schafhirt": [
-"Schafhiert",
 "compound"
 ],
 "Schafvliess": [
@@ -7051,6 +7271,10 @@
 "Schiesswolle": [
 "Schießwolle",
 "word"
+],
+"Schiffahrt": [
+"Schifffahrt",
+"manual"
 ],
 "Schiffsrheder": [
 "Schiffsreeder",
@@ -7256,6 +7480,10 @@
 "Sklavenwirtschaft",
 "word"
 ],
+"Skropheln": [
+"Skrofeln",
+"manual"
+],
 "Skrophulose": [
 "Skrofulose",
 "word"
@@ -7302,6 +7530,18 @@
 ],
 "Souverain": [
 "Souverän",
+"manual"
+],
+"Souverainen": [
+"Souveränen",
+"manual"
+],
+"Souverainität": [
+"Souveränität",
+"manual"
+],
+"Souverains": [
+"Souveräns",
 "manual"
 ],
 "Specialarbeit": [
@@ -7415,6 +7655,10 @@
 "Staatsverräther": [
 "Staatsverräter",
 "word"
+],
+"Staatswegen": [
+"Staats wegen",
+"manual"
 ],
 "Stadtrath": [
 "Stadtrat",
@@ -7593,8 +7837,8 @@
 "compound"
 ],
 "Telegraphendräthen": [
-"Telegraphendräten",
-"compound"
+"Telegraphendrähten",
+"manual"
 ],
 "Thaler": [
 "Taler",
@@ -7995,6 +8239,10 @@
 "Totalwerth": [
 "Totalwert",
 "word"
+],
+"Tramirer": [
+"Tramierer",
+"manual"
 ],
 "Transactionen": [
 "Transaktionen",
@@ -8620,12 +8868,20 @@
 "Unteroffiziere",
 "word"
 ],
+"Unterstützungskomité": [
+"Unterstützungskomitee",
+"manual"
+],
 "Untersuchungscomité": [
 "Untersuchungskomitee",
 "manual"
 ],
 "Untersuchungscomités": [
 "Untersuchungskomitees",
+"manual"
+],
+"Untersuchungskommissaire": [
+"Untersuchungskommissäre",
 "manual"
 ],
 "Unterthanen": [
@@ -10356,6 +10612,10 @@
 "Wichtigtuerei",
 "word"
 ],
+"Wiederschein": [
+"Widerschein",
+"manual"
+],
 "Willensverhältniss": [
 "Willensverhältnis",
 "word"
@@ -10490,6 +10750,14 @@
 ],
 "Zenith": [
 "Zenit",
+"manual"
+],
+"Zenithjahr": [
+"Zenitjahr",
+"manual"
+],
+"Zenithjahre": [
+"Zenitjahre",
 "manual"
 ],
 "Zerreissung": [
@@ -11031,6 +11299,10 @@
 "angiebt": [
 "angibt",
 "word"
+],
+"angränzenden": [
+"angrenzenden",
+"manual"
 ],
 "anmasslichen": [
 "anmaßlichen",
@@ -11692,6 +11964,10 @@
 "büßest",
 "word"
 ],
+"cambridger": [
+"Cambridger",
+"manual"
+],
 "campire": [
 "kampiere",
 "word"
@@ -12039,6 +12315,10 @@
 "conventionell": [
 "konventionell",
 "word"
+],
+"convertible": [
+"konvertible",
+"manual"
 ],
 "cooperation": [
 "kooperation",
@@ -12492,6 +12772,14 @@
 "dreißigjährigen",
 "sz"
 ],
+"dreiviertel": [
+"drei Viertel",
+"manual"
+],
+"drittel": [
+"Drittel",
+"manual"
+],
 "durchpassiren": [
 "durchpassieren",
 "compound"
@@ -12560,6 +12848,10 @@
 "einbüßt",
 "sz"
 ],
+"eindrittel": [
+"ein Drittel",
+"manual"
+],
 "einestheils": [
 "einesteils",
 "word"
@@ -12623,6 +12915,10 @@
 "eintheilt": [
 "einteilt",
 "word"
+],
+"einviertel": [
+"ein Viertel",
+"manual"
 ],
 "einzuexerciren": [
 "einzuexerzieren",
@@ -12827,6 +13123,10 @@
 "ertheilte": [
 "erteilte",
 "word"
+],
+"erwiesnermassen": [
+"erwiesnermaßen",
+"manual"
 ],
 "erwähnenswerthe": [
 "erwähnenswerte",
@@ -13661,16 +13961,28 @@
 "manual"
 ],
 "gleichgrosse": [
-"gleichgroße",
-"sz"
+"gleich große",
+"manual"
 ],
 "gleichgrossen": [
-"gleichgroßen",
-"sz"
+"gleich großen",
+"manual"
 ],
 "gleichgrosser": [
-"gleichgroßer",
-"word"
+"gleich großer",
+"manual"
+],
+"gleichgroße": [
+"gleich große",
+"manual"
+],
+"gleichgroßen": [
+"gleich großen",
+"manual"
+],
+"gleichgute": [
+"gleich gute",
+"manual"
 ],
 "gleichmässig": [
 "gleichmäßig",
@@ -13911,6 +14223,18 @@
 "größtentheils": [
 "größtenteils",
 "word"
+],
+"gutbezahlten": [
+"gut bezahlten",
+"manual"
+],
+"gutgelegner": [
+"gut gelegner",
+"manual"
+],
+"gutgeleiteten": [
+"gut geleiteten",
+"manual"
 ],
 "gährt": [
 "gärt",
@@ -14956,9 +15280,21 @@
 "langatmigen",
 "word"
 ],
+"langfortgesetzte": [
+"lang fortgesetzte",
+"manual"
+],
+"lausitzer": [
+"Lausitzer",
+"manual"
+],
 "legalisirt": [
 "legalisiert",
 "word"
+],
+"leichtkonvertiblen": [
+"leicht konvertiblen",
+"manual"
 ],
 "letztcitirten": [
 "letztzitierten",
@@ -15015,6 +15351,10 @@
 "lokalisirt": [
 "lokalisiert",
 "word"
+],
+"londoner": [
+"Londoner",
+"manual"
 ],
 "läugne": [
 "leugne",
@@ -15441,40 +15781,144 @@
 "word"
 ],
 "neuakkumulirten": [
-"neuakkumulierten",
-"compound"
+"neu akkumulierten",
+"manual"
+],
+"neuausgeheckten": [
+"neu ausgeheckten",
+"manual"
+],
+"neubebauten": [
+"neu bebauten",
+"manual"
+],
+"neubeginnende": [
+"neu beginnende",
+"manual"
+],
+"neuentdeckt": [
+"neu entdeckt",
+"manual"
+],
+"neuentdeckten": [
+"neu entdeckten",
+"manual"
+],
+"neuerrichteten": [
+"neu errichteten",
+"manual"
+],
+"neugebildete": [
+"neu gebildete",
+"manual"
+],
+"neugebildeten": [
+"neu gebildeten",
+"manual"
+],
+"neugekauft": [
+"neu gekauft",
+"manual"
+],
+"neugeschaffenen": [
+"neu geschaffenen",
+"manual"
+],
+"neugeschaffne": [
+"neu geschaffne",
+"manual"
+],
+"neugeschaffnen": [
+"neu geschaffnen",
+"manual"
+],
+"neugeschaffner": [
+"neu geschaffner",
+"manual"
 ],
 "neuproducirt": [
-"neuproduziert",
-"compound"
+"neu produziert",
+"manual"
 ],
 "neuproducirte": [
-"neuproduzierte",
-"compound"
+"neu produzierte",
+"manual"
 ],
 "neuproducirtem": [
-"neuproduziertem",
-"compound"
+"neu produziertem",
+"manual"
 ],
 "neuproducirten": [
-"neuproduzierten",
-"compound"
+"neu produzierten",
+"manual"
 ],
 "neuproducirter": [
-"neuproduzierter",
-"compound"
+"neu produzierter",
+"manual"
 ],
 "neutralisiren": [
 "neutralisieren",
 "word"
 ],
+"neuzugeführten": [
+"neu zugeführten",
+"manual"
+],
+"neuzugesetzten": [
+"neu zugesetzten",
+"manual"
+],
+"nichtackerbauenden": [
+"nicht ackerbauenden",
+"manual"
+],
+"nichtagrikole": [
+"nicht agrikole",
+"manual"
+],
+"nichtagrikolen": [
+"nicht agrikolen",
+"manual"
+],
+"nichtansässigen": [
+"nicht ansässigen",
+"manual"
+],
+"nichtbebauten": [
+"nicht bebauten",
+"manual"
+],
+"nichtbesitzenden": [
+"nicht besitzenden",
+"manual"
+],
 "nichtexistirenden": [
-"nichtexistierenden",
-"word"
+"nicht existierenden",
+"manual"
+],
+"nichtfixem": [
+"nicht fixem",
+"manual"
+],
+"nichtkapitalistische": [
+"nicht kapitalistische",
+"manual"
+],
+"nichtkapitalistischen": [
+"nicht kapitalistischen",
+"manual"
+],
+"nichtkapitalistischer": [
+"nicht kapitalistischer",
+"manual"
 ],
 "nichtproducirenden": [
-"nichtproduzierenden",
-"compound"
+"nicht produzierenden",
+"manual"
+],
+"nichtverbrauchtes": [
+"nicht verbrauchtes",
+"manual"
 ],
 "nivellirend": [
 "nivellierend",
@@ -15579,6 +16023,18 @@
 "nöthigt": [
 "nötigt",
 "word"
+],
+"obenerwähnte": [
+"oben erwähnte",
+"manual"
+],
+"obenerwähnten": [
+"oben erwähnten",
+"manual"
+],
+"obengenannten": [
+"oben genannten",
+"manual"
 ],
 "object": [
 "objekt",
@@ -15719,6 +16175,10 @@
 "paradirten": [
 "paradierten",
 "word"
+],
+"paradisischen": [
+"paradiesischen",
+"manual"
 ],
 "paralysiren": [
 "paralysieren",
@@ -16248,6 +16708,22 @@
 "raten",
 "word"
 ],
+"rauh": [
+"rau",
+"manual"
+],
+"rauher": [
+"rauer",
+"manual"
+],
+"rauhgehaunen": [
+"raugehaunen",
+"manual"
+],
+"rauhsten": [
+"rausten",
+"manual"
+],
 "reagiren": [
 "reagieren",
 "word"
@@ -16311,6 +16787,10 @@
 "rechtmässiger": [
 "rechtmäßiger",
 "sz"
+],
+"rechtswegen": [
+"Rechts wegen",
+"manual"
 ],
 "record": [
 "rekord",
@@ -16908,9 +17388,21 @@
 "schießt",
 "sz"
 ],
+"schlechtbezahlten": [
+"schlecht bezahlten",
+"manual"
+],
+"schlechtgebauten": [
+"schlecht gebauten",
+"manual"
+],
+"schlechtgelüfteten": [
+"schlecht gelüfteten",
+"manual"
+],
 "schlechtventilirten": [
-"schlechtventilierten",
-"compound"
+"schlecht ventilierten",
+"manual"
 ],
 "schleisse": [
 "schleiße",
@@ -16952,6 +17444,14 @@
 "schweißen",
 "sz"
 ],
+"schweizer": [
+"Schweizer",
+"manual"
+],
+"schwerverständlich": [
+"schwer verständlich",
+"manual"
+],
 "schülermässigem": [
 "schülermäßigem",
 "compound"
@@ -16959,6 +17459,10 @@
 "scrupulös": [
 "skrupulös",
 "word"
+],
+"sechstel": [
+"Sechstel",
+"manual"
 ],
 "sechszehnten": [
 "sechzehnten",
@@ -17524,6 +18028,10 @@
 "to",
 "foreign?"
 ],
+"thubar": [
+"tubar",
+"manual"
+],
 "thue": [
 "tue",
 "word"
@@ -17795,6 +18303,10 @@
 "untheilbaren": [
 "unteilbaren",
 "word"
+],
+"unthubar": [
+"untubar",
+"manual"
 ],
 "unthätig": [
 "untätig",
@@ -18164,6 +18676,10 @@
 "verstoße",
 "sz"
 ],
+"vertheidigbar": [
+"verteidigbar",
+"manual"
+],
 "vertheidigen": [
 "verteidigen",
 "word"
@@ -18337,8 +18853,8 @@
 "word"
 ],
 "vorhercitirten": [
-"vorherzitierten",
-"compound"
+"vorher zitierten",
+"manual"
 ],
 "vorräthig": [
 "vorrätig",
@@ -18696,6 +19212,10 @@
 "wütete",
 "word"
 ],
+"zeitlang": [
+"Zeit lang",
+"manual"
+],
 "zerfliesst": [
 "zerfließt",
 "sz"
@@ -18864,6 +19384,10 @@
 "zweckmäßigste",
 "word"
 ],
+"zweidrittel": [
+"zwei Drittel",
+"manual"
+],
 "zwergmässig": [
 "zwergmäßig",
 "compound"
@@ -18943,6 +19467,10 @@
 "ökonomisirt": [
 "ökonomisiert",
 "word"
+],
+"übelberathnen": [
+"übel beratnen",
+"manual"
 ],
 "überexportirt": [
 "überexportiert",
@@ -19030,7 +19558,6 @@
 "Acre",
 "Acres",
 "Act",
-"Action",
 "Actor",
 "Acts",
 "Ad",
@@ -19223,7 +19750,6 @@
 "Budget",
 "Buffalo",
 "Bullion",
-"Bureaux",
 "Burke",
 "Bury",
 "Bush",
@@ -19274,7 +19800,6 @@
 "Character",
 "Charter",
 "Chaux",
-"Cheque",
 "Cheques",
 "Cheshire",
 "Chief",

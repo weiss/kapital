@@ -263,18 +263,27 @@ Im Zweifel gilt die heute geläufigste Form. Marx' Wortformen und Satzbau bleibe
 - **Kontextregeln** in `variants/modern.py`:
   - Masse oder Maße (nach „dem“, „im“, „gleichem“ …).
   - Wortgruppen: usw., zugrunde, imstande, aufeinander, stattfinden, solange
-    und soweit (als Konjunktion), so viel, ebenso wenig, jedes Mal,
-    infolge, sozusagen, aufrechterhalten, wiederherstellen … – Duden-Empfehlung,
-    wo beides erlaubt ist; auch über Zeilenumbrüche der Vorlage hinweg.
-  - Substantivierungen: etwas Neues, das Doppelte, im Allgemeinen.
+    und soweit (als Konjunktion), so viel, ebenso wenig, jedes Mal, umso,
+    infolge, sozusagen, aufrechterhalten, wiederherstellen, glücklicherweise
+    … – Duden-Empfehlung, wo beides erlaubt ist.
+  - Substantivierungen: etwas Neues, das Doppelte, im Allgemeinen, aufs
+    Höchste.
   - Kommas vor Nebensätzen (dass, ob, wenn, weil, wo, worin …), vor
     Infinitivgruppen mit um/ohne … zu, vor „sondern“ und „d. h.“; nicht nach
-    Konjunktionen und Partikeln (und dass, ohne dass, je nachdem). Weitere
-    einzeln geprüfte Stellen stehen in `COMMAS`.
+    Konjunktionen und Partikeln (und dass, ohne dass, je nachdem).
   - Adjektive aus Personennamen: hegelsche, ricardoschen.
-  - Kleinschreibung von Pronomen (jeder, alles, andre) außerhalb des
-    Satzanfangs.
+  - Kleinschreibung von Pronomen und Zahlwörtern (jeder, alles, andre,
+    viele, wenige) außerhalb des Satzanfangs, von Tageszeiten (nachts,
+    morgens).
   - Apostrophe: ins, aufs, Smiths.
+  - Die Regeln sehen eine Zeile der Vorlage und, über Zeilen- und
+    Seitenumbrüche hinweg, die folgende; über Auszeichnungen (Sperrung,
+    Indizes) sehen sie nicht hinweg.
+- **Einzelstellen** in `variants/modern_spots.py`, jede einzeln geprüft:
+  `SPELLINGS` (Schreibungen, die keine Regel trifft), `COMMAS`
+  (Kommas vor Nebensätzen und Infinitivgruppen) als genaue Ersetzungen,
+  `EDGES` als reguläre Ausdrücke für Stellen an einer Auszeichnung. Ob jede
+  Ersetzung greift, zeigt das Protokoll.
 - **Nicht angetastet:**
   - Fremdsprachiges. Ein Wort gilt als fremdsprachig, wenn die Mehrzahl der
     Wörter um es herum auf der Fremdwortliste steht.

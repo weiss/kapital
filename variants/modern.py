@@ -17,6 +17,8 @@ import re
 from collections import Counter
 from pathlib import Path
 
+from .modern_spots import COMMAS, EDGES, SPELLINGS
+
 NAME = 'modern'
 NOTICE = (
     'Orthographie, Getrennt- und Zusammenschreibung folgen den heutigen Regeln'
@@ -63,6 +65,7 @@ BLOCKS = {
         'label',
     )
 }
+BREAKS = {TEI + 'lb', TEI + 'pb'}
 WORD = re.compile(
     r"[A-Za-zÄÖÜäöüßàâçéèêëîïôûùœæ]+(?:[’']s(?![A-Za-zÄÖÜäöüß]))?"
 )
@@ -202,7 +205,7 @@ PHRASES = [
         (
             r'\b([Ii])rgend'
             r' (ein|eine|einen|einem|einer|eines|welche[mnrs]?'
-            r'|wie|wo|etwas|jemand)\b'
+            r'|wie|wo|etwas|jemand|wen|wer)\b'
         ),
         r'\1rgend\2',
     ),
@@ -229,18 +232,15 @@ PHRASES = [
     (r'\bStatt gefunden\b', 'stattgefunden'),
     (r'\bzu Teil (?=werd|wird|ward|wurd|geword)', 'zuteil '),
     (r'\b([Ss])o gar\b', r'\1ogar'),
-    (r'\b([Ii])n so fern\b', r'\1nsofern'),
-    (r'\b([Ii])n so weit\b', r'\1nsoweit'),
-    (r'\b([Ii])n wie fern\b', r'\1nwiefern'),
-    (r'\b([Ii])n wie weit\b', r'\1nwieweit'),
+    (r'\b([Ii])n (so|wie) ?(fern|weit)\b', r'\1n\2\3'),
     (r'\b([Ss])o fern\b', r'\1ofern'),
     (r'\b([Vv])or Allem\b', r'\1or allem'),
     (r'\bbei Seite\b', 'beiseite'),
     (r'\bzu Nutze\b', 'zunutze'),
     (r'\bzu Wege\b', 'zuwege'),
-    (r'\bzu Tage\b', 'zutage'),
+    (r'(?<!Tag )\bzu Tage\b', 'zutage'),
     (r'\bzu Statten\b', 'zustatten'),
-    (r'\bvon Statten\b', 'vonstatten'),
+    (r'\bvon [Ss]tatten\b', 'vonstatten'),
     (r'\b([Aa])n Statt\b', r'\1nstatt'),
     (r'\bzu Schulden\b', 'zuschulden'),
     (r'\b([Hh])eut zu Tage\b', r'\1eutzutage'),
@@ -273,6 +273,7 @@ PHRASES = [
     (r'\bheut zutage\b', 'heutzutage'),
     (r'\bTag ein,? Tag aus\b', 'tagein, tagaus'),
     (r'\bTag aus,? Tag ein\b', 'tagaus, tagein'),
+    (r'\bJahr aus,? Jahr ein\b', 'jahraus, jahrein'),
     (r'\bWoche ein,? Woche aus\b', 'wochein, wochaus'),
     (r'\bHokus Pokus\b', 'Hokuspokus'),
     (r'\b([Bb])ei Leibe\b', r'\1eileibe'),
@@ -294,10 +295,28 @@ PHRASES = [
     (r'\bWie Viel\b', 'Wieviel'),
     (r'\b([Ee])benso(wenig|viel|viele|gut|sehr|oft|lange)\b', r'\1benso \2'),
     (r'\b([Jj])emehr\b', r'\1e mehr'),
+    (
+        r'\b([Uu])m so (?=(?:mehr|weniger|eher|öfter|\w+er|\w+re[ns]?)\b)',
+        r'\1mso ',
+    ),
+    (r'\b([Dd])em entsprechend', r'\1ementsprechend'),
+    (r'\b([Ii])nfolge dessen\b', r'\1nfolgedessen'),
+    (r'\balle dem\b', 'alledem'),
+    (r'\bzu stande\b', 'zustande'),
+    (r'\bhier zu Lande\b', 'hierzulande'),
+    (r'\bsogut wie\b', 'so gut wie'),
+    (r'\bTeil zu nehmen\b', 'teilzunehmen'),
+    (r'(?<=\d) mal\b(?! \d)', '-mal'),
+    (r'\b(nicht|absolut) das geringste\b(?! [A-ZÄÖÜ])', r'\1 das Geringste'),
+    (r'\b([Nn]icht) im geringsten\b(?! [A-ZÄÖÜ])', r'\1 im Geringsten'),
+    (
+        r'\baufs ([a-zäöü]+ste)\b',
+        lambda m: 'aufs ' + m.group(1).capitalize(),
+    ),
     (r'\b([Jj])enachdem\b', r'\1e nachdem'),
     (r'\b([Uu])msomehr\b', r'\1mso mehr'),
     (r'\b([Nn])ichts destoweniger\b', r'\1ichtsdestoweniger'),
-    (r'\b(das|dem) (eine|andre|andere)mal\b', r'\1 \2 Mal'),
+    (r'\b([Dd]as|dem) (eine|andre|andere)mal\b', r'\1 \2 Mal'),
     (
         r'\b([Zz]um|[Dd]as|[Dd]em|[Bb]eim)'
         r' (ersten|zweiten|dritten|letzten)mal\b',
@@ -327,6 +346,12 @@ PHRASES = [
     (
         r'\b(Samstag|Sonntag|Montag) (Morgen|Abend|Nachmittag)\b',
         lambda m: m.group(1) + m.group(2).lower(),
+    ),
+    (
+        r'(?<=[a-zäöüß0-9,;)] )(?<!des )(?<!eines )(?<!nächsten )'
+        r'(?<!folgenden )(Nachts|Morgens|Abends|Vormittags|Nachmittags'
+        r'|Freitags|Samstags|Sonnabends)\b',
+        lambda m: m.group(1).lower(),
     ),
     (
         r'(?<!des )(?<!eines )(?<!dieses )\bAnfangs\b(?=\s*[^\sA-ZÄÖÜ-])',
@@ -375,15 +400,18 @@ PHRASES = [
         lambda m: m.group(1) + ' ' + m.group(2)[0].upper() + m.group(2)[1:],
     ),
     (r'\bim voraus\b', 'im Voraus'),
-    (r'\b([Ii])n sofern\b', r'\1nsofern'),
     (r'\bwo andershin\b', 'woandershin'),
     (r'\banders woher\b', 'anderswoher'),
     (r'\bwo möglich noch\b', 'womöglich noch'),
-    (r'\b([Ss])onderbarer Weise\b', r'\1onderbarerweise'),
+    (
+        r'\b((?:[Uu]ng|[Gg])lücklich|pfiffig|möglich|billig|notwendig'
+        r'|natürlich|begreiflich|eigentümlich|[Ss]onderbar)er Weise\b',
+        r'\1erweise',
+    ),
     (r'\b([Ii]m) Ganzen und großen\b', r'\1 Ganzen und Großen'),
     (r'\bdes folgenden:', 'des Folgenden:'),
     (r'\bmanchmal dreifache der\b', 'manchmal Dreifache der'),
-    (r'\bohne weiteres\b', 'ohne Weiteres'),
+    (r'\bohne weit(e?)res\b', r'ohne Weit\1res'),
     (r'\bbei weitem\b', 'bei Weitem'),
     (r'\b(im ersten|identischer) Act\b', r'\1 Akt'),
     (r'\b(sparsamer|den) Wirth\b', r'\1 Wirt'),
@@ -498,89 +526,23 @@ def _comma_inf(m):
     return _comma(m)
 
 
-# (before, after): checked one by one
-COMMAS = [
-    ('industrielle Kapital, eine', 'industrielle Kapital eine'),
-    ('Brauereien, entwickeln, sich', 'Brauereien, entwickeln sich'),
-    ('Gesamtkapital, verhält sich', 'Gesamtkapital verhält sich'),
-    ('des Kapitals, in den Boden', 'des Kapitals in den Boden'),
-    ('eine Rente, zahle', 'eine Rente zahle'),
-    ('Fronarbeit, bis zur', 'Fronarbeit bis zur'),
-    ('unter den, ihrer', 'unter den ihrer'),
-    ('alle Arbeit fort, zum', 'alle Arbeit fort zum'),
-    ('bestimmt werden, durch das', 'bestimmt werden durch das'),
-    ('Noten füllen, nun', 'Noten füllen nun'),
-    ('Steuern verursacht während', 'Steuern verursacht, während'),
-    ('im Auge hat ist,', 'im Auge hat, ist,'),
-    ('kauft sie solange', 'kauft sie, solange'),
-    ('auf 4 % so stiege', 'auf 4 %, so stiege'),
-    ('„der Preis der von', '„der Preis, der von'),
-    ('Beispiel angeben; wo', 'Beispiel angeben, wo'),
-    ('glaube nicht dass', 'glaube nicht, dass'),
-    ('jedermann der irgendwie', 'jedermann, der irgendwie'),
-    ('glauben also er', 'glauben also, er'),
-    ('treffen sollten die Möglichkeit', 'treffen sollten, die Möglichkeit'),
-    ('Jeder der unsre', 'Jeder, der unsre'),
-    ('ein Profit; der vom', 'ein Profit, der vom'),
-    ('nicht vorziehn sich', 'nicht vorziehn, sich'),
-    ('der Grundrente die er', 'der Grundrente, die er'),
-    ('gewesen ist das Geheimnis', 'gewesen ist, das Geheimnis'),
-    ('nur gelte neue', 'nur gelte, neue'),
-    ('ihn realisiert hängt', 'ihn realisiert, hängt'),
-    ('zu erhöhen ganz wie', 'zu erhöhen, ganz wie'),
-    ('4 qrs. die es', '4 qrs., die es'),
-    ('Arbeitszeit die darin', 'Arbeitszeit, die darin'),
-    ('Reihenfolge) so würde', 'Reihenfolge), so würde'),
-    ('ein Umstand der in', 'ein Umstand, der in'),
-    ('den Preis den der', 'den Preis, den der'),
-    ('abwerfen aber keinen', 'abwerfen, aber keinen'),
-    ('Erdkörpers wächst die', 'Erdkörpers wächst, die'),
-    ('ein Mann der in', 'ein Mann, der in'),
-    ('befähigt einen Teil', 'befähigt, einen Teil'),
-    ('nur hinreichen die', 'nur hinreichen, die'),
-    ('Bedingungen die den', 'Bedingungen, die den'),
-    ('Verbesserungen deren', 'Verbesserungen, deren'),
-    ('Ökonomen die über', 'Ökonomen, die über'),
-    ('weiter unten) wenn', 'weiter unten), wenn'),
-    ('Prozess den man', 'Prozess, den man'),
-    ('Köpfe die in', 'Köpfe, die in'),
-    ('eingreifen konnte; wie', 'eingreifen konnte, wie'),
-    ('dessen was', 'dessen, was'),
-    ('Endzweck dieses Werks das', 'Endzweck dieses Werks, das'),
-    ('um dies zu erfahren ist', 'um dies zu erfahren, ist'),
-    ('Vorwand gedient um', 'Vorwand gedient, um'),
-    ('in England der Bauernstand', 'in England, der Bauernstand'),
-    ('ohne Weiteres den Sklaven', 'ohne Weiteres, den Sklaven'),
-    ('Narrheit einen', 'Narrheit, einen'),
-    ('überhebt den letztren', 'überhebt, den letztren'),
-    ('Produktionsverhältnisse diese', 'Produktionsverhältnisse, diese'),
-    ('haben möge als', 'haben möge, als'),
-    ('einen andern der,', 'einen andern, der,'),
-    ('Sätze die alle', 'Sätze, die alle'),
-    ('Gefahren ausgesetzt die', 'Gefahren ausgesetzt, die'),
-    ('der Mehrarbeit der außer', 'der Mehrarbeit, der außer'),
-    ('Arbeit erscheint) heißt', 'Arbeit erscheint), heißt'),
-    ('nichts übrig als', 'nichts übrig, als'),
-    ('ganz unnötig diesen', 'ganz unnötig, diesen'),
-    ('nie geben was', 'nie geben, was'),
-    ('ist alles was', 'ist alles, was'),
-    ('vorausgesetzt nur dass', 'vorausgesetzt nur, dass'),
-    ('dem Teil der der', 'dem Teil, der der'),
-    ('Verhältnisse die im', 'Verhältnisse, die im'),
-    ('geleitet ist) setzt', 'geleitet ist), setzt'),
-    ('gezeigt hat die stets', 'gezeigt hat, die stets'),
-    ('und gesetzt dieser', 'und gesetzt, dieser'),
-    ('Mann der im Ruf', 'Mann, der im Ruf'),
-    ('Änderung die stattfindet', 'Änderung, die stattfindet'),
-    ('Vorausgesetzt aber dass', 'Vorausgesetzt aber, dass'),
-    ('Kapital falle statt zu', 'Kapital falle, statt zu'),
-    ('gefallen statt zu steigen', 'gefallen, statt zu steigen'),
-]
-PHRASES += [(r'(?<!\w)' + re.escape(a) + r'(?!\w)', b) for a, b in COMMAS]
+SPOTS = dict(SPELLINGS + COMMAS)
+
+
+def _spot(m):
+    _log[(m.group(0), SPOTS[m.group(0)])] += 1
+    return SPOTS[m.group(0)]
+
+
 PHRASES += [
-    (r'^ der Rest von 100\b', ', der Rest von 100'),
-    (r'^ Spekulieren ist, und\b', ', Spekulieren ist, und'),
+    (
+        r'(?<!\w)(?:'
+        + '|'.join(re.escape(a) for a in sorted(SPOTS, key=len, reverse=True))
+        + r')(?!\w)',
+        _spot,
+    )
 ]
+PHRASES += EDGES
 PHRASES += [
     (WORD_BEFORE + r'(' + SUB + r')\b', _comma),
     (WORD_BEFORE + r'(sondern\b|d\. h\.)()', _comma),
@@ -662,11 +624,37 @@ def _join(m):
 # not as a noun after an article: „das Nichts“, „ein Etwas“)
 PRON = re.compile(
     r'(?<=[a-zäöüß0-9,;)–]\s)'
-    r'(Jeder|Jede|Jedes|Jedem|Jeden|Alle|Alles|Allen|Aller|'
+    r'(Jeder|Jede|Jedes|Jedem|Jeden|Alle|Alles|Allen|Aller|Allem|'
     r'Andre|Andrer|Andres|Andren|Andern|Andere|Anderer|Anderes|Anderen|'
     r'Eine|Einer|Einem|Einen|Eines|Keiner|Niemand|Jemand|'
-    r'Nichts|Etwas|Beide|Beiden|Beides|Beider)\b'
+    r'Nichts|Etwas|Beide|Beiden|Beides|Beider|'
+    r'Viele|Vielen|Vieler|Wenige|Wenigen|Weniger|Einige|Einigen|Einiges|'
+    r'Manches|Meisten|Dasselbe|Derselbe|Diejenigen|Derer|Diesen|Diesem|'
+    r'Jenen)\b'
 )
+# before a capital that begins a sentence or a numbered item
+SENTENCE = re.compile(r'[.!?][“)]* – $|(?:^|[.!?])\) $|(?<![\w)])\w\) $')
+NOUN_AFTER = {
+    'Nichts': ('das', 'ein', 'dem', 'des', 'im', 'Das', 'Ein'),
+    'Etwas': ('das', 'ein', 'dem', 'des', 'im', 'Das', 'Ein'),
+    'Weniger': ('oder',),
+}
+
+
+def lower_pronouns(s, at=None):
+    def low(m):
+        before = s[max(0, m.start() - 8) : m.start()]
+        if (
+            at not in (None, m.start())
+            or SENTENCE.search(before)
+            or before.split()[-1:]
+            and before.split()[-1] in NOUN_AFTER.get(m.group(1), ())
+        ):
+            return m.group(1)
+        return m.group(1).lower()
+
+    return PRON.sub(low, s)
+
 
 _log = Counter()
 
@@ -780,19 +768,7 @@ def modernize_text(s, foreign=None, before=''):
 
     s = WORD.sub(rep, s)
     if not any(flags):
-
-        def low(m):
-            before = s[max(0, m.start() - 5) : m.start()].split()
-            if (
-                m.group(1) in ('Nichts', 'Etwas')
-                and before
-                and before[-1]
-                in ('das', 'ein', 'dem', 'des', 'im', 'Das', 'Ein')
-            ):
-                return m.group(1)
-            return m.group(1).lower()
-
-        s2 = PRON.sub(low, s)
+        s2 = lower_pronouns(s)
         if s2 != s:
             _log[('Großschreibung Pronomen', 'klein')] += 1
             s = s2
@@ -803,26 +779,35 @@ def apply_phrases(s):
     for rx, r in PHRASES:
         s2 = rx.sub(r, s)
         if s2 != s:
-            _log[(rx.pattern, str(r))] += 1
+            if r is not _spot:
+                _log[(rx.pattern, str(r))] += 1
             s = s2
     return s
 
 
-def phrases_across_lines(segs):
-    """Phrases split by a line break: the rewritten phrase moves before the
-    break."""
+def phrases_across_lines(segs, foreign):
+    """Phrases split by a line or page break: the rewritten phrase moves
+    before the break."""
+    segs = [
+        (e, a)
+        for e, a in segs
+        if e.tag not in BREAKS or (getattr(e, a) or '').strip()
+    ]
     for (e1, a1), (e2, a2) in zip(segs, segs[1:]):
-        if e2.tag != TEI + 'lb' or a2 != 'tail':
+        if e2.tag not in BREAKS or a2 != 'tail':
             continue
         t1, t2 = getattr(e1, a1) or '', e2.tail or ''
         lead = re.match(r'\s*', t2).group(0)
-        m1 = re.search(r'(\S+\s+){0,3}\S+\s*$', t1)
-        m2 = re.match(r'\S+(\s+\S+){0,4}', t2[len(lead) :])
+        m1 = re.search(r'\S(.*\S)?\s*$', t1, re.S)
+        m2 = re.match(r'\S(.*\S)?', t2[len(lead) :], re.S)
         if not m1 or not m2:
             continue
         head, tail = m1.group(0).rstrip(), m2.group(0)
         both = head + ' ' + tail
-        new = apply_phrases(both)
+        new = both
+        if (e1, a1) not in foreign and (e2, a2) not in foreign:
+            new = lower_pronouns(both, len(head) + 1)
+        new = apply_phrases(new)
         if new == both:
             continue
         keep = 0
@@ -832,6 +817,9 @@ def phrases_across_lines(segs):
             and new[-1 - keep] == both[-1 - keep]
         ):
             keep += 1
+        # not inside a word the phrase has joined across the break
+        while keep and ' ' not in new[-keep - 1 : len(new) - keep + 1]:
+            keep -= 1
         p = len(tail) - keep
         if p == 0 and not new[: len(new) - keep][-1:].isspace():
             p = 1
@@ -858,14 +846,16 @@ def transform(root, part):
             pos += len(t)
         flags = foreign_flags(words)
         historic_quotes(joined, offsets, flags)
-        k = 0
+        k, foreign = 0, set()
         for (e, a), t in zip(segs, texts):
             n = len(WORD.findall(t))
+            if any(flags[k : k + n]):
+                foreign.add((e, a))
             new = modernize_text(t, flags[k : k + n], words[k - 1] if k else '')
             k += n
             if new != t:
                 setattr(e, a, new)
-        phrases_across_lines(segs)
+        phrases_across_lines(segs, foreign)
     log = HERE.parent / 'build' / f'modern-changes-{part["key"]}.tsv'
     log.parent.mkdir(exist_ok=True)
     with open(log, 'w', encoding='utf-8') as f:
@@ -873,6 +863,17 @@ def transform(root, part):
             _log.items(), key=lambda kv: (-kv[1], kv[0])
         ):
             f.write(f'{n}\t{old}\t{new}\n')
+
+
+def _notice(s, quotes=False):
+    """The editor's own words by the word table, quoted headings fully."""
+
+    def sub(m):
+        if m.group(0)[0] != '„':
+            return MAP.get(m.group(0), m.group(0))
+        return modernize_text(m.group(0)) if quotes else m.group(0)
+
+    return re.sub(r'„[^“]*“|[A-Za-zÄÖÜäöüß]+', sub, s)
 
 
 def adjust(vol):
@@ -887,10 +888,14 @@ def adjust(vol):
         )
         + ' Rechtschreibung nach heutigen Regeln.'
     )
-    vol['structure'] = [
-        re.sub(r'„[^“]*“', lambda m: modernize_text(m.group(0)), s)
-        for s in vol.get('structure', ())
-    ]
+    for key in ('structure', 'structure_epub', 'structure_pdf'):
+        if key in vol:
+            vol[key] = [_notice(s, True) for s in vol[key]]
+    for key in ('pages_note', 'pages_note_pdf'):
+        if key in vol:
+            vol[key] = _notice(vol[key])
+    if 'corrections' in vol:
+        vol['corrections'] = [_notice(s) for s in vol['corrections']]
     vol['principle'] = (
         'Diese Ausgabe ist eine Leseausgabe der Erstausgabe in heutiger'
         ' Rechtschreibung. Sie gibt deren Wortlaut vollständig wieder und'

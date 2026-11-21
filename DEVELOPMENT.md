@@ -159,7 +159,7 @@ Was die editorische Notiz nur zusammenfasst:
   Klammern, die Buchstaben c, v, m mit Klammer über den Beträgen.
 - **PDF:** 11 pt auf 13 pt Zeilenabstand, Fußnoten mit sieben Zeilen auf sechs
   Textzeilen; Format 14 × 21,6 cm (Lulu „Digest“), Satzspiegel nach
-  KOMA-Script (`DIV=calc`, `BCOR=17mm`). Der Einzug der Fußnoten richtet sich
+  KOMA-Script (`DIV=calc`, `BCOR=16mm`). Der Einzug der Fußnoten richtet sich
   nach der längsten Nummer des Bandes. Zu breite Tabellen ragen bis 3 mm in den
   Bundsteg und sonst nach außen, notfalls verkleinert.
 - **Abgeschriebene Tabellen:** eine Textdatei je Tabelle, aus der EPUB und PDF

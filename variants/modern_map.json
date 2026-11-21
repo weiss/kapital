@@ -1,5 +1,9 @@
 {
 "map": {
+"Abendbrod": [
+"Abendbrot",
+"manual"
+],
 "Abgestossene": [
 "Abgestoßene",
 "word"
@@ -36,6 +40,18 @@
 "Akzentuierung",
 "word"
 ],
+"Accept": [
+"Akzept",
+"manual"
+],
+"Acceptanten": [
+"Akzeptanten",
+"manual"
+],
+"Accepte": [
+"Akzepte",
+"manual"
+],
 "Accessorium": [
 "Akzessorium",
 "manual"
@@ -47,6 +63,10 @@
 "Accumulation": [
 "Akkumulation",
 "foreign?"
+],
+"Accumulations": [
+"Akkumulations",
+"manual"
 ],
 "Accumulationsbedingungen": [
 "Akkumulationsbedingungen",
@@ -100,9 +120,17 @@
 "Ackergerätschaft",
 "compound"
 ],
+"Acquisition": [
+"Akquisition",
+"manual"
+],
 "Addiren": [
 "Addieren",
 "word"
+],
+"Addirung": [
+"Addierung",
+"manual"
 ],
 "Aecker": [
 "Äcker",
@@ -153,8 +181,8 @@
 "word"
 ],
 "Aeltern": [
-"Ältern",
-"word"
+"Eltern",
+"manual"
 ],
 "Aendert": [
 "Ändert",
@@ -259,6 +287,14 @@
 "Aexte": [
 "Äxte",
 "word"
+],
+"Akkomodation": [
+"Akkommodation",
+"manual"
+],
+"Akkomodationswechsel": [
+"Akkommodationswechsel",
+"manual"
 ],
 "Akkumulationsprocedur": [
 "Akkumulationsprozedur",
@@ -432,6 +468,14 @@
 "Askese",
 "foreign?"
 ],
+"Ascetik": [
+"Asketik",
+"manual"
+],
+"Association": [
+"Assoziation",
+"manual"
+],
 "Associationen": [
 "Assoziationen",
 "word"
@@ -484,6 +528,10 @@
 "Atmungsorgane",
 "word"
 ],
+"Attwoodschen": [
+"attwoodschen",
+"manual"
+],
 "Aufsichtsräthe": [
 "Aufsichtsräte",
 "word"
@@ -499,6 +547,10 @@
 "Aushülfsmittel": [
 "Aushilfsmittel",
 "compound"
+],
+"Auspicien": [
+"Auspizien",
+"manual"
 ],
 "Ausschliessbarkeit": [
 "Ausschließbarkeit",
@@ -584,6 +636,14 @@
 "Autor",
 "foreign?"
 ],
+"Axe": [
+"Achse",
+"manual"
+],
+"Axen": [
+"Achsen",
+"manual"
+],
 "Baar": [
 "Bar",
 "foreign?"
@@ -648,6 +708,26 @@
 "Barzahlungen",
 "word"
 ],
+"Bankakkomodation": [
+"Bankakkommodation",
+"manual"
+],
+"Bankerott": [
+"Bankrott",
+"manual"
+],
+"Bankerotte": [
+"Bankrotte",
+"manual"
+],
+"Bankerotten": [
+"Bankrotten",
+"manual"
+],
+"Bankerotts": [
+"Bankrotts",
+"manual"
+],
 "Bankierthums": [
 "Bankiertums",
 "compound"
@@ -659,6 +739,14 @@
 "Bankzinsfuss": [
 "Bankzinsfuß",
 "word"
+],
+"Banquier": [
+"Bankier",
+"manual"
+],
+"Banquiers": [
+"Bankiers",
+"manual"
 ],
 "Bauerneigenthum": [
 "Bauerneigentum",
@@ -675,6 +763,10 @@
 "Bauernwirthschaften": [
 "Bauernwirtschaften",
 "word"
+],
+"Baumwollblokade": [
+"Baumwollblockade",
+"manual"
 ],
 "Baumwollennoth": [
 "Baumwollennot",
@@ -701,8 +793,8 @@
 "word"
 ],
 "Baumwollsammtscheerers": [
-"Baumwollsamtscheerers",
-"compound"
+"Baumwollsamtscherers",
+"manual"
 ],
 "Baumwolltheurung": [
 "Baumwollteuerung",
@@ -860,6 +952,14 @@
 "Bildungsprozesses",
 "word"
 ],
+"Billet": [
+"Billett",
+"manual"
+],
+"Biscuitbacken": [
+"Biskuitbacken",
+"manual"
+],
 "Bleigiesser": [
 "Bleigießer",
 "word"
@@ -940,9 +1040,77 @@
 "Botmäßigkeit",
 "compound"
 ],
+"Brod": [
+"Brot",
+"manual"
+],
+"Brodbacken": [
+"Brotbacken",
+"manual"
+],
+"Brodbereitung": [
+"Brotbereitung",
+"manual"
+],
+"Brodbereitungsmaschinen": [
+"Brotbereitungsmaschinen",
+"manual"
+],
+"Brodbillet": [
+"Brotbillett",
+"manual"
+],
+"Brodbillets": [
+"Brotbilletts",
+"manual"
+],
+"Brode": [
+"Brote",
+"manual"
+],
+"Brodes": [
+"Brotes",
+"manual"
+],
+"Brodfälschung": [
+"Brotfälschung",
+"manual"
+],
+"Brodherumträgerei": [
+"Brotherumträgerei",
+"manual"
+],
+"Brodpreisen": [
+"Brotpreisen",
+"manual"
+],
+"Brods": [
+"Brots",
+"manual"
+],
+"Brodschneider": [
+"Brotschneider",
+"manual"
+],
+"Brodschnitten": [
+"Brotschnitten",
+"manual"
+],
+"Brodstoff": [
+"Brotstoff",
+"manual"
+],
+"Brodstoffe": [
+"Brotstoffe",
+"manual"
+],
+"Brodverfälschung": [
+"Brotverfälschung",
+"manual"
+],
 "Brodvertheurung": [
-"Brodverteuerung",
-"compound"
+"Brotverteuerung",
+"manual"
 ],
 "Bruchtheil": [
 "Bruchteil",
@@ -968,6 +1136,18 @@
 "Bruttowert",
 "word"
 ],
+"Bureaukosten": [
+"Bürokosten",
+"manual"
+],
+"Bureaukraten": [
+"Bürokraten",
+"manual"
+],
+"Bureaukratie": [
+"Bürokratie",
+"manual"
+],
 "Busse": [
 "Buße",
 "sz"
@@ -975,6 +1155,10 @@
 "Börsenwerthe": [
 "Börsenwerte",
 "word"
+],
+"Büreaus": [
+"Büros",
+"manual"
 ],
 "Bürgerthum": [
 "Bürgertum",
@@ -996,6 +1180,10 @@
 "Kassa",
 "foreign?"
 ],
+"Casus": [
+"Kasus",
+"manual"
+],
 "Categorien": [
 "Kategorien",
 "word"
@@ -1004,6 +1192,10 @@
 "Zementöfen",
 "word"
 ],
+"Census": [
+"Zensus",
+"manual"
+],
 "Centimeter": [
 "Zentimeter",
 "foreign?"
@@ -1011,6 +1203,10 @@
 "Centner": [
 "Zentner",
 "word"
+],
+"Centra": [
+"Zentra",
+"manual"
 ],
 "Centralbank": [
 "Zentralbank",
@@ -1183,6 +1379,14 @@
 "Cirkel": [
 "Zirkel",
 "foreign?"
+],
+"Cirkellauf": [
+"Zirkellauf",
+"manual"
+],
+"Cirkelläufen": [
+"Zirkelläufen",
+"manual"
 ],
 "Cirkels": [
 "Zirkels",
@@ -1549,8 +1753,8 @@
 "word"
 ],
 "Colportirung": [
-"Colportierung",
-"compound"
+"Kolportierung",
+"manual"
 ],
 "Combination": [
 "Kombination",
@@ -1559,6 +1763,14 @@
 "Combinationen": [
 "Kombinationen",
 "word"
+],
+"Comité": [
+"Komitee",
+"manual"
+],
+"Comités": [
+"Komitees",
+"manual"
 ],
 "Compendiums": [
 "Kompendiums",
@@ -1600,6 +1812,10 @@
 "Konstantes",
 "foreign?"
 ],
+"Constitution": [
+"Konstitution",
+"manual"
+],
 "Consum": [
 "Konsum",
 "word"
@@ -1640,6 +1856,10 @@
 "Kontakts",
 "word"
 ],
+"Conti": [
+"Konti",
+"manual"
+],
 "Continuität": [
 "Kontinuität",
 "word"
@@ -1663,6 +1883,14 @@
 "Contraktion": [
 "Kontraktion",
 "word"
+],
+"Controle": [
+"Kontrolle",
+"manual"
+],
+"Convention": [
+"Konvention",
+"manual"
 ],
 "Cooperation": [
 "Kooperation",
@@ -1720,9 +1948,17 @@
 "Zyklen",
 "word"
 ],
+"Cyklope": [
+"Zyklope",
+"manual"
+],
 "Cyklopen": [
 "Zyklopen",
 "word"
+],
+"Cyklops": [
+"Zyklops",
+"manual"
 ],
 "Cyklus": [
 "Zyklus",
@@ -1800,6 +2036,10 @@
 "Dezimalzahlen",
 "word"
 ],
+"Decimation": [
+"Dezimation",
+"manual"
+],
 "Deficit": [
 "Defizit",
 "foreign?"
@@ -1840,6 +2080,10 @@
 "Deshalb",
 "manual"
 ],
+"Desswegen": [
+"Deswegen",
+"manual"
+],
 "Detailcirculation": [
 "Detailzirkulation",
 "word"
@@ -1877,12 +2121,16 @@
 "word"
 ],
 "Disciplinarcodex": [
-"Disziplinarcodex",
-"word"
+"Disziplinarkodex",
+"manual"
 ],
 "Disciplinmangel": [
 "Disziplinmangel",
 "compound"
+],
+"Discontos": [
+"Diskontos",
+"manual"
 ],
 "Discreditirung": [
 "Diskreditierung",
@@ -1928,6 +2176,18 @@
 "Dokument",
 "foreign?"
 ],
+"Dollmetscher": [
+"Dolmetscher",
+"manual"
+],
+"Dollmetschern": [
+"Dolmetschern",
+"manual"
+],
+"Domaine": [
+"Domäne",
+"manual"
+],
 "Donaufürstenthümer": [
 "Donaufürstentümer",
 "word"
@@ -1940,9 +2200,25 @@
 "Doppelzylindermaschinen",
 "word"
 ],
+"Doublirspindeln": [
+"Doublierspindeln",
+"manual"
+],
+"Doublirsystem": [
+"Doubliersystem",
+"manual"
+],
 "Drainirung": [
 "Drainierung",
 "compound"
+],
+"Drainirungsoperationen": [
+"Drainierungsoperationen",
+"manual"
+],
+"Drainirungsröhren": [
+"Drainierungsröhren",
+"manual"
 ],
 "Dreifelderwirthschaft": [
 "Dreifelderwirtschaft",
@@ -1979,6 +2255,10 @@
 "Dritttheils": [
 "Drittteils",
 "word"
+],
+"Dublirspindeln": [
+"Dublierspindeln",
+"manual"
 ],
 "Durchschnittscirculation": [
 "Durchschnittszirkulation",
@@ -2027,6 +2307,10 @@
 "Edelmüthigster": [
 "Edelmütigster",
 "compound"
+],
+"Egypten": [
+"Ägypten",
+"manual"
 ],
 "Eigenthum": [
 "Eigentum",
@@ -2344,6 +2628,14 @@
 "Erziehungszertifikat",
 "word"
 ],
+"Etiquette": [
+"Etikette",
+"manual"
+],
+"Etiquetten": [
+"Etiketten",
+"manual"
+],
 "Excess": [
 "Exzess",
 "foreign?"
@@ -2364,9 +2656,17 @@
 "Exerzitien",
 "word"
 ],
+"Experimentalisirens": [
+"Experimentalisierens",
+"manual"
+],
 "Experimentirens": [
 "Experimentierens",
 "word"
+],
+"Explodirbarkeit": [
+"Explodierbarkeit",
+"manual"
 ],
 "Exploitationsprocess": [
 "Exploitationsprozess",
@@ -2403,6 +2703,10 @@
 "Fabrikcensor": [
 "Fabrikzensor",
 "word"
+],
+"Fabrikcodex": [
+"Fabrikkodex",
+"manual"
 ],
 "Fabrikeigenthümers": [
 "Fabrikeigentümers",
@@ -2468,9 +2772,61 @@
 "Fortzirkulieren",
 "compound"
 ],
+"Freihandelshausirburschen": [
+"Freihandelshausierburschen",
+"manual"
+],
+"Friction": [
+"Friktion",
+"manual"
+],
+"Frohnarbeit": [
+"Fronarbeit",
+"manual"
+],
+"Frohnarbeitszeit": [
+"Fronarbeitszeit",
+"manual"
+],
+"Frohnbauer": [
+"Fronbauer",
+"manual"
+],
+"Frohnbauern": [
+"Fronbauern",
+"manual"
+],
+"Frohnden": [
+"Fronden",
+"manual"
+],
+"Frohnherrn": [
+"Fronherrn",
+"manual"
+],
+"Frohnpflichtige": [
+"Fronpflichtige",
+"manual"
+],
+"Frohnpflichtigen": [
+"Fronpflichtigen",
+"manual"
+],
+"Frohntage": [
+"Frontage",
+"manual"
+],
+"Frottirer": [
+"Frottierer",
+"manual"
+],
 "Fruchtwechselwirthschaft": [
 "Fruchtwechselwirtschaft",
 "word"
+],
+"Fröhners": [
+"Fröners",
+"manual"
 ],
 "Functionen": [
 "Funktionen",
@@ -2544,6 +2900,10 @@
 "Füßen",
 "sz"
 ],
+"Gallerie": [
+"Galerie",
+"manual"
+],
 "Garnproducenten": [
 "Garnproduzenten",
 "compound"
@@ -2555,6 +2915,14 @@
 "Garnwerths": [
 "Garnwerts",
 "compound"
+],
+"Gascompagnien": [
+"Gaskompagnien",
+"manual"
+],
+"Gastheer": [
+"Gasteer",
+"manual"
 ],
 "Gcsammtkapitals": [
 "Gcsamtkapitals",
@@ -2671,6 +3039,10 @@
 "Geldaccumulationen": [
 "Geldakkumulationen",
 "word"
+],
+"Geldakkomodation": [
+"Geldakkommodation",
+"manual"
 ],
 "Geldbusse": [
 "Geldbuße",
@@ -2823,10 +3195,6 @@
 "Gesammtansicht": [
 "Gesamtansicht",
 "word"
-],
-"Gesammtarbeistag": [
-"Gesamtarbeistag",
-"compound"
 ],
 "Gesammtarbeit": [
 "Gesamtarbeit",
@@ -3468,6 +3836,10 @@
 "Gesellschaftsteile",
 "word"
 ],
+"Gespinnst": [
+"Gespinst",
+"manual"
+],
 "Geständniss": [
 "Geständnis",
 "word"
@@ -3587,6 +3959,18 @@
 "Greuelthaten": [
 "Greueltaten",
 "word"
+],
+"Grobschmidt": [
+"Grobschmied",
+"manual"
+],
+"Grobschmidte": [
+"Grobschmiede",
+"manual"
+],
+"Grobschmidts": [
+"Grobschmieds",
+"manual"
 ],
 "Grossbetriebes": [
 "Großbetriebes",
@@ -3828,6 +4212,18 @@
 "Gips",
 "word"
 ],
+"Gährung": [
+"Gärung",
+"manual"
+],
+"Gährungsprozesses": [
+"Gärungsprozesses",
+"manual"
+],
+"Gährungsstoff": [
+"Gärungsstoff",
+"manual"
+],
 "Halbgrossen": [
 "Halbgroßen",
 "compound"
@@ -3847,6 +4243,10 @@
 "Handelswerth": [
 "Handelswert",
 "word"
+],
+"Handgespinnst": [
+"Handgespinst",
+"manual"
 ],
 "Handwerkserforderniss": [
 "Handwerkserfordernis",
@@ -3940,6 +4340,18 @@
 "Hausvermieter",
 "word"
 ],
+"Heerde": [
+"Herde",
+"manual"
+],
+"Hegelschem": [
+"hegelschem",
+"manual"
+],
+"Hegelschen": [
+"hegelschen",
+"manual"
+],
 "Heimath": [
 "Heimat",
 "word"
@@ -4004,13 +4416,33 @@
 "Hintertür",
 "word"
 ],
+"Hirngespinnst": [
+"Hirngespinst",
+"manual"
+],
+"Hobelspähnen": [
+"Hobelspänen",
+"manual"
+],
 "Holzwerth": [
 "Holzwert",
 "word"
 ],
+"Hubbardschen": [
+"hubbardschen",
+"manual"
+],
 "Hungersnoth": [
 "Hungersnot",
 "word"
+],
+"Häringe": [
+"Heringe",
+"manual"
+],
+"Häringsfang": [
+"Heringsfang",
+"manual"
 ],
 "Hülfe": [
 "Hilfe",
@@ -4065,12 +4497,12 @@
 "compound"
 ],
 "Hülfstoffe": [
-"Hilfstoffe",
-"compound"
+"Hilfsstoffe",
+"manual"
 ],
 "Hülfstoffen": [
-"Hilfstoffen",
-"compound"
+"Hilfsstoffen",
+"manual"
 ],
 "Idealisirung": [
 "Idealisierung",
@@ -4179,6 +4611,10 @@
 "Jamaica": [
 "Jamaika",
 "foreign?"
+],
+"Kabinet": [
+"Kabinett",
+"manual"
 ],
 "Kaiserthum": [
 "Kaisertum",
@@ -4320,6 +4756,26 @@
 "Kapitalwirtschaft",
 "word"
 ],
+"Kardirmaschine": [
+"Kardiermaschine",
+"manual"
+],
+"Kardirmaschinen": [
+"Kardiermaschinen",
+"manual"
+],
+"Kardirraum": [
+"Kardierraum",
+"manual"
+],
+"Kardirräumen": [
+"Kardierräumen",
+"manual"
+],
+"Karrikatur": [
+"Karikatur",
+"manual"
+],
 "Kassirer": [
 "Kassierer",
 "word"
@@ -4348,6 +4804,14 @@
 "Kausalverhältnis",
 "word"
 ],
+"Kavalerieschwadron": [
+"Kavallerieschwadron",
+"manual"
+],
+"Kavalerist": [
+"Kavallerist",
+"manual"
+],
 "Kenntniss": [
 "Kenntnis",
 "word"
@@ -4355,6 +4819,10 @@
 "Kenntnissnahme": [
 "Kenntnisnahme",
 "compound"
+],
+"Kinderdecimation": [
+"Kinderdezimation",
+"manual"
 ],
 "Kircheneigenthum": [
 "Kircheneigentum",
@@ -4391,6 +4859,10 @@
 "Knechtschaftsverhältniss": [
 "Knechtschaftsverhältnis",
 "compound"
+],
+"Knix": [
+"Knicks",
+"manual"
 ],
 "Kohleneigenthümer": [
 "Kohleneigentümer",
@@ -4432,6 +4904,10 @@
 "Kommerziellen",
 "word"
 ],
+"Kommissair": [
+"Kommissär",
+"manual"
+],
 "Komplicirtere": [
 "Kompliziertere",
 "word"
@@ -4455,6 +4931,14 @@
 "Koncessionen": [
 "Konzessionen",
 "word"
+],
+"Kondensirmaschine": [
+"Kondensiermaschine",
+"manual"
+],
+"Kondensirmaschinen": [
+"Kondensiermaschinen",
+"manual"
 ],
 "Konscribirten": [
 "Konscribierten",
@@ -4512,9 +4996,17 @@
 "Kot",
 "word"
 ],
+"Kourantmünze": [
+"Kurantmünze",
+"manual"
+],
 "Kraftäusserung": [
 "Kraftäußerung",
 "word"
+],
+"Kravatten": [
+"Krawatten",
+"manual"
 ],
 "Kreditassociationen": [
 "Kreditassoziationen",
@@ -4543,6 +5035,10 @@
 "Kriegsvorräthen": [
 "Kriegsvorräten",
 "word"
+],
+"Krisenheerde": [
+"Krisenherde",
+"manual"
 ],
 "Krystall": [
 "Kristall",
@@ -4684,6 +5180,10 @@
 "Lichtgießer",
 "word"
 ],
+"Liederjahn": [
+"Liederjan",
+"manual"
+],
 "Linientheile": [
 "Linienteile",
 "word"
@@ -4700,6 +5200,10 @@
 "Logik",
 "foreign?"
 ],
+"Logirer": [
+"Logierer",
+"manual"
+],
 "Logirhäuser": [
 "Logierhäuser",
 "word"
@@ -4708,9 +5212,21 @@
 "Lokalzirkulation",
 "word"
 ],
+"Loos": [
+"Los",
+"manual"
+],
+"Looses": [
+"Loses",
+"manual"
+],
 "Losreissung": [
 "Losreißung",
 "sz"
+],
+"Lumpensortirer": [
+"Lumpensortierer",
+"manual"
 ],
 "Lumpensortirung": [
 "Lumpensortierung",
@@ -4740,6 +5256,14 @@
 "Malakka",
 "foreign?"
 ],
+"Malthusschen": [
+"malthusschen",
+"manual"
+],
+"Mannichfaltigkeit": [
+"Mannigfaltigkeit",
+"manual"
+],
 "Manufakturwaaren": [
 "Manufakturwaren",
 "word"
@@ -4767,6 +5291,18 @@
 "Martyrthum": [
 "Martyrtum",
 "compound"
+],
+"Marxische": [
+"marxische",
+"manual"
+],
+"Marxschen": [
+"marxschen",
+"manual"
+],
+"Maschinenbrod": [
+"Maschinenbrot",
+"manual"
 ],
 "Maschinenexploitirenden": [
 "Maschinenexploitierenden",
@@ -4920,6 +5456,22 @@
 "Mehrwerttheorie",
 "word"
 ],
+"Meisel": [
+"Meißel",
+"manual"
+],
+"Mengerschen": [
+"mengerschen",
+"manual"
+],
+"Menschenpackete": [
+"Menschenpakete",
+"manual"
+],
+"Menschenrace": [
+"Menschenrasse",
+"manual"
+],
 "Menschenschweiss": [
 "Menschenschweiß",
 "word"
@@ -4963,6 +5515,10 @@
 "Mexico": [
 "Mexiko",
 "foreign?"
+],
+"Meynertschen": [
+"meynertschen",
+"manual"
 ],
 "Miethe": [
 "Miete",
@@ -5020,9 +5576,21 @@
 "Milchwirtschaft",
 "word"
 ],
+"Militairausgaben": [
+"Militärausgaben",
+"manual"
+],
+"Militairdienst": [
+"Militärdienst",
+"manual"
+],
 "Militairmass": [
-"Militairmaß",
-"sz"
+"Militärmaß",
+"manual"
+],
+"Militärlazarethen": [
+"Militärlazaretten",
+"manual"
 ],
 "Mindermass": [
 "Mindermaß",
@@ -5092,9 +5660,17 @@
 "Modifikationen",
 "word"
 ],
+"Monopolisirern": [
+"Monopolisierern",
+"manual"
+],
 "Monopolisirung": [
 "Monopolisierung",
 "word"
+],
+"Monsterscheere": [
+"Monsterschere",
+"manual"
 ],
 "Morgenröthe": [
 "Morgenröte",
@@ -5115,6 +5691,10 @@
 "Mussestunde": [
 "Mußestunde",
 "word"
+],
+"Mussezeit": [
+"Mußezeit",
+"manual"
 ],
 "Muth": [
 "Mut",
@@ -5144,6 +5724,10 @@
 "Müßiggang",
 "sz"
 ],
+"Müssiggangs": [
+"Müßiggangs",
+"manual"
+],
 "Müssiggänger": [
 "Müßiggänger",
 "sz"
@@ -5167,6 +5751,10 @@
 "Nahrungsproducenten": [
 "Nahrungsproduzenten",
 "word"
+],
+"Naivetät": [
+"Naivität",
+"manual"
 ],
 "Nationalreichthum": [
 "Nationalreichtum",
@@ -5408,6 +5996,14 @@
 "Oberoffiziere",
 "word"
 ],
+"Ocean": [
+"Ozean",
+"manual"
+],
+"Oceans": [
+"Ozeans",
+"manual"
+],
 "October": [
 "Oktober",
 "foreign?"
@@ -5544,9 +6140,17 @@
 "Ostteil",
 "word"
 ],
+"Owensche": [
+"owensche",
+"manual"
+],
 "Oxydirbarkeit": [
 "Oxidierbarkeit",
 "word"
+],
+"Pabst": [
+"Papst",
+"manual"
 ],
 "Papiercirculation": [
 "Papierzirkulation",
@@ -5600,6 +6204,14 @@
 "Pauperisierung",
 "word"
 ],
+"Peelschen": [
+"peelschen",
+"manual"
+],
+"Perfectum": [
+"Perfektum",
+"manual"
+],
 "Pericles": [
 "Perikles",
 "foreign?"
@@ -5607,6 +6219,10 @@
 "Periodicität": [
 "Periodizität",
 "word"
+],
+"Personencondukteur": [
+"Personenkondukteur",
+"manual"
 ],
 "Personificirung": [
 "Personifizierung",
@@ -5624,6 +6240,10 @@
 "Fantasien",
 "word"
 ],
+"Philantropen": [
+"Philanthropen",
+"manual"
+],
 "Photographie": [
 "Fotografie",
 "foreign?"
@@ -5632,9 +6252,17 @@
 "Plantagenwirtschaft",
 "word"
 ],
+"Plusquamperfectum": [
+"Plusquamperfektum",
+"manual"
+],
 "Populationsprincip": [
 "Populationsprinzip",
 "compound"
+],
+"Posamentirer": [
+"Posamentierer",
+"manual"
 ],
 "Positionsvortheil": [
 "Positionsvorteil",
@@ -5644,9 +6272,25 @@
 "Possenreißerei",
 "sz"
 ],
+"Prairie": [
+"Prärie",
+"manual"
+],
+"Prairien": [
+"Prärien",
+"manual"
+],
+"Prairiestaaten": [
+"Präriestaaten",
+"manual"
+],
 "Preisbestandtheile": [
 "Preisbestandteile",
 "word"
+],
+"Preiscourants": [
+"Preiskurants",
+"manual"
 ],
 "Preisgrössen": [
 "Preisgrößen",
@@ -6028,6 +6672,14 @@
 "Rassen",
 "manual"
 ],
+"Racencharakter": [
+"Rassencharakter",
+"manual"
+],
+"Racenverhältnisse": [
+"Rassenverhältnisse",
+"manual"
+],
 "Rasirmesser": [
 "Rasiermesser",
 "word"
@@ -6160,6 +6812,10 @@
 "Reichtümern",
 "word"
 ],
+"Reihefolge": [
+"Reihenfolge",
+"manual"
+],
 "Reinlichkeitsmassregeln": [
 "Reinlichkeitsmaßregeln",
 "word"
@@ -6216,6 +6872,10 @@
 "Restwaren",
 "word"
 ],
+"Resumé": [
+"Resümee",
+"manual"
+],
 "Revenuetheil": [
 "Revenueteil",
 "compound"
@@ -6227,6 +6887,14 @@
 "Revolutionirung": [
 "Revolutionierung",
 "word"
+],
+"Rhederei": [
+"Reederei",
+"manual"
+],
+"Ricardoschen": [
+"ricardoschen",
+"manual"
 ],
 "Riesenthurm": [
 "Riesenturm",
@@ -6276,6 +6944,10 @@
 "Ruten",
 "word"
 ],
+"Räderpolirer": [
+"Räderpolierer",
+"manual"
+],
 "Räthsel": [
 "Rätsel",
 "word"
@@ -6297,8 +6969,12 @@
 "word"
 ],
 "Sabbathentheiligung": [
-"Sabbathenteiligung",
-"compound"
+"Sabbatentheiligung",
+"manual"
+],
+"Sabbathheiligen": [
+"Sabbatheiligen",
+"manual"
 ],
 "Sabbaths": [
 "Sabbats",
@@ -6360,9 +7036,17 @@
 "Schatzbestandteil",
 "word"
 ],
+"Scheererei": [
+"Schererei",
+"manual"
+],
 "Scheidungsprocess": [
 "Scheidungsprozess",
 "word"
+],
+"Schiboleth": [
+"Schibboleth",
+"manual"
 ],
 "Schienenproducenten": [
 "Schienenproduzenten",
@@ -6371,6 +7055,14 @@
 "Schiesswolle": [
 "Schießwolle",
 "word"
+],
+"Schiffsrheder": [
+"Schiffsreeder",
+"manual"
+],
+"Schlachtbülletins": [
+"Schlachtbulletins",
+"manual"
 ],
 "Schliessen": [
 "Schließen",
@@ -6396,8 +7088,20 @@
 "Schlusspunkt",
 "sz"
 ],
+"Schneiderscheere": [
+"Schneiderschere",
+"manual"
+],
 "Schooss": [
 "Schoß",
+"manual"
+],
+"Schoss": [
+"Schoß",
+"manual"
+],
+"Schraubenpolirer": [
+"Schraubenpolierer",
 "manual"
 ],
 "Schulbesuchscertifikate": [
@@ -6492,6 +7196,18 @@
 "Selbstwerte",
 "word"
 ],
+"Selbständige": [
+"Selbstständige",
+"manual"
+],
+"Selbständigkeit": [
+"Selbstständigkeit",
+"manual"
+],
+"Shylocksche": [
+"shylocksche",
+"manual"
+],
 "Sicilien": [
 "Sizilien",
 "foreign?"
@@ -6511,6 +7227,10 @@
 "Silberproducenten": [
 "Silberproduzenten",
 "word"
+],
+"Silberschmidt": [
+"Silberschmied",
+"manual"
 ],
 "Silbervorrath": [
 "Silbervorrat",
@@ -6544,6 +7264,14 @@
 "Skrofulose",
 "word"
 ],
+"Smithisch": [
+"smithisch",
+"manual"
+],
+"Smithschen": [
+"smithschen",
+"manual"
+],
 "Socialismus": [
 "Sozialismus",
 "word"
@@ -6575,6 +7303,10 @@
 "Sortirung": [
 "Sortierung",
 "word"
+],
+"Souverain": [
+"Souverän",
+"manual"
 ],
 "Specialarbeit": [
 "Spezialarbeit",
@@ -6619,6 +7351,10 @@
 "Specialuntersuchung": [
 "Spezialuntersuchung",
 "word"
+],
+"Speciesbildung": [
+"Speziesbildung",
+"manual"
 ],
 "Specifikation": [
 "Spezifikation",
@@ -6676,6 +7412,10 @@
 "Staatssozialisten",
 "word"
 ],
+"Staatssynekuristen": [
+"Staatssinekuristen",
+"manual"
+],
 "Staatsverräther": [
 "Staatsverräter",
 "word"
@@ -6688,9 +7428,17 @@
 "Stadtteilen",
 "word"
 ],
+"Stahlpolirer": [
+"Stahlpolierer",
+"manual"
+],
 "Steuervertheilung": [
 "Steuerverteilung",
 "word"
+],
+"Stiebelingsche": [
+"stiebelingsche",
+"manual"
 ],
 "Stimulirung": [
 "Stimulierung",
@@ -6700,6 +7448,10 @@
 "Stipulierung",
 "compound"
 ],
+"Stolbergsche": [
+"stolbergsche",
+"manual"
+],
 "Stoss": [
 "Stoß",
 "sz"
@@ -6707,6 +7459,10 @@
 "Stossen": [
 "Stoßen",
 "sz"
+],
+"Strafcodex": [
+"Strafkodex",
+"manual"
 ],
 "Strafkolonieen": [
 "Strafkolonien",
@@ -6760,6 +7516,14 @@
 "Stils",
 "word"
 ],
+"Stärkmehl": [
+"Stärkemehl",
+"manual"
+],
+"Stärkmehlschlichte": [
+"Stärkemehlschlichte",
+"manual"
+],
 "Stösst": [
 "Stößt",
 "sz"
@@ -6771,6 +7535,10 @@
 "Surpluswerth": [
 "Surpluswert",
 "compound"
+],
+"Sutherlandschen": [
+"sutherlandschen",
+"manual"
 ],
 "Syrup": [
 "Sirup",
@@ -6784,6 +7552,10 @@
 "Säugetier",
 "word"
 ],
+"Taback": [
+"Tabak",
+"manual"
+],
 "Tageswerth": [
 "Tageswert",
 "word"
@@ -6795,6 +7567,14 @@
 "Tageszinsfuss": [
 "Tageszinsfuß",
 "word"
+],
+"Tamerlanschen": [
+"tamerlanschen",
+"manual"
+],
+"Tantième": [
+"Tantieme",
+"manual"
 ],
 "Tauschwerth": [
 "Tauschwert",
@@ -7824,6 +8604,10 @@
 "Unregelmäßigkeiten",
 "sz"
 ],
+"Unstätigkeit": [
+"Unstetigkeit",
+"manual"
+],
 "Unterabtheilung": [
 "Unterabteilung",
 "word"
@@ -7839,6 +8623,14 @@
 "Unterofficiere": [
 "Unteroffiziere",
 "word"
+],
+"Untersuchungscomité": [
+"Untersuchungskomitee",
+"manual"
+],
+"Untersuchungscomités": [
+"Untersuchungskomitees",
+"manual"
 ],
 "Unterthanen": [
 "Untertanen",
@@ -7872,9 +8664,21 @@
 "Urteilssprüchen",
 "word"
 ],
+"Vampyrdurst": [
+"Vampirdurst",
+"manual"
+],
 "Variirt": [
 "Variiert",
 "word"
+],
+"Variirung": [
+"Variierung",
+"manual"
+],
+"Venetianern": [
+"Venezianern",
+"manual"
 ],
 "Verbrennungsprocesses": [
 "Verbrennungsprozesses",
@@ -7967,6 +8771,10 @@
 "Verschleisszeit": [
 "Verschleißzeit",
 "word"
+],
+"Verselbständigung": [
+"Verselbstständigung",
+"manual"
 ],
 "Verstoss": [
 "Verstoß",
@@ -8166,6 +8974,10 @@
 ],
 "Viertheil": [
 "Viertel",
+"manual"
+],
+"Vieruhrenbrod": [
+"Vieruhrenbrot",
 "manual"
 ],
 "Vierunddreissigstes": [
@@ -8868,6 +9680,14 @@
 "Wachstums",
 "word"
 ],
+"Wagons": [
+"Waggons",
+"manual"
+],
+"Wagschale": [
+"Waagschale",
+"manual"
+],
 "Waldeigenthümer": [
 "Waldeigentümer",
 "word"
@@ -8896,9 +9716,13 @@
 "Wechselwirtschaft",
 "word"
 ],
+"Wehrwolfs": [
+"Werwolfs",
+"manual"
+],
 "Wehrwolfsheisshunger": [
-"Wehrwolfsheißhunger",
-"word"
+"Werwolfsheißhunger",
+"manual"
 ],
 "Weidewirthschaft": [
 "Weidewirtschaft",
@@ -8919,6 +9743,10 @@
 "Weisswaschung": [
 "Weißwaschung",
 "word"
+],
+"Weizenbrod": [
+"Weizenbrot",
+"manual"
 ],
 "Weizenwerths": [
 "Weizenwerts",
@@ -9536,6 +10364,10 @@
 "Willensverhältnis",
 "word"
 ],
+"Willkühr": [
+"Willkür",
+"manual"
+],
 "Wirthe": [
 "Wirte",
 "word"
@@ -9576,6 +10408,10 @@
 "Wirtschaftskosten",
 "word"
 ],
+"Wittwen": [
+"Witwen",
+"manual"
+],
 "Wochenmiethe": [
 "Wochenmiete",
 "word"
@@ -9599,6 +10435,26 @@
 "Wollerndte": [
 "Wollernte",
 "word"
+],
+"Wollscheeren": [
+"Wollscheren",
+"manual"
+],
+"Wollscheerer": [
+"Wollscherer",
+"manual"
+],
+"Woolffschen": [
+"woolffschen",
+"manual"
+],
+"Woolfsche": [
+"woolfsche",
+"manual"
+],
+"Woolfschen": [
+"woolfschen",
+"manual"
 ],
 "Wucherzinsfuss": [
 "Wucherzinsfuß",
@@ -9791,6 +10647,10 @@
 "abliess": [
 "abließ",
 "sz"
+],
+"abläugnete": [
+"ableugnete",
+"manual"
 ],
 "abnöthigen": [
 "abnötigen",
@@ -10060,9 +10920,33 @@
 "allergrößten",
 "sz"
 ],
+"allmählig": [
+"allmählich",
+"manual"
+],
+"allmälig": [
+"allmählich",
+"manual"
+],
+"allmälige": [
+"allmähliche",
+"manual"
+],
+"allmäligen": [
+"allmählichen",
+"manual"
+],
+"allmäliger": [
+"allmählicher",
+"manual"
+],
 "allzusammt": [
 "allzusamt",
 "compound"
+],
+"altadlichen": [
+"altadligen",
+"manual"
 ],
 "altcivilisirten": [
 "altzivilisierten",
@@ -10157,16 +11041,16 @@
 "compound"
 ],
 "annexirt": [
-"annexiert",
-"compound"
+"annektiert",
+"manual"
 ],
 "annexirte": [
-"annexierte",
-"compound"
+"annektierte",
+"manual"
 ],
 "annexirtes": [
-"annexiertes",
-"compound"
+"annektiertes",
+"manual"
 ],
 "annoncirt": [
 "annonciert",
@@ -10270,6 +11154,14 @@
 ],
 "appreciirt": [
 "appreziiert",
+"manual"
+],
+"appropriirt": [
+"appropriiert",
+"manual"
+],
+"appropriirte": [
+"appropriierte",
 "manual"
 ],
 "arrangirt": [
@@ -10484,6 +11376,10 @@
 "auszugießen",
 "word"
 ],
+"auszugähren": [
+"auszugären",
+"manual"
+],
 "auszuschliessen": [
 "auszuschließen",
 "sz"
@@ -10547,6 +11443,10 @@
 "basirtem": [
 "basiertem",
 "word"
+],
+"begränzt": [
+"begrenzt",
+"manual"
 ],
 "begrüsst": [
 "begrüßt",
@@ -10696,6 +11596,10 @@
 "bewundernswerten",
 "word"
 ],
+"bischen": [
+"bisschen",
+"manual"
+],
 "blamiren": [
 "blamieren",
 "word"
@@ -10703,6 +11607,10 @@
 "blasirt": [
 "blasiert",
 "word"
+],
+"blos": [
+"bloß",
+"manual"
 ],
 "bloss": [
 "bloß",
@@ -10755,6 +11663,14 @@
 "both": [
 "bot",
 "foreign?"
+],
+"brittische": [
+"britische",
+"manual"
+],
+"brittischer": [
+"britischer",
+"manual"
 ],
 "brutalisirt": [
 "brutalisiert",
@@ -10839,6 +11755,10 @@
 "charakterisirte": [
 "charakterisierte",
 "word"
+],
+"choquirt": [
+"schockiert",
+"manual"
 ],
 "ciel": [
 "ziel",
@@ -11384,6 +12304,10 @@
 "depraviert",
 "compound"
 ],
+"depreciiren": [
+"depreziieren",
+"manual"
+],
 "depreciirt": [
 "depreziiert",
 "manual"
@@ -11402,6 +12326,10 @@
 ],
 "desshalb": [
 "deshalb",
+"manual"
+],
+"desswegen": [
+"deswegen",
 "manual"
 ],
 "detailliren": [
@@ -12416,6 +13344,10 @@
 "frappierte",
 "word"
 ],
+"fröhnen": [
+"frönen",
+"manual"
+],
 "function": [
 "funktion",
 "foreign?"
@@ -12555,6 +13487,10 @@
 "geisseln": [
 "geißeln",
 "sz"
+],
+"geläugnet": [
+"geleugnet",
+"manual"
 ],
 "gemassregelten": [
 "gemaßregelten",
@@ -12723,6 +13659,10 @@
 "giesst": [
 "gießt",
 "sz"
+],
+"gleichgiltig": [
+"gleichgültig",
+"manual"
 ],
 "gleichgrosse": [
 "gleichgroße",
@@ -12976,6 +13916,10 @@
 "größtenteils",
 "word"
 ],
+"gährt": [
+"gärt",
+"manual"
+],
 "halbmercantilistische": [
 "halbmerkantilistische",
 "compound"
@@ -13067,6 +14011,10 @@
 "herzzerreissendsten": [
 "herzzerreißendsten",
 "sz"
+],
+"hieher": [
+"hierher",
+"manual"
 ],
 "hiess": [
 "hieß",
@@ -13196,6 +14144,10 @@
 "inklusive",
 "foreign?"
 ],
+"incommensurable": [
+"inkommensurable",
+"manual"
+],
 "indemnificirten": [
 "indemnifizierten",
 "compound"
@@ -13284,6 +14236,10 @@
 "interpretiert",
 "word"
 ],
+"intriguirten": [
+"intrigierten",
+"manual"
+],
 "involvirt": [
 "involviert",
 "word"
@@ -13355,6 +14311,10 @@
 "kapitalübermüthig": [
 "kapitalübermütig",
 "compound"
+],
+"kaput": [
+"kaputt",
+"manual"
 ],
 "kasernenmässige": [
 "kasernenmäßige",
@@ -13480,9 +14440,13 @@
 "kompiliert",
 "word"
 ],
+"komplete": [
+"komplette",
+"manual"
+],
 "kompletiren": [
-"kompletieren",
-"compound"
+"komplettieren",
+"manual"
 ],
 "kompliciren": [
 "komplizieren",
@@ -13539,6 +14503,10 @@
 "komprimire": [
 "komprimiere",
 "word"
+],
+"kompromittirlich": [
+"kompromittierlich",
+"manual"
 ],
 "koncentriren": [
 "konzentrieren",
@@ -13740,6 +14708,10 @@
 "kontingentiert",
 "word"
 ],
+"kontinuiren": [
+"kontinuieren",
+"manual"
+],
 "kontinuirlich": [
 "kontinuierlich",
 "word"
@@ -13763,6 +14735,10 @@
 "kontinuirliches": [
 "kontinuierliches",
 "word"
+],
+"kontinuirt": [
+"kontinuiert",
+"manual"
 ],
 "kontrahiren": [
 "kontrahieren",
@@ -14048,6 +15024,14 @@
 "lokalisiert",
 "word"
 ],
+"läugne": [
+"leugne",
+"manual"
+],
+"läugnen": [
+"leugnen",
+"manual"
+],
 "macadamisirte": [
 "macadamisierte",
 "compound"
@@ -14067,6 +15051,26 @@
 "manipulirt": [
 "manipuliert",
 "word"
+],
+"mannichfach": [
+"mannigfach",
+"manual"
+],
+"mannichfachen": [
+"mannigfachen",
+"manual"
+],
+"mannichfaltig": [
+"mannigfaltig",
+"manual"
+],
+"mannichfaltige": [
+"mannigfaltige",
+"manual"
+],
+"mannichfaltigsten": [
+"mannigfaltigsten",
+"manual"
 ],
 "manufakturmässig": [
 "manufakturmäßig",
@@ -14106,10 +15110,6 @@
 ],
 "mass": [
 "maß",
-"sz"
-],
-"massen": [
-"maßen",
 "sz"
 ],
 "massgebend": [
@@ -14553,8 +15553,8 @@
 "word"
 ],
 "numerirt": [
-"numeriert",
-"compound"
+"nummeriert",
+"manual"
 ],
 "nöthig": [
 "nötig",
@@ -14700,6 +15700,14 @@
 "organisierten",
 "word"
 ],
+"oscillatorische": [
+"oszillatorische",
+"manual"
+],
+"oscillatorischen": [
+"oszillatorischen",
+"manual"
+],
 "oscilliren": [
 "oszillieren",
 "word"
@@ -14831,6 +15839,10 @@
 "philanthropisirt": [
 "philanthropisiert",
 "compound"
+],
+"philantropischen": [
+"philanthropischen",
+"manual"
 ],
 "philosophiren": [
 "philosophieren",
@@ -15097,8 +16109,8 @@
 "word"
 ],
 "proscribire": [
-"proscribiere",
-"compound"
+"proskribiere",
+"manual"
 ],
 "prosperirend": [
 "prosperierend",
@@ -15211,6 +16223,14 @@
 "raffinirter": [
 "raffinierter",
 "word"
+],
+"raisonablen": [
+"räsonablen",
+"manual"
+],
+"raisonables": [
+"räsonables",
+"manual"
 ],
 "raisonnirenden": [
 "raisonnierenden",
@@ -15732,6 +16752,10 @@
 "revolutionierten",
 "word"
 ],
+"rhachitisches": [
+"rachitisches",
+"manual"
+],
 "riskiren": [
 "riskieren",
 "word"
@@ -15872,6 +16896,10 @@
 "saßen",
 "sz"
 ],
+"scheert": [
+"schert",
+"manual"
+],
 "scheusslichen": [
 "scheußlichen",
 "sz"
@@ -15944,6 +16972,18 @@
 "sechzehnten",
 "manual"
 ],
+"sekulär": [
+"säkular",
+"manual"
+],
+"sekulären": [
+"säkularen",
+"manual"
+],
+"sekulärer": [
+"säkularer",
+"manual"
+],
 "selbstreproducirende": [
 "selbstreproduzierende",
 "compound"
@@ -15968,6 +17008,26 @@
 "selbstwirtschaftender",
 "compound"
 ],
+"selbständig": [
+"selbstständig",
+"manual"
+],
+"selbständige": [
+"selbstständige",
+"manual"
+],
+"selbständigen": [
+"selbstständigen",
+"manual"
+],
+"selbständiger": [
+"selbstständiger",
+"manual"
+],
+"selbständiges": [
+"selbstständiges",
+"manual"
+],
 "sey": [
 "sei",
 "word"
@@ -15991,6 +17051,14 @@
 "skrophulöses": [
 "skrofulöses",
 "word"
+],
+"slavischer": [
+"slawischer",
+"manual"
+],
+"social": [
+"sozial",
+"manual"
 ],
 "sociale": [
 "soziale",
@@ -16312,6 +17380,10 @@
 "sämtlicher",
 "word"
 ],
+"tendentiellen": [
+"tendenziellen",
+"manual"
+],
 "that": [
 "tat",
 "manual"
@@ -16608,6 +17680,14 @@
 "undiskontierbar",
 "compound"
 ],
+"unentgeldlich": [
+"unentgeltlich",
+"manual"
+],
+"unentgeldlichen": [
+"unentgeltlichen",
+"manual"
+],
 "unfläthig": [
 "unflätig",
 "word"
@@ -16656,6 +17736,14 @@
 "unkontrollierten",
 "word"
 ],
+"unläugbar": [
+"unleugbar",
+"manual"
+],
+"unläugbaren": [
+"unleugbaren",
+"manual"
+],
 "unnöthig": [
 "unnötig",
 "word"
@@ -16691,6 +17779,10 @@
 "unregelmässiger": [
 "unregelmäßiger",
 "sz"
+],
+"unstät": [
+"unstet",
+"manual"
 ],
 "unterabtheilen": [
 "unterabteilen",
@@ -16793,8 +17885,8 @@
 "word"
 ],
 "vampyrmässig": [
-"vampyrmäßig",
-"compound"
+"vampirmäßig",
+"manual"
 ],
 "variiren": [
 "variieren",
@@ -16831,6 +17923,14 @@
 "verdeklamirtes": [
 "verdeklamiertes",
 "compound"
+],
+"verdollmetschen": [
+"verdolmetschen",
+"manual"
+],
+"verfehmt": [
+"verfemt",
+"manual"
 ],
 "verfliessen": [
 "verfließen",
@@ -16960,6 +18060,10 @@
 "verließen",
 "sz"
 ],
+"verläugnete": [
+"verleugnete",
+"manual"
+],
 "vermarschirt": [
 "vermarschiert",
 "compound"
@@ -17035,6 +18139,30 @@
 "verschrieen": [
 "verschrien",
 "word"
+],
+"verselbständigen": [
+"verselbstständigen",
+"manual"
+],
+"verselbständigt": [
+"verselbstständigt",
+"manual"
+],
+"verselbständigte": [
+"verselbstständigte",
+"manual"
+],
+"verselbständigten": [
+"verselbstständigten",
+"manual"
+],
+"verselbständigter": [
+"verselbstständigter",
+"manual"
+],
+"verselbständigtes": [
+"verselbstständigtes",
+"manual"
 ],
 "verspekuliren": [
 "verspekulieren",
@@ -17328,6 +18456,10 @@
 "wegdrainiert",
 "compound"
 ],
+"wegläugnen": [
+"wegleugnen",
+"manual"
+],
 "weiss": [
 "weiß",
 "sz"
@@ -17468,6 +18600,10 @@
 "weshalb",
 "manual"
 ],
+"wesswegen": [
+"weswegen",
+"manual"
+],
 "westphälischen": [
 "westfälischen",
 "word"
@@ -17483,6 +18619,18 @@
 "wiederspiegelt": [
 "widerspiegelt",
 "word"
+],
+"willkührlich": [
+"willkürlich",
+"manual"
+],
+"willkührliche": [
+"willkürliche",
+"manual"
+],
+"willkührliches": [
+"willkürliches",
+"manual"
 ],
 "wirthschaften": [
 "wirtschaften",
@@ -17977,7 +19125,6 @@
 "Average",
 "Avez",
 "Avignon",
-"Axe",
 "Back",
 "Bag",
 "Bailey",
@@ -18185,7 +19332,6 @@
 "Come",
 "Comforts",
 "Comité",
-"Comités",
 "Comm",
 "Comme",
 "Commerce",
@@ -18229,7 +19375,6 @@
 "Contractor",
 "Contrasted",
 "Contributions",
-"Controle",
 "Convention",
 "Conversion",
 "Cooling",
@@ -18434,7 +19579,6 @@
 "Et",
 "Etat",
 "Etienne",
-"Etiquette",
 "Eugène",
 "Europe",
 "European",
@@ -18524,7 +19668,6 @@
 "Fulton",
 "Fund",
 "Funding",
-"Gallerie",
 "Gallons",
 "Gangs",
 "Gardner",
@@ -18607,7 +19750,6 @@
 "He",
 "Health",
 "Heat",
-"Heerde",
 "Henderson",
 "Her",
 "Hertfordshire",
@@ -19457,7 +20599,6 @@
 "South",
 "Southern",
 "Souvent",
-"Souverain",
 "Souverains",
 "Sovereign",
 "Soyons",
@@ -19685,7 +20826,6 @@
 "Vulgarisation",
 "Wade",
 "Wages",
-"Wagons",
 "Wakefield",
 "Wales",
 "Wallace",
@@ -23301,7 +24441,6 @@
 "scarce",
 "scarcely",
 "scarcity",
-"scheert",
 "schools",
 "science",
 "scientifici",

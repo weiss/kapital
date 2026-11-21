@@ -244,11 +244,17 @@ Im Zweifel gilt die heute geläufigste Form. Marx' Wortformen und Satzbau bleibe
     Wörterbuch (die alte Form darf es nicht kennen, die neue muss es).
   - Zusammensetzungen werden stückweise umgeschrieben.
   - ß/ss nach festen Stammregeln (groß, Größe, äußer-, -mäßig, schließen …).
-  - Einzelentscheidungen stehen in `variants/modern_overrides.py`.
+  - Einzelentscheidungen stehen in `variants/modern_overrides.py`, dazu
+    Ersetzungsmuster für Wortfamilien, die die Regeln nicht erfassen (Brod,
+    Frohn, allmälig, selbständig).
 - **Kontextregeln** in `variants/modern.py`:
   - Masse oder Maße (nach „dem“, „im“, „gleichem“ …).
   - Wortgruppen: usw., zugrunde, imstande, aufeinander, stattfinden, solange
-    (als Konjunktion) …
+    und soweit (als Konjunktion), so viel, ebenso wenig, jedes Mal,
+    infolge, sozusagen, aufrechterhalten, wiederherstellen … – Duden-Empfehlung,
+    wo beides erlaubt ist; auch über Zeilenumbrüche der Vorlage hinweg.
+  - Substantivierungen: etwas Neues, das Doppelte, im Allgemeinen.
+  - Adjektive aus Personennamen: hegelsche, ricardoschen.
   - Kleinschreibung von Pronomen (jeder, alles, andre) außerhalb des
     Satzanfangs.
   - Apostrophe: ins, aufs, Smiths.

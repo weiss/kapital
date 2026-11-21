@@ -13,7 +13,8 @@ kept where the ss form is not at least as common today (Prozess, not Prozeß).
 Compounds unknown to wordfreq are rewritten piecewise with the morphemes learned
 from the simple words. Where wordfreq knows neither form, a German spelling
 dictionary decides: the old form must be unknown to it, the new one known.
-Manual decisions in variants/modern_overrides.py win.
+Manual decisions in variants/modern_overrides.py win; its PATTERNS rewrite
+the result for word families the rules miss (Brod, Frohn, allmälig).
 Requires: pip install wordfreq spylls, and de_DE_frami.dic/.aff from
 https://github.com/LibreOffice/dictionaries (de/) in build/
 """
@@ -302,7 +303,7 @@ def sz(w):
 
 def main():
     vocab = Counter(json.load(open(sys.argv[1])))
-    from variants.modern_overrides import MORPHEMES, OVERRIDES
+    from variants.modern_overrides import MORPHEMES, OVERRIDES, PATTERNS
 
     direct = direct_map(vocab)
     rules = morphemes(direct, OVERRIDES, MORPHEMES)
@@ -332,6 +333,16 @@ def main():
         if new != base[0]:
             table[w] = [new, base[1] if base[1] != 'sz' else 'sz']
             kinds['sz'] += 1
+    for w in vocab:
+        if w in OVERRIDES:
+            continue
+        base = table.get(w, [w, 'manual'])
+        new = base[0]
+        for pat, rep in PATTERNS:
+            new = re.sub(pat, rep, new)
+        if new != base[0]:
+            table[w] = [new, 'manual']
+            kinds['manual'] += 1
     foreign = sorted(
         w
         for w in vocab

@@ -237,8 +237,10 @@ XHTML.
 ### Variante `modern`: heutige Rechtschreibung
 
 Orthographie sowie Getrennt- und Zusammenschreibung folgen den heutigen Regeln.
-Im Zweifel gilt die heute geläufigste Form. Marx' Wortformen und Satzbau bleiben
-(„andren“, „verschiedne“, „geschehn“).
+Lässt der Duden zwei Schreibungen zu, gilt die von ihm empfohlene („von Neuem“,
+„bei Weitem“), außer bei Fremdwörtern mit ph („Phantasie“, „Telegraph“,
+„Photographie“) und auf -tial/-tiell („Differentialrente“, „potentiell“). Marx'
+Wortformen und Satzbau bleiben („andren“, „verschiedne“, „geschehn“).
 
 - **Wortliste:** `variants/modern_map.json`, erzeugt aus allen Wortformen der
   drei Bände (braucht `pip install wordfreq spylls` und das deutsche

@@ -165,10 +165,12 @@ Was die editorische Notiz nur zusammenfasst:
 - **Formeln** (Bd. 1): Bögen über zusammengehörigen Gliedern wie im Druck statt
   Klammern, die Buchstaben c, v, m mit Klammer über den Beträgen.
 - **PDF:** 11 pt auf 13 pt Zeilenabstand, Fußnoten mit sieben Zeilen auf sechs
-  Textzeilen; Format 14 × 21,6 cm (Lulu „Digest“), Satzspiegel nach
-  KOMA-Script (`DIV=calc`, `BCOR=16mm`). Der Einzug der Fußnoten richtet sich
-  nach der längsten Nummer des Bandes. Zu breite Tabellen ragen bis 3 mm in den
-  Bundsteg und sonst nach außen, notfalls verkleinert.
+  Textzeilen; Format 14 × 21,6 cm (Lulu „Digest“), Satzspiegel nach KOMA-Script
+  (`DIV=calc`, `BCOR=16mm`). Der Einzug der Fußnoten richtet sich nach der
+  längsten Nummer des Bandes. Zu breite Tabellen ragen bis 3 mm in den Bundsteg
+  und sonst nach außen, notfalls verkleinert. Wortzwischenräume stehen als echte
+  Leerzeichen im PDF (tagpdf, `interwordspace`), damit Kopieren, Suche und
+  Textextraktion Wortgrenzen finden.
 - **Abgeschriebene Tabellen:** eine Textdatei je Tabelle, aus der EPUB und PDF
   gesetzt werden.
 

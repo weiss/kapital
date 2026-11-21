@@ -1819,6 +1819,27 @@ COMMAS = [
     ),
     ('nur fortfahren zu einem', 'nur fortfahren, zu einem'),
     ('aufgehört hat für die', 'aufgehört hat, für die'),
+    ('um statt in', 'um, statt in'),
+    ('Wert reproduzieren oder durch', 'Wert reproduzieren, oder durch'),
+    ('zu exploitieren) mehr oder', 'zu exploitieren), mehr oder'),
+    (
+        'dem „Bevölkerungsprinzip“ schlug die',
+        'dem „Bevölkerungsprinzip“, schlug die',
+    ),
+    ('Es ist als ob', 'Es ist, als ob'),
+    ('ist größer als das', 'ist größer, als das'),
+    ('ihr auspumpt als der', 'ihr auspumpt, als der'),
+    ('auszusprechen und schickten', 'auszusprechen, und schickten'),
+    ('minder grausam als die', 'minder grausam, als die'),
+    ('absorbiert werden als es', 'absorbiert werden, als es'),
+    ('höher steige als er', 'höher steige, als er'),
+    ('ebenso rasch als sie', 'ebenso rasch, als sie'),
+    ('zu akkumulieren als er', 'zu akkumulieren, als er'),
+    ('Kapital besitzt als er', 'Kapital besitzt, als er'),
+    ('den Arbeitsmarkt als die', 'den Arbeitsmarkt, als die'),
+    ('so wichtig wie es', 'so wichtig, wie es'),
+    ('gilt, einerlei in welcher', 'gilt, einerlei, in welcher'),
+    ('Produkt, bestimmt der produktiven', 'Produkt, bestimmt, der produktiven'),
 ]
 
 EDGES = [
@@ -1892,5 +1913,7 @@ EDGES = [
     ('^ :$', ':'),
     ('(?<=wäre es leichter)(?=\\s*$)', ','),
     ('(?<=die gezwungen wurden)(?=\\s*$)', ','),
+    ('(?<=einfache Wertausdrücke)$', ','),
+    ('(?<=^geplündert)$', ','),
     ('^…(?= the\\s*$)', ' …'),
 ]

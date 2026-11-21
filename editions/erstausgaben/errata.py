@@ -523,6 +523,7 @@ K1_TEXT = [
     ('bona fide. Charakter', 'bona fide Charakter'),
     ('Burgeoisschriftsteller', 'Bourgeoisschriftsteller'),
     ('des Kapital werths auf', 'des Kapitalwerths auf'),
+    ('Fürsichselbst arbeiten', 'Fürsichselbstarbeiten'),
     ('alter Kapitale, Stellt', 'alter Kapitale. Stellt'),
     ('so deutet, das sie', 'so deutet, dass sie'),
     ('Forster, M P.,', 'Forster, M. P.,'),

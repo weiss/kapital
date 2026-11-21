@@ -1,5 +1,4 @@
 % Präambel aller Bände; erwartet \Sprache (german oder ngerman) und \Titel
-\DocumentMetadata{}
 \documentclass[
   paper=140mm:216mm,
   BCOR=16mm,
@@ -72,8 +71,7 @@
 \usepackage{hyperref}
 \usepackage{bookmark}
 % echte Leerzeichen im PDF, für Kopieren, Suche und Textextraktion
-\usepackage{tagpdf}
-\tagpdfsetup{interwordspace=true}
+\directlua{dofile(kpse.find_file('leerzeichen.lua'))}
 \urlstyle{same}
 
 \pagestyle{scrheadings}

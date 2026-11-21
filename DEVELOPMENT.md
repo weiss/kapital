@@ -169,7 +169,7 @@ Was die editorische Notiz nur zusammenfasst:
   (`DIV=calc`, `BCOR=16mm`). Der Einzug der Fußnoten richtet sich nach der
   längsten Nummer des Bandes. Zu breite Tabellen ragen bis 3 mm in den Bundsteg
   und sonst nach außen, notfalls verkleinert. Wortzwischenräume stehen als echte
-  Leerzeichen im PDF (tagpdf, `interwordspace`), damit Kopieren, Suche und
+  Leerzeichen im PDF (`latex/leerzeichen.lua`), damit Kopieren, Suche und
   Textextraktion Wortgrenzen finden.
 - **Abgeschriebene Tabellen:** eine Textdatei je Tabelle, aus der EPUB und PDF
   gesetzt werden.

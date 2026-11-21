@@ -1837,8 +1837,12 @@ COMMAS = [
     ('zu akkumulieren als er', 'zu akkumulieren, als er'),
     ('Kapital besitzt als er', 'Kapital besitzt, als er'),
     ('den Arbeitsmarkt als die', 'den Arbeitsmarkt, als die'),
+    ('Culloch anfing von sich', 'Culloch anfing, von sich'),
     ('so wichtig wie es', 'so wichtig, wie es'),
     ('gilt, einerlei in welcher', 'gilt, einerlei, in welcher'),
+    ('fährt fort es zu', 'fährt fort, es zu'),
+    ('hören auf Waren zu', 'hören auf, Waren zu'),
+    ('gestattet die im', 'gestattet, die im'),
     ('Produkt, bestimmt der produktiven', 'Produkt, bestimmt, der produktiven'),
 ]
 
@@ -1913,6 +1917,7 @@ EDGES = [
     ('^ :$', ':'),
     ('(?<=wäre es leichter)(?=\\s*$)', ','),
     ('(?<=die gezwungen wurden)(?=\\s*$)', ','),
+    ('(?<=ihr Lohn anfing)(?=\\s*$)', ','),
     ('(?<=einfache Wertausdrücke)$', ','),
     ('(?<=^geplündert)$', ','),
     ('^…(?= the\\s*$)', ' …'),

@@ -857,6 +857,11 @@ K2_TEXT = [
     ('heissen; So', 'heissen: So'),
     ('vorzugsweis èine', 'vorzugsweis eine'),
     ('V:25', 'V: 25'),
+    ('setzt G<supplied>,</supplied>', 'setzt G'),
+    ('schiesst der Cirkulation,<lb/>', 'schiesst der Cirkulation<lb/>'),
+    ('Physiocrates, le. partie', 'Physiocrates, Ie. partie'),
+    ('capitaux<lb/>\nqu &#x2019;on', 'capitaux<lb/>\nqu&#x2019;on'),
+    ('politique et qu &#x2019;on', 'politique et qu&#x2019;on'),
 ]
 
 K31_TEXT = [
@@ -998,6 +1003,12 @@ K31_TEXT = [
     ('0,100,200', '0, 100, 200'),
     ('(A.Müller, l.c., II., p.147', '(A. Müller, l. c., II., p. 147'),
     ('(p. 43,44.)', '(p. 43, 44.)'),
+    ('gesetzten Gesammtkapital ist', 'gesetzten Gesammtkapitals ist'),
+    ('kann in einen Multipel', 'kann in einem Multipel'),
+    (
+        'die Kapital-<lb/>\nzusammensetzung, bei',
+        'die Kapitalzusammensetzung,<lb/>\nbei',
+    ),
 ]
 
 K32_TEXT = [

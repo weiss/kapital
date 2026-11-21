@@ -23,8 +23,9 @@ NOTICE = (
     ' (Wert statt Werth, Ware statt Waare, Prozess statt Process, Zirkulation'
     ' statt Cirkulation, produzieren statt produciren, groß statt gross, usw.'
     ' statt u. s. w., zugrunde statt zu Grunde, aufeinander statt auf einander,'
-    ' jeder statt Jeder). Wortformen und Satzbau sind unverändert (z. B.'
-    ' „andren“, „verschiedne“, „geschehn“, „ward“). Fremdsprachige Zitate,'
+    ' jeder statt Jeder). Fehlende Kommas vor Nebensätzen und'
+    ' Infinitivgruppen sind ergänzt. Wortformen und Satzbau sind unverändert'
+    ' (z. B. „andren“, „verschiedne“, „geschehn“, „ward“). Fremdsprachige Zitate,'
     ' Eigennamen und Titel bleiben in ihrer Schreibung, ebenso'
     ' frühneuhochdeutsche Zitate (Luther). Grundlage ist eine Wortliste aller'
     ' Formen der drei Bände mit Einzelentscheidungen.'
@@ -369,10 +370,16 @@ PHRASES = [
     ),
     (
         r'\b([Ii]m) (allgemeinen|einzelnen|wesentlichen|ganzen|übrigen'
-        r'|folgenden|besondern|besonderen|stillen)\b(?=\s*[^\sA-ZÄÖÜ])',
+        r'|folgenden|besondern|besonderen|stillen|großen)\b'
+        r'(?=\s*[^\sA-ZÄÖÜ])',
         lambda m: m.group(1) + ' ' + m.group(2)[0].upper() + m.group(2)[1:],
     ),
     (r'\bim voraus\b', 'im Voraus'),
+    (r'\b([Ii])n sofern\b', r'\1nsofern'),
+    (r'\bwo andershin\b', 'woandershin'),
+    (r'\banders woher\b', 'anderswoher'),
+    (r'\bwo möglich noch\b', 'womöglich noch'),
+    (r'\b([Ss])onderbarer Weise\b', r'\1onderbarerweise'),
     (r'\b([Ii]m) Ganzen und großen\b', r'\1 Ganzen und Großen'),
     (r'\bdes folgenden:', 'des Folgenden:'),
     (r'\bmanchmal dreifache der\b', 'manchmal Dreifache der'),
@@ -390,7 +397,9 @@ PHRASES = [
     (r'\bden Ausfall gut machen\b', 'den Ausfall gutmachen'),
     (r'\bdass sie nicht gut gemacht\b', 'dass sie nicht gutgemacht'),
     (r'\bVerluste gut zu machen\b', 'Verluste gutzumachen'),
-    (r'\bzu gut kommt\b', 'zugutekommt'),
+    (r'\bzu gute? kommt\b', 'zugutekommt'),
+    (r'\bzu gut käme\b', 'zugutekäme'),
+    (r'\b(Erfahrungen|darin) zu gut\b', r'\1 zugute'),
     (
         r'\baufrecht (erhalten|zu erhalten)\b',
         lambda m: 'aufrecht' + m.group(1).replace(' ', ''),
@@ -409,6 +418,176 @@ PHRASES = [
         r'|geführt|zu führen|hergestellt|hergestellten|herstellen|herstellt'
         r'|herzustellen|gewinnen|gekommen)\b',
         lambda m: _join(m),
+    ),
+]
+
+# commas by today's rules
+SUB = (
+    r'dass|ob|wenn(?! auch| möglich)|weil|obgleich|obwohl|indem|sobald|nachdem'
+    r'|bevor|ehe'
+    r'|wo(?! möglich)|worin|womit|wovon|woraus|worauf|wodurch|wofür|wonach'
+    r'|woran|worüber|wozu|wogegen'
+)
+NO_COMMA = set(
+    'und oder aber sondern denn als wie so auch nur selbst schon noch erst'
+    ' zwar gerade grade eben ja doch dass ob wenn weil also nämlich nicht'
+    ' bloß statt anstatt ohne ohn außer außerdem trotzdem dadurch bis teils'
+    ' einesteils zugleich ebenso endlich namentlich einerseits andrerseits'
+    ' andererseits vielmehr besonders erstens zweitens drittens entweder'
+    ' hauptsächlich zunächst vielleicht nie ebenfalls die der das welche'
+    ' lange kurz gleich jedenfalls je sowohl ebensowohl sonst freilich meist'
+    ' sodass während oft verkaufs sich mehr weniger viel'.split()
+)
+NO_COMMA_BEFORE = {
+    'bevor': {'monate', 'monat', 'jahre', 'zeit'},
+    'ehe': {'monate', 'monat', 'jahre', 'zeit'},
+    'wovon': {'von', 'auf', 'infolge', 'grund', 'grundlage', 'teil'},
+    'wo': {'von'},
+}
+WORD_BEFORE = r'(?<![\w′£)])((?:[\w′]+[)£]?|£))( +)'
+UM_VERBS = (
+    'tun',
+    'kümmern',
+    'bekümmern',
+    'drehen',
+    'bewerben',
+    'bringen',
+    'kommen',
+    'streiten',
+    'bitten',
+    'sorgen',
+    'handeln',
+    'kämpfen',
+)
+NO_INF = {'den', 'ihn', 'ihnen', 'einen', 'seinen', 'ihren', 'diesen', 'eben'}
+
+
+def _comma(m):
+    w, conj = m.group(1), m.group(3)
+    if (
+        re.search(r'(\d|^[a-z])\)$', w)
+        or w.lower() in NO_COMMA
+        or w.lower() in NO_COMMA_BEFORE.get(conj, ())
+    ):
+        return m.group(0)
+    return w + ',' + m.group(0)[len(w) :]
+
+
+def _comma_inf(m):
+    conj, words, inf = m.group(3), m.group(5) or '', m.group(6)
+    if not inf.endswith('n') or inf in NO_INF:
+        return m.group(0)
+    if conj == 'um' and (
+        inf in UM_VERBS
+        or re.match(
+            r'(\d|[¼½¾⅓⅔]|so\b|die Hälfte|das \w*fache|mehr\b|weniger\b'
+            r'|einen Fuß|ein \w+tel\b)',
+            words,
+        )
+    ):
+        return m.group(0)
+    pron = re.match(r'(sich|sie|es|ihn|ihm|ihnen|mich|etwas)\b', words)
+    if conj == 'statt' and not pron:
+        return m.group(0)
+    if (
+        conj == 'ohne'
+        and words
+        and not pron
+        and not (inf == 'werden' and re.fullmatch(r'\w+(t|en)', words))
+    ):
+        return m.group(0)
+    return _comma(m)
+
+
+# (before, after): checked one by one
+COMMAS = [
+    ('industrielle Kapital, eine', 'industrielle Kapital eine'),
+    ('Brauereien, entwickeln, sich', 'Brauereien, entwickeln sich'),
+    ('Gesamtkapital, verhält sich', 'Gesamtkapital verhält sich'),
+    ('des Kapitals, in den Boden', 'des Kapitals in den Boden'),
+    ('eine Rente, zahle', 'eine Rente zahle'),
+    ('Fronarbeit, bis zur', 'Fronarbeit bis zur'),
+    ('unter den, ihrer', 'unter den ihrer'),
+    ('alle Arbeit fort, zum', 'alle Arbeit fort zum'),
+    ('bestimmt werden, durch das', 'bestimmt werden durch das'),
+    ('Noten füllen, nun', 'Noten füllen nun'),
+    ('Steuern verursacht während', 'Steuern verursacht, während'),
+    ('im Auge hat ist,', 'im Auge hat, ist,'),
+    ('kauft sie solange', 'kauft sie, solange'),
+    ('auf 4 % so stiege', 'auf 4 %, so stiege'),
+    ('„der Preis der von', '„der Preis, der von'),
+    ('Beispiel angeben; wo', 'Beispiel angeben, wo'),
+    ('glaube nicht dass', 'glaube nicht, dass'),
+    ('jedermann der irgendwie', 'jedermann, der irgendwie'),
+    ('glauben also er', 'glauben also, er'),
+    ('treffen sollten die Möglichkeit', 'treffen sollten, die Möglichkeit'),
+    ('Jeder der unsre', 'Jeder, der unsre'),
+    ('ein Profit; der vom', 'ein Profit, der vom'),
+    ('nicht vorziehn sich', 'nicht vorziehn, sich'),
+    ('der Grundrente die er', 'der Grundrente, die er'),
+    ('gewesen ist das Geheimnis', 'gewesen ist, das Geheimnis'),
+    ('nur gelte neue', 'nur gelte, neue'),
+    ('ihn realisiert hängt', 'ihn realisiert, hängt'),
+    ('zu erhöhen ganz wie', 'zu erhöhen, ganz wie'),
+    ('4 qrs. die es', '4 qrs., die es'),
+    ('Arbeitszeit die darin', 'Arbeitszeit, die darin'),
+    ('Reihenfolge) so würde', 'Reihenfolge), so würde'),
+    ('ein Umstand der in', 'ein Umstand, der in'),
+    ('den Preis den der', 'den Preis, den der'),
+    ('abwerfen aber keinen', 'abwerfen, aber keinen'),
+    ('Erdkörpers wächst die', 'Erdkörpers wächst, die'),
+    ('ein Mann der in', 'ein Mann, der in'),
+    ('befähigt einen Teil', 'befähigt, einen Teil'),
+    ('nur hinreichen die', 'nur hinreichen, die'),
+    ('Bedingungen die den', 'Bedingungen, die den'),
+    ('Verbesserungen deren', 'Verbesserungen, deren'),
+    ('Ökonomen die über', 'Ökonomen, die über'),
+    ('weiter unten) wenn', 'weiter unten), wenn'),
+    ('Prozess den man', 'Prozess, den man'),
+    ('Köpfe die in', 'Köpfe, die in'),
+    ('eingreifen konnte; wie', 'eingreifen konnte, wie'),
+    ('dessen was', 'dessen, was'),
+    ('um dies zu erfahren ist', 'um dies zu erfahren, ist'),
+    ('Vorwand gedient um', 'Vorwand gedient, um'),
+    ('in England der Bauernstand', 'in England, der Bauernstand'),
+    ('ohne Weiteres den Sklaven', 'ohne Weiteres, den Sklaven'),
+    ('Narrheit einen', 'Narrheit, einen'),
+    ('überhebt den letztren', 'überhebt, den letztren'),
+    ('Produktionsverhältnisse diese', 'Produktionsverhältnisse, diese'),
+    ('haben möge als', 'haben möge, als'),
+    ('einen andern der,', 'einen andern, der,'),
+    ('Sätze die alle', 'Sätze, die alle'),
+    ('Gefahren ausgesetzt die', 'Gefahren ausgesetzt, die'),
+    ('der Mehrarbeit der außer', 'der Mehrarbeit, der außer'),
+    ('Arbeit erscheint) heißt', 'Arbeit erscheint), heißt'),
+    ('nichts übrig als', 'nichts übrig, als'),
+    ('ganz unnötig diesen', 'ganz unnötig, diesen'),
+    ('nie geben was', 'nie geben, was'),
+    ('ist alles was', 'ist alles, was'),
+    ('vorausgesetzt nur dass', 'vorausgesetzt nur, dass'),
+    ('dem Teil der der', 'dem Teil, der der'),
+    ('Verhältnisse die im', 'Verhältnisse, die im'),
+    ('geleitet ist) setzt', 'geleitet ist), setzt'),
+    ('gezeigt hat die stets', 'gezeigt hat, die stets'),
+    ('und gesetzt dieser', 'und gesetzt, dieser'),
+    ('Mann der im Ruf', 'Mann, der im Ruf'),
+    ('Änderung die stattfindet', 'Änderung, die stattfindet'),
+    ('Vorausgesetzt aber dass', 'Vorausgesetzt aber, dass'),
+    ('Kapital falle statt zu', 'Kapital falle, statt zu'),
+    ('gefallen statt zu steigen', 'gefallen, statt zu steigen'),
+]
+PHRASES += [(r'(?<!\w)' + re.escape(a) + r'(?!\w)', b) for a, b in COMMAS]
+PHRASES += [
+    (r'^ der Rest von 100\b', ', der Rest von 100'),
+    (r'^ Spekulieren ist, und\b', ', Spekulieren ist, und'),
+]
+PHRASES += [
+    (WORD_BEFORE + r'(' + SUB + r')\b', _comma),
+    (WORD_BEFORE + r'(sondern\b|d\. h\.)()', _comma),
+    (
+        WORD_BEFORE + r'(um|ohne|statt)( +(?=(?:([^,.;:!?()–„“]{0,80}?) )?zu'
+        r' ([a-zäöüß]+)\b))',
+        _comma_inf,
     ),
 ]
 PHRASES = [(re.compile(p), r) for p, r in PHRASES]

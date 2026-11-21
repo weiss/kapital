@@ -254,6 +254,10 @@ Im Zweifel gilt die heute geläufigste Form. Marx' Wortformen und Satzbau bleibe
     infolge, sozusagen, aufrechterhalten, wiederherstellen … – Duden-Empfehlung,
     wo beides erlaubt ist; auch über Zeilenumbrüche der Vorlage hinweg.
   - Substantivierungen: etwas Neues, das Doppelte, im Allgemeinen.
+  - Kommas vor Nebensätzen (dass, ob, wenn, weil, wo, worin …), vor
+    Infinitivgruppen mit um/ohne … zu, vor „sondern“ und „d. h.“; nicht nach
+    Konjunktionen und Partikeln (und dass, ohne dass, je nachdem). Weitere
+    einzeln geprüfte Stellen stehen in `COMMAS`.
   - Adjektive aus Personennamen: hegelsche, ricardoschen.
   - Kleinschreibung von Pronomen (jeder, alles, andre) außerhalb des
     Satzanfangs.

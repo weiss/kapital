@@ -37,6 +37,18 @@ def build_time():
     return datetime.datetime.now(datetime.timezone.utc)
 
 
+def build_version():
+    return os.environ.get('KAPITAL_VERSION', '')
+
+
+def german_date(t):
+    month = (
+        'Januar Februar März April Mai Juni Juli August September Oktober'
+        ' November Dezember'
+    ).split()[t.month - 1]
+    return f'{t.day}. {month} {t.year}'
+
+
 DTA_VIEW = 'https://www.deutschestextarchiv.de/book/view/{}?p={}'
 A11Y_SUMMARY = (
     'Fließtext mit gegliederten Überschriften, Inhaltsverzeichnis, verlinkten'
@@ -2135,14 +2147,19 @@ class Book:
                     ' Seiten:'
                 )
                 page_list((page, facs) for page, facs, _ in tabs)
-        t = build_time()
-        month = (
-            'Januar Februar März April Mai Juni Juli August September Oktober'
-            ' November Dezember'
-        ).split()[t.month - 1]
         editor, _, mail = vol.get('editor', ('', '', ''))
+        version = build_version()
         para(
-            ', '.join(filter(None, (editor, f'{t.day}. {month} {t.year}'))),
+            ', '.join(
+                filter(
+                    None,
+                    (
+                        editor,
+                        version and f'Version {version}',
+                        german_date(build_time()),
+                    ),
+                )
+            ),
             cls='sign',
         )
         if mail and not pdf:
@@ -2451,6 +2468,12 @@ def package(book, out):
             ' property="source-of">pagination</meta>'
             for i, p in enumerate(vol['parts'], 1)
         )
+        version = build_version()
+        version_meta = (
+            f'\n    <meta property="schema:version">{version}</meta>'
+            if version
+            else ''
+        )
         contrib = (
             '\n    <dc:contributor id="ed">Friedrich Engels</dc:contributor>\n '
             '   <meta refines="#ed" property="role"'
@@ -2486,7 +2509,7 @@ def package(book, out):
     <dc:rights>CC BY-SA 4.0 – Textgrundlage: Deutsches Textarchiv, BBAW</dc:rights>
     <dc:subject>Politische Ökonomie</dc:subject>
     <dc:description>{vol['description']}</dc:description>
-    <meta property="dcterms:modified">{now}</meta>
+    <meta property="dcterms:modified">{now}</meta>{version_meta}
     <meta property="schema:accessMode">textual</meta>
     <meta property="schema:accessModeSufficient">textual</meta>
     <meta property="schema:accessibilityFeature">structuralNavigation</meta>

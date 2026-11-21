@@ -13,6 +13,12 @@ GitHub Actions bauen und prüfen bei jedem Push alle EPUBs und bauen die PDFs
 `marx-kapital-<band>-<jahr>[-modern].epub` und den PDFs als
 `marx-kapital-<band>[.<teil>]-<jahr>[-modern].pdf` (`release.yml`).
 
+Die Version kommt aus `git describe --tags --dirty` (oder `VERSION=…`) und
+steht mit dem Datum im Impressum der PDFs, unter der editorischen Notiz und in
+den EPUB-Metadaten (`schema:version`). Versionen 0.Y.Z sind Vorabfassungen. Ab
+1.0.0 zählt Z reine Korrekturen, Y weitergehende Überarbeitungen; ein neues X
+steht für eine wesentlich geänderte Edition.
+
 ```sh
 make                 # build/erstausgaben/kapital-{1,2,3}.epub
 make VARIANT=modern  # build/erstausgaben-modern/…: heutige Rechtschreibung

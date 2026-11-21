@@ -20,6 +20,8 @@ jobs:
             texlive-lang-german texlive-lang-greek
       - name: Check out repository code
         uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
       - name: Build EPUBs and PDFs
         run: |
           make

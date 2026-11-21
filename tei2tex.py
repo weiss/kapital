@@ -922,6 +922,7 @@ class TeX:
 
     def imprint(self):
         vol, parts = self.book.vol, self.book.vol['parts']
+        version = T.build_version()
         urls = ', '.join(
             r'\url{'
             + T.text_of(p['header'].find(f'.//{T.TEI}idno[@type="URLWeb"]'))
@@ -951,7 +952,17 @@ class TeX:
                         if vol.get('editor')
                         else ''
                     ),
-                    r'Gesetzt in Crimson Pro, Griechisch in Gentium Book.\par}',
+                    r'Gesetzt in Crimson Pro, Griechisch in Gentium Book.\par',
+                    ', '.join(
+                        filter(
+                            None,
+                            (
+                                version and 'Version ' + esc(version),
+                                T.german_date(T.build_time()),
+                            ),
+                        )
+                    )
+                    + r'.\par}',
                     '',
                 ]
             )

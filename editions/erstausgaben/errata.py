@@ -582,6 +582,7 @@ K1_TEXT = [
     ('Salair gaben. entzogen', 'Salair gaben, entzogen'),
     ('Holzsäger</hi>. 1851:', 'Holzsäger</hi>: 1851:'),
     ('7 sh. 6d.,', '7 sh. 6 d.,'),
+    ('Werth</hi> sein bildet', 'Werth</hi>sein bildet'),
 ]
 
 K2_TEXT = [

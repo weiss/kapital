@@ -66,7 +66,7 @@ BLOCKS = {
 WORD = re.compile(
     r"[A-Za-zÄÖÜäöüßàâçéèêëîïôûùœæ]+(?:[’']s(?![A-Za-zÄÖÜäöüß]))?"
 )
-MASS_DAT = re.compile(r'(?:em|im|^demselben|^denselben)$')
+MASS_DAT = re.compile(r'(?:em|im|^demselben|^denselben|^gesellschaftlicher)$')
 CONTRACT = {
     'in',
     'auf',
@@ -388,7 +388,6 @@ PHRASES = [
     (r'\b(im ersten|identischer) Act\b', r'\1 Akt'),
     (r'\b(sparsamer|den) Wirth\b', r'\1 Wirt'),
     (r'\b(ihr|zum|und) Thor\b', r'\1 Tor'),
-    (r'\bgesellschaftlicher Masse für\b', 'gesellschaftlicher Maße für'),
     (r'\bWarenmasse entspringt\b', 'Warenmaße entspringt'),
     (
         r'\bbestimmte Masse (?=festgeronnener|der Warenarten|des Goldes)',
@@ -547,6 +546,7 @@ COMMAS = [
     ('Köpfe die in', 'Köpfe, die in'),
     ('eingreifen konnte; wie', 'eingreifen konnte, wie'),
     ('dessen was', 'dessen, was'),
+    ('Endzweck dieses Werks das', 'Endzweck dieses Werks, das'),
     ('um dies zu erfahren ist', 'um dies zu erfahren, ist'),
     ('Vorwand gedient um', 'Vorwand gedient, um'),
     ('in England der Bauernstand', 'in England, der Bauernstand'),

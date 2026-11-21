@@ -1006,6 +1006,10 @@ K31_TEXT = [
     ('gesetzten Gesammtkapital ist', 'gesetzten Gesammtkapitals ist'),
     ('kann in einen Multipel', 'kann in einem Multipel'),
     (
+        '</hi> gesellschaftlichem Werth, dem',
+        '</hi> gesellschaftlichen Werth, dem',
+    ),
+    (
         'die Kapital-<lb/>\nzusammensetzung, bei',
         'die Kapitalzusammensetzung,<lb/>\nbei',
     ),

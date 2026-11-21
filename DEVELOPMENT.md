@@ -165,7 +165,7 @@ Was die editorische Notiz nur zusammenfasst:
 - **Formeln** (Bd. 1): Bögen über zusammengehörigen Gliedern wie im Druck statt
   Klammern, die Buchstaben c, v, m mit Klammer über den Beträgen.
 - **PDF:** 11 pt auf 13 pt Zeilenabstand, Fußnoten mit sieben Zeilen auf sechs
-  Textzeilen; Format 14 × 21,6 cm („Digest“), Satzspiegel nach KOMA-Script
+  Textzeilen; Format 5,5 × 8,5 Zoll („Digest“), Satzspiegel nach KOMA-Script
   (`DIV=calc`, `BCOR=16mm`). Der Einzug der Fußnoten richtet sich nach der
   längsten Nummer des Bandes. Zu breite Tabellen ragen bis 3 mm in den Bundsteg
   und sonst nach außen, notfalls verkleinert.

@@ -832,7 +832,10 @@ def phrases_across_lines(segs, foreign):
         keep = len(tail) - p
         cut = tail[p:].lstrip()
         moved = new[: len(new) - keep].rstrip()
-        setattr(e1, a1, t1[: m1.start()] + moved)
+        lead1 = t1[: m1.start()]
+        if moved.startswith(',') and lead1.isspace():
+            lead1, moved = ',' + lead1, moved[1:]
+        setattr(e1, a1, lead1 + moved)
         e2.tail = lead + cut + t2[len(lead) + len(tail) :]
 
 

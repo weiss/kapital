@@ -11,7 +11,7 @@ on:
 jobs:
   build:
     name: Build EPUBs and PDFs
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     env:
       EPUBCHECK: java -jar /usr/share/java/epubcheck.jar
     steps:

@@ -136,6 +136,10 @@
 "Addierung",
 "manual"
 ],
+"Advokatenplaidoyer": [
+"Advokatenplädoyer",
+"manual"
+],
 "Aecker": [
 "Äcker",
 "word"
@@ -2153,12 +2157,12 @@
 "word"
 ],
 "Deplacirten": [
-"Deplazierten",
-"compound"
+"Deplatzierten",
+"manual"
 ],
 "Deplacirung": [
-"Deplazierung",
-"compound"
+"Deplatzierung",
+"manual"
 ],
 "Deponiren": [
 "Deponieren",
@@ -5300,6 +5304,10 @@
 "Körperteile",
 "word"
 ],
+"Lacedämonier": [
+"Lakedämonier",
+"manual"
+],
 "Lackirarbeiten": [
 "Lackierarbeiten",
 "word"
@@ -6508,10 +6516,6 @@
 "Philanthropen",
 "manual"
 ],
-"Photographie": [
-"Fotografie",
-"foreign?"
-],
 "Plantagenwirthschaft": [
 "Plantagenwirtschaft",
 "word"
@@ -7019,6 +7023,10 @@
 "Recepten": [
 "Rezepten",
 "foreign?"
+],
+"Rechtsetiquetten": [
+"Rechtsetiketten",
+"manual"
 ],
 "Rechtsverhältniss": [
 "Rechtsverhältnis",
@@ -8253,8 +8261,8 @@
 "word"
 ],
 "Thuc": [
-"Tuk",
-"word"
+"Thuk",
+"manual"
 ],
 "Thucydides": [
 "Thukydides",
@@ -16813,8 +16821,8 @@
 "manual"
 ],
 "raisonnirenden": [
-"raisonnierenden",
-"compound"
+"räsonierenden",
+"manual"
 ],
 "rangiren": [
 "rangieren",
@@ -20447,6 +20455,7 @@
 "Ibid",
 "Iddio",
 "Ideales",
+"Ie",
 "If",
 "Il",
 "Illegal",
@@ -20908,6 +20917,7 @@
 "Philippe",
 "Philosophique",
 "Philosophy",
+"Photographie",
 "Phrase",
 "Physical",
 "Physiology",

@@ -320,6 +320,27 @@ SPELLINGS = [
     ('von nächst höherer Fruchtbarkeit', 'von nächsthöherer Fruchtbarkeit'),
     ('ergeben nun folgendes', 'ergeben nun Folgendes'),
     ('– Dank dem in', '– dank dem in'),
+    (
+        'ihrer Timur-tamerlanschen „Verschwendung“ von',
+        'ihrer timur-tamerlanschen „Verschwendung“ von',
+    ),
+    ('der guten Hoffnung nach', 'der Guten Hoffnung nach'),
+    ('den kanarischen Inseln', 'den Kanarischen Inseln'),
+    ('überzählig“ gemachten und damit', 'überzählig“ Gemachten und damit'),
+    ('sich breit macht', 'sich breitmacht'),
+    ('selbstgefällig breit gemacht', 'selbstgefällig breitgemacht'),
+    (
+        'sagt: „der Landarbeiter Südenglands',
+        'sagt: „Der Landarbeiter Südenglands',
+    ),
+    ('Arsenal offen zu halten', 'Arsenal offenzuhalten'),
+    ('Irrtümer neben oder durcheinander', 'Irrtümer neben- oder durcheinander'),
+    (
+        'Gemeinwesen (holländisch Ostindien',
+        'Gemeinwesen (Holländisch-Ostindien',
+    ),
+    ('Aber Halt! ist hier', 'Aber halt! ist hier'),
+    ('Montag und Dienstag Morgen', 'Montag- und Dienstagmorgen'),
 ]
 
 COMMAS = [
@@ -1871,4 +1892,5 @@ EDGES = [
     ('^ :$', ':'),
     ('(?<=wäre es leichter)(?=\\s*$)', ','),
     ('(?<=die gezwungen wurden)(?=\\s*$)', ','),
+    ('^…(?= the\\s*$)', ' …'),
 ]

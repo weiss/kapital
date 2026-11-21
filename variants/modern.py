@@ -424,6 +424,8 @@ PHRASES = [
     (r'\b([Vv]or|seit) kurzem\b', r'\1 Kurzem'),
     (r'\bgleichviel (?=[A-ZÄÖÜ]|variables)', 'gleich viel '),
     (r'\bgleich Null\b', 'gleich null'),
+    (r'\bSumma Summarum\b', 'Summa summarum'),
+    (r',“', '“,'),
     (r'\bin Bar\b', 'in bar'),
     (r'\bdas einzige(?=, was)', 'das Einzige'),
     (

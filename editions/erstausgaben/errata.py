@@ -885,6 +885,8 @@ K2_TEXT = [
     ('übertragnem<lb/>', 'übertragnen<lb/>'),
     ('cirkulirendem Geld;', 'cirkulirenden Geld;'),
     ('entwickeln,<lb/>\nsich daher', 'entwickeln<lb/>\nsich daher'),
+    ('5. &#x201E; 25&#x2014;30.', '5. &#x201E; 21&#x2014;25.'),
+    ('also Waare = 100 <hi', 'also Waare = 1000 <hi'),
 ]
 
 K31_TEXT = [
@@ -1038,6 +1040,8 @@ K31_TEXT = [
     ),
     ('Collieries et. 21', 'Collieries etc. 21'),
     ('what is was', 'what it was'),
+    ("p' = 16&#x2153; %", "p' = 16&#x2154; %"),
+    ('= 66&#x2153; %', '= 66&#x2154; %'),
 ]
 
 K32_TEXT = [

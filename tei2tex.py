@@ -82,9 +82,9 @@ def plain(e):
 
 def running(title):
     title = title.replace(' (Erstausgabe)', '')
-    if len(title) <= 62:
+    if len(title) <= 68:
         return title
-    return title[:58].rsplit(' ', 1)[0].rstrip(' –,;:') + ' …'
+    return title[:64].rsplit(' ', 1)[0].rstrip(' –,;:') + ' …'
 
 
 # Seitenwechsel vor einer zentrierten Zeile: nur die Randziffer, kein Strich auf

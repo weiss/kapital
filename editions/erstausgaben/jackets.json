@@ -24,24 +24,6 @@
         "modern": "Buch I: Der Produktionsprozess des Kapitals"
       },
       "place": "Hamburg 1867",
-      "motif": {
-        "lines": [
-          "20 Ellen",
-          "Leinwand",
-          "= 1 Rock"
-        ],
-        "size": 82,
-        "dx": [
-          -0.04,
-          -0.04,
-          -0.04
-        ],
-        "y": [
-          3.85,
-          2.85,
-          1.85
-        ]
-      },
       "quote": "„Ich unterstelle natürlich Leser, die etwas Neues lernen, also auch selbst denken wollen.“",
       "quote_source": "Aus dem Vorwort",
       "front_flap": [
@@ -71,24 +53,6 @@
       },
       "editor": "Herausgegeben von Friedrich Engels",
       "place": "Hamburg 1885",
-      "motif": {
-        "lines": [
-          "G – W",
-          "… P …",
-          "W′ – G′"
-        ],
-        "size": 82,
-        "dx": [
-          -0.04,
-          -0.04,
-          -0.04
-        ],
-        "y": [
-          3.85,
-          2.85,
-          1.85
-        ]
-      },
       "quote": "„[Das Kapital] kann daher nur als Bewegung und nicht als ruhendes Ding begriffen werden.“",
       "quote_source": "Aus dem vierten Kapitel",
       "front_flap": [
@@ -106,32 +70,6 @@
       },
       "editor": "Herausgegeben von Friedrich Engels",
       "place": "Hamburg 1894",
-      "motif": {
-        "lines": [
-          "p\\kern-.04em′ =",
-          "m",
-          "C"
-        ],
-        "size": 82,
-        "dx": [
-          -0.04,
-          2.08,
-          2.2
-        ],
-        "y": [
-          2.85,
-          3.33,
-          2.24
-        ],
-        "rules": [
-          [
-            1.88,
-            3.18,
-            3.16,
-            2.6
-          ]
-        ]
-      },
       "quote": "„Die wahre Schranke der kapitalistischen Produktion ist das Kapital selbst …“",
       "quote_source": "Aus dem fünfzehnten Kapitel",
       "front_flap": [

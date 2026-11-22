@@ -35,6 +35,7 @@ SPINE = [
     (666, 1.75),
 ]
 BLEED, FLAP, FOLD, COVER, HEIGHT = 0.125, 3.25, 0.25, 5.75, 9.25
+TOP = 6.9
 
 TEMPLATE = r"""\documentclass{article}
 \usepackage[paperwidth=%(width)sin,paperheight=%(height)sin,margin=0pt]%%
@@ -58,29 +59,21 @@ TEMPLATE = r"""\documentclass{article}
   Numbers=Lining]
 \definecolor{bg}{HTML}{F2EDE2}
 \definecolor{fg}{HTML}{1E2A45}
-\definecolor{tone}{HTML}{E2D9C5}
 \definecolor{accent}{HTML}{6F82A6}
 \begin{document}
 \begin{tikzpicture}[remember picture, overlay, x=1in, y=1in,
   shift={(current page.south west)}, inner sep=0pt]
 \fill[bg] (0,0) rectangle (%(width)s,%(height)s);
-\begin{scope}
-\clip (%(front)s,0) rectangle (%(front_end)s,%(height)s);
-\begin{scope}[color=tone, font=\light\fontsize{%(msize)s}{%(msize)s}%%
-  \selectfont]
-%(motif)s
-\end{scope}
-\end{scope}
 \begin{scope}[color=fg]
-\node[anchor=north west] at (%(left)s,7.75)
+\node[anchor=north west] at (%(left)s,%(y_author)s)
   {\caps\fontsize{12.5}{15}\selectfont KARL MARX};
-\node[anchor=north west] at (%(left_title)s,7.35)
+\node[anchor=north west] at (%(left_title)s,%(y_title)s)
   {\light\fontsize{50}{54}\selectfont Das\hspace{.24em}Kapital};
-\node[anchor=north west] at (%(left)s,6.48)
+\node[anchor=north west] at (%(left)s,%(y_sub)s)
   {\lightit\fontsize{15.5}{18}\selectfont %(subtitle)s};
-\node[anchor=north west] at (%(left)s,5.75)
+\node[anchor=north west] at (%(left)s,%(y_vol)s)
   {\caps\fontsize{10}{12}\selectfont %(vol_line)s};
-\node[anchor=north west] at (%(left)s,5.45)
+\node[anchor=north west] at (%(left)s,%(y_book)s)
   {\lightit\fontsize{12.5}{15}\selectfont %(book)s};
 %(editor)s\node[anchor=south west] at (%(left)s,1.22)
   {\caps\fontsize{9.5}{11}\selectfont %(place)s};
@@ -142,18 +135,8 @@ def main():
     front = back + COVER + spine
     width = 2 * (BLEED + FLAP + FOLD + COVER) + spine
     left = front + 0.625
-    motif = v['motif']
-    lines = '\n'.join(
-        rf'\node[anchor=base west] at ({fmt(left + dx)},{fmt(y)}) {{{t}}};'
-        for t, dx, y in zip(motif['lines'], motif['dx'], motif['y'])
-    )
-    for x0, x1, y, w in motif.get('rules', []):
-        lines += (
-            f'\n\\draw[line width={w}pt] ({fmt(left + x0)},{fmt(y)})'
-            f' -- ({fmt(left + x1)},{fmt(y)});'
-        )
     editor = (
-        rf'\node[anchor=north west] at ({fmt(left)},5.1)'
+        rf'\node[anchor=north west] at ({fmt(left)},{fmt(TOP - 2.65)})'
         rf' {{\lightit\fontsize{{11}}{{13}}\selectfont {v["editor"]}}};'
         '\n'
         if v.get('editor')
@@ -163,16 +146,17 @@ def main():
     tex = TEMPLATE % {
         'width': fmt(width),
         'height': fmt(HEIGHT),
-        'front': fmt(front),
-        'front_end': fmt(front + COVER),
         'left': fmt(left),
         'left_title': fmt(left - 0.03),
         'spine': fmt(back + COVER + spine / 2),
         'back': fmt(back + COVER / 2),
         'front_flap': fmt(front + COVER + FOLD + 0.35),
         'back_flap': fmt(BLEED + 0.35),
-        'msize': motif['size'],
-        'motif': lines,
+        'y_author': fmt(TOP),
+        'y_title': fmt(TOP - 0.4),
+        'y_sub': fmt(TOP - 1.27),
+        'y_vol': fmt(TOP - 2.0),
+        'y_book': fmt(TOP - 2.3),
         'subtitle': v['subtitle'],
         'vol_line': part_sep.join(
             x.upper() for x in (v['vol'], v.get('part')) if x

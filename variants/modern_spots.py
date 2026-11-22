@@ -341,6 +341,24 @@ SPELLINGS = [
     ),
     ('Aber Halt! ist hier', 'Aber halt! ist hier'),
     ('Montag und Dienstag Morgen', 'Montag- und Dienstagmorgen'),
+    ('heißt eben daselbst', 'heißt ebendaselbst'),
+    ('der Vier über die', 'der vier über die'),
+    (
+        'öffentliche Sympathie(!) muss erwachen',
+        'öffentliche Sympathie (!) muss erwachen',
+    ),
+    ('Loch. So oft einer', 'Loch. Sooft einer'),
+    ('der, so oft er seinen', 'der, sooft er seinen'),
+    ('Die Brasilische Usance steht', 'Die brasilische Usance steht'),
+    ('das einfachste und arithmetisch', 'das Einfachste und arithmetisch'),
+    (
+        'Arbeitszeit fertig gemacht zu werden',
+        'Arbeitszeit fertiggemacht zu werden',
+    ),
+    ('das erste, was wir', 'das Erste, was wir'),
+    ('Das zweite: Wenn die', 'Das Zweite: Wenn die'),
+    ('im besondren davon handeln', 'im Besondren davon handeln'),
+    ('alles übrige zusammengenommen', 'alles Übrige zusammengenommen'),
 ]
 
 COMMAS = [
@@ -1922,4 +1940,5 @@ EDGES = [
     ('(?<=^geplündert)$', ','),
     ('^…(?= the\\s*$)', ' …'),
     ('^…(?= Herr Potter)', ' …'),
+    ('^\\(\\+ (?=[23]000$)', ' (+ '),
 ]

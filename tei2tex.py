@@ -938,7 +938,9 @@ class TeX:
                     r'Textgrundlage: Deutsches Textarchiv, ' + urls + r'.\par',
                     r'Diese Ausgabe steht unter der Lizenz Creative Commons'
                     r' Namensnennung – Weitergabe unter gleichen '
-                    r'Bedingungen 4.0 (CC BY-SA 4.0). Die editorische Notiz am'
+                    r'Bedingungen 4.0 (CC BY-SA 4.0), \url{'
+                    + T.LICENSE_URL
+                    + r'}. Die editorische Notiz am'
                     r' Ende des Bandes nennt die Textgrundlage '
                     r'und alle Eingriffe.\par',
                     (
@@ -952,6 +954,23 @@ class TeX:
                         if vol.get('editor')
                         else ''
                     ),
+                    (
+                        r'EPUB und PDF frei unter \url{'
+                        + vol['homepage']
+                        + r'}.\par'
+                        if vol.get('homepage')
+                        else ''
+                    ),
+                    ' '.join(
+                        esc(x) + '.'
+                        for x in (
+                            vol.get('publisher'),
+                            vol.get('printer')
+                            and 'Druckausgabe: ' + vol['printer'],
+                        )
+                        if x
+                    )
+                    + r'\par',
                     r'Gesetzt in Crimson Pro, Griechisch in Gentium Book.\par',
                     ', '.join(
                         filter(

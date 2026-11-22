@@ -22,6 +22,7 @@ XML = '{http://www.w3.org/XML/1998/namespace}'
 XH = 'http://www.w3.org/1999/xhtml'
 EP = 'http://www.idpf.org/2007/ops'
 H = '{%s}' % XH
+LICENSE_URL = 'https://creativecommons.org/licenses/by-sa/4.0/deed.de'
 EPT = '{%s}type' % EP
 
 HERE = Path(__file__).parent
@@ -1955,7 +1956,7 @@ class Book:
                     'Creative Commons Namensnennung – Weitergabe unter gleichen'
                     ' Bedingungen 4.0 (CC BY-SA 4.0)'
                 ),
-                'https://creativecommons.org/licenses/by-sa/4.0/deed.de',
+                LICENSE_URL,
             ),
             '. Diese Ausgabe ist eine Bearbeitung davon und steht unter'
             ' derselben Lizenz.',

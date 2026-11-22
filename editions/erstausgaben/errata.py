@@ -811,6 +811,10 @@ K2_TEXT = [
         r"\mathrm{P - W' - G' - W' &lt; {A \atop Pm} - P'}",
         r"\mathrm{P \ldots W' - G' - W' &lt; {A \atop Pm} \ldots P'}",
     ),
+    (
+        r"\mathrm{W' - W &lt; {A \atop Pm}}",
+        r"\mathrm{W' \ldots W &lt; {A \atop Pm}}",
+    ),
     ('</formula>&#x2026;', '</formula> &#x2026;', 3),
     ('ein Doppeltes, Unter', 'ein Doppeltes. Unter'),
     ("Kreisform W' &#x2026;W'", "Kreisform W' &#x2026; W'"),

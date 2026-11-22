@@ -165,7 +165,7 @@ def main():
         'editor': editor,
         'place': v['place'].upper(),
         'edition': v['edition'],
-        'spine_text': ', '.join(x for x in (v['vol'], v.get('part')) if x),
+        'spine_text': part_sep.join(x for x in (v['vol'], v.get('part')) if x),
         'label': v['label'],
         'quote': v['quote'],
         'quote_source': v['quote_source'].upper(),

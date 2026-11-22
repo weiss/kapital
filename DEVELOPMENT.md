@@ -70,7 +70,10 @@ Commits. Die Buch-ID ist eine UUIDv5 aus Edition, Band und Varianten.
 Die DTA-Transkriptionen (Edition `erstausgaben`) liegen unverändert unter
 `editions/erstausgaben/sources/`, Prüfsummen in `SHA256SUMS`. Textkorrekturen
 (Druckfehlerlisten, MEGA-Abgleich, Erfassungsfehler) stehen in
-`editions/erstausgaben/errata.py` und `sperrsatz.py`.
+`editions/erstausgaben/errata.py` und `sperrsatz.py`. Berichtigt sind
+Druckfehler in Schreibung und Satz, außerdem Zahlen, die der Rechengang an der
+Stelle selbst als Druckfehler ausweist („100/150 = 66⅓ %“). Nicht berichtigt
+ist, wo erst der Gedankengang ein anderes Wort oder Zeichen verlangt.
 
 - **Faksimiles:**
   `https://www.deutschestextarchiv.de/media/images/<id>/<id>_<NNNN>_1600px.jpg`.

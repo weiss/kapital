@@ -588,6 +588,19 @@ K1_TEXT = [
     ('Pfd. St.. In den letzten', 'Pfd. St. In den letzten'),
     ('1851: 216, 851 Personen', '1851: 216,851 Personen'),
     ('u.a.', 'u. a.', 2),
+    ('Lorqu&#x2019;il', 'Lorsqu&#x2019;il'),
+    ('Questionable at it', 'Questionable as it'),
+    ('eguagità', 'egualità'),
+    ('exployera', 'employera'),
+    ('on baisera le', 'on baissera le'),
+    ('mieux extendus', 'mieux entendus'),
+    ('mais qu&#x2019;elle pénible', 'mais quelle pénible'),
+    ('vient qu&#x2019; hommes', 'vient qu&#x2019;hommes'),
+    ('Histoire Parlamentaire', 'Histoire Parlementaire'),
+    ('greater<lb/>\ncourse upon', 'greater<lb/>\ncurse upon'),
+    ('thirteen years of ages', 'thirteen years of age'),
+    ('m = o, in', 'm = 0, in'),
+    ('tion noch, unerklärlich', 'tion, noch unerklärlich'),
 ]
 
 K2_TEXT = [
@@ -863,6 +876,11 @@ K2_TEXT = [
     ('Physiocrates, le. partie', 'Physiocrates, Ie. partie'),
     ('capitaux<lb/>\nqu &#x2019;on', 'capitaux<lb/>\nqu&#x2019;on'),
     ('politique et qu &#x2019;on', 'politique et qu&#x2019;on'),
+    ('La differénce', 'La différence'),
+    ('oder flüssigen, d. h.', 'oder flüssigem, d. h.'),
+    ('übertragnem<lb/>', 'übertragnen<lb/>'),
+    ('cirkulirendem Geld;', 'cirkulirenden Geld;'),
+    ('entwickeln,<lb/>\nsich daher', 'entwickeln<lb/>\nsich daher'),
 ]
 
 K31_TEXT = [
@@ -1014,6 +1032,8 @@ K31_TEXT = [
         'die Kapital-<lb/>\nzusammensetzung, bei',
         'die Kapitalzusammensetzung,<lb/>\nbei',
     ),
+    ('Collieries et. 21', 'Collieries etc. 21'),
+    ('what is was', 'what it was'),
 ]
 
 K32_TEXT = [
@@ -1170,4 +1190,7 @@ K32_TEXT = [
     ('Profits im Durchschnittsprofit', 'Profits in Durchschnittsprofit'),
     ('Werthe im Produktionspreise', 'Werthe in Produktionspreise'),
     ('konkuriren', 'konkurriren'),
+    ('Noten füllen,<lb/>\nnun', 'Noten füllen<lb/>\nnun'),
+    ('eine Rente,<lb/>\nzahle,', 'eine Rente<lb/>\nzahle,'),
+    ('von 4 qrs, auf', 'von 4 qrs. auf'),
 ]

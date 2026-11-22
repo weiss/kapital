@@ -150,7 +150,7 @@ K1 = {
         r'\ov{c + v}',
         r'\ov{\lab{c}{410 l.} + \lab{v}{90 l.}} + \lab{m}{90}',
         r'\ov{\lab{v}{90 l.} + \lab{m}{90 l.}}',
-        r'\ov{o + v}',
+        r'\ov{0 + v}',
         r'\ov{c + v}',
         r'\lab{v}{90 l.}',
         r'\ov{c + v}',

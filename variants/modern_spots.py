@@ -363,15 +363,12 @@ SPELLINGS = [
 
 COMMAS = [
     ('industrielle Kapital, eine', 'industrielle Kapital eine'),
-    ('Brauereien, entwickeln, sich', 'Brauereien, entwickeln sich'),
     ('Gesamtkapital, verhält sich', 'Gesamtkapital verhält sich'),
     ('des Kapitals, in den Boden', 'des Kapitals in den Boden'),
-    ('eine Rente, zahle', 'eine Rente zahle'),
     ('Fronarbeit, bis zur', 'Fronarbeit bis zur'),
     ('unter den, ihrer', 'unter den ihrer'),
     ('alle Arbeit fort, zum', 'alle Arbeit fort zum'),
     ('bestimmt werden, durch das', 'bestimmt werden durch das'),
-    ('Noten füllen, nun', 'Noten füllen nun'),
     ('Steuern verursacht während', 'Steuern verursacht, während'),
     ('im Auge hat ist,', 'im Auge hat, ist,'),
     ('kauft sie solange', 'kauft sie, solange'),

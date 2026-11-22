@@ -272,7 +272,8 @@ Wortformen und Satzbau bleiben („andren“, „verschiedne“, „geschehn“)
     Höchste.
   - Kommas vor Nebensätzen (dass, ob, wenn, weil, wo, worin …), vor
     Infinitivgruppen mit um/ohne … zu, vor „sondern“ und „d. h.“; nicht nach
-    Konjunktionen und Partikeln (und dass, ohne dass, je nachdem).
+    Konjunktionen und Partikeln (und dass, ohne dass, je nachdem). Das Komma
+    vor einem schließenden Anführungszeichen rückt dahinter.
   - Adjektive aus Personennamen: hegelsche, ricardoschen.
   - Kleinschreibung von Pronomen und Zahlwörtern (jeder, alles, andre,
     viele, wenige) außerhalb des Satzanfangs, von Tageszeiten (nachts,

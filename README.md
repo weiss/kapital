@@ -39,14 +39,14 @@ In heutiger Rechtschreibung:
 
 ## Die Ausgabe
 
-- **Text:** Wortlaut und Zeichensetzung wie in der Vorlage. Die
-  Druckfehlerlisten der Erstausgaben (Bd. 1 und 3) und die Ergebnisse eines
-  Abgleichs aller Bände mit der MEGA² (II/5, II/13, II/15) sind eingearbeitet.
-- **Zwei Fassungen:** in der Orthographie der Vorlage und in heutiger
-  Rechtschreibung. Diese folgt in Orthographie sowie Getrennt- und
-  Zusammenschreibung den heutigen Regeln, im Zweifel der heute geläufigsten
-  Form; Marx' Wortformen und Satzbau bleiben („andren“, „verschiedne“,
-  „geschehn“).
+- **Text:** Wortlaut wie in der Vorlage. Die Druckfehlerlisten der
+  Erstausgaben (Bd. 1 und 3) und die Ergebnisse eines Abgleichs aller Bände mit
+  der MEGA² (II/5, II/13, II/15) sind eingearbeitet.
+- **Zwei Fassungen:** in Orthographie und Zeichensetzung der Vorlage sowie in
+  heutiger Rechtschreibung. Letztere folgt in Orthographie, Getrennt- und
+  Zusammenschreibung sowie Kommasetzung den heutigen Regeln, im Zweifel der
+  heute geläufigsten Form; Marx' Wortformen und Satzbau bleiben („andren“,
+  „verschiedne“, „geschehn“).
 - **Lücken der Transkription:** Was das DTA leer gelassen hat (Formeln,
   Tabellen, Schemata), ist nach dem Faksimile ergänzt und als Text gesetzt.
 - **Fußnoten** sind verlinkt (im EPUB) bzw. stehen am Seitenende (im PDF), mit

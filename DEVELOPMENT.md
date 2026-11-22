@@ -58,6 +58,13 @@ python3 tei2epub.py -e erstausgaben -v <variante> 2 out.epub
 Die eingecheckten Umschläge erzeugt `make covers` neu; das braucht Node.js und
 einmalig `cd tools && npm ci && npx playwright install chromium`.
 
+Schutzumschläge für den Druck bei Lulu (Leinen mit Schutzumschlag) erzeugt
+`make jackets [VARIANT=modern]` nach `make pdf` als
+`build/…/kapital-<teil>-umschlag.pdf`. Die Rückenbreite folgt aus der
+Seitenzahl im LaTeX-Log nach Lulus Tabelle (`tools/mk_jacket.py`); Texte und
+Motiv stehen in `jackets.json`. Wo die Formel an der Falzkante angeschnitten
+wird, ist von Hand abgestimmt (`size`, `dx`, `y`).
+
 ### Reproduzierbarkeit
 
 Mit gesetztem `SOURCE_DATE_EPOCH` sind die EPUBs bitgenau reproduzierbar:
@@ -98,6 +105,7 @@ editions/<edition>/      eine Textgrundlage
   sources/               TEI-Dateien + SHA256SUMS
   tables/<teil>/         abgeschriebene Tabellen (tab-*.txt)
   covers/, covers.json   Umschläge und ihre Texte
+  jackets.json           Schutzumschläge für den Druck
   errata.py              Textkorrekturen (Druckfehler, Erfassungsfehler)
   sperrsatz.py           Erfassungsfehler im Sperrsatz
   notes.py               nicht transkribierte Fußnoten aus Tabellen

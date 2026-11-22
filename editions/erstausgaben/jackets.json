@@ -1,0 +1,61 @@
+{
+  "subtitle": {
+    "": "Kritik der politischen Oekonomie",
+    "modern": "Kritik der politischen Ökonomie"
+  },
+  "edition": {
+    "": "Text der Erstausgabe",
+    "modern": "Text der Erstausgabe in heutiger Rechtschreibung"
+  },
+  "back_flap": [
+    {
+      "": "Text der Erstausgabe nach der Transkription des Deutschen Textarchivs, mit berichtigten Druck- und Erfassungsfehlern. Die Seitenzahlen der Erstausgabe stehen am Rand; eine editorische Notiz nennt alle Eingriffe.",
+      "modern": "Text der Erstausgabe nach der Transkription des Deutschen Textarchivs, mit berichtigten Druck- und Erfassungsfehlern, in heutiger Rechtschreibung. Die Seitenzahlen der Erstausgabe stehen am Rand; eine editorische Notiz nennt alle Eingriffe."
+    },
+    "Bearbeitet von Holger Weiß. Text und Ausgabe stehen unter der Lizenz \\mbox{CC BY-SA 4.0}. EPUB und PDF frei unter \\mbox{holger.weiss-berlin.de/kapital.html}"
+  ],
+  "volumes": {
+    "1-1": {
+      "vol": "Erster Band",
+      "part": "Erster Teil",
+      "label": "I/1",
+      "book": {
+        "": "Buch I: Der Produktionsprocess des Kapitals",
+        "modern": "Buch I: Der Produktionsprozess des Kapitals"
+      },
+      "place": "Hamburg 1867",
+      "motif": {
+        "lines": [
+          "20 Ellen",
+          "Leinwand",
+          "= 1 Rock"
+        ],
+        "size": 150.2,
+        "dx": [
+          -0.08,
+          0.04,
+          -0.08
+        ],
+        "y": [
+          3.5,
+          1.65,
+          -0.2
+        ]
+      },
+      "quote": "„Ich unterstelle natürlich Leser, die etwas \\textup{Neues} lernen, also auch selbst denken wollen.“",
+      "quote_source": "Aus dem Vorwort, 1867",
+      "front_flap": [
+        {
+          "": "Der erste Band des „Kapitals“ erschien 1867 in Hamburg. Für die zweite Auflage 1872 hat Marx den Anfang neu gefasst: Die Analyse der Wertform, die hier im ersten Kapitel und in einem eigenen Anhang „Die Werthform“ steht, wurde umgebaut, die Gliederung geändert. Die verbreiteten Ausgaben folgen der vierten Auflage von 1890.",
+          "modern": "Der erste Band des „Kapitals“ erschien 1867 in Hamburg. Für die zweite Auflage 1872 hat Marx den Anfang neu gefasst: Die Analyse der Wertform, die hier im ersten Kapitel und in einem eigenen Anhang „Die Wertform“ steht, wurde umgebaut, die Gliederung geändert. Die verbreiteten Ausgaben folgen der vierten Auflage von 1890."
+        },
+        "Diese Ausgabe gibt den Text von 1867 vollständig wieder. Der erste Teil enthält das Vorwort, die Kapitel I bis III und den Anhang, der zweite Teil die Kapitel IV bis VI."
+      ]
+    },
+    "1-2": {
+      "base": "1-1",
+      "part": "Zweiter Teil",
+      "label": "I/2"
+    }
+  }
+}

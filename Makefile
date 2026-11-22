@@ -21,7 +21,7 @@ DATEENV := $(if $(EPOCH),SOURCE_DATE_EPOCH=$(EPOCH)) \
 TEXENV  := TEXINPUTS=.:$(CURDIR)/latex: TTFONTS=$(CURDIR)/latex/fonts: \
            $(if $(EPOCH),$(DATEENV) FORCE_SOURCE_DATE=1)
 
-.PHONY: all check pdf covers clean
+.PHONY: all check pdf covers jackets clean
 
 all: $(EPUBS)
 
@@ -56,6 +56,23 @@ pdf:
 # cd tools && npm ci && npx playwright install chromium)
 covers:
 	node tools/render_covers.js $(ED)
+
+# Schutzumschläge für Lulu; die Rückenbreite folgt aus der Seitenzahl, daher
+# erst nach make pdf
+jackets:
+	cd $(OUT)/tex && for p in $$($(PY) -c 'import json, sys; \
+	    print(*json.load(open(sys.argv[1]))["volumes"])' \
+	    $(CURDIR)/$(ED)/jackets.json); do \
+	  [ -f kapital-$$p.log ] || continue; \
+	  $(PY) $(CURDIR)/tools/mk_jacket.py $(CURDIR)/$(ED)/jackets.json $$p \
+	    kapital-$$p.log '$(VARIANT)' umschlag-$$p.tex || exit 1; \
+	  for i in 1 2; do \
+	    $(TEXENV) $(LUALATEX) -interaction=batchmode -halt-on-error \
+	      umschlag-$$p.tex || { tail -n 30 umschlag-$$p.log; exit 1; }; \
+	  done; \
+	  $(PY) $(CURDIR)/tools/check_tex_log.py umschlag-$$p.log || exit 1; \
+	  cp umschlag-$$p.pdf ../kapital-$$p-umschlag.pdf; \
+	done
 
 clean:
 	rm -rf build

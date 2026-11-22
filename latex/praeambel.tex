@@ -57,6 +57,7 @@
 \usepackage{array}
 \usepackage{booktabs}
 \usepackage{xcolor}
+\usepackage{enumitem}
 \usepackage{scrlayer-scrpage}
 \usepackage[
   protrusion=true,
@@ -80,6 +81,8 @@
 \displaywidowpenalty=10000
 \raggedbottom
 \setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=1em, labelwidth=1em, labelsep=0pt, align=left,
+  topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt}
 \let\KapitalFootnoterule\footnoterule
 \renewcommand*{\footnoterule}{\vfill\KapitalFootnoterule}
 % Marke grundlinienbündig, rechtsbündig vor dem Text; der Einzug richtet sich

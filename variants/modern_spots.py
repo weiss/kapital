@@ -1862,6 +1862,33 @@ COMMAS = [
     ('hören auf Waren zu', 'hören auf, Waren zu'),
     ('gestattet die im', 'gestattet, die im'),
     ('Produkt, bestimmt der produktiven', 'Produkt, bestimmt, der produktiven'),
+    ('nicht einmal um der', 'nicht einmal, um der'),
+    ('andre Mal um ihren', 'andre Mal, um ihren'),
+    ('Arbeitern an als jetzt', 'Arbeitern an, als jetzt'),
+    (
+        'individuellen Abweichungen oder was',
+        'individuellen Abweichungen, oder was',
+    ),
+    (
+        'vermindertem Kohlenkonsum über 100',
+        'vermindertem Kohlenkonsum, über 100',
+    ),
+    ('13. Jahr die Gelegenheit', '13. Jahr, die Gelegenheit'),
+    ('zur Zeit als der', 'zur Zeit, als der'),
+    (
+        'zirkulierenden“ Kapitals „die Arbeit',
+        'zirkulierenden“ Kapitals, „die Arbeit',
+    ),
+    ('stattfinden, oder was auf', 'stattfinden, oder, was auf'),
+    ('Profit, Grundrente) der im', 'Profit, Grundrente), der im'),
+    ('er steigt und fallen', 'er steigt, und fallen'),
+    ('der Fall selbst wenn', 'der Fall, selbst wenn'),
+    ('Alles was die', 'Alles, was die'),
+    ('wie alles was sich', 'wie alles, was sich'),
+    ('derselben, die wie wir', 'derselben, die, wie wir'),
+    ('nichts falscher als solchen', 'nichts falscher, als solchen'),
+    ('zu Zeiten „wo wir', 'zu Zeiten, „wo wir'),
+    ('dem Versuch „aus dem', 'dem Versuch, „aus dem'),
 ]
 
 EDGES = [

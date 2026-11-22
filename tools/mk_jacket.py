@@ -39,6 +39,7 @@ BLEED, FLAP, FOLD, COVER, HEIGHT = 0.125, 3.25, 0.25, 5.75, 9.25
 TEMPLATE = r"""\documentclass{article}
 \usepackage[paperwidth=%(width)sin,paperheight=%(height)sin,margin=0pt]%%
   {geometry}
+\usepackage[ngerman,shorthands=off]{babel}
 \usepackage{fontspec}
 \usepackage{tikz}
 \pagestyle{empty}
@@ -52,6 +53,8 @@ TEMPLATE = r"""\documentclass{article}
   RawFeature={axis={wght=280}}, Numbers=Lining]
 \newfontfamily\lightit{CrimsonPro-Italic-VF.ttf}[
   RawFeature={axis={wght=300}}]
+\newfontfamily\lightup{CrimsonPro-VF.ttf}[RawFeature={axis={wght=300}}]
+\renewcommand{\textup}[1]{{\lightup #1}}
 \newfontfamily\caps{CrimsonPro-VF.ttf}[
   RawFeature={axis={wght=420}}, Renderer=Node, LetterSpace=22,
   Numbers=Lining]
@@ -78,10 +81,10 @@ TEMPLATE = r"""\documentclass{article}
 \node[anchor=north west] at (%(left)s,6.48)
   {\lightit\fontsize{15.5}{18}\selectfont %(subtitle)s};
 \node[anchor=north west] at (%(left)s,5.75)
-  {\caps\fontsize{10}{12}\selectfont %(vol)s\enspace·\enspace %(part)s};
+  {\caps\fontsize{10}{12}\selectfont %(vol_line)s};
 \node[anchor=north west] at (%(left)s,5.45)
   {\lightit\fontsize{12.5}{15}\selectfont %(book)s};
-\node[anchor=south west] at (%(left)s,1.22)
+%(editor)s\node[anchor=south west] at (%(left)s,1.22)
   {\caps\fontsize{9.5}{11}\selectfont %(place)s};
 \node[anchor=south west] at (%(left)s,0.95)
   {\lightit\fontsize{10.5}{12}\selectfont %(edition)s};
@@ -92,7 +95,7 @@ TEMPLATE = r"""\documentclass{article}
 \node[color=accent] at (%(spine)s,0.85)
   {\light\fontsize{15}{18}\selectfont %(label)s};
 \node[anchor=north, text width=3.6in, align=center] at (%(back)s,5.6)
-  {\lightit\fontsize{14}{19}\selectfont %(quote)s\\[10pt]
+  {\lightit\fontsize{14}{19}\selectfont\hyphenpenalty=10000 %(quote)s\\[10pt]
    \color{accent}\caps\fontsize{8.5}{10}\selectfont %(quote_source)s};
 \node[anchor=north west, text width=2.55in, align=left]
   at (%(front_flap)s,7.4)
@@ -146,6 +149,19 @@ def main():
         rf'\node[anchor=base west] at ({fmt(left + dx)},{fmt(y)}) {{{t}}};'
         for t, dx, y in zip(motif['lines'], motif['dx'], motif['y'])
     )
+    for x0, x1, y, w in motif.get('rules', []):
+        lines += (
+            f'\n\\draw[line width={w}pt] ({fmt(left + x0)},{fmt(y)})'
+            f' -- ({fmt(left + x1)},{fmt(y)});'
+        )
+    editor = (
+        rf'\node[anchor=north west] at ({fmt(left)},5.1)'
+        rf' {{\lightit\fontsize{{11}}{{13}}\selectfont {v["editor"]}}};'
+        '\n'
+        if v.get('editor')
+        else ''
+    )
+    part_sep = '\\enspace·\\enspace '
     tex = TEMPLATE % {
         'width': fmt(width),
         'height': fmt(HEIGHT),
@@ -160,12 +176,14 @@ def main():
         'msize': motif['size'],
         'motif': lines,
         'subtitle': v['subtitle'],
-        'vol': v['vol'].upper(),
-        'part': v['part'].upper(),
+        'vol_line': part_sep.join(
+            x.upper() for x in (v['vol'], v.get('part')) if x
+        ),
         'book': v['book'],
+        'editor': editor,
         'place': v['place'].upper(),
         'edition': v['edition'],
-        'spine_text': f"{v['vol']}, {v['part']}",
+        'spine_text': ', '.join(x for x in (v['vol'], v.get('part')) if x),
         'label': v['label'],
         'quote': v['quote'],
         'quote_source': v['quote_source'].upper(),

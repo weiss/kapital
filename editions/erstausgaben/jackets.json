@@ -56,6 +56,88 @@
       "base": "1-1",
       "part": "Zweiter Teil",
       "label": "I/2"
+    },
+    "2": {
+      "vol": "Zweiter Band",
+      "label": "II",
+      "book": {
+        "": "Buch II: Der Cirkulationsprocess des Kapitals",
+        "modern": "Buch II: Der Zirkulationsprozess des Kapitals"
+      },
+      "editor": "Herausgegeben von Friedrich Engels",
+      "place": "Hamburg 1885",
+      "motif": {
+        "lines": [
+          "G – W",
+          "… P …",
+          "W′ – G′"
+        ],
+        "size": 150,
+        "dx": [
+          -0.25,
+          0.07,
+          0.385
+        ],
+        "y": [
+          3.2,
+          1.65,
+          0.1
+        ]
+      },
+      "quote": "„[Das Kapital] kann daher nur als Bewegung und nicht als ruhendes Ding begriffen werden.“",
+      "quote_source": "Aus dem vierten Kapitel",
+      "front_flap": [
+        "Den zweiten Band hat Friedrich Engels 1885, zwei Jahre nach Marx’ Tod, aus dessen Manuskripten zusammengestellt und herausgegeben. Er behandelt den Zirkulationsprozess des Kapitals: die Metamorphosen des Kapitals und ihren Kreislauf, den Umschlag des Kapitals und die Reproduktion und Zirkulation des gesellschaftlichen Gesamtkapitals.",
+        "Die zweite Auflage von 1893 ist nach Engels’ Vorwort fast unverändert. Diese Ausgabe gibt den Text von 1885 vollständig wieder."
+      ]
+    },
+    "3-1": {
+      "vol": "Dritter Band",
+      "part": "Erster Teil",
+      "label": "III/1",
+      "book": {
+        "": "Buch III: Der Gesammtprocess der kapitalistischen Produktion",
+        "modern": "Buch III: Der Gesamtprozess der kapitalistischen Produktion"
+      },
+      "editor": "Herausgegeben von Friedrich Engels",
+      "place": "Hamburg 1894",
+      "motif": {
+        "lines": [
+          "p′ =",
+          "m",
+          "C"
+        ],
+        "size": 140,
+        "dx": [
+          -0.08,
+          3.29,
+          3.5
+        ],
+        "y": [
+          1.9,
+          2.7,
+          0.865
+        ],
+        "rules": [
+          [
+            3.11,
+            7.0,
+            2.425,
+            4.5
+          ]
+        ]
+      },
+      "quote": "„Die \\textup{wahre Schranke} der kapitalistischen Produktion ist \\textup{das Kapital selbst} …“",
+      "quote_source": "Aus dem fünfzehnten Kapitel",
+      "front_flap": [
+        "Den dritten Band hat Engels 1894 herausgegeben, nach Manuskripten, die Marx zum größten Teil 1864/65 geschrieben hatte. Er behandelt den Gesamtprozess der kapitalistischen Produktion: die Verwandlung des Mehrwerts in Profit und den Durchschnittsprofit, den tendenziellen Fall der Profitrate, Handelskapital, Zins und Kredit sowie die Grundrente.",
+        "Eine weitere Auflage erschien zu Engels’ Lebzeiten nicht. Diese Ausgabe gibt den Text von 1894 vollständig wieder; wie die Erstausgabe ist sie geteilt, der erste Teil enthält die Kapitel I bis XXVIII, der zweite die Kapitel XXIX bis LII."
+      ]
+    },
+    "3-2": {
+      "base": "3-1",
+      "part": "Zweiter Teil",
+      "label": "III/2"
     }
   }
 }

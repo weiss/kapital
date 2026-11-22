@@ -58,7 +58,7 @@ TEMPLATE = r"""\documentclass{article}
   Numbers=Lining]
 \definecolor{bg}{HTML}{F2EDE2}
 \definecolor{fg}{HTML}{1E2A45}
-\definecolor{tone}{HTML}{E7E0D0}
+\definecolor{tone}{HTML}{E2D9C5}
 \definecolor{accent}{HTML}{6F82A6}
 \begin{document}
 \begin{tikzpicture}[remember picture, overlay, x=1in, y=1in,

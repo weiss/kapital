@@ -62,8 +62,8 @@ Schutzumschläge für den Druck bei Lulu (Leinen mit Schutzumschlag) erzeugt
 `make jackets [VARIANT=modern]` nach `make pdf` als
 `build/…/kapital-<teil>-umschlag.pdf`. Die Rückenbreite folgt aus der
 Seitenzahl im LaTeX-Log nach Lulus Tabelle (`tools/mk_jacket.py`); Texte und
-Motiv stehen in `jackets.json`. Wo die Formel an der Falzkante angeschnitten
-wird, ist von Hand abgestimmt (`size`, `dx`, `y`).
+Motiv stehen in `jackets.json`; Größe und Lage der Formel sind von Hand
+abgestimmt (`size`, `dx`, `y`, für Bruchstriche `rules`).
 
 ### Reproduzierbarkeit
 

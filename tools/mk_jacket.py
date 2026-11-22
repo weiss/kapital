@@ -53,8 +53,6 @@ TEMPLATE = r"""\documentclass{article}
   RawFeature={axis={wght=280}}, Numbers=Lining]
 \newfontfamily\lightit{CrimsonPro-Italic-VF.ttf}[
   RawFeature={axis={wght=300}}]
-\newfontfamily\lightup{CrimsonPro-VF.ttf}[RawFeature={axis={wght=300}}]
-\renewcommand{\textup}[1]{{\lightup #1}}
 \newfontfamily\caps{CrimsonPro-VF.ttf}[
   RawFeature={axis={wght=420}}, Renderer=Node, LetterSpace=22,
   Numbers=Lining]

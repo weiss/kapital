@@ -42,8 +42,8 @@
           -0.2
         ]
       },
-      "quote": "„Ich unterstelle natürlich Leser, die etwas \\textup{Neues} lernen, also auch selbst denken wollen.“",
-      "quote_source": "Aus dem Vorwort, 1867",
+      "quote": "„Ich unterstelle natürlich Leser, die etwas Neues lernen, also auch selbst denken wollen.“",
+      "quote_source": "Aus dem Vorwort",
       "front_flap": [
         {
           "": "Der erste Band des „Kapitals“ erschien 1867 in Hamburg. Für die zweite Auflage 1872 hat Marx den Anfang neu gefasst: Die Analyse der Wertform, die hier im ersten Kapitel und in einem eigenen Anhang „Die Werthform“ steht, wurde umgebaut, die Gliederung geändert. Die verbreiteten Ausgaben folgen der vierten Auflage von 1890.",
@@ -55,7 +55,12 @@
     "1-2": {
       "base": "1-1",
       "part": "Zweiter Teil",
-      "label": "I/2"
+      "label": "I/2",
+      "quote": {
+        "": "„Accumulirt, accumulirt! Das ist Moses und die Propheten!“",
+        "modern": "„Akkumuliert, akkumuliert! Das ist Moses und die Propheten!“"
+      },
+      "quote_source": "Aus dem sechsten Kapitel"
     },
     "2": {
       "vol": "Zweiter Band",
@@ -103,7 +108,7 @@
       "place": "Hamburg 1894",
       "motif": {
         "lines": [
-          "p′ =",
+          "p\\kern-.04em′ =",
           "m",
           "C"
         ],
@@ -114,30 +119,32 @@
           3.5
         ],
         "y": [
-          1.9,
-          2.7,
-          0.865
+          2.02,
+          2.82,
+          0.985
         ],
         "rules": [
           [
             3.11,
             7.0,
-            2.425,
+            2.545,
             4.5
           ]
         ]
       },
-      "quote": "„Die \\textup{wahre Schranke} der kapitalistischen Produktion ist \\textup{das Kapital selbst} …“",
+      "quote": "„Die wahre Schranke der kapitalistischen Produktion ist das Kapital selbst …“",
       "quote_source": "Aus dem fünfzehnten Kapitel",
       "front_flap": [
-        "Den dritten Band hat Engels 1894 herausgegeben, nach Manuskripten, die Marx zum größten Teil 1864/65 geschrieben hatte. Er behandelt den Gesamtprozess der kapitalistischen Produktion: die Verwandlung des Mehrwerts in Profit und den Durchschnittsprofit, den tendenziellen Fall der Profitrate, Handelskapital, Zins und Kredit sowie die Grundrente.",
+        "Den dritten Band hat Friedrich Engels 1894 herausgegeben, nach Manuskripten, die Marx zum größten Teil 1864/65 geschrieben hatte. Er behandelt den Gesamtprozess der kapitalistischen Produktion: die Verwandlung des Mehrwerts in Profit und den Durchschnittsprofit, den tendenziellen Fall der Profitrate, Handelskapital, Zins und Kredit sowie die Grundrente.",
         "Eine weitere Auflage erschien zu Engels’ Lebzeiten nicht. Diese Ausgabe gibt den Text von 1894 vollständig wieder; wie die Erstausgabe ist sie geteilt, der erste Teil enthält die Kapitel I bis XXVIII, der zweite die Kapitel XXIX bis LII."
       ]
     },
     "3-2": {
       "base": "3-1",
       "part": "Zweiter Teil",
-      "label": "III/2"
+      "label": "III/2",
+      "quote": "„… alle Wissenschaft wäre überflüssig, wenn die Erscheinungsform und das Wesen der Dinge unmittelbar zusammenfielen …“",
+      "quote_source": "Aus dem achtundvierzigsten Kapitel"
     }
   }
 }

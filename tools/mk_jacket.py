@@ -35,7 +35,8 @@ SPINE = [
     (666, 1.75),
 ]
 BLEED, FLAP, FOLD, COVER, HEIGHT = 0.25, 3.25, 0.25, 5.625, 9.25
-TOP = 6.9
+TOP, FOOT = 6.9, 0.95
+COLORS = {'bg': 'F2EDE2', 'fg': '1E2A45', 'accent': '6F82A6', 'tone': 'E2D9C5'}
 
 TEMPLATE = r"""\documentclass{article}
 \usepackage[paperwidth=%(width)sin,paperheight=%(height)sin,margin=0pt]%%
@@ -57,14 +58,15 @@ TEMPLATE = r"""\documentclass{article}
 \newfontfamily\caps{CrimsonPro-VF.ttf}[
   RawFeature={axis={wght=420}}, Renderer=Node, LetterSpace=22,
   Numbers=Lining]
-\definecolor{bg}{HTML}{F2EDE2}
-\definecolor{fg}{HTML}{1E2A45}
-\definecolor{accent}{HTML}{6F82A6}
+\definecolor{bg}{HTML}{%(bg)s}
+\definecolor{fg}{HTML}{%(fg)s}
+\definecolor{accent}{HTML}{%(accent)s}
+\definecolor{tone}{HTML}{%(tone)s}
 \begin{document}
 \begin{tikzpicture}[remember picture, overlay, x=1in, y=1in,
   shift={(current page.south west)}, inner sep=0pt]
 \fill[bg] (0,0) rectangle (%(width)s,%(height)s);
-\begin{scope}[color=fg]
+%(motif)s\begin{scope}[color=fg]
 \node[anchor=north west] at (%(left)s,%(y_author)s)
   {\caps\fontsize{12.5}{15}\selectfont KARL MARX};
 \node[anchor=north west] at (%(left_title)s,%(y_title)s)
@@ -75,9 +77,9 @@ TEMPLATE = r"""\documentclass{article}
   {\caps\fontsize{10}{12}\selectfont %(vol_line)s};
 \node[anchor=north west] at (%(left)s,%(y_book)s)
   {\lightit\fontsize{12.5}{15}\selectfont %(book)s};
-%(editor)s\node[anchor=south west] at (%(left)s,1.22)
+%(editor)s\node[anchor=south west] at (%(left)s,%(y_place)s)
   {\caps\fontsize{9.5}{11}\selectfont %(place)s};
-\node[anchor=south west] at (%(left)s,0.95)
+\node[anchor=south west] at (%(left)s,%(y_edition)s)
   {\lightit\fontsize{10.5}{12}\selectfont %(edition)s};
 \node[rotate=-90] at (%(spine)s,5.15)
   {\caps\fontsize{10}{12}\selectfont KARL MARX\hspace{1.6em}%%
@@ -135,8 +137,30 @@ def main():
     front = back + COVER + spine
     width = 2 * (BLEED + FLAP + FOLD + COVER) + spine
     left = front + 0.625
+    top = v.get('top', TOP)
+    foot = v.get('foot', FOOT)
+    motif = v.get('motif')
+    lines = ''
+    if motif:
+        lines = '\n'.join(
+            rf'\node[anchor=base west] at ({fmt(left + dx)},{fmt(y)}) {{{t}}};'
+            for t, dx, y in zip(motif['lines'], motif['dx'], motif['y'])
+        )
+        for x0, x1, y, w in motif.get('rules', []):
+            lines += (
+                f'\n\\draw[line width={w}pt] ({fmt(left + x0)},{fmt(y)})'
+                f' -- ({fmt(left + x1)},{fmt(y)});'
+            )
+        size = motif['size']
+        lines = (
+            '\\begin{scope}\n'
+            f'\\clip ({fmt(front)},0) rectangle'
+            f' ({fmt(front + COVER + 0.1)},{HEIGHT});\n'
+            f'\\begin{{scope}}[color=tone, font=\\light\\fontsize{{{size}}}'
+            f'{{{size}}}\\selectfont]\n{lines}\n\\end{{scope}}\n\\end{{scope}}\n'
+        )
     editor = (
-        rf'\node[anchor=north west] at ({fmt(left)},{fmt(TOP - 2.65)})'
+        rf'\node[anchor=north west] at ({fmt(left)},{fmt(top - 2.65)})'
         rf' {{\lightit\fontsize{{11}}{{13}}\selectfont {v["editor"]}}};'
         '\n'
         if v.get('editor')
@@ -145,6 +169,9 @@ def main():
     part_sep = '\\enspace·\\enspace '
     tex = TEMPLATE % {
         'width': fmt(width),
+        'motif': lines,
+        **COLORS,
+        **v.get('colors', {}),
         'height': fmt(HEIGHT),
         'left': fmt(left),
         'left_title': fmt(left - 0.03),
@@ -152,11 +179,13 @@ def main():
         'back': fmt(back + COVER / 2),
         'front_flap': fmt(front + COVER + FOLD + 0.5),
         'back_flap': fmt(BLEED + 0.5),
-        'y_author': fmt(TOP),
-        'y_title': fmt(TOP - 0.4),
-        'y_sub': fmt(TOP - 1.27),
-        'y_vol': fmt(TOP - 2.0),
-        'y_book': fmt(TOP - 2.3),
+        'y_author': fmt(top),
+        'y_title': fmt(top - 0.4),
+        'y_sub': fmt(top - 1.27),
+        'y_vol': fmt(top - 2.0),
+        'y_book': fmt(top - 2.3),
+        'y_place': fmt(foot + 0.27),
+        'y_edition': fmt(foot),
         'subtitle': v['subtitle'],
         'vol_line': part_sep.join(
             x.upper() for x in (v['vol'], v.get('part')) if x

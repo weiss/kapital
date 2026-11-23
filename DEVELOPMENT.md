@@ -61,8 +61,9 @@ einmalig `cd tools && npm ci && npx playwright install chromium`.
 Schutzumschläge für den Druck bei Lulu (Leinen mit Schutzumschlag) erzeugt
 `make jackets [VARIANT=modern]` nach `make pdf` als
 `build/…/kapital-<teil>-umschlag.pdf`. Die Rückenbreite folgt aus der
-Seitenzahl im LaTeX-Log nach Lulus Tabelle (`tools/mk_jacket.py`); die Texte
-stehen in `jackets.json`.
+Seitenzahl im LaTeX-Log nach Lulus Tabelle (`tools/mk_jacket.py`); Texte,
+Farben und Motive stehen in `jackets.json`. Größe und Lage eines Motivs sind von
+Hand abgestimmt (`size`, `dx`, `y`, für Bruchstriche `rules`).
 
 ### Reproduzierbarkeit
 

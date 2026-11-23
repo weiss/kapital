@@ -3,8 +3,8 @@
 Die drei Bände des *Kapital* im Text ihrer Erstausgaben (1867, 1885, 1894), nach
 den Transkriptionen des
 [Deutschen Textarchivs](https://www.deutschestextarchiv.de/) (DTA): als EPUB für
-E-Reader und als PDF im Buchformat 14 × 21,6 cm, jeweils in der Schreibung der
-Vorlage und in heutiger Rechtschreibung.
+E-Reader und als PDF im Buchformat 5,5″ × 8,5″ („Digest“), jeweils in der
+Schreibung der Vorlage und in heutiger Rechtschreibung.
 
 ## Herunterladen
 

@@ -34,7 +34,7 @@ SPINE = [
     (638, 1.6875),
     (666, 1.75),
 ]
-BLEED, FLAP, FOLD, COVER, HEIGHT = 0.125, 3.25, 0.25, 5.75, 9.25
+BLEED, FLAP, FOLD, COVER, HEIGHT = 0.25, 3.25, 0.25, 5.625, 9.25
 TOP = 6.9
 
 TEMPLATE = r"""\documentclass{article}
@@ -88,12 +88,12 @@ TEMPLATE = r"""\documentclass{article}
 \node[anchor=north, text width=3.6in, align=center] at (%(back)s,5.6)
   {\lightit\fontsize{14}{19}\selectfont\hyphenpenalty=10000 %(quote)s\\[10pt]
    \color{accent}\caps\fontsize{8.5}{10}\selectfont %(quote_source)s};
-\node[anchor=north west, text width=2.55in, align=left]
+\node[anchor=north west, text width=2.25in, align=left]
   at (%(front_flap)s,7.4)
-  {\fontsize{10.5}{14}\selectfont\raggedright %(front_flap_text)s\par};
-\node[anchor=north west, text width=2.55in, align=left]
+  {\fontsize{10}{13.5}\selectfont\raggedright %(front_flap_text)s\par};
+\node[anchor=north west, text width=2.25in, align=left]
   at (%(back_flap)s,7.4)
-  {\fontsize{10.5}{14}\selectfont\raggedright %(back_flap_text)s\par};
+  {\fontsize{10}{13.5}\selectfont\raggedright %(back_flap_text)s\par};
 \end{scope}
 \end{tikzpicture}
 \end{document}
@@ -150,8 +150,8 @@ def main():
         'left_title': fmt(left - 0.03),
         'spine': fmt(back + COVER + spine / 2),
         'back': fmt(back + COVER / 2),
-        'front_flap': fmt(front + COVER + FOLD + 0.35),
-        'back_flap': fmt(BLEED + 0.35),
+        'front_flap': fmt(front + COVER + FOLD + 0.5),
+        'back_flap': fmt(BLEED + 0.5),
         'y_author': fmt(TOP),
         'y_title': fmt(TOP - 0.4),
         'y_sub': fmt(TOP - 1.27),

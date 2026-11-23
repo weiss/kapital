@@ -12,7 +12,7 @@
       "": "Text der Erstausgabe nach der Transkription des Deutschen Textarchivs, mit berichtigten Druck- und Erfassungsfehlern. Die Seitenzahlen der Erstausgabe stehen am Rand; eine editorische Notiz nennt alle Eingriffe.",
       "modern": "Text der Erstausgabe nach der Transkription des Deutschen Textarchivs, mit berichtigten Druck- und Erfassungsfehlern, in heutiger Rechtschreibung. Die Seitenzahlen der Erstausgabe stehen am Rand; eine editorische Notiz nennt alle Eingriffe."
     },
-    "Bearbeitet von Holger Weiß. Text und Ausgabe stehen unter der Lizenz \\mbox{CC BY-SA 4.0}. EPUB und PDF frei unter \\mbox{holger.weiss-berlin.de/kapital.html}"
+    "Bearbeitet von Holger Weiß. Text und Ausgabe stehen unter der Lizenz \\mbox{CC BY-SA 4.0}. Frei als EPUB und PDF: \\mbox{holger.weiss-berlin.de/kapital.html}"
   ],
   "volumes": {
     "1-1": {
@@ -31,7 +31,7 @@
           "": "Der erste Band des „Kapitals“ erschien 1867 in Hamburg. Er behandelt den Produktionsprozess des Kapitals: Ware und Geld, die Produktion des absoluten und des relativen Mehrwerts und den Akkumulationsprozess. Für die zweite Auflage von 1872 hat Marx den Anfang neu gefasst: Die Analyse der Wertform, die hier im ersten Kapitel und in einem eigenen Anhang „Die Werthform“ steht, wurde umgebaut, die Gliederung geändert. Die verbreiteten Ausgaben folgen der vierten Auflage von 1890.",
           "modern": "Der erste Band des „Kapitals“ erschien 1867 in Hamburg. Er behandelt den Produktionsprozess des Kapitals: Ware und Geld, die Produktion des absoluten und des relativen Mehrwerts und den Akkumulationsprozess. Für die zweite Auflage von 1872 hat Marx den Anfang neu gefasst: Die Analyse der Wertform, die hier im ersten Kapitel und in einem eigenen Anhang „Die Wertform“ steht, wurde umgebaut, die Gliederung geändert. Die verbreiteten Ausgaben folgen der vierten Auflage von 1890."
         },
-        "Diese Ausgabe gibt den Text von 1867 vollständig wieder. Der erste Teil enthält Vorwort, Kapitel I bis III und Anhang, der zweite die Kapitel IV bis VI."
+        "Diese Ausgabe gibt den Text von 1867 vollständig wieder. Der erste Teil enthält das Vorwort, die Kapitel I~bis~III und den Anhang, der zweite Teil die Kapitel IV~bis~VI."
       ]
     },
     "1-2": {

@@ -53,7 +53,7 @@ TEMPLATE = r"""\documentclass{article}
 \newfontfamily\light{CrimsonPro-VF.ttf}[
   RawFeature={axis={wght=280}}, Numbers=Lining]
 \newfontfamily\lightit{CrimsonPro-Italic-VF.ttf}[
-  RawFeature={axis={wght=300}}]
+  RawFeature={axis={wght=300}}, Numbers={OldStyle,Proportional}]
 \newfontfamily\caps{CrimsonPro-VF.ttf}[
   RawFeature={axis={wght=420}}, Renderer=Node, LetterSpace=22,
   Numbers=Lining]

@@ -24,7 +24,10 @@
         "modern": "Buch I: Der Produktionsprozess des Kapitals"
       },
       "place": "Hamburg 1867",
-      "quote": "„Ich unterstelle natürlich Leser, die etwas Neues lernen, also auch selbst denken wollen.“",
+      "quote": {
+        "": "„Die Werthform, deren fertige Gestalt die Geldform, ist sehr inhaltslos und einfach. Dennoch hat der Menschengeist sie seit mehr als 2000~Jahren vergeblich zu ergründen gesucht …“",
+        "modern": "„Die Wertform, deren fertige Gestalt die Geldform, ist sehr inhaltslos und einfach. Dennoch hat der Menschengeist sie seit mehr als 2000~Jahren vergeblich zu ergründen gesucht …“"
+      },
       "quote_source": "Aus dem Vorwort",
       "front_flap": [
         {

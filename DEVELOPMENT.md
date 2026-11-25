@@ -64,6 +64,7 @@ Schutzumschläge für den Druck bei Lulu (Leinen mit Schutzumschlag) erzeugt
 Seitenzahl im LaTeX-Log nach Lulus Tabelle (`tools/mk_jacket.py`); Texte,
 Farben und Motive stehen in `jackets.json`. Größe und Lage eines Motivs sind von
 Hand abgestimmt (`size`, `dx`, `y`, für Bruchstriche `rules`).
+Die CI lädt sie als eigenes Artefakt `umschlaege` hoch, nicht als Release-Asset.
 
 ### Reproduzierbarkeit
 

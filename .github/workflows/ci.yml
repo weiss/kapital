@@ -33,6 +33,10 @@ jobs:
         run: |
           make pdf
           make pdf VARIANT=modern
+      - name: Build jackets
+        run: |
+          make jackets
+          make jackets VARIANT=modern
       - name: Upload EPUBs and PDFs
         uses: actions/upload-artifact@v7
         with:
@@ -40,3 +44,9 @@ jobs:
           path: |
             build/*/*.epub
             build/*/*.pdf
+            !build/*/*-umschlag.pdf
+      - name: Upload jackets
+        uses: actions/upload-artifact@v7
+        with:
+          name: umschlaege
+          path: build/*/*-umschlag.pdf

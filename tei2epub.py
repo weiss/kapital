@@ -1454,7 +1454,8 @@ class Book:
         self.merged = 0
         self.dashes = 0
         self.note_groups = []
-        self.notes_file = None
+        self.notes_files = []
+        self.note_file = {}
         for part in vol['parts']:
             raw = Path(part['tei']).read_text(encoding='utf-8')
             part['empty_formulas'] = raw.count('<formula/>')
@@ -1537,12 +1538,6 @@ class Book:
         link_contents(self)
 
     def endnotes(self):
-        name = self.notes_file = self.name('anmerkungen')
-        html, body = self.start(name, 'Anmerkungen')
-        sec = el(body, 'section', 'chapter endnotes', role='doc-endnotes')
-        sec.set(EPT, 'endnotes')
-        el(sec, 'h1', id='anmerkungen').text = 'Anmerkungen'
-        self.C.toc.append((1, 'Anmerkungen', name, 'anmerkungen'))
         toc = self.C.toc
         book = min(
             (t[0] for t in toc if re.search(r'\bBuch\b', t[1])), default=0
@@ -1552,7 +1547,15 @@ class Book:
         )
         unit = firsts.most_common(1)[0][0]
         shown = set()
-        for src, title, notes in self.note_groups:
+        for n, (src, title, notes) in enumerate(self.note_groups):
+            name = self.name('anmerkungen')
+            self.notes_files.append(name)
+            html, body = self.start(name, 'Anmerkungen')
+            sec = el(body, 'section', 'chapter endnotes', role='doc-endnotes')
+            sec.set(EPT, 'endnotes')
+            if not n:
+                el(sec, 'h1', id='anmerkungen').text = 'Anmerkungen'
+                toc.append((1, 'Anmerkungen', name, 'anmerkungen'))
             k = next((i for i, t in enumerate(toc) if t[2] == src), None)
             if k is None:
                 el(el(sec, 'h2'), 'a', href=src).text = title
@@ -1581,7 +1584,9 @@ class Book:
                     tag = f'h{min(4, 2 + max(t[0], book + 1) - book - 1)}'
                     el(el(sec, tag), 'a', href=f'{t[2]}#{t[3]}').text = t[1]
             sec.append(notes)
-        self.finish(name, html, body)
+            for aside in notes.iter(H + 'aside'):
+                self.note_file[aside.get('id')] = name
+            self.finish(name, html, body)
 
     def front(self, part):
         C = self.C
@@ -2338,7 +2343,7 @@ def heading_order(book):
     (kind, id, text, file)."""
     order = []
     for name, doc in book.files:
-        if name == book.notes_file:
+        if name in book.notes_files:
             continue
         for e in doc.iter(H + 'span', *(H + f'h{i}' for i in range(1, 7))):
             c = (e.get('class') or '').split()
@@ -2439,7 +2444,14 @@ def package(book, out):
                 lambda m: page_map[m.group(1).decode()].encode(),
                 data,
             )
-            data = data.replace(b'@@NOTES@@', book.notes_file.encode())
+            data = re.sub(
+                rb'@@NOTES@@#(fn\d+)',
+                lambda m: (
+                    f'{book.note_file[m.group(1).decode()]}#'.encode()
+                    + m.group(1)
+                ),
+                data,
+            )
             put(f'OEBPS/text/{name}', data)
             iid = 'x-' + name.replace('.xhtml', '')
             opf_items.append(

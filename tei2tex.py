@@ -994,7 +994,7 @@ class TeX:
         docs, notice, marks = [], [], {}
         self.prev_heading = False
         for name, doc in b.files:
-            if name == b.notes_file:
+            if name in b.notes_files:
                 continue
             body = doc.find(H + 'body')
             if 'titlepage' in cls(body):

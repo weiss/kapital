@@ -749,10 +749,10 @@ for _vol in VOLUMES.values():
     _vol['editor'] = (
         'Holger Weiß',
         'Weiß, Holger',
-        'holger+kapital@weiss-berlin.de',
+        'kapital@weiss-berlin.de',
     )
     _vol['publisher'] = 'Selbstverlag Holger Weiß, Berlin'
-    _vol['homepage'] = 'https://holger.weiss-berlin.de/kapital.html'
+    _vol['homepage'] = 'https://kapital.weiss-berlin.de'
     _vol['printer'] = 'Lulu Press, Inc., Morrisville\u00a0(USA)'
     _vol['factual_note'] = (
         ', auch wo die MEGA² sie nach den Quellen verbessert.'

@@ -81,7 +81,7 @@ Kulturbesitz.
 
 Hinweise auf Fehler im Text oder im Satz gern als
 [Issue](https://github.com/weiss/kapital/issues) oder an
-holger+kapital@weiss-berlin.de.
+kapital@weiss-berlin.de.
 
 ## Selbst bauen
 

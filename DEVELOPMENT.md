@@ -296,7 +296,8 @@ Wortformen und Satzbau bleiben („andren“, „verschiedne“, „geschehn“)
     Indizes) sehen sie nicht hinweg.
 - **Einzelstellen** in `variants/modern_spots.py`, jede einzeln geprüft:
   `SPELLINGS` (Schreibungen, die keine Regel trifft), `COMMAS`
-  (Kommas vor Nebensätzen und Infinitivgruppen) als genaue Ersetzungen,
+  (Kommas vor Nebensätzen und Infinitivgruppen, nach Einschüben zwischen
+  Gedankenstrichen hinter den schließenden Strich) als genaue Ersetzungen,
   `EDGES` als reguläre Ausdrücke für Stellen an einer Auszeichnung. Ob jede
   Ersetzung greift, zeigt das Protokoll.
 - **Nicht angetastet:**

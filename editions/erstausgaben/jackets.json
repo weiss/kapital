@@ -17,10 +17,18 @@
   "top": 7.75,
   "foot": 1.4,
   "colors": {
-    "bg": "1E2A45",
-    "fg": "F3F0E8",
-    "accent": "9FB0CC",
-    "tone": "26345A"
+    "": {
+      "bg": "F2EDE2",
+      "fg": "1E2A45",
+      "accent": "6F82A6",
+      "tone": "E2D9C5"
+    },
+    "modern": {
+      "bg": "1E2A45",
+      "fg": "F3F0E8",
+      "accent": "9FB0CC",
+      "tone": "26345A"
+    }
   },
   "volumes": {
     "1-1": {

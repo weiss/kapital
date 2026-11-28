@@ -210,12 +210,13 @@
   \addfontfeatures{Numbers={Lining,Monospaced}}\setlength{\tabcolsep}{.4em}}
 \newcommand{\linerule}[1]{\kern.12em\rule[.3em]{#1}{.4pt}\kern.12em}
 % Brüche im Fließtext eine Stufe kleiner und mit 2 pt Luft zu den Nachbarzeilen,
-% in abgesetzten Formeln in voller Größe
+% in abgesetzten Formeln in voller Größe; Versalziffern, damit Zähler und Nenner
+% gleichmäßig am Bruchstrich stehen
 \newif\ifdisplayfrac
-\newcommand{\Frac}[2]{%
-  \ifdisplayfrac\dfrac{#1}{#2}\else
+\newcommand{\Frac}[2]{\text{\addfontfeatures{Numbers=Lining}%
+  \ifdisplayfrac$\dfrac{#1}{#2}$\else
     \raisebox{0pt}[\dimexpr\height+2pt][\dimexpr\depth+2pt]{\small$\dfrac{#1}{#2}$}%
-  \fi}
+  \fi}}
 \newcommand{\ovarc}[1]{\overline{#1}}
 \newcommand{\lab}[2]{\overbrace{#2}^{\text{\scriptsize #1}}}
 \newbox\brzhalf

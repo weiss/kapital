@@ -266,6 +266,8 @@ a.fnlabel {
 }
 
 p.keep {
+  page-break-inside: avoid;
+  break-inside: avoid;
   page-break-after: avoid;
   break-after: avoid;
 }

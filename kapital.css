@@ -265,6 +265,11 @@ a.fnlabel {
   text-indent: 0;
 }
 
+p.keep {
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
 .et {
   display: block;
   margin-left: 2em;

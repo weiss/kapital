@@ -1466,6 +1466,15 @@ def split_blocks(html):
             elif n.text and i:
                 prev = parent[i - 1]
                 prev.tail = (prev.tail or '') + n.text
+        last = parent[i - 1] if i else None
+        nxt = last.getnext() if i else None
+        if (
+            i
+            and last.get('class') in ('c', 'et', 'right')
+            and nxt is not None
+            and nxt.tag == H + 'table'
+        ):
+            last.set('class', last.get('class') + ' keep')
     return html
 
 

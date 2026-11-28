@@ -1434,10 +1434,45 @@ def xhtml_doc(title, body_cls=None, css='../css/kapital.css'):
     return html, body
 
 
+def split_blocks(html):
+    """Lift centered and indented lines out of their paragraph: some reading
+    systems (KOReader) mis-indent a paragraph that holds a block-level span."""
+    html = etree.fromstring(etree.tostring(html))
+    for p in list(html.iter(H + 'p')):
+        if not any(
+            c.tag == H + 'span' and c.get('class') in ('c', 'et', 'right')
+            for c in p
+        ):
+            continue
+        cur = etree.Element(H + 'p', dict(p.attrib))
+        cur.text = p.text
+        out = [cur]
+        for c in list(p):
+            if c.tag == H + 'span' and c.get('class') in ('c', 'et', 'right'):
+                blk = etree.Element(H + 'p', {'class': c.get('class')})
+                blk.text = c.text
+                blk.extend(list(c))
+                cur = etree.Element(H + 'p', {'class': 'cont'})
+                cur.text = c.tail
+                out += [blk, cur]
+            else:
+                cur.append(c)
+        parent, i = p.getparent(), p.getparent().index(p)
+        parent.remove(p)
+        for n in out:
+            if len(n) or (n.text or '').strip():
+                parent.insert(i, n)
+                i += 1
+            elif n.text and i:
+                prev = parent[i - 1]
+                prev.tail = (prev.tail or '') + n.text
+    return html
+
+
 def serialize(html):
     return (
         b'<?xml version="1.0" encoding="utf-8"?>\n<!DOCTYPE html>\n'
-        + etree.tostring(html, encoding='utf-8')
+        + etree.tostring(split_blocks(html), encoding='utf-8')
     )
 
 

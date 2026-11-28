@@ -175,9 +175,11 @@
   \nobreak\global\@nobreakfalse}
 \makeatother
 % Formelzeile, die nicht umbrechen darf, notfalls auf Satzbreite verkleinert
-\newcommand{\fitline}[1]{\par\noindent\setbox0\hbox{\displayfractrue#1}%
+\newcommand{\fitline}[1]{\par\noindent\setbox0\hbox{\displayfractrue
+  \addfontfeatures{Numbers=Lining}#1}%
   \ifdim\wd0>\linewidth\resizebox{\linewidth}{!}{\box0}\else\box0\fi\par}
-\newcommand{\dispf}[1]{\par\smallskip{\kcentering\displayfractrue #1\par}\smallskip}
+\newcommand{\dispf}[1]{\par\smallskip{\kcentering\displayfractrue
+  \addfontfeatures{Numbers=Lining}#1\par}\smallskip}
 \newcommand{\etline}[1]{\par{\kraggedright\advance\leftskip2em\noindent #1\par}}
 \newcommand{\rline}[1]{\par{\raggedleft #1\par}}
 \newenvironment{hanglist}[1][1.5em]

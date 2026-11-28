@@ -76,6 +76,17 @@ def cls(e):
     return (e.get('class') or '').split()
 
 
+CALC = re.compile(r'[=+×]')
+LINING = r'\addfontfeatures{Numbers=Lining}'
+
+
+def calc(e):
+    s = re.sub(r'Kapital [IVX]+ =', '', plain(e))
+    return bool(CALC.search(s)) or (
+        any('u' in cls(x) for x in e.iter()) and any(c.isdigit() for c in s)
+    )
+
+
 def plain(e):
     return ' '.join(''.join(x for x in e.itertext()).split())
 
@@ -92,6 +103,50 @@ def running(title):
 LONE_PB = re.compile(
     r'\n\n(?:\\noindent ?)?\\pb(\{[^}]*\}\{[^}]*\})\s*\n\n\\(cenline|dispf)\{'
 )
+
+
+SETOFF = re.compile(
+    r'(?:\\noindent ?)?\\(cenline|etline|rline|dispf|fitline)\{'
+    r'|\\begin\{hanglist\}(?:\[[^\]]*\])?'
+)
+
+
+def lining_runs(body):
+    # Abgesetzte Rechnungen stehen zeilenweise; erhält eine Zeile Versalziffern,
+    # dann auch die übrigen Zeilen derselben Folge
+    paras = body.split('\n\n')
+    units, i = [], 0
+    while i < len(paras):
+        if paras[i].startswith('\\begin{hanglist}'):
+            j = i
+            while j < len(paras) - 1 and '\\end{hanglist}' not in paras[j]:
+                j += 1
+            units.append((i, j))
+            i = j + 1
+        else:
+            units.append((i, i))
+            i += 1
+    run = []
+    for n, (i, j) in enumerate(units + [(len(paras), len(paras))]):
+        text = '\n\n'.join(paras[i : j + 1])
+        if i < len(paras) and (SETOFF.match(text) or not text.strip()):
+            run.append((i, j))
+            continue
+        texts = ['\n\n'.join(paras[a : b + 1]) for a, b in run]
+        if any(LINING in t or re.match(r'\\(dispf|fitline)', t) for t in texts):
+            for a, b in run:
+                t = '\n\n'.join(paras[a : b + 1])
+                m = SETOFF.match(t)
+                if (
+                    m
+                    and LINING not in t[: m.end() + 40]
+                    and re.search(r'\d', t)
+                ):
+                    paras[a] = (
+                        paras[a][: m.end()] + LINING + paras[a][m.end() :]
+                    )
+        run = []
+    return '\n\n'.join(paras)
 
 
 class TeX:
@@ -208,13 +263,21 @@ class TeX:
         ):
             return '$' + self.math_el(c) + '$'
         if 'c' in k:
-            return self.block_mark(r'\cenline{' + self.inl(c) + '}')
+            return self.block_mark(
+                r'\cenline{' + (LINING if calc(c) else '') + self.inl(c) + '}'
+            )
         if 'et' in k:
-            return self.block_mark(r'\etline{' + self.inl(c) + '}')
+            return self.block_mark(
+                r'\etline{' + (LINING if calc(c) else '') + self.inl(c) + '}'
+            )
         if 'right' in k:
-            return self.block_mark(r'\rline{' + self.inl(c) + '}')
+            return self.block_mark(
+                r'\rline{' + (LINING if calc(c) else '') + self.inl(c) + '}'
+            )
         if 'blockish' in k:
-            return self.block_mark(r'\etline{' + self.inl(c) + '}')
+            return self.block_mark(
+                r'\etline{' + (LINING if calc(c) else '') + self.inl(c) + '}'
+            )
         if 'line' in k:
             return self.inl(c) + r'\\' + '\n'
         if 'linefig' in k:
@@ -516,6 +579,7 @@ class TeX:
             return (
                 r'\begin{hanglist}'
                 + ('[1.5em]' if 'corr' not in k else '[0pt]')
+                + (LINING if calc(b) else '')
                 + '\n'
                 + ''.join(items)
                 + r'\end{hanglist}'
@@ -1090,6 +1154,7 @@ class TeX:
             body = LONE_PB.sub(
                 lambda m: '\n\n\\' + m.group(2) + '{\\pbm' + m.group(1), body
             )
+            body = lining_runs(body)
             here = set(re.findall(r'\\(?:pb|pbm|pbx|label)\{([^}]+)\}', body))
             body = re.sub(
                 r'\\hyperref\[([^\]]+)\]\{',

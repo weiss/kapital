@@ -701,7 +701,6 @@ class Converter:
 
     def start_part(self, part):
         self.part = part
-        part['missing_tables'] = []
         part['text_tables'] = []
         part['formula_pages'] = []
         part['formula_index'] = 0
@@ -780,7 +779,7 @@ class Converter:
         ):
             self.inline(c, out, br)
         elif tag == 'table' and is_empty_table(c):
-            self.table(c, out, inline=True)
+            self.table(c, out)
         elif tag in BLOCK_TAGS:
             span = el(out, 'span', 'blockish')
             self.inline(c, span, True)
@@ -846,8 +845,7 @@ class Converter:
         part['formula_pages'].append(c.get('_page'))
         formulas = part.get('formulas') or []
         if idx >= len(formulas):
-            el(out, 'span', 'missingf').text = f'[Formel, S. {c.get("_page")}]'
-            return
+            sys.exit(f'formula on p. {c.get("_page")} not supplied')
         src = formulas[idx]
         display = c.get('rend') == 'display' or src.startswith('!')
         src = src.lstrip('!')
@@ -1005,30 +1003,9 @@ class Converter:
             right.set('class', 'br')
             tr.append(right)
 
-    def table(self, tab, parent, inline=False):
-        mk = (
-            (lambda p, cls: el(p, 'span', cls))
-            if inline
-            else (lambda p, cls: self.new_block(p, 'div', cls))
-        )
+    def table(self, tab, parent):
         if is_empty_table(tab):
-            part = self.part
-            page, facs, count = (
-                tab.get('_page'),
-                tab.get('_facs'),
-                int(tab.get('_count', '1')),
-            )
-            part['missing_tables'].append((page, facs, count))
-            d = mk(parent, 'missing')
-            p = el(d, 'span' if inline else 'p')
-            p.text = (
-                f'[Tabelle, S.\u00a0{page}: in der DTA-Vorlage nicht'
-                ' transkribiert – '
-            )
-            a = el(p, 'a', href=DTA_VIEW.format(part['dir'], facs))
-            a.text = 'Faksimile'
-            a.tail = ']'
-            return
+            sys.exit(f'table on p. {tab.get("_page")} not supplied')
         if tab.get('_cols'):
             self.text_table(tab, parent)
             return
@@ -2083,17 +2060,14 @@ class Book:
             (
                 p,
                 p['formula_pages'],
-                p['missing_tables'],
                 p.get('figure_page'),
                 p['text_tables'],
             )
             for p in vol['parts']
         ]
-        if any(
-            f or t or g or x or p.get('table_notes') for p, f, t, g, x in gaps
-        ):
+        if any(f or g or x or p.get('table_notes') for p, f, g, x in gaps):
             h('Lücken der Vorlage, nach dem Faksimile ergänzt')
-        for part, fpages, tabs, fig, texts in gaps:
+        for part, fpages, fig, texts in gaps:
             pre = part['prefix']
             if fpages:
                 pages = sorted(set(int(x) for x in fpages))
@@ -2187,16 +2161,6 @@ class Book:
                         + '. Andere Unstimmigkeiten der Tabellen bleiben wie'
                         ' gedruckt.'
                     )
-            if tabs:
-                n_tab = sum(c for _, _, c in tabs)
-                para(
-                    f'{n_tab} {"weitere " if texts else ""}Tabellen'
-                    f'{part.get("part_label", "")}'
-                    ' hat das DTA nicht transkribiert; sie fehlen hier, ein'
-                    ' Hinweis an ihrer Stelle verweist auf das Faksimile.'
-                    ' Seiten:'
-                )
-                page_list((page, facs) for page, facs, _ in tabs)
         editor, _, mail = vol.get('editor', ('', '', ''))
         version = build_version()
         para(
@@ -2641,8 +2605,6 @@ def main():
             len(part.get('formulas') or []),
             '| tables as text',
             len(part['text_tables']),
-            'missing',
-            len(part['missing_tables']),
         )
     wide = [
         f'{page} ({w} em)' for page, w in C.table_widths if w > TABLE_LINE + 1.5
